@@ -9,7 +9,6 @@ import { TestimonialsSection } from './components/testimonials-section';
 import { AffiliationsSection } from './components/affiliations-section';
 import { CTASection } from './components/cta-section';
 import { Footer } from './components/footer';
-import { StickyCTAButton } from './components/sticky-cta-button';
 
 export default function App() {
   return (
@@ -25,7 +24,6 @@ export default function App() {
       <AffiliationsSection />
       <CTASection />
       <Footer />
-      <StickyCTAButton />
     </div>
   );
 }
