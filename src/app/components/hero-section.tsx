@@ -14,7 +14,8 @@ export function HeroSection() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-left-top"
+          style={{ objectPosition: 'left top' }}
         >
           <source src="/Call Tucker!.mp4" type="video/mp4" />
         </video>
