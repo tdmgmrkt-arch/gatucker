@@ -73,6 +73,14 @@ export function AboutSection() {
                 License #188351
               </p>
             </div>
+            <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 bg-gradient-to-r from-[#000000] to-[#000000] p-2 md:p-3 rounded-xl shadow-[0_10px_40px_rgba(231,173,65,0.3)] transform -rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105">
+  <ImageWithFallback
+    src="/dontbeasucker.webp"
+    alt="Don't be a sucker"
+    className="w-48 md:w-64 h-auto object-contain rounded-lg"
+  />
+</div>
+
           </motion.div>
 
           {/* Right: Content */}

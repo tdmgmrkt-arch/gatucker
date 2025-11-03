@@ -7,21 +7,20 @@ import { ChevronDown, Shield, Clock, Lock, ArrowRight, Phone } from 'lucide-reac
 export function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Animated Background Image with Parallax */}
-      <motion.div
-        className="absolute inset-0 z-0"
-        initial={{ scale: 1.2 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 15, ease: "easeOut" }}
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/labackscape.webp')`
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/90 via-[#0D0D0D]/75 to-[#0D0D0D]" />
-      </motion.div>
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/Call Tucker!.mp4" type="video/mp4" />
+        </video>
+        {/* Darker gradient overlay for better text readability on video */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/85 via-[#0D0D0D]/70 to-[#0D0D0D]" />
+      </div>
 
       {/* Premium Spotlight Glow Effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[#E7AD41]/20 rounded-full blur-[180px] z-0 animate-pulse" style={{ animationDuration: '5s' }} />
