@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
-import { ChevronDown, Shield, Clock, Lock, ArrowRight, Phone } from 'lucide-react';
+import { ChevronDown, Phone, Shield } from 'lucide-react';
 
 export function HeroSection() {
   return (
@@ -17,155 +17,186 @@ export function HeroSection() {
           className="absolute inset-0 w-full h-full object-cover object-left-top"
           style={{ objectPosition: 'left top' }}
         >
-          <source src="/Call Tucker!.mp4" type="video/mp4" />
+          <source src="/Call Tucker!2.mp4" type="video/mp4" />
         </video>
-        {/* Darker gradient overlay for better text readability on video */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/85 via-[#0D0D0D]/70 to-[#0D0D0D]" />
+        {/* Warm-toned overlay for neon aesthetic */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1a0a00]/60 via-[#0D0D0D]/50 to-[#0D0D0D]" />
       </div>
 
-      {/* Premium Spotlight Glow Effects */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[#E7AD41]/20 rounded-full blur-[180px] z-0 animate-pulse" style={{ animationDuration: '5s' }} />
-      <div className="absolute top-1/3 right-1/3 w-[500px] h-[500px] bg-[#F5D68A]/15 rounded-full blur-[120px] z-0" />
-      <div className="absolute bottom-1/3 left-1/3 w-[500px] h-[500px] bg-[#D79D31]/12 rounded-full blur-[120px] z-0" />
+      {/* VHS Grain Overlay */}
+      <div
+        className="absolute inset-0 z-[1] opacity-[0.15] mix-blend-overlay pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+          animation: 'grain 8s steps(10) infinite'
+        }}
+      />
 
-      {/* Animated Particles */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-[#E7AD41]/30 rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 3}s`
-            }}
-          />
-        ))}
-      </div>
+      {/* Neon Glow Effects */}
+      <div className="absolute top-1/4 left-1/4 w-[800px] h-[800px] bg-[#FFD700]/20 rounded-full blur-[150px] z-0 animate-pulse" style={{ animationDuration: '4s' }} />
+      <div className="absolute top-1/2 right-1/4 w-[600px] h-[600px] bg-[#FF6B35]/15 rounded-full blur-[120px] z-0" />
 
-      {/* Content */}
+      {/* Content - Retro Neon Style */}
       <div className="relative z-10 h-full flex items-center justify-center px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          {/* Overhead Badge */}
+        <div className="max-w-7xl mx-auto text-center">
+          {/* License Badge - Retro Style */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-[#E7AD41]/10 backdrop-blur-sm border border-[#E7AD41]/30 rounded-full"
+            className="inline-flex items-center gap-3 px-5 py-2 mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#FFD700]/40 rounded-sm"
+            style={{
+              boxShadow: '0 0 20px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 215, 0, 0.1)'
+            }}
           >
-            <Shield className="w-4 h-4 text-[#E7AD41]" />
-            <span className="text-[#E7AD41] text-sm font-semibold tracking-wider uppercase" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <Shield className="w-5 h-5 text-[#FFD700]" style={{ filter: 'drop-shadow(0 0 4px #FFD700)' }} />
+            <span
+              className="text-[#FFD700] text-xs md:text-sm font-bold tracking-[0.2em] uppercase"
+              style={{
+                fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
+                textShadow: '0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.5)'
+              }}
+            >
               California Licensed PI #188351
             </span>
           </motion.div>
 
+          {/* Main Headline - Bold Retro Typography */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1
-              className="mb-8 tracking-tight leading-[1.05]"
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 'clamp(2.8rem, 7vw, 6.5rem)',
-                fontWeight: 700
-              }}
-            >
-              <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-                Hire California&apos;s
+            <h1 className="mb-6 leading-[0.95]">
+              {/* Top Line - Warm Yellow */}
+              <span
+                className="block mb-2"
+                style={{
+                  fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
+                  fontSize: 'clamp(2rem, 5vw, 4rem)',
+                  fontWeight: 900,
+                  color: '#FFA500',
+                  textShadow: '0 0 20px rgba(255, 165, 0, 0.8), 0 0 40px rgba(255, 165, 0, 0.4), 3px 3px 0 rgba(0,0,0,0.8)',
+                  letterSpacing: '0.05em'
+                }}
+              >
+                HIRE CALIFORNIA&apos;S LEADING
               </span>
-              <span className="block relative text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] my-2">
-                Leading Private
-                <motion.div
-                  className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#E7AD41] to-transparent opacity-60"
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ duration: 1, delay: 0.8 }}
-                />
-              </span>
-              <span className="block relative mt-2">
-                <span className="relative bg-gradient-to-r from-[#E7AD41] via-[#F5D68A] to-[#E7AD41] bg-clip-text text-transparent animate-shimmer bg-[length:200%_100%] drop-shadow-[0_0_30px_rgba(231,173,65,0.5)]" style={{ WebkitTextStroke: '1px rgba(231,173,65,0.3)' }}>
-                  Investigator
-                </span>
+
+              {/* Main Focus - PRIVATE INVESTIGATOR with Neon Flicker */}
+              <span
+                className="block relative animate-neon-flicker"
+                style={{
+                  fontFamily: "'Bebas Neue', 'Anton', sans-serif",
+                  fontSize: 'clamp(3.5rem, 10vw, 8rem)',
+                  fontWeight: 900,
+                  color: '#FFD700',
+                  textShadow: '0 0 30px rgba(255, 215, 0, 1), 0 0 60px rgba(255, 215, 0, 0.8), 0 0 90px rgba(255, 215, 0, 0.5), 4px 4px 0 rgba(0,0,0,0.9)',
+                  letterSpacing: '0.02em',
+                  WebkitTextStroke: '2px rgba(255, 215, 0, 0.3)'
+                }}
+              >
+                PRIVATE INVESTIGATOR
               </span>
             </h1>
           </motion.div>
 
+          {/* Call Tucker! - Script Font Tagline */}
           <motion.div
-            className="mb-10 max-w-4xl mx-auto"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
+            className="mb-10"
           >
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5 text-[#E7AD41]" />
-                <span className="text-[#EDEDED]/90 text-sm md:text-base font-medium" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  24/7 Consultations
-                </span>
-              </div>
-              <div className="hidden md:block w-1 h-1 bg-[#E7AD41] rounded-full" />
-              <div className="flex items-center gap-2">
-                <Shield className="w-5 h-5 text-[#E7AD41]" />
-                <span className="text-[#EDEDED]/90 text-sm md:text-base font-medium" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  State Licensed
-                </span>
-              </div>
-              <div className="hidden md:block w-1 h-1 bg-[#E7AD41] rounded-full" />
-              <div className="flex items-center gap-2">
-                <Lock className="w-5 h-5 text-[#E7AD41]" />
-                <span className="text-[#EDEDED]/90 text-sm md:text-base font-medium" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  100% Confidential
-                </span>
-              </div>
-            </div>
+            <p
+              className="text-[#FF6B35] mb-2"
+              style={{
+                fontFamily: "'Brush Script MT', cursive",
+                fontSize: 'clamp(2rem, 4vw, 3.5rem)',
+                fontWeight: 700,
+                textShadow: '0 0 20px rgba(255, 107, 53, 0.9), 0 0 40px rgba(255, 107, 53, 0.6), 2px 2px 0 rgba(0,0,0,0.7)',
+                transform: 'rotate(-3deg)'
+              }}
+            >
+              Call Tucker!
+            </p>
+            <p
+              className="text-[#FFA500]/90 text-sm md:text-base"
+              style={{
+                fontFamily: "'Courier New', monospace",
+                letterSpacing: '0.1em',
+                textShadow: '0 0 8px rgba(255, 165, 0, 0.6)'
+              }}
+            >
+              Don&apos;t be a sucker — Get the truth!
+            </p>
           </motion.div>
 
+          {/* Phone Number - Neon Glow with Flicker */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-5"
+            className="mb-12"
           >
-            {/* Premium Primary CTA */}
-            <div className="group relative">
-              <div className="absolute -inset-1.5 bg-gradient-to-r from-[#E7AD41] via-[#F5D68A] to-[#E7AD41] rounded-full blur-lg opacity-60 group-hover:opacity-100 transition duration-500 animate-pulse" style={{ animationDuration: '3s' }} />
-              <Button
-                size="lg"
-                className="relative bg-gradient-to-r from-[#E7AD41] via-[#F5D68A] to-[#E7AD41] hover:from-[#F5D68A] hover:via-[#E7AD41] hover:to-[#F5D68A] text-[#0D0D0D] px-14 py-7 text-lg font-bold transition-all duration-500 rounded-full shadow-2xl hover:shadow-[0_0_50px_rgba(231,173,65,0.8)] hover:scale-105"
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  letterSpacing: '0.3px'
-                }}
-              >
-                <span className="relative z-10 flex items-center gap-2">
-                  Request Consultation
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <a
+              href="tel:909-345-1350"
+              className="inline-block group"
+            >
+              <div className="relative">
+                <div
+                  className="absolute -inset-4 bg-[#FFD700]/20 blur-2xl rounded-full animate-pulse"
+                  style={{ animationDuration: '2s' }}
+                />
+                <span
+                  className="relative block animate-neon-flicker-subtle group-hover:scale-105"
+                  style={{
+                    fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
+                    fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+                    fontWeight: 900,
+                    color: '#FFD700',
+                    textShadow: '0 0 20px rgba(255, 215, 0, 1), 0 0 40px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 215, 0, 0.5), 3px 3px 0 rgba(0,0,0,0.8)',
+                    letterSpacing: '0.1em',
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  (909) 345-1350
                 </span>
-              </Button>
-            </div>
-
-            {/* Premium Secondary CTA */}
-            <a href="tel:909-345-1350" className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-[#E7AD41]/50 to-[#D79D31]/50 rounded-full blur opacity-0 group-hover:opacity-70 transition duration-300" />
-              <Button
-                size="lg"
-                variant="outline"
-                className="relative border-2 border-[#E7AD41]/60 bg-[#0D0D0D]/50 backdrop-blur-sm text-[#E7AD41] hover:border-[#E7AD41] hover:bg-[#E7AD41]/10 px-12 py-7 text-lg font-bold transition-all duration-300 rounded-full shadow-lg hover:shadow-[0_0_30px_rgba(231,173,65,0.4)]"
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  letterSpacing: '0.3px'
-                }}
-              >
-                <Phone className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                (909) 345-1350
-              </Button>
+              </div>
             </a>
           </motion.div>
 
-          {/* Scroll Indicator - Enhanced */}
+          {/* CTA Button - Retro Style */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-5"
+          >
+            <a
+              href="tel:909-345-1350"
+              className="group relative inline-block"
+            >
+              <div
+                className="absolute -inset-1 bg-gradient-to-r from-[#FFD700] to-[#FFA500] blur-md opacity-75 group-hover:opacity-100 transition duration-300"
+                style={{ animation: 'pulse 2s infinite' }}
+              />
+              <button
+                className="relative px-10 py-4 bg-black border-4 border-[#FFD700] font-black text-[#FFD700] uppercase tracking-wider transition-all duration-300 group-hover:bg-[#FFD700] group-hover:text-black group-hover:scale-105"
+                style={{
+                  fontFamily: "'Bebas Neue', sans-serif",
+                  fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)',
+                  boxShadow: '0 0 30px rgba(255, 215, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.2)',
+                  textShadow: '0 0 10px rgba(255, 215, 0, 0.8)'
+                }}
+              >
+                <Phone className="inline-block w-6 h-6 mr-2 mb-1" />
+                CALL NOW!
+              </button>
+            </a>
+          </motion.div>
+
+          {/* Scroll Indicator */}
           <motion.div
             className="absolute bottom-12 left-1/2 -translate-x-1/2 cursor-pointer group"
             initial={{ opacity: 0 }}
@@ -178,17 +209,21 @@ export function HeroSection() {
               transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
               className="flex flex-col items-center gap-2"
             >
-              <span className="text-[#E7AD41]/70 text-xs uppercase tracking-wider font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>
-                Scroll
-              </span>
-              <div className="w-6 h-10 border-2 border-[#E7AD41]/50 rounded-full flex items-start justify-center p-2 group-hover:border-[#E7AD41] transition-colors">
+              <div
+                className="w-6 h-10 border-2 border-[#FFD700]/60 rounded-full flex items-start justify-center p-2 group-hover:border-[#FFD700] transition-colors"
+                style={{ boxShadow: '0 0 10px rgba(255, 215, 0, 0.4)' }}
+              >
                 <motion.div
-                  className="w-1.5 h-1.5 bg-[#E7AD41] rounded-full"
+                  className="w-1.5 h-1.5 bg-[#FFD700] rounded-full"
+                  style={{ boxShadow: '0 0 8px rgba(255, 215, 0, 0.8)' }}
                   animate={{ y: [0, 12, 0] }}
                   transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
                 />
               </div>
-              <ChevronDown className="w-4 h-4 text-[#E7AD41]/70 group-hover:text-[#E7AD41] transition-colors" />
+              <ChevronDown
+                className="w-5 h-5 text-[#FFD700]/70 group-hover:text-[#FFD700] transition-colors"
+                style={{ filter: 'drop-shadow(0 0 4px rgba(255, 215, 0, 0.6))' }}
+              />
             </motion.div>
           </motion.div>
         </div>
