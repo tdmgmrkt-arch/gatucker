@@ -17,7 +17,7 @@ export function HeroSection() {
           className="absolute inset-0 w-full h-full object-cover object-right-top"
           style={{ objectPosition: "right top" }}
         >
-          <source src="/Call Tucker!2.mp4" type="video/mp4" />
+          <source src="/Call Tucker!2.webm" type="video/webm" />
         </video>
         {/* Warm-toned overlay for neon aesthetic */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a0a00]/40 via-[#0D0D0D]/30 to-[#0D0D0D]" />
