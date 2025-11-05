@@ -77,8 +77,8 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-500">
       {/* Premium glass background with double border */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/95 to-[#0D0D0D]/90 backdrop-filter backdrop-blur-2xl" />
-      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#E7AD41]/40 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-[#E7AD41]/20 to-transparent blur-sm" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/40 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-[#CEA53D]/20 to-transparent blur-sm" />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative">
         <div className="flex justify-between items-center h-24">
@@ -92,14 +92,14 @@ export function Navbar() {
           >
             <div className="relative">
               <Image
-                src="/gatuckernavlogo.png"
+                src="/galogotest3.png"
                 alt="G.A. Tucker PI Logo"
-                width={200}
-                height={45}
+                width={140}
+                height={100}
                 className="h-auto transition-all duration-300 group-hover:brightness-110"
               />
               {/* Subtle glow on hover */}
-              <div className="absolute inset-0 bg-[#E7AD41]/0 group-hover:bg-[#E7AD41]/5 rounded-lg transition-all duration-300 blur-xl" />
+              <div className="absolute inset-0 bg-[#CEA53D]/0 group-hover:bg-[#CEA53D]/5 rounded-lg transition-all duration-300 blur-xl" />
             </div>
           </motion.a>
 
@@ -113,7 +113,7 @@ export function Navbar() {
                 onMouseLeave={() => handleDropdown(null)}
               >
                 <motion.button
-                  className="relative px-5 py-2 text-white hover:text-[#E7AD41] transition-all duration-300 font-medium tracking-wide text-sm group"
+                  className="relative px-5 py-2 text-white hover:text-[#CEA53D] transition-all duration-300 font-medium tracking-wide text-sm group"
                   style={{ fontFamily: "'Inter', sans-serif", letterSpacing: '0.5px' }}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -128,35 +128,39 @@ export function Navbar() {
                   </span>
 
                   {/* Elegant underline */}
-                  <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-px bg-gradient-to-r from-transparent via-[#E7AD41] to-transparent group-hover:w-3/4 transition-all duration-500" />
+                  <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D] to-transparent group-hover:w-3/4 transition-all duration-500" />
 
                   {/* Subtle background glow */}
-                  <span className="absolute inset-0 bg-[#E7AD41]/0 group-hover:bg-[#E7AD41]/5 rounded-lg transition-all duration-300 blur-sm" />
+                  <span className="absolute inset-0 bg-[#CEA53D]/0 group-hover:bg-[#CEA53D]/5 rounded-lg transition-all duration-300 blur-sm" />
                 </motion.button>
 
                 {/* Vertical divider */}
                 {index < navItems.length - 1 && (
-                  <div className="h-4 w-px bg-gradient-to-b from-transparent via-[#E7AD41]/20 to-transparent mx-1" />
+                  <div className="h-4 w-px bg-gradient-to-b from-transparent via-[#CEA53D]/20 to-transparent mx-1" />
                 )}
               </div>
             ))}
             
-            {/* Premium CTA Button */}
+            {/* Retro CTA Button */}
             <motion.div
-              className="ml-6 pl-6 border-l border-[#E7AD41]/20"
+              className="ml-6 pl-6 border-l border-[#CEA53D]/20"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
               <a href="#contact" className="group relative inline-block">
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#E7AD41] via-[#F5D68A] to-[#E7AD41] rounded-full blur opacity-40 group-hover:opacity-70 transition duration-300" />
-                <Button
-                  size="sm"
-                  className="relative bg-gradient-to-r from-[#E7AD41] to-[#D79D31] hover:from-[#F5D68A] hover:to-[#E7AD41] text-[#0D0D0D] px-7 py-2.5 font-bold transition-all duration-300 rounded-full text-sm shadow-lg hover:shadow-[0_0_30px_rgba(231,173,65,0.6)] hover:scale-105"
-                  style={{ fontFamily: "'Inter', sans-serif", letterSpacing: '0.3px' }}
+                <button
+                  className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-6 py-2 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105"
+                  style={{
+                    fontFamily: "'Bebas Neue', sans-serif",
+                    boxShadow:
+                    "0 0 15px rgba(130,100,35,0.3), inset 0 0 8px rgba(130,100,35,0.15)",
+                    textShadow: "0 0 5px rgba(130,100,35,0.4)",
+                    
+                  }}
                 >
-                  Request Consultation
-                </Button>
+                  Get Consultation
+                </button>
               </a>
             </motion.div>
           </div>
@@ -167,7 +171,7 @@ export function Navbar() {
               variant="ghost"
               size="icon"
               onClick={toggleMenu}
-              className="text-white hover:bg-transparent hover:text-[#e7ad41] focus:outline-none"
+              className="text-white hover:bg-transparent hover:text-[#CEA53D] focus:outline-none"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -188,9 +192,9 @@ export function Navbar() {
         >
           {/* Premium layered background */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/98 to-[#0D0D0D]/95 backdrop-blur-3xl" />
-          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#E7AD41]/30 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#E7AD41]/40 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-[3px] bg-gradient-to-r from-transparent via-[#E7AD41]/20 to-transparent blur-md" />
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/30 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/40 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-[3px] bg-gradient-to-r from-transparent via-[#CEA53D]/20 to-transparent blur-md" />
 
           <div className="relative p-12">
             <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12">
@@ -203,16 +207,16 @@ export function Navbar() {
                             <a
                                 key={item.title}
                                 href={item.href}
-                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#E7AD41]/10 hover:border-[#E7AD41]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
                             >
                                 {/* Hover glow effect */}
-                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#E7AD41]/0 to-[#E7AD41]/0 group-hover:from-[#E7AD41]/5 group-hover:to-transparent transition-all duration-500" />
+                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
 
-                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#E7AD41]/10 to-[#D79D31]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#E7AD41]/20 group-hover:to-[#D79D31]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
-                                    <item.icon className="w-6 h-6 text-[#E7AD41] group-hover:text-[#F5D68A] transition-colors" strokeWidth={2.5}/>
+                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                    <item.icon className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
                                 </div>
                                 <div className="relative">
-                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#E7AD41] transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
+                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                                         {item.title}
                                     </h4>
                                     <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -221,37 +225,40 @@ export function Navbar() {
                                 </div>
 
                                 {/* Arrow indicator */}
-                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#E7AD41]/0 group-hover:text-[#E7AD41]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
+                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
                             </a>
                         ))}
                     </div>
                     <div className="col-span-4 relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A]/60 to-[#0D0D0D]/60 backdrop-blur-sm" />
-                        <div className="absolute inset-0 border border-[#E7AD41]/30 rounded-2xl" />
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-[#E7AD41]/10 rounded-full blur-3xl" />
+                        <div className="absolute inset-0 border border-[#CEA53D]/30 rounded-2xl" />
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-[#CEA53D]/10 rounded-full blur-3xl" />
 
                         <div className="relative p-10 flex flex-col items-center justify-center text-center h-full">
                             <div className="mb-6 relative">
-                                <div className="absolute inset-0 bg-[#E7AD41]/20 blur-2xl rounded-full" />
+                                <div className="absolute inset-0 bg-[#CEA53D]/20 blur-2xl rounded-full" />
                                 <Image
-                                    src="/gatuckernavlogo.png"
+                                    src="/teamphoto.png"
                                     alt="G.A. Tucker PI Logo"
-                                    width={190}
-                                    height={50}
+                                    width={275}
+                                    height={75}
                                     className="h-auto relative"
                                 />
                             </div>
                             <p className="text-[#EDEDED]/70 text-sm mb-8 max-w-xs leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                                Our team uses extensive experience and cutting-edge techniques to deliver results you can trust.
+                            Our team combines experience with cutting-edge techniques to deliver results you can trust when it matters most.
                             </p>
                             <a href="#services" className="group relative">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-[#E7AD41] to-[#D79D31] rounded-full blur opacity-30 group-hover:opacity-60 transition duration-300" />
-                                <Button
-                                    className="relative bg-gradient-to-r from-[#E7AD41] to-[#D79D31] hover:from-[#F5D68A] hover:to-[#E7AD41] text-[#0D0D0D] px-8 py-3 font-bold rounded-full text-sm group shadow-lg transition-all"
-                                    style={{ fontFamily: "'Inter', sans-serif" }}
+                                <button
+                                    className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-8 py-3 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
+                                    style={{
+                                        fontFamily: "'Bebas Neue', sans-serif",
+                                        boxShadow: '0 0 20px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
+                                        textShadow: '0 0 8px rgba(255, 215, 0, 0.7)'
+                                    }}
                                 >
-                                    View All Services <ArrowRight className="w-4 h-4 ml-2 inline group-hover:translate-x-1 transition-transform" />
-                                </Button>
+                                    View All Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -266,15 +273,15 @@ export function Navbar() {
                             <a
                                 key={item.title}
                                 href={item.href}
-                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#E7AD41]/10 hover:border-[#E7AD41]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
                             >
-                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#E7AD41]/0 to-[#E7AD41]/0 group-hover:from-[#E7AD41]/5 group-hover:to-transparent transition-all duration-500" />
+                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
 
-                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#E7AD41]/10 to-[#D79D31]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#E7AD41]/20 group-hover:to-[#D79D31]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
-                                    <item.icon className="w-6 h-6 text-[#E7AD41] group-hover:text-[#F5D68A] transition-colors" strokeWidth={2.5}/>
+                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                    <item.icon className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
                                 </div>
                                 <div className="relative">
-                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#E7AD41] transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
+                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                                         {item.title}
                                     </h4>
                                     <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -282,20 +289,20 @@ export function Navbar() {
                                     </p>
                                 </div>
 
-                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#E7AD41]/0 group-hover:text-[#E7AD41]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
+                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
                             </a>
                         ))}
                     </div>
                     <div className="col-span-4 relative overflow-hidden rounded-2xl">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A]/60 to-[#0D0D0D]/60 backdrop-blur-sm" />
-                        <div className="absolute inset-0 border border-[#E7AD41]/30 rounded-2xl" />
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-[#E7AD41]/10 rounded-full blur-3xl" />
+                        <div className="absolute inset-0 border border-[#CEA53D]/30 rounded-2xl" />
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-[#CEA53D]/10 rounded-full blur-3xl" />
 
                         <div className="relative p-10 flex flex-col items-center justify-center text-center h-full">
                             <div className="mb-6 relative">
-                                <div className="absolute inset-0 bg-[#E7AD41]/20 blur-2xl rounded-full" />
+                                <div className="absolute inset-0 bg-[#CEA53D]/20 blur-2xl rounded-full" />
                                 <Image
-                                    src="/gatuckernavlogo.png"
+                                    src="/galogotest3.png"
                                     alt="G.A. Tucker PI Logo"
                                     width={190}
                                     height={50}
@@ -307,13 +314,16 @@ export function Navbar() {
                                 Committed to integrity, confidentiality, and unparalleled investigative results.
                             </p>
                             <a href="#about" className="group relative">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-[#E7AD41] to-[#D79D31] rounded-full blur opacity-30 group-hover:opacity-60 transition duration-300" />
-                                <Button
-                                    className="relative bg-gradient-to-r from-[#E7AD41] to-[#D79D31] hover:from-[#F5D68A] hover:to-[#E7AD41] text-[#0D0D0D] px-8 py-3 font-bold rounded-full text-sm group shadow-lg transition-all"
-                                    style={{ fontFamily: "'Inter', sans-serif" }}
+                                <button
+                                    className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-8 py-3 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
+                                    style={{
+                                        fontFamily: "'Bebas Neue', sans-serif",
+                                        boxShadow: '0 0 20px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
+                                        textShadow: '0 0 8px rgba(255, 215, 0, 0.7)'
+                                    }}
                                 >
-                                    Discover Our Story <ArrowRight className="w-4 h-4 ml-2 inline group-hover:translate-x-1 transition-transform" />
-                                </Button>
+                                    Discover Our Story <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -328,15 +338,15 @@ export function Navbar() {
                             <a
                                 key={item.title}
                                 href={item.href}
-                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#E7AD41]/10 hover:border-[#E7AD41]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
                             >
-                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#E7AD41]/0 to-[#E7AD41]/0 group-hover:from-[#E7AD41]/5 group-hover:to-transparent transition-all duration-500" />
+                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
 
-                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#E7AD41]/10 to-[#D79D31]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#E7AD41]/20 group-hover:to-[#D79D31]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
-                                    <item.icon className="w-6 h-6 text-[#E7AD41] group-hover:text-[#F5D68A] transition-colors" strokeWidth={2.5}/>
+                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                    <item.icon className="w-6 h-6 text-[#CEA53D] group-hover:text-[#FFA500] transition-colors" strokeWidth={2.5}/>
                                 </div>
                                 <div className="relative">
-                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#E7AD41] transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
+                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                                         {item.title}
                                     </h4>
                                     <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -344,20 +354,20 @@ export function Navbar() {
                                     </p>
                                 </div>
 
-                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#E7AD41]/0 group-hover:text-[#E7AD41]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
+                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
                             </a>
                         ))}
                          <a
                             href="mailto:info@gatuckerpi.com"
-                            className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#E7AD41]/10 hover:border-[#E7AD41]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                            className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
                         >
-                            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#E7AD41]/0 to-[#E7AD41]/0 group-hover:from-[#E7AD41]/5 group-hover:to-transparent transition-all duration-500" />
+                            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
 
-                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#E7AD41]/10 to-[#D79D31]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#E7AD41]/20 group-hover:to-[#D79D31]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
-                                <Mail className="w-6 h-6 text-[#E7AD41] group-hover:text-[#F5D68A] transition-colors" strokeWidth={2.5}/>
+                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                <Mail className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
                             </div>
                             <div className="relative">
-                                <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#E7AD41] transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
+                                <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                                     Email Us
                                 </h4>
                                 <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -365,19 +375,19 @@ export function Navbar() {
                                 </p>
                             </div>
 
-                            <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#E7AD41]/0 group-hover:text-[#E7AD41]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
+                            <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
                         </a>
                         <a
                             href="#"
-                            className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#E7AD41]/10 hover:border-[#E7AD41]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                            className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
                         >
-                            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#E7AD41]/0 to-[#E7AD41]/0 group-hover:from-[#E7AD41]/5 group-hover:to-transparent transition-all duration-500" />
+                            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
 
-                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#E7AD41]/10 to-[#D79D31]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#E7AD41]/20 group-hover:to-[#D79D31]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
-                                <MapPin className="w-6 h-6 text-[#E7AD41] group-hover:text-[#F5D68A] transition-colors" strokeWidth={2.5}/>
+                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                <MapPin className="w-6 h-6 text-[#CEA53D] group-hover:text-[#FFA500] transition-colors" strokeWidth={2.5}/>
                             </div>
                             <div className="relative">
-                                <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#E7AD41] transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
+                                <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                                     Our Location
                                 </h4>
                                 <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -385,33 +395,58 @@ export function Navbar() {
                                 </p>
                             </div>
 
-                            <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#E7AD41]/0 group-hover:text-[#E7AD41]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
+                            <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
                         </a>
                     </div>
                     <div className="col-span-4 relative overflow-hidden rounded-2xl">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A]/60 to-[#0D0D0D]/60 backdrop-blur-sm" />
-                        <div className="absolute inset-0 border border-[#E7AD41]/30 rounded-2xl" />
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-[#E7AD41]/10 rounded-full blur-3xl" />
+                        <div className="absolute inset-0 border border-[#CEA53D]/30 rounded-2xl" />
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-[#CEA53D]/10 rounded-full blur-3xl" />
 
                         <div className="relative p-10 flex flex-col items-center justify-center text-center h-full">
-                            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#E7AD41]/20 to-[#D79D31]/10 flex items-center justify-center mb-6 relative">
-                                <div className="absolute inset-0 bg-[#E7AD41]/20 blur-xl rounded-full" />
-                                <Phone className="w-10 h-10 text-[#E7AD41] relative" />
-                            </div>
-                            <h3 className="text-[#F5D68A] text-2xl font-bold mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
-                                Ready to Talk?
-                            </h3>
-                            <p className="text-[#EDEDED]/70 text-sm mb-8 max-w-xs leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                                Don&apos;t be a sucker&mdash;call Tucker, your California Private Investigator.
-                            </p>
+                            
+                            {/* Tagline */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mb-10"
+          >
+            <p
+              className="text-[#CEA53D]/90 text-sm md:text-base"
+              style={{
+                fontFamily: "var(--font-space-mono)",
+                letterSpacing: "0.1em",
+                textShadow: "0 0 3px rgba(255,165,0,0.3)",
+              }}
+            >
+              DON&apos;T BE A SUCKER!
+            </p>
+
+            <p
+              className="text-[#EB0A08] mb-2"
+              style={{
+                fontFamily: "var(--font-dancing-script)",
+                fontSize: "clamp(2rem, 4vw, 3.5rem)",
+                fontWeight: 700,
+                textShadow:
+                "0 0 6px rgba(255, 30, 30, 0.7), 0 0 12px rgba(255, 30, 30, 0.4), 1px 1px 0 rgba(0,0,0,0.6)",
+                transform: "rotate(-3deg)",
+              }}
+            >
+              Call Tucker!
+            </p>
+          </motion.div>
                             <a href="tel:909-345-1350" className="group relative">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-[#E7AD41] to-[#D79D31] rounded-full blur opacity-30 group-hover:opacity-60 transition duration-300" />
-                                <Button
-                                    className="relative bg-gradient-to-r from-[#E7AD41] to-[#D79D31] hover:from-[#F5D68A] hover:to-[#E7AD41] text-[#0D0D0D] px-8 py-3 font-bold rounded-full text-sm flex items-center group shadow-lg transition-all"
-                                    style={{ fontFamily: "'Inter', sans-serif" }}
+                                <button
+                                    className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-8 py-3 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
+                                    style={{
+                                        fontFamily: "'Bebas Neue', sans-serif",
+                                        boxShadow: '0 0 20px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
+                                    }}
                                 >
-                                    <Phone className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" /> (909) 345-1350
-                                </Button>
+                                    <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" /> (909) 345-1350
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -427,19 +462,19 @@ export function Navbar() {
         initial="closed"
         animate={isOpen ? 'open' : 'closed'}
         variants={dropdownVariants}
-        className="md:hidden overflow-hidden bg-[#0D0D0D] border-t border-[#E7AD41]/10 shadow-xl"
+        className="md:hidden overflow-hidden bg-[#0D0D0D] border-t border-[#CEA53D]/10 shadow-xl"
       >
         <div className="px-4 pt-2 pb-4 space-y-4">
             {navItems.map((item) => (
                 <div key={item.name} className="border-b border-[#2C2C2C] pb-2">
-                    <h3 className="text-[#E7AD41] font-bold uppercase tracking-wider text-sm mb-2 pt-2">{item.name}</h3>
+                    <h3 className="text-[#CEA53D] font-bold uppercase tracking-wider text-sm mb-2 pt-2">{item.name}</h3>
                     <div className="space-y-1 pl-3">
                         {item.dropdown.map((subItem) => (
                             <a 
                                 key={subItem.title} 
                                 href={subItem.href}
                                 onClick={() => setIsOpen(false)}
-                                className="block text-[#EDEDED] hover:text-[#E7AD41] transition-colors duration-300 font-light py-1 text-base"
+                                className="block text-[#EDEDED] hover:text-[#CEA53D] transition-colors duration-300 font-light py-1 text-base"
                                 style={{ fontFamily: "'Inter', sans-serif" }}
                             >
                                 {subItem.title}
@@ -449,13 +484,17 @@ export function Navbar() {
                 </div>
             ))}
             <div className="pt-4">
-                <Button
+                <button
                     onClick={() => setIsOpen(false)}
-                    className="w-full bg-[#E7AD41] hover:bg-[#D79D31] text-[#0D0D0D] py-3 font-bold rounded-full"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
+                    className="w-full bg-black border-4 border-[#CEA53D] text-[#CEA53D] py-3 font-black uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black"
+                    style={{
+                      fontFamily: "'Bebas Neue', sans-serif",
+                      boxShadow: '0 0 25px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
+                      textShadow: '0 0 8px rgba(255, 215, 0, 0.7)'
+                    }}
                 >
-                    Request Consultation
-                </Button>
+                    Get Consultation
+                </button>
             </div>
         </div>
       </motion.div>

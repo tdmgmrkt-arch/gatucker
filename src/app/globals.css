@@ -351,20 +351,21 @@ html {
 @keyframes neon-flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     text-shadow:
-      0 0 30px rgba(255, 215, 0, 1),
-      0 0 60px rgba(255, 215, 0, 0.8),
-      0 0 90px rgba(255, 215, 0, 0.5),
+      0 0 30px rgba(206, 165, 61, 1),
+      0 0 60px rgba(206, 165, 61, 0.8),
+      0 0 90px rgba(206, 165, 61, 0.5),
       4px 4px 0 rgba(0,0,0,0.9);
     opacity: 1;
   }
   20%, 24%, 55% {
     text-shadow:
-      0 0 10px rgba(255, 215, 0, 0.5),
-      0 0 20px rgba(255, 215, 0, 0.3),
+      0 0 10px rgba(206, 165, 61, 0.5),
+      0 0 20px rgba(206, 165, 61, 0.3),
       4px 4px 0 rgba(0,0,0,0.9);
     opacity: 0.8;
   }
 }
+
 
 .animate-neon-flicker {
   animation: neon-flicker 4s infinite;

@@ -68,7 +68,7 @@ export default function BackgroundChecksPage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="mb-6 text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"
               style={{
-                fontFamily: "'Playfair Display', serif",
+                fontFamily: "'Bebas Neue', sans-serif",
                 fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
                 fontWeight: 700,
                 lineHeight: 1.1
@@ -155,7 +155,7 @@ export default function BackgroundChecksPage() {
                   </p>
 
                   <div className="p-6 bg-gradient-to-br from-[#E7AD41]/10 to-[#D79D31]/5 border border-[#E7AD41]/20 rounded-xl">
-                    <p className="text-[#F5D68A] text-xl font-bold mb-0" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    <p className="text-[#F5D68A] text-xl font-bold mb-0" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                       Contact us for a full comprehensive background check.
                     </p>
                   </div>
@@ -171,7 +171,7 @@ export default function BackgroundChecksPage() {
                   className="sticky top-28"
                 >
                   <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D] border border-[#E7AD41]/20 rounded-2xl p-8">
-                    <h3 className="text-[#F5D68A] text-2xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    <h3 className="text-[#F5D68A] text-2xl font-bold mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                       Related Services
                     </h3>
                     <ul className="space-y-3">
@@ -235,11 +235,11 @@ export default function BackgroundChecksPage() {
                   <div className="absolute inset-0 bg-gradient-to-br from-[#E7AD41]/0 to-[#E7AD41]/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
 
                   <div className="relative">
-                    <span className="text-[#E7AD41]/30 text-6xl font-bold block mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    <span className="text-[#E7AD41]/30 text-6xl font-bold block mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                       {benefit.number}
                     </span>
                     <benefit.icon className="w-10 h-10 text-[#E7AD41] mb-4" />
-                    <h4 className="text-[#EDEDED] text-xl font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    <h4 className="text-[#EDEDED] text-xl font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                       {benefit.title}
                     </h4>
                   </div>
@@ -258,7 +258,7 @@ export default function BackgroundChecksPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-[#F5D68A] text-4xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <h2 className="text-[#F5D68A] text-4xl font-bold mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                   Employment and Personal Background Checks
                 </h2>
                 <p className="text-[#EDEDED]/80 text-lg leading-relaxed mb-6">
@@ -293,7 +293,7 @@ export default function BackgroundChecksPage() {
                 className="relative"
               >
                 <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D] border border-[#E7AD41]/30 rounded-2xl p-8 shadow-2xl">
-                  <h3 className="text-[#F5D68A] text-2xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  <h3 className="text-[#F5D68A] text-2xl font-bold mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                     Request Consultation Now
                   </h3>
 
@@ -369,7 +369,7 @@ export default function BackgroundChecksPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[#F5D68A] text-4xl font-bold mb-8 text-center" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h2 className="text-[#F5D68A] text-4xl font-bold mb-8 text-center" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 Completing Personal Background Checks
               </h2>
 
@@ -399,7 +399,7 @@ export default function BackgroundChecksPage() {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="text-[#F5D68A] text-4xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h2 className="text-[#F5D68A] text-4xl font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 Reviews
               </h2>
             </motion.div>
@@ -450,7 +450,7 @@ export default function BackgroundChecksPage() {
               viewport={{ once: true }}
               className="mb-12"
             >
-              <h2 className="text-[#F5D68A] text-4xl font-bold mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h2 className="text-[#F5D68A] text-4xl font-bold mb-8" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 What Can Be Found in a Background Check?
               </h2>
             </motion.div>
@@ -462,7 +462,7 @@ export default function BackgroundChecksPage() {
                 viewport={{ once: true }}
                 className="bg-gradient-to-br from-[#1A1A1A]/60 to-[#0D0D0D]/60 border border-[#E7AD41]/20 rounded-2xl p-8"
               >
-                <h3 className="text-[#E7AD41] text-2xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <h3 className="text-[#E7AD41] text-2xl font-bold mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                   Personal Background Check
                 </h3>
                 <ul className="space-y-3">
@@ -488,7 +488,7 @@ export default function BackgroundChecksPage() {
                 viewport={{ once: true }}
                 className="bg-gradient-to-br from-[#1A1A1A]/60 to-[#0D0D0D]/60 border border-[#E7AD41]/20 rounded-2xl p-8"
               >
-                <h3 className="text-[#E7AD41] text-2xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <h3 className="text-[#E7AD41] text-2xl font-bold mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                   Criminal Background Check
                 </h3>
                 <ul className="space-y-3">
@@ -519,7 +519,7 @@ export default function BackgroundChecksPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[#F5D68A] text-4xl font-bold mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h2 className="text-[#F5D68A] text-4xl font-bold mb-8" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 Learn More About Personal Background Checks
               </h2>
 
@@ -567,7 +567,7 @@ export default function BackgroundChecksPage() {
               viewport={{ once: true }}
               className="mb-12"
             >
-              <h2 className="text-[#F5D68A] text-4xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h2 className="text-[#F5D68A] text-4xl font-bold mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 Corporate Background Checks
               </h2>
               <p className="text-[#EDEDED]/80 text-lg">
@@ -614,7 +614,7 @@ export default function BackgroundChecksPage() {
               viewport={{ once: true }}
               className="mt-12 p-8 bg-gradient-to-br from-[#E7AD41]/10 to-[#D79D31]/5 border border-[#E7AD41]/30 rounded-2xl text-center"
             >
-              <h3 className="text-[#F5D68A] text-2xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h3 className="text-[#F5D68A] text-2xl font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 Asset Search Services Also Available
               </h3>
               <p className="text-[#EDEDED]/80 mb-6">
@@ -633,7 +633,7 @@ export default function BackgroundChecksPage() {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="text-[#F5D68A] text-4xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h2 className="text-[#F5D68A] text-4xl font-bold mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 FAQs About Background Checks
               </h2>
             </motion.div>
@@ -691,10 +691,10 @@ export default function BackgroundChecksPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[#F5D68A] text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h2 className="text-[#F5D68A] text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 Greg Tucker – Private Investigator California
               </h2>
-              <p className="text-[#E7AD41] text-xl mb-8 italic" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <p className="text-[#E7AD41] text-xl mb-8 italic" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 Don&apos;t be a sucker – call Tucker, your California Private Investigator
               </p>
               <p className="text-[#EDEDED]/80 text-lg mb-12">

@@ -7,7 +7,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback'; // Assuming you h
 
 export function Footer() {
   return (
-    <footer className="relative bg-[#0D0D0D] border-t border-[#E7AD41]/30 py-16 px-6">
+    <footer className="relative bg-[#0D0D0D] border-t border-[#CEA53D]/30 py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mb-12">
           {/* Column 1: Logo, Company Info, & Socials */}
@@ -30,23 +30,23 @@ export function Footer() {
               California&apos;s most trusted private investigation firm. Providing discreet, professional investigative services.
             </p>
 
-            <div className="flex items-center gap-2 text-[#E7AD41] text-sm mb-6">
+            <div className="flex items-center gap-2 text-[#CEA53D] text-sm mb-6">
               <Shield className="w-4 h-4" />
               <span style={{ fontFamily: "'Inter', sans-serif" }}>
                 California PI License #188351
               </span>
             </div>
             
-            {/* Social Links */}
+            {/* Social Links - Retro square style */}
             <div className="flex gap-4 mt-auto">
-              <a href="#" className="w-10 h-10 rounded-full bg-[#E7AD41]/10 flex items-center justify-center hover:bg-[#E7AD41]/20 transition-colors">
-                <Facebook className="w-5 h-5 text-[#E7AD41]" />
+              <a href="#" className="w-10 h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+                <Facebook className="w-5 h-5 text-[#CEA53D]" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#E7AD41]/10 flex items-center justify-center hover:bg-[#E7AD41]/20 transition-colors">
-                <Twitter className="w-5 h-5 text-[#E7AD41]" />
+              <a href="#" className="w-10 h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+                <Twitter className="w-5 h-5 text-[#CEA53D]" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#E7AD41]/10 flex items-center justify-center hover:bg-[#E7AD41]/20 transition-colors">
-                <Instagram className="w-5 h-5 text-[#E7AD41]" />
+              <a href="#" className="w-10 h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+                <Instagram className="w-5 h-5 text-[#CEA53D]" />
               </a>
             </div>
           </div>
@@ -72,7 +72,7 @@ export function Footer() {
                 <li key={link.name}>
                   <a 
                     href={link.href}
-                    className="text-[#EDEDED]/70 hover:text-[#E7AD41] transition-colors text-sm font-light"
+                    className="text-[#EDEDED]/70 hover:text-[#CEA53D] transition-colors text-sm font-light"
                     style={{ fontFamily: "'Inter', sans-serif" }}
                   >
                     {link.name}
@@ -92,27 +92,27 @@ export function Footer() {
             </h4>
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-[#E7AD41] flex-shrink-0" />
+                <Phone className="w-4 h-4 text-[#CEA53D] flex-shrink-0" />
                 <a 
                   href="tel:909-345-1350"
-                  className="text-[#EDEDED] hover:text-[#E7AD41] transition-colors text-sm font-light"
+                  className="text-[#EDEDED] hover:text-[#CEA53D] transition-colors text-sm font-light"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   (909) 345-1350
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-[#E7AD41] flex-shrink-0" />
+                <Mail className="w-4 h-4 text-[#CEA53D] flex-shrink-0" />
                 <a 
                   href="mailto:greg@gatucker.com"
-                  className="text-[#EDEDED] hover:text-[#E7AD41] transition-colors text-sm font-light"
+                  className="text-[#EDEDED] hover:text-[#CEA53D] transition-colors text-sm font-light"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   greg@gatucker.com
                 </a>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-[#E7AD41] flex-shrink-0 mt-1" />
+                <MapPin className="w-4 h-4 text-[#CEA53D] flex-shrink-0 mt-1" />
                 <p 
                   className="text-[#EDEDED] text-sm font-light"
                   style={{ fontFamily: "'Inter', sans-serif" }}
@@ -132,24 +132,28 @@ export function Footer() {
               Sign up to receive our latest news and updates.
             </p>
             <div className="flex gap-2 w-full">
-              <Input 
+              <Input
                 type="email"
                 placeholder="Email Address"
-                className="bg-[#1A1A1A] border-[#E7AD41]/20 text-[#EDEDED] placeholder:text-[#EDEDED]/40 text-sm"
+                className="bg-black border-2 border-[#CEA53D]/30 text-[#EDEDED] placeholder:text-[#EDEDED]/40 text-sm focus:border-[#CEA53D]"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               />
-              <Button 
-                className="bg-[#E7AD41] hover:bg-[#D79D31] text-[#0D0D0D] px-4"
-                style={{ fontFamily: "'Inter', sans-serif" }}
+              <button
+                className="bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-4 py-2 font-black uppercase text-xs tracking-wider transition-all hover:bg-[#CEA53D] hover:text-black"
+                style={{
+                  fontFamily: "'Bebas Neue', sans-serif",
+                  boxShadow: '0 0 15px rgba(255, 215, 0, 0.4)',
+                  textShadow: '0 0 6px rgba(255, 215, 0, 0.6)'
+                }}
               >
                 Sign Up
-              </Button>
+              </button>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[#E7AD41]/20 text-center">
+        <div className="pt-8 border-t border-[#CEA53D]/20 text-center">
           <p 
             className="text-[#EDEDED]/50 text-sm mb-4 md:mb-0 font-light"
             style={{ fontFamily: "'Inter', sans-serif" }}

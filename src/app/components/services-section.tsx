@@ -73,9 +73,9 @@ export function ServicesSection() {
 </div>
 
       {/* Enhanced Glow Effects */}
-      <div className="absolute top-1/4 left-0 w-[700px] h-[700px] bg-[#E7AD41]/8 rounded-full blur-[150px] z-10" />
-      <div className="absolute bottom-1/4 right-0 w-[700px] h-[700px] bg-[#D79D31]/8 rounded-full blur-[150px] z-10" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#E7AD41]/5 rounded-full blur-[120px] z-10" />
+      <div className="absolute top-1/4 left-0 w-[700px] h-[700px] bg-[#CEA53D]/8 rounded-full blur-[150px] z-10" />
+      <div className="absolute bottom-1/4 right-0 w-[700px] h-[700px] bg-[#FFA500]/8 rounded-full blur-[150px] z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#CEA53D]/5 rounded-full blur-[120px] z-10" />
 
       <div className="relative max-w-7xl mx-auto z-20">
         <motion.div
@@ -85,21 +85,22 @@ export function ServicesSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 
-            className="mb-3 text-[#EDEDED] font-bold tracking-tight leading-tight"
-            style={{ 
-              fontFamily: "'Playfair Display', serif",
+          <h2
+            className="mb-4 font-black uppercase tracking-tight leading-tight"
+            style={{
+              fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
               fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              color: '#FFFF',
             }}
           >
-            <span className="text-[#E7AD41]">Services</span>
+            Our <span className="text-[#FFFF]">Services</span>
           </h2>
-          <div className="h-1 w-24 bg-[#E7AD41] mx-auto my-4"></div>
+          <div className="h-1 w-32 bg-[#CEA53D] mx-auto my-5" style={{ boxShadow: '0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.4)' }}></div>
           <p
-            className="text-[#E7AD41] text-sm uppercase tracking-[0.2em] max-w-3xl mx-auto mb-3"
+            className="text-[#CEA53D] text-sm uppercase tracking-[0.2em] max-w-3xl mx-auto mb-3 font-bold"
             style={{
               fontFamily: "'Inter', sans-serif",
-              textShadow: '0 0 20px rgba(231, 173, 65, 0.4)'
+              textShadow: '0 0 15px rgba(255, 215, 0, 0.5)'
             }}
           >
             Browse Our California Private Investigator Services
@@ -129,19 +130,19 @@ export function ServicesSection() {
               onHoverEnd={() => setHoveredIndex(null)}
               className="group relative"
             >
-              <div className="relative h-full bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D] border border-[#2C2C2C] rounded-2xl p-8 md:p-10 hover:border-[#E7AD41]/50 transition-all duration-500 overflow-hidden shadow-lg hover:shadow-[0_20px_60px_rgba(231,173,65,0.15)] group-hover:scale-[1.02]">
+              <div className="relative h-full bg-black/90 border-2 border-[#CEA53D]/30 rounded-xl p-8 md:p-10 hover:border-[#CEA53D] transition-all duration-500 overflow-hidden shadow-lg hover:shadow-[0_0_50px_rgba(255,215,0,0.4)] group-hover:scale-[1.02]" style={{ boxShadow: '0 0 25px rgba(255, 215, 0, 0.2), inset 0 0 40px rgba(255, 215, 0, 0.05)' }}>
                 {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#E7AD41]/0 to-[#E7AD41]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
 
                 {/* Animated corner accent */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#E7AD41]/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-0 right-0 w-24 h-24 bg-[#CEA53D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative z-10">
-                  <div className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-[#E7AD41]/10 to-[#D79D31]/10 flex items-center justify-center group-hover:from-[#E7AD41]/20 group-hover:to-[#D79D31]/20 transition-all duration-300 group-hover:scale-110">
-                    <service.icon className="w-8 h-8 text-[#E7AD41]" strokeWidth={2.5} />
+                  <div className="mb-6 w-16 h-16 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center group-hover:border-[#CEA53D] transition-all duration-300 group-hover:scale-110" style={{ boxShadow: '0 0 15px rgba(255, 215, 0, 0.3)' }}>
+                    <service.icon className="w-8 h-8 text-[#CEA53D]" strokeWidth={2.5} />
                   </div>
                   <p
-                    className="text-[#E7AD41] text-xs uppercase tracking-[0.2em] mb-3 font-bold"
+                    className="text-[#CEA53D] text-xs uppercase tracking-[0.2em] mb-3 font-bold"
                     style={{
                       fontFamily: "'Inter', sans-serif",
                       textShadow: '0 0 15px rgba(231, 173, 65, 0.3)'
@@ -150,11 +151,12 @@ export function ServicesSection() {
                     {service.category}
                   </p>
                   <h3
-                    className="mb-5 text-[#EDEDED] font-bold group-hover:text-[#F0C674] transition-colors"
+                    className="mb-5 text-[#EDEDED] font-black uppercase group-hover:text-[#CEA53D] transition-colors"
                     style={{
-                      fontFamily: "'Playfair Display', serif",
+                      fontFamily: "'Bebas Neue', sans-serif",
                       fontSize: '1.75rem',
-                      lineHeight: '1.3'
+                      lineHeight: '1.3',
+                      letterSpacing: '0.02em'
                     }}
                   >
                     {service.title}
@@ -170,7 +172,7 @@ export function ServicesSection() {
                     {service.description}
                   </p>
                   <motion.div
-                    className="text-[#E7AD41] text-sm flex items-center gap-2 uppercase tracking-wider font-bold group-hover:text-[#F0C674] transition-colors"
+                    className="text-[#CEA53D] text-sm flex items-center gap-2 uppercase tracking-wider font-bold group-hover:text-[#F0C674] transition-colors"
                     style={{ fontFamily: "'Inter', sans-serif" }}
                     animate={{ x: hoveredIndex === index ? 8 : 0 }}
                   >
@@ -189,11 +191,12 @@ export function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-gradient-to-br from-[#1A1A1A]/80 to-[#0D0D0D]/80 backdrop-blur-sm border border-[#E7AD41]/20 rounded-2xl p-10 md:p-12 shadow-2xl"
+          className="bg-black/90 backdrop-blur-sm border-2 border-[#CEA53D]/30 rounded-xl p-10 md:p-12 shadow-2xl"
+          style={{ boxShadow: '0 0 30px rgba(255, 215, 0, 0.25), inset 0 0 50px rgba(255, 215, 0, 0.05)' }}
         >
-          <h3 
-            className="mb-8 text-[#EDEDED] text-center font-bold tracking-tight"
-            style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}
+          <h3
+            className="mb-8 text-[#EDEDED] text-center font-black uppercase tracking-tight"
+            style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', letterSpacing: '0.05em' }}
           >
             Complete Service List
           </h3>
@@ -202,8 +205,8 @@ export function ServicesSection() {
             
             {/* Group 1: General & Digital */}
             <div>
-              <h4 className="text-[#E7AD41] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
-                <div className="w-8 h-0.5 bg-gradient-to-r from-[#E7AD41] to-transparent" />
+              <h4 className="text-[#CEA53D] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
+                <div className="w-8 h-0.5 bg-gradient-to-r from-[#CEA53D] to-transparent" />
                 General & Digital
               </h4>
               <ul className="space-y-2">
@@ -214,9 +217,9 @@ export function ServicesSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.02 }}
-                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#E7AD41] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#E7AD41]/5 hover:pl-5"
+                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#CEA53D] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#CEA53D]/5 hover:pl-5"
                   >
-                    <div className="w-1.5 h-1.5 bg-[#E7AD41] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
+                    <div className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
                     <span
                       style={{
                         fontFamily: "'Inter', sans-serif",
@@ -233,8 +236,8 @@ export function ServicesSection() {
             
             {/* Group 2: Corporate & Domestic */}
             <div>
-              <h4 className="text-[#E7AD41] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
-                <div className="w-8 h-0.5 bg-gradient-to-r from-[#E7AD41] to-transparent" />
+              <h4 className="text-[#CEA53D] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
+                <div className="w-8 h-0.5 bg-gradient-to-r from-[#CEA53D] to-transparent" />
                 Corporate & Domestic
               </h4>
               <ul className="space-y-2">
@@ -245,9 +248,9 @@ export function ServicesSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.02 }}
-                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#E7AD41] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#E7AD41]/5 hover:pl-5"
+                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#CEA53D] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#CEA53D]/5 hover:pl-5"
                   >
-                    <div className="w-1.5 h-1.5 bg-[#E7AD41] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
+                    <div className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
                     <span
                       style={{
                         fontFamily: "'Inter', sans-serif",
@@ -264,8 +267,8 @@ export function ServicesSection() {
 
             {/* Group 3: Legal & Criminal */}
             <div>
-              <h4 className="text-[#E7AD41] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
-                <div className="w-8 h-0.5 bg-gradient-to-r from-[#E7AD41] to-transparent" />
+              <h4 className="text-[#CEA53D] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
+                <div className="w-8 h-0.5 bg-gradient-to-r from-[#CEA53D] to-transparent" />
                 Legal & Criminal
               </h4>
               <ul className="space-y-2">
@@ -276,9 +279,9 @@ export function ServicesSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.02 }}
-                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#E7AD41] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#E7AD41]/5 hover:pl-5"
+                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#CEA53D] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#CEA53D]/5 hover:pl-5"
                   >
-                    <div className="w-1.5 h-1.5 bg-[#E7AD41] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
+                    <div className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
                     <span
                       style={{
                         fontFamily: "'Inter', sans-serif",

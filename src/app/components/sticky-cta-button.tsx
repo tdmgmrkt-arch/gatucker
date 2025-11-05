@@ -40,17 +40,19 @@ export function StickyCTAButton() {
           className="fixed bottom-6 right-6 z-50 md:bottom-8 md:right-8"
         >
           <div className="group relative">
-            {/* Pulsing glow effect */}
-            <div className="absolute -inset-2 bg-gradient-to-r from-[#E7AD41] via-[#F5D68A] to-[#E7AD41] rounded-full blur-lg opacity-60 group-hover:opacity-100 transition duration-500 animate-pulse" style={{ animationDuration: '3s' }} />
-
-            {/* Button */}
+            {/* Retro thick border button */}
             <button
               onClick={handleClick}
-              className="relative flex items-center gap-3 bg-gradient-to-r from-[#E7AD41] via-[#F5D68A] to-[#E7AD41] hover:from-[#F5D68A] hover:via-[#E7AD41] hover:to-[#F5D68A] text-[#0D0D0D] px-6 py-4 md:px-8 md:py-5 font-bold transition-all duration-500 rounded-full shadow-2xl hover:shadow-[0_0_50px_rgba(231,173,65,0.8)] hover:scale-105"
-              style={{ fontFamily: "'Inter', sans-serif" }}
+              className="relative flex items-center gap-3 bg-black border-4 border-[#CEA53D] text-[#CEA53D] px-6 py-3 md:px-8 md:py-4 font-black uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 shadow-2xl"
+              style={{
+                fontFamily: "'Bebas Neue', sans-serif",
+                fontSize: 'clamp(0.9rem, 2vw, 1.2rem)',
+                boxShadow: '0 0 30px rgba(255, 215, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.2)',
+                
+              }}
             >
               <Phone className="w-5 h-5 md:w-6 md:h-6 group-hover:rotate-12 transition-transform duration-300" />
-              <span className="text-sm md:text-base whitespace-nowrap">Request Consultation</span>
+              <span className="whitespace-nowrap">Get Consultation</span>
             </button>
           </div>
         </motion.div>

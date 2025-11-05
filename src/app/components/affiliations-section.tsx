@@ -67,16 +67,17 @@ export function AffiliationsSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 
-            className="mb-3 text-[#EDEDED] font-bold tracking-tight leading-tight"
-            style={{ 
-              fontFamily: "'Playfair Display', serif",
+          <h2
+            className="mb-4 font-black uppercase tracking-tight leading-tight"
+            style={{
+              fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
               fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              color: '#FFFF',
             }}
           >
-            Professional <span className="text-[#E7AD41]">Credentials & Affiliations</span>
+            Professional Affiliations
           </h2>
-          <div className="h-1 w-24 bg-[#E7AD41] mx-auto my-4"></div>
+          <div className="h-1 w-32 bg-[#CEA53D] mx-auto my-5" style={{ boxShadow: '0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.4)' }}></div>
         </motion.div>
 
         <motion.div
@@ -84,7 +85,8 @@ export function AffiliationsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-[#2C2C2C]/50 backdrop-blur-sm border border-[#2C2C2C] rounded-2xl p-8 md:p-12 relative"
+          className="bg-black/90 backdrop-blur-sm border-2 border-[#CEA53D]/30 rounded-xl p-8 md:p-12 relative"
+          style={{ boxShadow: '0 0 30px rgba(255, 215, 0, 0.25), inset 0 0 50px rgba(255, 215, 0, 0.05)' }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-12">
             {affiliations.map((affiliation, index) => (
@@ -96,8 +98,8 @@ export function AffiliationsSection() {
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 className="group flex items-start gap-4"
               >
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#E7AD41]/10 flex items-center justify-center transition-colors group-hover:bg-[#E7AD41]/20">
-                  <affiliation.icon className="w-6 h-6 text-[#E7AD41]" strokeWidth={2.5} />
+                <div className="flex-shrink-0 w-12 h-12 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center transition-all group-hover:border-[#CEA53D]" style={{ boxShadow: '0 0 15px rgba(255, 215, 0, 0.2)' }}>
+                  <affiliation.icon className="w-6 h-6 text-[#CEA53D]" strokeWidth={2.5} />
                 </div>
                 <div>
                   <h4 

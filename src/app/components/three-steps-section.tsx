@@ -1,7 +1,8 @@
 "use client";
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Phone, MessageSquare, CheckCircle, ArrowRight } from 'lucide-react';
+import { Phone, MessageSquare, CheckCircle, ArrowRight, Briefcase, Target, Users, Award } from 'lucide-react';
 import { Button } from './ui/button';
 
 const steps = [
@@ -29,12 +30,12 @@ export function ThreeStepsSection() {
   return (
     <section className="relative py-24 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] to-[#0D0D0D] overflow-hidden">
       {/* Decorative gradient separator - top */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E7AD41]/30 to-transparent" />
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#E7AD41]/10 to-transparent blur-sm" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#CEA53D]/10 to-transparent blur-sm" />
 
       {/* Decorative gradient separator - bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E7AD41]/30 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#E7AD41]/10 to-transparent blur-sm" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/30 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#CEA53D]/10 to-transparent blur-sm" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
@@ -44,16 +45,17 @@ export function ThreeStepsSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 
-            className="mb-3 text-[#EDEDED] font-bold tracking-tight leading-tight"
-            style={{ 
-              fontFamily: "'Playfair Display', serif",
+          <h2
+            className="mb-4 font-black uppercase tracking-tight leading-tight"
+            style={{
+              fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
               fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              color: '#FFFF',
             }}
           >
-            <span className="text-[#E7AD41]">3 Simple Steps</span>
+            3 Simple Steps
           </h2>
-          <div className="h-1 w-24 bg-[#E7AD41] mx-auto my-4 shadow-[0_0_10px_rgba(231,173,65,0.5)]"></div>
+          <div className="h-1 w-32 bg-[#CEA53D] mx-auto my-5" style={{ boxShadow: '0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.4)' }}></div>
           <p
             className="text-[#EDEDED]/80 max-w-2xl mx-auto font-light"
             style={{
@@ -66,79 +68,117 @@ export function ThreeStepsSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {steps.map((step, index) => (
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          {/* Left Column: Image with Badge + CTA */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="order-2 lg:order-1"
+          >
+            <div className="relative mb-8">
+              <Image
+                src="/27yearsexp.webp"
+                alt="27 Years Experience Private Investigator"
+                width={600}
+                height={800}
+                className="w-full h-auto rounded-xl"
+              />
+              {/* Experience Badge */}
+              <div className="absolute top-0 left-1 md:top-0 md:left-1
+               bg-black border-4 border-[#CEA53D] px-6 py-3 md:px-8 md:py-4 rounded-sm transform -rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105" style={{ boxShadow: '0 0 30px rgba(255, 215, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.2)' }}>
+                <p className="text-[#FFFF] font-black tracking-wider uppercase text-sm md:text-base" style={{ fontFamily: "'Bebas Neue', sans-serif", textShadow: '0 0 10px rgba(255, 215, 0, 0.8)' }}>
+                  27+ YEARS <br></br> EXPERIENCE
+                </p>
+              </div>
+            </div>
+
+            {/* CTA - Retro style button */}
             <motion.div
-              key={step.number}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="relative group"
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="text-center lg:text-left"
             >
-              {/* Connector Line */}
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-[60px] left-[50%] right-[-50%] h-[2px] bg-gradient-to-r from-[#E7AD41] to-[#E7AD41]/20 transform -translate-x-1/2 -translate-y-1/2 z-0" />
-              )}
-              
-              <div className="relative bg-[#2C2C2C]/50 border border-[#2C2C2C] rounded-2xl p-6 md:p-8 hover:border-[#E7AD41] transition-all duration-300 overflow-hidden shadow-sm hover:shadow-xl h-full flex flex-col justify-between">
-                <div className="flex justify-between items-start mb-6">
-                  {/* Icon */}
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#E7AD41]/10 flex items-center justify-center group-hover:bg-[#E7AD41]/20 transition-colors">
-                    <step.icon className="w-6 h-6 text-[#E7AD41]" strokeWidth={2.5} />
-                  </div>
-                  {/* Step Number */}
-                  <div 
-                    className="flex-shrink-0 w-10 h-10 border-2 border-[#E7AD41] text-[#E7AD41] rounded-full flex items-center justify-center font-bold text-sm transform transition-transform duration-300 group-hover:scale-110"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
+              <div className="group relative inline-block">
+                <button
+                  className="relative px-10 py-4 bg-black border-4 border-[#CEA53D] font-black text-[#CEA53D] uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
+                  style={{
+                    fontFamily: "'Bebas Neue', sans-serif",
+                    fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
+                    boxShadow: '0 0 30px rgba(255, 215, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.2)',
+                  }}
+                >
+                  Request Consultation <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Right Column: Steps List */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="order-1 lg:order-2"
+          >
+            <div className="space-y-8">
+              {steps.map((step, index) => (
+                <motion.div
+                  key={step.number}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.15 }}
+                  className="relative group flex items-start gap-6"
+                >
+                  {/* Step Number Badge */}
+                  <div
+                    className="flex-shrink-0 w-16 h-16 border-4 border-[#CEA53D] bg-black text-[#CEA53D] rounded-sm flex items-center justify-center font-black text-2xl transform transition-transform duration-300 group-hover:scale-110"
+                    style={{
+                      fontFamily: "'Bebas Neue', sans-serif",
+                      boxShadow: '0 0 20px rgba(255, 215, 0, 0.6), inset 0 0 15px rgba(255, 215, 0, 0.2)',
+                      textShadow: '0 0 10px rgba(255, 215, 0, 0.8)'
+                    }}
                   >
                     <span>{step.number}</span>
                   </div>
-                </div>
 
-                <div>
-                  {/* Title */}
-                  <h3 
-                    className="mb-2 text-[#EDEDED] font-semibold"
-                    style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.5rem' }}
-                  >
-                    {step.title}
-                  </h3>
-                  {/* Description */}
-                  <p
-                    className="text-[#EDEDED]/80 font-light"
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      lineHeight: '1.7'
-                    }}
-                  >
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+                  {/* Content */}
+                  <div className="flex-1 pt-1">
+                    <div className="flex items-center gap-3 mb-3">
+                      <step.icon className="w-6 h-6 text-[#CEA53D]" strokeWidth={2.5} />
+                      <h3
+                        className="text-[#EDEDED] font-black uppercase"
+                        style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.75rem', letterSpacing: '0.02em' }}
+                      >
+                        {step.title}
+                      </h3>
+                    </div>
+                    <p
+                      className="text-[#EDEDED]/80 font-light leading-relaxed"
+                      style={{
+                        fontFamily: "'Inter', sans-serif",
+                        fontSize: '1rem',
+                        lineHeight: '1.7'
+                      }}
+                    >
+                      {step.description}
+                    </p>
+                  </div>
+
+                  {/* Connector Line */}
+                  {index < steps.length - 1 && (
+                    <div className="absolute left-[32px] top-[80px] bottom-[-32px] w-[2px] bg-gradient-to-b from-[#CEA53D] to-[#CEA53D]/20" />
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
-
-        {/* CTA - Standardized premium button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-center mt-12"
-        >
-          <div className="group relative inline-block">
-            <div className="absolute -inset-1.5 bg-gradient-to-r from-[#E7AD41] via-[#F5D68A] to-[#E7AD41] rounded-full blur-lg opacity-60 group-hover:opacity-100 transition duration-500 animate-pulse" style={{ animationDuration: '3s' }} />
-            <Button
-              size="lg"
-              className="relative bg-gradient-to-r from-[#E7AD41] via-[#F5D68A] to-[#E7AD41] hover:from-[#F5D68A] hover:via-[#E7AD41] hover:to-[#F5D68A] text-[#0D0D0D] px-12 py-6 rounded-full transition-all duration-500 shadow-2xl hover:shadow-[0_0_50px_rgba(231,173,65,0.8)] hover:scale-105 font-bold"
-              style={{ fontFamily: "'Inter', sans-serif" }}
-            >
-              Request Consultation <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
