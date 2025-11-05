@@ -179,9 +179,9 @@ export default function AboutPage() {
                 A U.S. Army Veteran, former Lieutenant for the Texas Department of Criminal Justice,
                 and Senior Parole/Probation Officer for the Florida Department of Corrections,
                 Greg is the Private Investigator California trusts.
-                Holding three master's degrees in Criminology, Legal Studies, and Forensic Behavioral Science,
+                Holding three master&apos;s degrees in Criminology, Legal Studies, and Forensic Behavioral Science,
                 Greg combines 27 years of investigative experience with academic expertise to lead
-                one of California's most trusted investigation firms.
+                one of California&apos;s most trusted investigation firms.
               </p>
 
               {/* Credentials Grid */}
@@ -256,7 +256,7 @@ export default function AboutPage() {
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               &ldquo;At GA Tucker PI, we stand for truth, integrity, and results.
-              Every case deserves our full attention—and that's exactly what we deliver.&rdquo;
+              Every case deserves our full attention—and that&apos;s exactly what we deliver.&rdquo;
             </p>
 
             <div className="grid grid-cols-[auto_1fr] items-center gap-3 pt-5 justify-start">
@@ -341,8 +341,8 @@ export default function AboutPage() {
                 }}
               >
                 Julia Tucker serves as Co-Owner and COO of GA Tucker PI Investigative Services LLC.
-                A dedicated advocate for children's well-being, she brings over 17 years of experience
-                as a licensed school psychologist. With master's degrees in Education and Child Psychology,
+                A dedicated advocate for children&apos;s well-being, she brings over 17 years of experience
+                as a licensed school psychologist. With master&apos;s degrees in Education and Child Psychology,
                 Julia specializes in supporting investigations involving missing children, domestic disputes,
                 and child custody cases. Her compassion and expertise ensure that each case is approached with
                 empathy, professionalism, and insight.

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Award, Shield, Scale, Users, GraduationCap, Globe, Heart, Building, Medal, BookOpen, Fingerprint } from 'lucide-react';
+import { Award, Shield, Scale, Users, GraduationCap, Globe, Heart, Building, Medal, BookOpen } from 'lucide-react';
 
 const affiliations = [
   {
