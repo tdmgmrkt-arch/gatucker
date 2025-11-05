@@ -10,9 +10,7 @@ import {
   Search,
   Users,
   FileText,
-  AlertCircle,
   Phone,
-  Mail,
   MapPin,
   Star,
   ChevronDown

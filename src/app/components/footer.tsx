@@ -2,7 +2,6 @@
 
 import { Phone, Mail, MapPin, Shield, Facebook, Twitter, Instagram } from 'lucide-react';
 import { Input } from './ui/input';
-import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback'; // Assuming you have this component
 
 export function Footer() {

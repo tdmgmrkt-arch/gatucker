@@ -26,32 +26,6 @@ const featuredServices = [
   }
 ];
 
-const allServices = [
-  "Surveillance",
-  "Background Checks",
-  "Personal Background Checks",
-  "Corporate Background Checks",
-  "Risk Management",
-  "Threat Assessment",
-  "Child Custody",
-  "Infidelity",
-  "Attorney Services",
-  "Trial Services",
-  "Jury Consulting",
-  "Profiling",
-  "Missing Persons",
-  "Civil Investigations",
-  "Criminal Investigations",
-  "Domestic Investigations",
-  "Cyberbullying",
-  "Stalking Consulting Services",
-  "Forensic Linguistics",
-  "Behavioral Analysis Consulting",
-  "Counter Intelligence",
-  "Process Server",
-  "Asset Searches"
-];
-
 export function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 

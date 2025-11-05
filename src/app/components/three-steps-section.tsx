@@ -2,8 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Phone, MessageSquare, CheckCircle, ArrowRight, Briefcase, Target, Users, Award } from 'lucide-react';
-import { Button } from './ui/button';
+import { Phone, MessageSquare, CheckCircle, ArrowRight } from 'lucide-react';
 
 const steps = [
   {

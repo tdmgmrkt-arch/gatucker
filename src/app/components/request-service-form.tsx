@@ -346,7 +346,7 @@ export function RequestServiceForm() {
         >
           <CheckCircle className="w-5 h-5 text-[#CEA53D]" />
           <p className="text-[#CEA53D] font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>
-            Request submitted successfully! We'll contact you soon.
+            Request submitted successfully! We&apos;ll contact you soon.
           </p>
         </motion.div>
       )}

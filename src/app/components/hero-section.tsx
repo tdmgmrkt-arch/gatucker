@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
 import { ChevronDown, Phone, Shield } from "lucide-react";
 
 export function HeroSection() {
