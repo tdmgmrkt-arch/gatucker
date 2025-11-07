@@ -6,9 +6,9 @@ import { ImageWithFallback } from './figma/ImageWithFallback'; // Assuming you h
 
 export function Footer() {
   return (
-    <footer className="relative bg-[#0D0D0D] border-t border-[#CEA53D]/30 py-16 px-6">
+    <footer className="relative bg-[#0D0D0D] border-t border-[#CEA53D]/30 py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 lg:gap-16 mb-10 sm:mb-12">
           {/* Column 1: Logo, Company Info, & Socials */}
           <div className="md:col-span-1 lg:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
             <div className="mb-4 w-48"> {/* Adjust width as needed for your logo */}
@@ -38,13 +38,13 @@ export function Footer() {
             
             {/* Social Links - Retro square style */}
             <div className="flex gap-4 mt-auto">
-              <a href="#" className="w-10 h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
                 <Facebook className="w-5 h-5 text-[#CEA53D]" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
                 <Twitter className="w-5 h-5 text-[#CEA53D]" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
                 <Instagram className="w-5 h-5 text-[#CEA53D]" />
               </a>
             </div>
@@ -130,15 +130,15 @@ export function Footer() {
             <p className="text-[#EDEDED]/60 text-xs mb-3 font-light" style={{ fontFamily: "'Inter', sans-serif" }}>
               Sign up to receive our latest news and updates.
             </p>
-            <div className="flex gap-2 w-full">
+            <div className="flex flex-col sm:flex-row gap-2 w-full">
               <Input
                 type="email"
                 placeholder="Email Address"
-                className="bg-black border-2 border-[#CEA53D]/30 text-[#EDEDED] placeholder:text-[#EDEDED]/40 text-sm focus:border-[#CEA53D]"
+                className="bg-black border-2 border-[#CEA53D]/30 text-[#EDEDED] placeholder:text-[#EDEDED]/40 text-sm focus:border-[#CEA53D] flex-1 min-h-[44px]"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               />
               <button
-                className="bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-4 py-2 font-black uppercase text-xs tracking-wider transition-all hover:bg-[#CEA53D] hover:text-black"
+                className="bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-5 py-3 sm:px-4 sm:py-2 font-black uppercase text-xs tracking-wider transition-all hover:bg-[#CEA53D] hover:text-black active:scale-95 touch-manipulation whitespace-nowrap"
                 style={{
                   fontFamily: "'Bebas Neue', sans-serif",
                   boxShadow: '0 0 15px rgba(255, 215, 0, 0.4)',

@@ -37,7 +37,7 @@ export default function AboutPage() {
 
       <section
         id="about"
-        className="relative py-32 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#1A1A1A] overflow-hidden"
+        className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#1A1A1A] overflow-hidden"
       >
         {/* Gradient Borders */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/40 to-transparent z-20" />
@@ -110,14 +110,14 @@ export default function AboutPage() {
 
               {/* License Badge */}
               <div
-                className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-black border-4 border-[#CEA53D] px-6 py-3 md:px-8 md:py-4 rounded-sm transform rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105"
+                className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 md:-bottom-6 md:-right-6 bg-black border-3 sm:border-4 border-[#CEA53D] px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-sm transform rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105"
                 style={{
                   boxShadow:
                     "0 0 30px rgba(255,215,0,0.6), inset 0 0 20px rgba(255,215,0,0.2)",
                 }}
               >
                 <p
-                  className="text-[#CEA53D] font-black tracking-wider uppercase text-sm md:text-base"
+                  className="text-[#CEA53D] font-black tracking-wider uppercase text-xs sm:text-sm md:text-base whitespace-nowrap"
                   style={{
                     fontFamily: "'Bebas Neue', sans-serif",
                     textShadow: "0 0 10px rgba(255,215,0,0.8)",
@@ -245,14 +245,14 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-black/80 border-2 border-[#CEA53D]/30 rounded-xl p-6 md:p-8 mt-20"
+            className="bg-black/80 border-2 border-[#CEA53D]/30 rounded-xl p-5 sm:p-6 md:p-8 mt-12 sm:mt-16 md:mt-20"
             style={{
               boxShadow:
                 "0 0 25px rgba(255,215,0,0.2), inset 0 0 30px rgba(255,215,0,0.05)",
             }}
           >
             <p
-              className="text-[#EDEDED] italic leading-relaxed text-lg md:text-xl font-light text-center md:text-left"
+              className="text-[#EDEDED] italic leading-relaxed text-base sm:text-lg md:text-xl font-light text-center md:text-left"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               &ldquo;At GA Tucker PI, we stand for truth, integrity, and results.
@@ -291,7 +291,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mt-24"
+            className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center mt-16 sm:mt-20 md:mt-24"
           >
             {/* Left: Text */}
             <motion.div

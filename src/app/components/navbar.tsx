@@ -80,8 +80,8 @@ export function Navbar() {
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/40 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-[#CEA53D]/20 to-transparent blur-sm" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative">
-        <div className="flex justify-between items-center h-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 relative">
+        <div className="flex justify-between items-center h-20 sm:h-24">
           {/* Premium Logo */}
           <motion.a
             href="#"
@@ -96,7 +96,7 @@ export function Navbar() {
                 alt="G.A. Tucker PI Logo"
                 width={140}
                 height={100}
-                className="h-auto transition-all duration-300 group-hover:brightness-110"
+                className="h-auto w-[100px] sm:w-[120px] md:w-[140px] transition-all duration-300 group-hover:brightness-110"
               />
               {/* Subtle glow on hover */}
               <div className="absolute inset-0 bg-[#CEA53D]/0 group-hover:bg-[#CEA53D]/5 rounded-lg transition-all duration-300 blur-xl" />
@@ -171,9 +171,9 @@ export function Navbar() {
               variant="ghost"
               size="icon"
               onClick={toggleMenu}
-              className="text-white hover:bg-transparent hover:text-[#CEA53D] focus:outline-none"
+              className="text-white hover:bg-transparent hover:text-[#CEA53D] focus:outline-none touch-manipulation min-w-[44px] min-h-[44px]"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
             </Button>
           </div>
         </div>
@@ -462,19 +462,19 @@ export function Navbar() {
         initial="closed"
         animate={isOpen ? 'open' : 'closed'}
         variants={dropdownVariants}
-        className="md:hidden overflow-hidden bg-[#0D0D0D] border-t border-[#CEA53D]/10 shadow-xl"
+        className="md:hidden overflow-hidden bg-[#0D0D0D] border-t border-[#CEA53D]/10 shadow-xl max-h-[calc(100vh-80px)] overflow-y-auto"
       >
-        <div className="px-4 pt-2 pb-4 space-y-4">
+        <div className="px-5 pt-4 pb-6 space-y-5">
             {navItems.map((item) => (
-                <div key={item.name} className="border-b border-[#2C2C2C] pb-2">
-                    <h3 className="text-[#CEA53D] font-bold uppercase tracking-wider text-sm mb-2 pt-2">{item.name}</h3>
-                    <div className="space-y-1 pl-3">
+                <div key={item.name} className="border-b border-[#2C2C2C] pb-4">
+                    <h3 className="text-[#CEA53D] font-bold uppercase tracking-wider text-sm mb-3 pt-2">{item.name}</h3>
+                    <div className="space-y-2 pl-3">
                         {item.dropdown.map((subItem) => (
-                            <a 
-                                key={subItem.title} 
+                            <a
+                                key={subItem.title}
                                 href={subItem.href}
                                 onClick={() => setIsOpen(false)}
-                                className="block text-[#EDEDED] hover:text-[#CEA53D] transition-colors duration-300 font-light py-1 text-base"
+                                className="block text-[#EDEDED] hover:text-[#CEA53D] active:text-[#CEA53D] transition-colors duration-300 font-light py-2.5 text-base touch-manipulation"
                                 style={{ fontFamily: "'Inter', sans-serif" }}
                             >
                                 {subItem.title}
@@ -486,7 +486,7 @@ export function Navbar() {
             <div className="pt-4">
                 <button
                     onClick={() => setIsOpen(false)}
-                    className="w-full bg-black border-4 border-[#CEA53D] text-[#CEA53D] py-3 font-black uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black"
+                    className="w-full bg-black border-4 border-[#CEA53D] text-[#CEA53D] py-4 font-black uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black active:scale-95 touch-manipulation"
                     style={{
                       fontFamily: "'Bebas Neue', sans-serif",
                       boxShadow: '0 0 25px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',

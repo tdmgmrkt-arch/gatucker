@@ -13,8 +13,8 @@ export function HeroSection() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover object-right-top"
-          style={{ objectPosition: "right top" }}
+          className="absolute inset-0 w-full h-full object-cover md:object-right-top object-center"
+          style={{ objectPosition: "center center" }}
         >
           <source src="/Call Tucker!2.webm" type="video/webm" />
         </video>
@@ -40,25 +40,25 @@ export function HeroSection() {
       <div className="absolute top-1/2 right-1/4 w-[600px] h-[600px] bg-[#FF6B35]/15 rounded-full blur-[120px] z-0" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center px-6">
-        <div className="max-w-7xl mx-auto text-center">
+      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto text-center w-full">
           {/* License Badge */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="inline-flex items-center gap-3 px-5 py-2 mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
+            className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 mb-4 sm:mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
             style={{
               boxShadow:
                 "0 0 15px rgba(206,165,61,0.25), inset 0 0 10px rgba(206,165,61,0.1)",
             }}
           >
             <Shield
-              className="w-5 h-5 text-[#CEA53D]"
+              className="w-4 h-4 sm:w-5 sm:h-5 text-[#CEA53D] flex-shrink-0"
               style={{ filter: "drop-shadow(0 0 3px #CEA53D)" }}
             />
             <span
-              className="text-[#CEA53D] text-xs md:text-sm font-bold tracking-[0.2em] uppercase"
+              className="text-[#CEA53D] text-[0.65rem] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
               style={{
                 fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
                 textShadow:
@@ -117,7 +117,7 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-10"
+            className="mb-6 sm:mb-10"
           >
             <p
               className="text-[#CEA53D]/90 text-sm md:text-base"
@@ -150,7 +150,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mb-12"
+            className="mb-8 sm:mb-12"
           >
             <a href="tel:909-345-1350" className="inline-block group">
               <div className="relative">
@@ -182,24 +182,24 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-5"
+            className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4"
           >
-            <a href="tel:909-345-1350" className="group relative inline-block">
+            <a href="tel:909-345-1350" className="group relative inline-block w-full sm:w-auto max-w-sm">
               <div
                 className="absolute -inset-1 bg-gradient-to-r from-[#8B6C2F] to-[#FFA500] blur-md opacity-70 group-hover:opacity-100 transition duration-300"
                 style={{ animation: "pulse 2s infinite" }}
               />
               <button
-                className="relative px-10 py-4 bg-black border-4 border-[#CEA53D] font-black text-[#CEA53D] uppercase tracking-wider transition-all duration-300 group-hover:bg-[#CEA53D] group-hover:text-black group-hover:scale-105"
+                className="relative w-full px-8 sm:px-10 py-4 sm:py-4 bg-black border-4 border-[#CEA53D] font-black text-[#CEA53D] uppercase tracking-wider transition-all duration-300 group-hover:bg-[#CEA53D] group-hover:text-black group-hover:scale-105 touch-manipulation"
                 style={{
                   fontFamily: "'Bebas Neue', sans-serif",
-                  fontSize: "clamp(1.2rem, 2.5vw, 1.8rem)",
+                  fontSize: "clamp(1.1rem, 2.5vw, 1.8rem)",
                   boxShadow:
                     "0 0 15px rgba(130,100,35,0.3), inset 0 0 8px rgba(130,100,35,0.15)",
                   textShadow: "0 0 5px rgba(130,100,35,0.4)",
                 }}
               >
-                <Phone className="inline-block w-6 h-6 mr-2 mb-1" />
+                <Phone className="inline-block w-5 h-5 sm:w-6 sm:h-6 mr-2 mb-1" />
                 CALL NOW!
               </button>
             </a>
@@ -207,7 +207,7 @@ export function HeroSection() {
 
           {/* Scroll Indicator */}
           <motion.div
-            className="absolute bottom-12 left-1/2 -translate-x-1/2 cursor-pointer group"
+            className="absolute bottom-6 sm:bottom-12 left-1/2 -translate-x-1/2 cursor-pointer group touch-manipulation"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}

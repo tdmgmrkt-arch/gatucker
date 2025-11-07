@@ -31,7 +31,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative py-32 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#1A1A1A] overflow-hidden"
+      className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#1A1A1A] overflow-hidden"
     >
       {/* Decorative gradient lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/40 to-transparent z-20" />
@@ -98,14 +98,14 @@ export function AboutSection() {
 
             {/* License Badge */}
             <div
-              className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-black border-4 border-[#CEA53D] px-6 py-3 md:px-8 md:py-4 rounded-sm transform rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105"
+              className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 md:-bottom-6 md:-right-6 bg-black border-3 sm:border-4 border-[#CEA53D] px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-sm transform rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105"
               style={{
                 boxShadow:
                   "0 0 30px rgba(255, 215, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.2)",
               }}
             >
               <p
-                className="text-[#CEA53D] font-black tracking-wider uppercase text-sm md:text-base"
+                className="text-[#CEA53D] font-black tracking-wider uppercase text-xs sm:text-sm md:text-base whitespace-nowrap"
                 style={{
                   fontFamily: "'Bebas Neue', sans-serif",
                   textShadow:
@@ -117,13 +117,13 @@ export function AboutSection() {
             </div>
 
             {/* Don't Be a Sucker Badge */}
-            <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 bg-gradient-to-r from-[#000000] to-[#000000] p-2 md:p-3 rounded-xl shadow-[0_10px_40px_rgba(231,173,65,0.3)] transform -rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105">
+            <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 md:-top-6 md:-left-6 bg-gradient-to-r from-[#000000] to-[#000000] p-1.5 sm:p-2 md:p-3 rounded-xl shadow-[0_10px_40px_rgba(231,173,65,0.3)] transform -rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105">
               <Image
                 src="/dontbeasucker.webp"
                 alt="Don't be a sucker"
                 width={300}
                 height={150}
-                className="w-48 md:w-64 h-auto object-contain rounded-lg"
+                className="w-32 sm:w-48 md:w-64 h-auto object-contain rounded-lg"
               />
             </div>
           </motion.div>
@@ -244,14 +244,14 @@ export function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="bg-black/80 border-2 border-[#CEA53D]/30 rounded-xl p-6 md:p-8 mt-16"
+          className="bg-black/80 border-2 border-[#CEA53D]/30 rounded-xl p-5 sm:p-6 md:p-8 mt-12 sm:mt-16"
           style={{
             boxShadow:
               "0 0 25px rgba(255, 215, 0, 0.2), inset 0 0 30px rgba(255, 215, 0, 0.05)",
           }}
         >
           <p
-            className="text-[#EDEDED] italic leading-relaxed text-lg md:text-xl font-light text-center md:text-left"
+            className="text-[#EDEDED] italic leading-relaxed text-base sm:text-lg md:text-xl font-light text-center md:text-left"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             &ldquo;No matter what problem you face, you have found an investigation
