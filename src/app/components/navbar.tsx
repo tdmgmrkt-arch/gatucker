@@ -56,8 +56,8 @@ const navItems = [
 ];
 
 const dropdownVariants = {
-    open: { opacity: 1, height: "auto", y: 0, transition: { duration: 0.3 } },
-    closed: { opacity: 0, height: 0, y: -10, transition: { duration: 0.3 } },
+    open: { opacity: 1, maxHeight: "100vh", y: 0, transition: { duration: 0.3, ease: "easeOut" } },
+    closed: { opacity: 0, maxHeight: 0, y: -10, transition: { duration: 0.3, ease: "easeIn" } },
 };
 
 // --- Navbar Component ---
@@ -462,9 +462,9 @@ export function Navbar() {
         initial="closed"
         animate={isOpen ? 'open' : 'closed'}
         variants={dropdownVariants}
-        className="md:hidden overflow-hidden bg-[#0D0D0D] border-t border-[#CEA53D]/10 shadow-xl max-h-[calc(100vh-80px)] overflow-y-auto"
+        className="md:hidden overflow-hidden bg-[#0D0D0D] border-t border-[#CEA53D]/10 shadow-xl"
       >
-        <div className="px-5 pt-4 pb-6 space-y-5">
+        <div className="px-5 pt-4 pb-6 space-y-5 max-h-[calc(100vh-80px)] overflow-y-auto">
             {navItems.map((item) => (
                 <div key={item.name} className="border-b border-[#2C2C2C] pb-4">
                     <h3 className="text-[#CEA53D] font-bold uppercase tracking-wider text-sm mb-3 pt-2">{item.name}</h3>
