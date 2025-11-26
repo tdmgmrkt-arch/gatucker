@@ -11,16 +11,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 lg:gap-16 mb-10 sm:mb-12">
           {/* Column 1: Logo, Company Info, & Socials */}
           <div className="md:col-span-1 lg:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="mb-4 w-48"> {/* Adjust width as needed for your logo */}
+            <a href="/" className="mb-4 w-48 cursor-pointer hover:opacity-80 transition-opacity"> {/* Adjust width as needed for your logo */}
               {/* This is the placeholder for your logo image */}
-              <ImageWithFallback 
+              <ImageWithFallback
                 src="/gatuckernavlogo.png"
                 alt="GA Tucker PI Logo"
                 width={350}
                 height={50}
                 className="w-full h-auto"
               />
-            </div>
+            </a>
             
             <p
               className="text-[#EDEDED]/70 mb-6 leading-relaxed text-sm max-w-sm"
@@ -61,7 +61,7 @@ export function Footer() {
             <ul className="space-y-3">
               {[
                 { name: 'About', href: '/about' },
-                { name: 'Services', href: '#services' },
+                { name: 'Services', href: '/services' },
                 { name: 'Pricing', href: '#pricing' },
                 { name: 'Testimonials', href: '#testimonials' },
                 { name: 'Affiliations', href: '#affiliations' },

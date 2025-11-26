@@ -84,7 +84,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-20 sm:h-24">
           {/* Premium Logo */}
           <motion.a
-            href="#"
+            href="/"
             className="flex-shrink-0 relative group"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -148,7 +148,7 @@ export function Navbar() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <a href="#contact" className="group relative inline-block">
+              <a href="/request-service" className="group relative inline-block">
                 <button
                   className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-6 py-2 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105"
                   style={{
@@ -248,7 +248,7 @@ export function Navbar() {
                             <p className="text-[#EDEDED]/70 text-sm mb-8 max-w-xs leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
                             Our team combines experience with cutting-edge techniques to deliver results you can trust when it matters most.
                             </p>
-                            <a href="#services" className="group relative">
+                            <a href="/services" className="group relative">
                                 <button
                                     className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-8 py-3 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
                                     style={{
