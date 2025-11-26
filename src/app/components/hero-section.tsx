@@ -8,15 +8,25 @@ export function HeroSection() {
     <section className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
+        {/* Mobile Video */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover md:object-right-top object-center"
-          style={{ objectPosition: "center center" }}
+          className="md:hidden absolute inset-0 w-full h-full object-cover object-center"
         >
-          <source src="/Call Tucker!2.webm" type="video/webm" />
+          <source src="/tuckervidheromobile.webm" type="video/webm" />
+        </video>
+        {/* Desktop Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hidden md:block absolute inset-0 w-full h-full object-cover object-right-top"
+        >
+          <source src="/tuckervidhero2.webm" type="video/webm" />
         </video>
         {/* Warm-toned overlay for neon aesthetic */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a0a00]/40 via-[#0D0D0D]/30 to-[#0D0D0D]" />
