@@ -23,6 +23,7 @@ import {
   Award, // Child Custody - chosen for its 'decision' aspect
   Mail, // For email in Contact
   MapPin, // For location in Contact
+  Star, // Hollywood Fixer
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -40,6 +41,7 @@ const services = [
 
 const about = [
   { title: 'About GA Tucker PI', description: 'Our history, mission, and commitment to excellence.', href: '/about', icon: Users },
+  { title: 'Hollywood Fixer', description: 'Trusted professional for celebrities and Fortune 500 companies.', href: '/hollywood-fixer', icon: Star },
   { title: 'Blog', description: 'Insights, case studies, and industry updates.', href: '/blog', icon: BookOpen },
   { title: 'FAQs', description: 'Answers to common questions about our services.', href: '/faqs', icon: MessageSquare },
 ];

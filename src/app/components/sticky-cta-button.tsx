@@ -23,7 +23,7 @@ export function StickyCTAButton() {
 
   const handleClick = () => {
     // Scroll to contact section or open contact modal
-    const ctaSection = document.querySelector('#contact');
+    const ctaSection = document.querySelector('/request-service');
     if (ctaSection) {
       ctaSection.scrollIntoView({ behavior: 'smooth' });
     }
