@@ -78,7 +78,7 @@ export default function AboutPage() {
               >
                 <div className="relative rounded-2xl overflow-hidden group">
                   <Image
-                    src="/gatuckport.webp"
+                    src="/gatuckerbwport.png"
                     alt="Greg Tucker - Private Investigator"
                     width={800}
                     height={800}
@@ -262,7 +262,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-[auto_1fr] items-center gap-3 pt-5 justify-start">
               <div className="flex justify-start">
                 <Image
-                  src="/gatuckport.webp"
+                  src="/gatuckersignaturethumbnail.webp"
                   alt="G.A. Tucker Portrait"
                   width={70}
                   height={70}

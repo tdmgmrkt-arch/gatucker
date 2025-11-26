@@ -28,25 +28,25 @@ import Image from 'next/image';
 
 // --- Navigation Data ---
 const services = [
-  { title: 'Background Checks', description: 'Comprehensive checks for individuals and corporations.', href: '#', icon: Search },
-  { title: 'Risk Management', description: 'Proactive identification of security vulnerabilities.', href: '#', icon: Shield },
-  { title: 'Investigations', description: 'Civil, criminal, domestic, and legal process support.', href: '#', icon: Fingerprint },
-  { title: 'Consulting', description: 'Expert guidance for complex behavioral and forensic cases.', href: '#', icon: Brain },
-  { title: 'Missing Persons', description: 'Specialized resources for locating individuals.', href: '#', icon: Target },
-  { title: 'Profiling', description: 'Behavioral analysis for legal strategies and insights.', href: '#', icon: UserCheck },
-  { title: 'Infidelity', description: 'Discreet and sensitive domestic relationship investigations.', href: '#', icon: Heart },
-  { title: 'Child Custody', description: 'Objective evidence for family court proceedings.', href: '#', icon: Award },
+  { title: 'Background Checks', description: 'Comprehensive checks for individuals and corporations.', href: '/background-checks', icon: Search },
+  { title: 'Risk Management', description: 'Proactive identification of security vulnerabilities.', href: '/risk-management', icon: Shield },
+  { title: 'Investigations', description: 'Civil, criminal, domestic, and legal process support.', href: '/investigations', icon: Fingerprint },
+  { title: 'Consulting', description: 'Expert guidance for complex behavioral and forensic cases.', href: '/consulting', icon: Brain },
+  { title: 'Missing Persons', description: 'Specialized resources for locating individuals.', href: '/missing-persons', icon: Target },
+  { title: 'Profiling', description: 'Behavioral analysis for legal strategies and insights.', href: '/profiling', icon: UserCheck },
+  { title: 'Infidelity', description: 'Discreet and sensitive domestic relationship investigations.', href: '/infidelity', icon: Heart },
+  { title: 'Child Custody', description: 'Objective evidence for family court proceedings.', href: '/child-custody', icon: Award },
 ];
 
 const about = [
   { title: 'About GA Tucker PI', description: 'Our history, mission, and commitment to excellence.', href: '/about', icon: Users },
-  { title: 'Blog', description: 'Insights, case studies, and industry updates.', href: '#blog', icon: BookOpen },
-  { title: 'FAQs', description: 'Answers to common questions about our services.', href: '#faqs', icon: MessageSquare },
+  { title: 'Blog', description: 'Insights, case studies, and industry updates.', href: '/blog', icon: BookOpen },
+  { title: 'FAQs', description: 'Answers to common questions about our services.', href: '/faqs', icon: MessageSquare },
 ];
 
 const contact = [
-  { title: 'Contact GA TUCKER PI', description: 'Get in touch for immediate assistance.', href: '#contact', icon: Phone },
-  { title: 'Request Service Form', description: 'Submit a detailed inquiry for expert assessment.', href: '#request', icon: FileText },
+  { title: 'Contact GA TUCKER PI', description: 'Get in touch for immediate assistance.', href: '/contact', icon: Phone },
+  { title: 'Request Service Form', description: 'Submit a detailed inquiry for expert assessment.', href: '/request-service-form', icon: FileText },
 ];
 
 const navItems = [

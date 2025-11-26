@@ -262,7 +262,7 @@ export function AboutSection() {
             {/* Left: Portrait */}
             <div className="flex justify-start">
               <Image
-                src="/gatuckport.webp"
+                src="/gatuckersignaturethumbnail.webp"
                 alt="G.A. Tucker Portrait"
                 width={70}
                 height={70}

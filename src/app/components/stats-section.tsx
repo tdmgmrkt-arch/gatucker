@@ -171,7 +171,7 @@ export function StatsSection() {
                 {/* Left Column: Thumbnail Image */}
                 <div className="flex justify-center md:justify-start">
                   <Image
-                    src="/gatuckport.webp"
+                    src="/gatuckersignaturethumbnail.webp"
                     alt="G.A. Tucker Portrait"
                     width={70}
                     height={70}
