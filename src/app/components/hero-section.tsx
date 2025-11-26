@@ -15,7 +15,7 @@ export function HeroSection() {
           muted
           playsInline
           className="md:hidden absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "center 35%" }}
+          style={{ objectPosition: "center 30%" }}
         >
           <source src="/tuckervidheromobile.webm" type="video/webm" />
         </video>
@@ -51,7 +51,7 @@ export function HeroSection() {
       <div className="absolute top-1/2 right-1/4 w-[600px] h-[600px] bg-[#FF6B35]/15 rounded-full blur-[120px] z-0" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6">
+      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 pt-16 md:pt-0">
         <div className="max-w-7xl mx-auto text-center w-full">
           {/* License Badge */}
           <motion.div
