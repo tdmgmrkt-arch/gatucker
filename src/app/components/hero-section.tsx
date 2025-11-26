@@ -15,7 +15,7 @@ export function HeroSection() {
           muted
           playsInline
           className="md:hidden absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "center 35%" }}
+          style={{ objectPosition: "40% 35%", transform: "scale(1.05)" }}
         >
           <source src="/tuckervidheromobile.webm" type="video/webm" />
         </video>
@@ -58,7 +58,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="absolute top-20 left-1/2 -translate-x-1/2 md:relative md:top-auto md:left-auto md:translate-x-0 inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 mb-0 md:mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
+            className="absolute top-25 left-1/2 -translate-x-1/2 md:relative md:top-auto md:left-auto md:translate-x-0 inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 mb-0 md:mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
             style={{
               boxShadow:
                 "0 0 15px rgba(206,165,61,0.25), inset 0 0 10px rgba(206,165,61,0.1)",
