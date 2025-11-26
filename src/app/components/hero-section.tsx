@@ -15,7 +15,7 @@ export function HeroSection() {
           muted
           playsInline
           className="md:hidden absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: "center 30%" }}
+          style={{ objectPosition: "center 35%" }}
         >
           <source src="/tuckervidheromobile.webm" type="video/webm" />
         </video>
@@ -51,14 +51,14 @@ export function HeroSection() {
       <div className="absolute top-1/2 right-1/4 w-[600px] h-[600px] bg-[#FF6B35]/15 rounded-full blur-[120px] z-0" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 pt-16 md:pt-0">
+      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6">
         <div className="max-w-7xl mx-auto text-center w-full">
           {/* License Badge */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 mb-4 sm:mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
+            className="absolute top-20 left-1/2 -translate-x-1/2 md:relative md:top-auto md:left-auto md:translate-x-0 inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 mb-0 md:mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
             style={{
               boxShadow:
                 "0 0 15px rgba(206,165,61,0.25), inset 0 0 10px rgba(206,165,61,0.1)",

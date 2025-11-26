@@ -47,7 +47,7 @@ export function StatsSection() {
             >
               <div className="relative rounded-2xl overflow-hidden group">
                 <Image
-                  src="/GATRUTH.webp"
+                  src="/ga.tucker.chasing.truth.webp"
                   alt="California Private Investigator Consultation"
                   width={800}
                   height={800}

@@ -66,7 +66,7 @@ export function AboutSection() {
             >
               <div className="relative rounded-2xl overflow-hidden group">
                 <Image
-                  src="/gatuckerintoimg.webp"
+                  src="/gatuckerbwport.png"
                   alt="Greg Tucker - Licensed Private Investigator"
                   width={800}
                   height={800}
@@ -117,7 +117,7 @@ export function AboutSection() {
             </div>
 
             {/* Don't Be a Sucker Badge */}
-            <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 md:-top-6 md:-left-6 bg-gradient-to-r from-[#000000] to-[#000000] p-1.5 sm:p-2 md:p-3 rounded-xl shadow-[0_10px_40px_rgba(231,173,65,0.3)] transform -rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105">
+            <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 md:-top-15 md:-left-6 bg-gradient-to-r from-[#000000] to-[#000000] p-1.5 sm:p-2 md:p-3 rounded-xl shadow-[0_10px_40px_rgba(231,173,65,0.3)] transform -rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105">
               <Image
                 src="/dontbeasucker.webp"
                 alt="Don't be a sucker"

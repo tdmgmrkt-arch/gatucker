@@ -366,7 +366,7 @@ export default function AboutPage() {
               >
                 <div className="relative rounded-2xl overflow-hidden group">
                   <Image
-                    src="/JuliaTucker.webp"
+                    src="/julia_profile.webp"
                     alt="Julia Tucker - Co-Owner & COO"
                     width={800}
                     height={800}

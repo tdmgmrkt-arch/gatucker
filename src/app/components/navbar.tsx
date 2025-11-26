@@ -39,7 +39,7 @@ const services = [
 ];
 
 const about = [
-  { title: 'About GA Tucker PI', description: 'Our history, mission, and commitment to excellence.', href: '#about', icon: Users },
+  { title: 'About GA Tucker PI', description: 'Our history, mission, and commitment to excellence.', href: '/about', icon: Users },
   { title: 'Blog', description: 'Insights, case studies, and industry updates.', href: '#blog', icon: BookOpen },
   { title: 'FAQs', description: 'Answers to common questions about our services.', href: '#faqs', icon: MessageSquare },
 ];
@@ -313,7 +313,7 @@ export function Navbar() {
                             <p className="text-[#EDEDED]/70 text-sm mb-8 max-w-xs leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
                                 Committed to integrity, confidentiality, and unparalleled investigative results.
                             </p>
-                            <a href="#about" className="group relative">
+                            <a href="/about" className="group relative">
                                 <button
                                     className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-8 py-3 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
                                     style={{
