@@ -14,7 +14,8 @@ export function HeroSection() {
           loop
           muted
           playsInline
-          className="md:hidden absolute inset-0 w-full h-full object-cover object-center"
+          className="md:hidden absolute inset-0 w-full h-full object-cover"
+          style={{ objectPosition: "center 35%" }}
         >
           <source src="/tuckervidheromobile.webm" type="video/webm" />
         </video>
