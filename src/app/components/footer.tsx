@@ -35,19 +35,6 @@ export function Footer() {
                 California PI License #188351
               </span>
             </div>
-            
-            {/* Social Links - Retro square style */}
-            <div className="flex gap-4 mt-auto">
-              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
-                <Facebook className="w-5 h-5 text-[#CEA53D]" />
-              </a>
-              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
-                <Twitter className="w-5 h-5 text-[#CEA53D]" />
-              </a>
-              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
-                <Instagram className="w-5 h-5 text-[#CEA53D]" />
-              </a>
-            </div>
           </div>
 
           {/* Column 2: Navigation Links */}
@@ -64,9 +51,7 @@ export function Footer() {
                 { name: 'Services', href: '/services' },
                 { name: 'Pricing', href: '#pricing' },
                 { name: 'Testimonials', href: '#testimonials' },
-                { name: 'Affiliations', href: '#affiliations' },
-                { name: 'Privacy Policy', href: '#' },
-                { name: 'Terms and Conditions', href: '#' },
+                
               ].map((link) => (
                 <li key={link.name}>
                   <a 
@@ -116,38 +101,24 @@ export function Footer() {
                   className="text-[#EDEDED] text-sm font-light"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
-                  Upland, CA 91786
+                  Southern California
                 </p>
               </div>
+              {/* Social Links - Retro square style */}
+            <div className="flex gap-4 mt-auto">
+              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+                <Facebook className="w-5 h-5 text-[#CEA53D]" />
+              </a>
+              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+                <Twitter className="w-5 h-5 text-[#CEA53D]" />
+              </a>
+              <a href="#" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+                <Instagram className="w-5 h-5 text-[#CEA53D]" />
+              </a>
+            </div>
             </div>
 
-            <h4 
-              className="mb-3 text-[#EDEDED] uppercase tracking-wider text-sm font-bold"
-              style={{ fontFamily: "'Inter', sans-serif" }}
-            >
-              Newsletter
-            </h4>
-            <p className="text-[#EDEDED]/60 text-xs mb-3 font-light" style={{ fontFamily: "'Inter', sans-serif" }}>
-              Sign up to receive our latest news and updates.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-2 w-full">
-              <Input
-                type="email"
-                placeholder="Email Address"
-                className="bg-black border-2 border-[#CEA53D]/30 text-[#EDEDED] placeholder:text-[#EDEDED]/40 text-sm focus:border-[#CEA53D] flex-1 min-h-[44px]"
-                style={{ fontFamily: "'Inter', sans-serif" }}
-              />
-              <button
-                className="bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-5 py-3 sm:px-4 sm:py-2 font-black uppercase text-xs tracking-wider transition-all hover:bg-[#CEA53D] hover:text-black active:scale-95 touch-manipulation whitespace-nowrap"
-                style={{
-                  fontFamily: "'Bebas Neue', sans-serif",
-                  boxShadow: '0 0 15px rgba(255, 215, 0, 0.4)',
-                  textShadow: '0 0 6px rgba(255, 215, 0, 0.6)'
-                }}
-              >
-                Sign Up
-              </button>
-            </div>
+            
           </div>
         </div>
 

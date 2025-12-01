@@ -9,6 +9,7 @@ const serviceOptions = [
   "Investigations",
   "Missing Persons",
   "Child Custody",
+  "Infidelity",
   "Risk Management",
   "Consulting",
   "Profiling"
@@ -21,13 +22,17 @@ const contactTypeOptions = [
   "Other"
 ];
 
-export function RequestServiceForm() {
+interface RequestServiceFormProps {
+  defaultService?: string;
+}
+
+export function RequestServiceForm({ defaultService }: RequestServiceFormProps = {}) {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     phone: '',
     email: '',
-    services: [] as string[],
+    services: defaultService ? [defaultService] : [] as string[],
     contactType: '',
     message: ''
   });
@@ -131,23 +136,23 @@ export function RequestServiceForm() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="bg-black/90 border-2 border-[#CEA53D]/30 rounded-xl p-8 md:p-12"
+      className="bg-black/90 border-2 border-[#CEA53D]/30 rounded-xl p-6 md:p-8 max-w-5xl mx-auto"
       style={{ boxShadow: '0 0 30px rgba(255, 215, 0, 0.25), inset 0 0 50px rgba(255, 215, 0, 0.05)' }}
     >
       {/* Full Name */}
-      <div className="mb-6">
-        <label className="block mb-4">
+      <div className="mb-4">
+        <label className="block mb-3">
           <span className="text-[#FFFF] uppercase tracking-wider text-sm font-bold mb-2 block" style={{ fontFamily: "'Inter', sans-serif" }}>
             Full Name <span className="text-[#EB0A08]">*</span>
           </span>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-3">
             <div>
               <input
                 type="text"
                 placeholder="First Name"
                 value={formData.firstName}
                 onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-4 py-3 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors"
+                className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-3 py-2 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               />
               {errors.firstName && (
@@ -163,7 +168,7 @@ export function RequestServiceForm() {
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-4 py-3 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors"
+                className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-3 py-2 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               />
               {errors.lastName && (
@@ -178,7 +183,7 @@ export function RequestServiceForm() {
       </div>
 
       {/* Phone Number */}
-      <div className="mb-6">
+      <div className="mb-4">
         <label className="block">
           <span className="text-[#FFFF] uppercase tracking-wider text-sm font-bold mb-2 block" style={{ fontFamily: "'Inter', sans-serif" }}>
             Phone Number <span className="text-[#EB0A08]">*</span>
@@ -188,7 +193,7 @@ export function RequestServiceForm() {
             placeholder="(000) 000-0000"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-4 py-3 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors"
+            className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-3 py-2 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors"
             style={{ fontFamily: "'Inter', sans-serif" }}
           />
           {errors.phone && (
@@ -201,7 +206,7 @@ export function RequestServiceForm() {
       </div>
 
       {/* Email */}
-      <div className="mb-6">
+      <div className="mb-4">
         <label className="block">
           <span className="text-[#FFFF] uppercase tracking-wider text-sm font-bold mb-2 block" style={{ fontFamily: "'Inter', sans-serif" }}>
             Email Address <span className="text-[#EB0A08]">*</span>
@@ -211,7 +216,7 @@ export function RequestServiceForm() {
             placeholder="example@example.com"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-4 py-3 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors"
+            className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-3 py-2 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors"
             style={{ fontFamily: "'Inter', sans-serif" }}
           />
           {errors.email && (
@@ -224,11 +229,11 @@ export function RequestServiceForm() {
       </div>
 
       {/* Service Checkboxes */}
-      <div className="mb-6">
-        <span className="text-[#FFFF] uppercase tracking-wider text-sm font-bold mb-3 block" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <div className="mb-4">
+        <span className="text-[#FFFF] uppercase tracking-wider text-sm font-bold mb-2 block" style={{ fontFamily: "'Inter', sans-serif" }}>
           Service
         </span>
-        <div className="grid md:grid-cols-2 gap-3">
+        <div className="grid md:grid-cols-2 gap-2">
           {serviceOptions.map((service) => (
             <label
               key={service}
@@ -263,7 +268,7 @@ export function RequestServiceForm() {
       </div>
 
       {/* Contact Type Dropdown */}
-      <div className="mb-6">
+      <div className="mb-4">
         <label className="block">
           <span className="text-[#FFFF] uppercase tracking-wider text-sm font-bold mb-2 block" style={{ fontFamily: "'Inter', sans-serif" }}>
             Preferred Contact Type <span className="text-[#EB0A08]">*</span>
@@ -271,7 +276,7 @@ export function RequestServiceForm() {
           <select
             value={formData.contactType}
             onChange={(e) => setFormData({ ...formData, contactType: e.target.value })}
-            className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-4 py-3 text-[#EDEDED] focus:border-[#CEA53D] focus:outline-none transition-colors"
+            className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-3 py-2 text-[#EDEDED] focus:border-[#CEA53D] focus:outline-none transition-colors"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             <option value="">Select contact type</option>
@@ -291,7 +296,7 @@ export function RequestServiceForm() {
       </div>
 
       {/* Message Textarea */}
-      <div className="mb-6">
+      <div className="mb-4">
         <label className="block">
           <span className="text-[#FFFF] uppercase tracking-wider text-sm font-bold mb-2 block" style={{ fontFamily: "'Inter', sans-serif" }}>
             Message (Optional)
@@ -300,16 +305,16 @@ export function RequestServiceForm() {
             placeholder="Additional details or notes..."
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            rows={5}
-            className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-4 py-3 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors resize-none"
+            rows={3}
+            className="w-full bg-black border-2 border-[#CEA53D]/30 rounded-lg px-3 py-2 text-[#EDEDED] placeholder:text-[#EDEDED]/40 focus:border-[#CEA53D] focus:outline-none transition-colors resize-none"
             style={{ fontFamily: "'Inter', sans-serif" }}
           />
         </label>
       </div>
 
       {/* Important Notes */}
-      <div className="mb-8 p-4 border-2 border-[#CEA53D]/30 rounded-lg bg-[#CEA53D]/5">
-        <p className="text-[#EDEDED]/80 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <div className="mb-5 p-3 border-2 border-[#CEA53D]/30 rounded-lg bg-[#CEA53D]/5">
+        <p className="text-[#EDEDED]/80 text-xs font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
           <strong className="text-[#CEA53D]">Important:</strong> For all virtual consultations, we will contact you to schedule a day and time.
         </p>
       </div>
@@ -319,10 +324,10 @@ export function RequestServiceForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="relative px-10 py-4 bg-black border-4 border-[#CEA53D] font-black text-[#CEA53D] uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-black disabled:hover:text-[#CEA53D] flex items-center gap-3 mx-auto"
+          className="relative px-8 py-3 bg-black border-4 border-[#CEA53D] font-black text-[#CEA53D] uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-black disabled:hover:text-[#CEA53D] flex items-center gap-3 mx-auto"
           style={{
             fontFamily: "'Bebas Neue', sans-serif",
-            fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
+            fontSize: 'clamp(1rem, 2.5vw, 1.3rem)',
             boxShadow: '0 0 30px rgba(255, 215, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.2)',
           }}
         >
@@ -342,10 +347,10 @@ export function RequestServiceForm() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-6 p-4 border-2 border-[#CEA53D] rounded-lg bg-[#CEA53D]/10 flex items-center gap-3"
+          className="mt-4 p-3 border-2 border-[#CEA53D] rounded-lg bg-[#CEA53D]/10 flex items-center gap-3"
         >
-          <CheckCircle className="w-5 h-5 text-[#CEA53D]" />
-          <p className="text-[#CEA53D] font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <CheckCircle className="w-4 h-4 text-[#CEA53D]" />
+          <p className="text-[#CEA53D] font-semibold text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
             Request submitted successfully! We&apos;ll contact you soon.
           </p>
         </motion.div>
@@ -355,10 +360,10 @@ export function RequestServiceForm() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-6 p-4 border-2 border-[#EB0A08] rounded-lg bg-[#EB0A08]/10 flex items-center gap-3"
+          className="mt-4 p-3 border-2 border-[#EB0A08] rounded-lg bg-[#EB0A08]/10 flex items-center gap-3"
         >
-          <AlertCircle className="w-5 h-5 text-[#EB0A08]" />
-          <p className="text-[#EB0A08] font-semibold" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <AlertCircle className="w-4 h-4 text-[#EB0A08]" />
+          <p className="text-[#EB0A08] font-semibold text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
             Something went wrong. Please try again or call us directly.
           </p>
         </motion.div>

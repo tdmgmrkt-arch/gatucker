@@ -126,7 +126,18 @@ export default function AboutPage() {
                   License #188351
                 </p>
               </div>
-            </motion.div>
+
+             {/* Don't Be a Sucker Badge */}
+              <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 md:-top-15 md:-left-6 bg-gradient-to-r from-[#000000] to-[#000000] p-1.5 sm:p-2 md:p-3 rounded-xl shadow-[0_10px_40px_rgba(231,173,65,0.3)] transform -rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105">
+                <Image
+                  src="/dontbeasucker.webp"
+                  alt="Don't be a sucker"
+                  width={300}
+                  height={150}
+                  className="w-32 sm:w-48 md:w-64 h-auto object-contain rounded-lg"
+                />
+              </div>
+              </motion.div>
 
             {/* Right Text */}
             <motion.div
@@ -396,6 +407,126 @@ export default function AboutPage() {
                 </div>
               </div>
             </motion.div>
+          </motion.div>
+
+          {/* ---------- GREG & JULIA AS A TEAM SECTION ---------- */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mt-16 sm:mt-20 md:mt-24"
+          >
+            <div className="text-center mb-12">
+              <h2
+                className="mb-4 font-black uppercase tracking-tight leading-tight"
+                style={{
+                  fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
+                  fontSize: "clamp(2.5rem,5vw,4rem)",
+                  color: "#FFF",
+                }}
+              >
+                A Family-Oriented Partnership
+              </h2>
+              <div
+                className="h-1 w-32 bg-[#CEA53D] mx-auto"
+                style={{
+                  boxShadow:
+                    "0 0 15px rgba(255,215,0,0.7), 0 0 30px rgba(255,215,0,0.4)",
+                }}
+              ></div>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center">
+              {/* Left: Team Image */}
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="relative order-2 lg:order-1"
+              >
+                <div
+                  className="relative p-3 md:p-4 bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D] rounded-xl shadow-2xl border-2 border-[#CEA53D]/30"
+                  style={{
+                    boxShadow:
+                      "0 0 30px rgba(255,215,0,0.2), inset 0 0 20px rgba(255,215,0,0.05)",
+                  }}
+                >
+                  <div className="relative rounded-2xl overflow-hidden group">
+                    <Image
+                      src="/greg_and_julia.webp"
+                      alt="Greg and Julia Tucker - Partners in Life and Business"
+                      width={800}
+                      height={800}
+                      className="w-full h-auto object-cover transition-all duration-700 ease-in-out group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                      <div>
+                        <h3
+                          className="text-white text-xl font-bold mb-1"
+                          style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+                        >
+                          Greg & Julia Tucker
+                        </h3>
+                        <p
+                          className="text-[#CEA53D] text-sm font-bold uppercase"
+                          style={{
+                            fontFamily: "'Bebas Neue', sans-serif",
+                            letterSpacing: "0.1em",
+                            textShadow: "0 0 10px rgba(255,215,0,0.8)",
+                          }}
+                        >
+                          28 Years of Partnership
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Right: Team Biography */}
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="order-1 lg:order-2"
+              >
+                <p
+                  className="mb-6 text-[#EDEDED]/85 font-light"
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "1.1rem",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Greg and Julia Tucker bring nearly three decades of partnership and family-centered values to GA Tucker PI Investigative Services LLC. As Owner and CEO, Greg draws on his experience as a US Army Veteran, his work in the criminal justice system, and his three master’s degrees to lead the firm with integrity and expertise—particularly in complex cases such as missing persons and child custody matters.
+                </p>
+
+                <p
+                  className="mb-6 text-[#EDEDED]/85 font-light"
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "1.1rem",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Julia, the firm’s Co-Owner and COO, adds more than 17 years as a licensed school psychologist, supported by dual master’s degrees in education and child psychology and a paralegal certification. Her background makes her a strong advocate for children and families, and she plays an active role in investigations involving missing children and domestic issues.
+                </p>
+
+                <p
+                  className="mb-6 text-[#EDEDED]/85 font-light"
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "1.1rem",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Together, Greg and Julia combine professional skill with a deep commitment to supporting families, using both their expertise and personal experience to make a meaningful impact in the community.
+                </p>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>

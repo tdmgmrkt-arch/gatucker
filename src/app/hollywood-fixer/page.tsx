@@ -37,8 +37,16 @@ export default function HollywoodFixerPage() {
 
       <section
         id="hollywood-fixer"
-        className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#1A1A1A] overflow-hidden"
+        className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden"
+        style={{
+          backgroundImage: "url('/hollywood_fixer_background.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
       >
+        {/* Dark Overlay for Readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80 z-0" />
         {/* Gradient Borders */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/40 to-transparent z-20" />
         <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#CEA53D]/20 to-transparent blur-sm z-20" />
