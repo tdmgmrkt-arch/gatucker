@@ -2,33 +2,92 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Award, CheckCircle2, FileCheck, Shield } from "lucide-react";
+import { Award, CheckCircle2, FileCheck, Shield, BookOpen, UserCheck, Users, Briefcase } from "lucide-react"; 
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
 import { StickyCTAButton } from "../components/sticky-cta-button";
 
-const credentials = [
+// --- Data for Greg's Education Credentials ---
+const education = [
   {
-    icon: Shield,
-    title: "US Army Veteran",
-    description: "Leadership & field discipline",
+    university: "Alliant International University",
+    degree: "Master of Science - MS, Forensic Psychology",
+    logoSrc: "/alliant_international_university.webp",
   },
   {
-    icon: FileCheck,
-    title: "Licensed by State of CA",
-    description: "California PI License #188351",
+    university: "Washington University in St. Louis",
+    degree: "Master's degree, Legal Studies, General",
+    logoSrc: "/washington_university_in_st_louis.webp",
   },
   {
-    icon: CheckCircle2,
-    title: "Expert Witness",
-    description: "Recognized in civil & criminal courts",
+    university: "Kaplan University",
+    degree: "Master of Science - MS, Criminology",
+    logoSrc: "/kaplan.university.webp",
   },
   {
-    icon: Award,
-    title: "27+ Years of Experience",
-    description: "Trusted investigative leadership",
+    university: "Azusa Pacific University",
+    degree: "Bachelor of Arts - BA, International/Global Studies",
+    logoSrc: "/azusa_pacific_university_logo.webp",
   },
 ];
+
+// --- Data for Professional Experience ---
+const experience = [
+  {
+    title: "US Army Veteran",
+    description: "Leadership & field discipline",
+    icon: Shield,
+    logoSrc: "/250px-Mark_of_the_United_States.webp",
+  },
+  {
+    title: "Former Lieutenant",
+    description: "Texas Department of Criminal Justice",
+    icon: Users,
+    logoSrc: "/texadepartmentcj-logo.webp",
+  },
+  {
+    title: "Senior Parole/Probation Officer",
+    description: "Florida Department of Corrections",
+    icon: UserCheck,
+    logoSrc: "/FDClogo-blue-outline.webp",
+  },
+  {
+    title: "27+ Years of Experience",
+    description: "Trusted investigative leadership",
+    icon: Briefcase,
+    // Using a different icon path for a generic experience badge to avoid repetition
+    logoSrc: "/californialicensedinvestigators.webp", 
+  },
+];
+
+// --- Data for Licenses & Affiliations ---
+const affiliations = [
+  {
+    title: "Licensed Private Investigator (CA)",
+    description: "California PI License #188351",
+    icon: FileCheck,
+    logoSrc: "/1200px-CalBarSeal.svg.webp", 
+  },
+  {
+    title: "Expert Witness",
+    description: "Recognized in civil & criminal courts",
+    icon: CheckCircle2,
+    logoSrc: "/california.lawyers.association.webp",
+  },
+  {
+    title: "World Association of Detectives",
+    description: "International Professional Member",
+    icon: Award, 
+    logoSrc: "/worldassocaitiondetectives.webp",
+  },
+  {
+    title: "CA Licensed Investigators Association",
+    description: "Dedicated to professional standards",
+    icon: Award, 
+    logoSrc: "/californialicensedinvestigators.webp",
+  },
+];
+
 
 export default function AboutPage() {
   return (
@@ -52,14 +111,14 @@ export default function AboutPage() {
         />
         <div className="absolute bottom-1/3 left-0 w-[600px] h-[600px] bg-[#FFA500]/8 rounded-full blur-[140px]" />
 
-        <div className="max-w-7xl mx-auto relative z-10">
-          {/* ---------- GREG SECTION ---------- */}
+        <div className="pt-30 max-w-7xl mx-auto relative z-10">
+          {/* ---------- GREG SECTION (TWO COLUMNS) ---------- */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24"
+            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12"
           >
             {/* Left Image */}
             <motion.div
@@ -127,7 +186,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-             {/* Don't Be a Sucker Badge */}
+              {/* Don't Be a Sucker Badge */}
               <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 md:-top-15 md:-left-6 bg-gradient-to-r from-[#000000] to-[#000000] p-1.5 sm:p-2 md:p-3 rounded-xl shadow-[0_10px_40px_rgba(231,173,65,0.3)] transform -rotate-2 hover:rotate-0 transition-all duration-300 hover:scale-105">
                 <Image
                   src="/dontbeasucker.webp"
@@ -137,9 +196,9 @@ export default function AboutPage() {
                   className="w-32 sm:w-48 md:w-64 h-auto object-contain rounded-lg"
                 />
               </div>
-              </motion.div>
+            </motion.div>
 
-            {/* Right Text */}
+            {/* Right Text/Bio */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -190,65 +249,124 @@ export default function AboutPage() {
                 A U.S. Army Veteran, former Lieutenant for the Texas Department of Criminal Justice,
                 and Senior Parole/Probation Officer for the Florida Department of Corrections,
                 Greg is the Private Investigator California trusts.
+                </p>
+
+                <p
+                className="mb-8 text-[#EDEDED]/85 font-light"
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "1.1rem",
+                  lineHeight: "1.8",
+                }}
+              >
+                
                 Holding three master&apos;s degrees in Criminology, Legal Studies, and Forensic Behavioral Science,
                 Greg combines 27 years of investigative experience with academic expertise to lead
                 one of California&apos;s most trusted investigation firms.
               </p>
-
-              {/* Credentials Grid */}
-              <div className="grid sm:grid-cols-2 gap-y-6 gap-x-8 mt-8">
-                {credentials.map((cred, index) => (
-                  <motion.div
-                    key={cred.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.15 }}
-                    className="group relative flex items-start p-5 bg-black/40 rounded-sm backdrop-filter backdrop-blur-sm border-2 border-[#CEA53D]/30 hover:border-[#CEA53D]/70 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
-                    style={{
-                      boxShadow: "0 0 20px rgba(255,215,0,0.1)",
-                    }}
-                  >
-                    <div
-                      className="flex-shrink-0 w-12 h-12 rounded-sm bg-black border-2 border-[#CEA53D]/50 flex items-center justify-center group-hover:border-[#CEA53D] transition-colors mr-4"
-                      style={{
-                        boxShadow: "0 0 15px rgba(255,215,0,0.3)",
-                      }}
-                    >
-                      <cred.icon
-                        className="w-6 h-6 text-[#CEA53D]"
-                        strokeWidth={2.5}
-                        style={{
-                          filter: "drop-shadow(0 0 4px rgba(255,215,0,0.8))",
-                        }}
-                      />
-                    </div>
-                    <div>
-                      <h4
-                        className="text-[#EDEDED] font-bold mb-2 tracking-wide group-hover:text-[#F0C674] transition-colors"
-                        style={{
-                          fontFamily: "'Inter', sans-serif",
-                          fontSize: "1.05rem",
-                          lineHeight: "1.4",
-                        }}
-                      >
-                        {cred.title}
-                      </h4>
-                      <p
-                        className="text-[#EDEDED]/80 text-sm font-light"
-                        style={{
-                          fontFamily: "'Inter', sans-serif",
-                          lineHeight: "1.6",
-                        }}
-                      >
-                        {cred.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
             </motion.div>
           </motion.div>
+
+          {/* UNIFIED CREDENTIALS & AFFILIATIONS SECTION (FULL WIDTH) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            // Removed lg:col-span-2 or similar, making it full width (default block behavior)
+            className="mt-12 p-6 rounded-xl bg-black/50 border border-[#CEA53D]/30 shadow-lg"
+            style={{
+                boxShadow: "0 0 30px rgba(255,215,0,0.1), inset 0 0 15px rgba(255,215,0,0.05)",
+            }}
+          >
+            <div className="grid md:grid-cols-3 gap-8">
+                
+                {/* 1. Academic Excellence */}
+                <div>
+                    <h3 className="flex items-center text-[#CEA53D] text-sm font-bold uppercase tracking-wider mb-4 border-b border-[#CEA53D]/20 pb-2">
+                        <BookOpen className="w-4 h-4 mr-2" strokeWidth={2.5} /> Academic Excellence
+                    </h3>
+                    <div className="space-y-4">
+                        {education.map((item, index) => (
+                            <div key={index} className="flex items-start group">
+                                <Image
+                                    src={item.logoSrc}
+                                    alt={`${item.university} logo`}
+                                    width={40}
+                                    height={40}
+                                    className="w-8 h-8 md:w-10 md:h-10 object-contain flex-shrink-0 mr-3 rounded-full p-0.5 bg-white/10 group-hover:scale-105 transition-transform duration-300"
+                                />
+                                <div>
+                                    <p className="text-[#EDEDED] font-semibold text-sm leading-tight group-hover:text-[#F0C674]">
+                                        {item.degree}
+                                    </p>
+                                    <p className="text-[#EDEDED]/70 text-xs font-light">
+                                        {item.university}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* 2. Professional Experience */}
+                <div>
+                    <h3 className="flex items-center text-[#CEA53D] text-sm font-bold uppercase tracking-wider mb-4 border-b border-[#CEA53D]/20 pb-2">
+                        <Shield className="w-4 h-4 mr-2" strokeWidth={2.5} /> Professional Experience
+                    </h3>
+                    <div className="space-y-4">
+                        {experience.map((item, index) => (
+                            <div key={index} className="flex items-start group">
+                                <Image
+                                    src={item.logoSrc}
+                                    alt={`${item.title} logo`}
+                                    width={40}
+                                    height={40}
+                                    className="w-8 h-8 md:w-10 md:h-10 object-contain flex-shrink-0 mr-3 rounded-full p-0.5 bg-white/10 group-hover:scale-105 transition-transform duration-300"
+                                />
+                                <div>
+                                    <p className="text-[#EDEDED] font-semibold text-sm leading-tight group-hover:text-[#F0C674]">
+                                        {item.title}
+                                    </p>
+                                    <p className="text-[#EDEDED]/70 text-xs font-light">
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* 3. Licenses & Affiliations */}
+                <div>
+                    <h3 className="flex items-center text-[#CEA53D] text-sm font-bold uppercase tracking-wider mb-4 border-b border-[#CEA53D]/20 pb-2">
+                        <FileCheck className="w-4 h-4 mr-2" strokeWidth={2.5} /> Licenses & Affiliations
+                    </h3>
+                    <div className="space-y-4">
+                        {affiliations.map((item, index) => (
+                            <div key={index} className="flex items-start group">
+                                <Image
+                                    src={item.logoSrc}
+                                    alt={`${item.title} logo`}
+                                    width={40}
+                                    height={40}
+                                    className="w-8 h-8 md:w-10 md:h-10 object-contain flex-shrink-0 mr-3 rounded-full p-0.5 bg-white/10 group-hover:scale-105 transition-transform duration-300"
+                                />
+                                <div>
+                                    <p className="text-[#EDEDED] font-semibold text-sm leading-tight group-hover:text-[#F0C674]">
+                                        {item.title}
+                                    </p>
+                                    <p className="text-[#EDEDED]/70 text-xs font-light">
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+          </motion.div>
+          {/* END UNIFIED CREDENTIALS SECTION */}
 
           {/* ---------- Signature & Quote ---------- */}
           <motion.div
@@ -296,7 +414,7 @@ export default function AboutPage() {
             </div>
           </motion.div>
 
-          {/* ---------- JULIA SECTION ---------- */}
+          {/* ---------- JULIA SECTION (No Change) ---------- */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -375,16 +493,15 @@ export default function AboutPage() {
                     "0 0 30px rgba(255,215,0,0.2), inset 0 0 20px rgba(255,215,0,0.05)",
                 }}
               >
-                <div className="relative rounded-2xl overflow-hidden group">
-                  <Image
-                    src="/julia_profile.webp"
-                    alt="Julia Tucker - Co-Owner & COO"
-                    width={800}
-                    height={800}
-                    className="w-full h-auto object-cover transition-all duration-700 ease-in-out group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
-                    <div>
+               <div className="relative rounded-2xl overflow-hidden group aspect-[3/4]">
+  <Image
+    src="/julia_profile.webp"
+    alt="Julia Tucker - Co-Owner & COO"
+    fill
+    className="object-cover object-[0%_50%] transition-all duration-700 ease-in-out group-hover:scale-105"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+    <div>
                       <h3
                         className="text-white text-xl font-bold mb-1"
                         style={{ fontFamily: "'Bebas Neue', sans-serif" }}
@@ -409,7 +526,7 @@ export default function AboutPage() {
             </motion.div>
           </motion.div>
 
-          {/* ---------- GREG & JULIA AS A TEAM SECTION ---------- */}
+          {/* ---------- GREG & JULIA AS A TEAM SECTION (No Change) ---------- */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -501,7 +618,7 @@ export default function AboutPage() {
                     lineHeight: "1.8",
                   }}
                 >
-                  Greg and Julia Tucker bring nearly three decades of partnership and family-centered values to GA Tucker PI Investigative Services LLC. As Owner and CEO, Greg draws on his experience as a US Army Veteran, his work in the criminal justice system, and his three master’s degrees to lead the firm with integrity and expertise—particularly in complex cases such as missing persons and child custody matters.
+                  Greg and Julia Tucker bring nearly three decades of partnership and family-centered values to GA Tucker PI Investigative Services LLC. As Owner and CEO, Greg draws on his experience as a US Army Veteran, his work in the criminal justice system, and his **three master’s degrees** (in Criminology, Legal Studies, and Forensic Behavioral Science) to lead the firm with integrity and expertise—particularly in complex cases such as missing persons and child custody matters.
                 </p>
 
                 <p

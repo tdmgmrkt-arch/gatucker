@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Search, Shield, Brain, ArrowRight } from 'lucide-react';
+// Imported all lucide icons used for categories and items
+import { Search, Shield, Brain, ArrowRight, FileText, Briefcase, Heart, Users, Scale, Target } from 'lucide-react'; 
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -26,6 +27,52 @@ const featuredServices = [
   }
 ];
 
+// --- COMPLETE SERVICE LIST DATA ---
+// Categorizing the services directly into lists for the new UI structure
+const serviceGroups = [
+    { 
+        title: "Digital & Information Services", 
+        icon: Search,
+        services: [
+            "Surveillance", 
+            "Background Checks", 
+            "Personal Background Checks", 
+            "Corporate Background Checks", 
+            "Cyberbullying", 
+            "Forensic Linguistics", 
+            "Behavioral Analysis Consulting"
+        ]
+    },
+    { 
+        title: "Corporate & Domestic Cases", 
+        icon: Briefcase,
+        services: [
+            "Risk Management", 
+            "Threat Assessment", 
+            "Child Custody", 
+            "Infidelity", 
+            "Counter Intelligence", 
+            "Asset Searches", 
+            "Stalking Consulting Services"
+        ]
+    },
+    { 
+        title: "Criminal & Legal Support", 
+        icon: Scale,
+        services: [
+            "Attorney Services", 
+            "Trial Services", 
+            "Jury Consulting", 
+            "Profiling", 
+            "Missing Persons", 
+            "Civil Investigations", 
+            "Criminal Investigations", 
+            "Domestic Investigations", 
+            "Process Server"
+        ]
+    },
+];
+
 export function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -33,18 +80,18 @@ export function ServicesSection() {
     <section id="services" className="relative py-32 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background Image with Next.js Image */}
       <div className="absolute inset-0 z-0">
-  <Image
-    src="/servicesbg.webp"
-    alt="Services Background"
-    fill
-    className="object-cover object-center brightness-[0.65]"
-    quality={90}
-    priority={false}
-  />
+        <Image
+            src="/servicesbg.webp"
+            alt="Services Background"
+            fill
+            className="object-cover object-center brightness-[0.65]"
+            quality={90}
+            priority={false}
+        />
 
-  {/* Optimized gradient for better text contrast */}
-  <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/70 via-[#0D0D0D]/80 to-[#0D0D0D]/95 mix-blend-multiply z-10" />
-</div>
+        {/* Optimized gradient for better text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/70 via-[#0D0D0D]/80 to-[#0D0D0D]/95 mix-blend-multiply z-10" />
+      </div>
 
       {/* Enhanced Glow Effects */}
       <div className="absolute top-1/4 left-0 w-[700px] h-[700px] bg-[#CEA53D]/8 rounded-full blur-[150px] z-10" />
@@ -91,7 +138,7 @@ export function ServicesSection() {
           </p>
         </motion.div>
 
-        {/* Featured Services Grid */}
+        {/* Featured Services Grid (No Change) */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {featuredServices.map((service, index) => (
             <motion.div
@@ -159,7 +206,7 @@ export function ServicesSection() {
           ))}
         </div>
 
-        {/* All Services Grid - Updated for tighter layout */}
+        {/* All Services Grid - UPGRADED TO CATEGORIZED GRID */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -174,101 +221,41 @@ export function ServicesSection() {
           >
             Complete Service List
           </h3>
-          {/* Grouped lists for visual balance and hierarchy */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             
-            {/* Group 1: General & Digital */}
-            <div>
-              <h4 className="text-[#CEA53D] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
-                <div className="w-8 h-0.5 bg-gradient-to-r from-[#CEA53D] to-transparent" />
-                General & Digital
-              </h4>
-              <ul className="space-y-2">
-                {["Surveillance", "Background Checks", "Personal Background Checks", "Corporate Background Checks", "Cyberbullying", "Forensic Linguistics", "Behavioral Analysis Consulting"].map((service, index) => (
-                  <motion.li
-                    key={service}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.02 }}
-                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#CEA53D] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#CEA53D]/5 hover:pl-5"
-                  >
-                    <div className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
-                    <span
-                      style={{
-                        fontFamily: "'Inter', sans-serif",
-                        lineHeight: '1.6'
-                      }}
-                      className="font-medium"
-                    >
-                      {service}
-                    </span>
-                  </motion.li>
-                ))}
-              </ul>
-            </div>
-            
-            {/* Group 2: Corporate & Domestic */}
-            <div>
-              <h4 className="text-[#CEA53D] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
-                <div className="w-8 h-0.5 bg-gradient-to-r from-[#CEA53D] to-transparent" />
-                Corporate & Domestic
-              </h4>
-              <ul className="space-y-2">
-                {["Risk Management", "Threat Assessment", "Child Custody", "Infidelity", "Counter Intelligence", "Asset Searches", "Stalking Consulting Services"].map((service, index) => (
-                  <motion.li
-                    key={service}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.02 }}
-                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#CEA53D] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#CEA53D]/5 hover:pl-5"
-                  >
-                    <div className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
-                    <span
-                      style={{
-                        fontFamily: "'Inter', sans-serif",
-                        lineHeight: '1.6'
-                      }}
-                      className="font-medium"
-                    >
-                      {service}
-                    </span>
-                  </motion.li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Group 3: Legal & Criminal */}
-            <div>
-              <h4 className="text-[#CEA53D] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2">
-                <div className="w-8 h-0.5 bg-gradient-to-r from-[#CEA53D] to-transparent" />
-                Legal & Criminal
-              </h4>
-              <ul className="space-y-2">
-                {["Attorney Services", "Trial Services", "Jury Consulting", "Profiling", "Missing Persons", "Civil Investigations", "Criminal Investigations", "Domestic Investigations", "Process Server"].map((service, index) => (
-                  <motion.li
-                    key={service}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.02 }}
-                    className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#CEA53D] transition-all duration-300 group text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-[#CEA53D]/5 hover:pl-5"
-                  >
-                    <div className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
-                    <span
-                      style={{
-                        fontFamily: "'Inter', sans-serif",
-                        lineHeight: '1.6'
-                      }}
-                      className="font-medium"
-                    >
-                      {service}
-                    </span>
-                  </motion.li>
-                ))}
-              </ul>
-            </div>
+            {serviceGroups.map((group, groupIndex) => (
+                <div key={group.title}>
+                    <h4 className="text-[#CEA53D] uppercase tracking-[0.15em] mb-4 text-sm font-bold flex items-center gap-2 border-b border-[#CEA53D]/20 pb-2">
+                        <group.icon className="w-4 h-4" strokeWidth={2.5} />
+                        {group.title}
+                    </h4>
+                    <ul className="space-y-1">
+                        {group.services.map((service, serviceIndex) => (
+                            <motion.li
+                                key={service}
+                                initial={{ opacity: 0, x: -10 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                // Stagger delay based on group index and service index
+                                transition={{ duration: 0.3, delay: (groupIndex * 0.1) + (serviceIndex * 0.03) }}
+                                className="flex items-center gap-3 text-[#EDEDED]/85 hover:text-[#CEA53D] transition-all duration-300 group text-sm cursor-pointer py-1.5 px-3 rounded-lg hover:bg-[#CEA53D]/5 hover:pl-5"
+                            >
+                                <div className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full group-hover:scale-150 transition-transform shadow-[0_0_8px_rgba(231,173,65,0.6)]" />
+                                <span
+                                    style={{
+                                        fontFamily: "'Inter', sans-serif",
+                                        lineHeight: '1.6'
+                                    }}
+                                    className="font-medium"
+                                >
+                                    {service}
+                                </span>
+                            </motion.li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
 
           </div>
         </motion.div>

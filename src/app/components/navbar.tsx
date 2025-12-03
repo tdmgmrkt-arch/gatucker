@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+// 1. Import 'Variants' for explicit typing and better error checking
+import { motion, Variants } from 'framer-motion'; 
 import { Button } from './ui/button';
 import {
   Menu,
@@ -9,21 +10,21 @@ import {
   ChevronDown,
   Phone,
   FileText,
-  Users, // Used for About GA Tucker PI
+  Users, 
   MessageSquare,
   ArrowRight,
-  BookOpen, // Used for Blog
-  Search, // Background Checks
-  Shield, // Risk Management
-  Fingerprint, // Investigations
-  Brain, // Consulting
-  Target, // Missing Persons
-  UserCheck, // Profiling
-  Heart, // Infidelity
-  Award, // Child Custody - chosen for its 'decision' aspect
-  Mail, // For email in Contact
-  MapPin, // For location in Contact
-  Star, // Hollywood Fixer
+  BookOpen, 
+  Search, 
+  Shield, 
+  Fingerprint, 
+  Brain, 
+  Target, 
+  UserCheck, 
+  Heart, 
+  Award, 
+  Mail, 
+  MapPin, 
+  Star, 
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -57,9 +58,26 @@ const navItems = [
     { name: 'Contact', dropdown: contact, panel: 'contact' },
 ];
 
-const dropdownVariants = {
-    open: { opacity: 1, maxHeight: "100vh", y: 0, transition: { duration: 0.3, ease: "easeOut" } },
-    closed: { opacity: 0, maxHeight: 0, y: -10, transition: { duration: 0.3, ease: "easeIn" } },
+// 2. Corrected: The 'ease' transition property must be a string that Framer Motion recognizes (e.g., 'easeInOut') or an array (e.g., a cubic bezier array).
+const dropdownVariants: Variants = {
+    open: { 
+        opacity: 1, 
+        maxHeight: "100vh", 
+        y: 0, 
+        transition: { 
+            duration: 0.3, 
+            ease: [0.42, 0, 0.58, 1] // Fixed: Using cubic-bezier array for custom easing
+        } 
+    },
+    closed: { 
+        opacity: 0, 
+        maxHeight: 0, 
+        y: -10, 
+        transition: { 
+            duration: 0.3, 
+            ease: [0.42, 0, 0.58, 1] // Fixed
+        } 
+    },
 };
 
 // --- Navbar Component ---
@@ -70,6 +88,7 @@ export function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const handleDropdown = (name: string | null) => {
+    // Only allow dropdowns on desktop
     if (window.innerWidth >= 768) {
       setActiveDropdown(name);
     }
@@ -94,11 +113,11 @@ export function Navbar() {
           >
             <div className="relative">
               <Image
-                src="/galogotest3.png"
+                src="/gatuckerlogotest2.webp"
                 alt="G.A. Tucker PI Logo"
                 width={140}
                 height={100}
-                className="h-auto w-[100px] sm:w-[120px] md:w-[140px] transition-all duration-300 group-hover:brightness-110"
+                className="h-auto w-[280px] sm:w-[120px] md:w-[140px] transition-all duration-300 group-hover:brightness-110"
               />
               {/* Subtle glow on hover */}
               <div className="absolute inset-0 bg-[#CEA53D]/0 group-hover:bg-[#CEA53D]/5 rounded-lg transition-all duration-300 blur-xl" />
@@ -240,8 +259,8 @@ export function Navbar() {
                             <div className="mb-6 relative">
                                 <div className="absolute inset-0 bg-[#CEA53D]/20 blur-2xl rounded-full" />
                                 <Image
-                                    src="/teamphoto.png"
-                                    alt="G.A. Tucker PI Logo"
+                                    src="/tucker_dropdown.png"
+                                    alt="G.A. Tucker PI Team"
                                     width={275}
                                     height={75}
                                     className="h-auto relative"
@@ -304,7 +323,7 @@ export function Navbar() {
                             <div className="mb-6 relative">
                                 <div className="absolute inset-0 bg-[#CEA53D]/20 blur-2xl rounded-full" />
                                 <Image
-                                    src="/galogotest3.png"
+                                    src="/gatuckerlogotest2.webp"
                                     alt="G.A. Tucker PI Logo"
                                     width={190}
                                     height={50}
@@ -345,7 +364,7 @@ export function Navbar() {
                                 <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
 
                                 <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
-                                    <item.icon className="w-6 h-6 text-[#CEA53D] group-hover:text-[#FFA500] transition-colors" strokeWidth={2.5}/>
+                                    <item.icon className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
                                 </div>
                                 <div className="relative">
                                     <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
@@ -359,46 +378,46 @@ export function Navbar() {
                                 <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
                             </a>
                         ))}
-                         <a
-                            href="mailto:info@gatuckerpi.com"
-                            className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
-                        >
-                            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
+                           <a
+                                href="mailto:info@gatuckerpi.com"
+                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                            >
+                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
 
-                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
-                                <Mail className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
-                            </div>
-                            <div className="relative">
-                                <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-                                    Email Us
-                                </h4>
-                                <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                                    info@gatuckerpi.com
-                                </p>
-                            </div>
+                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                    <Mail className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
+                                </div>
+                                <div className="relative">
+                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                                        Email Us
+                                    </h4>
+                                    <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                                        info@gatuckerpi.com
+                                    </p>
+                                </div>
 
-                            <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
-                        </a>
-                        <a
-                            href="#"
-                            className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
-                        >
-                            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
+                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
+                            </a>
+                            <a
+                                href="#"
+                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                            >
+                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
 
-                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
-                                <MapPin className="w-6 h-6 text-[#CEA53D] group-hover:text-[#FFA500] transition-colors" strokeWidth={2.5}/>
-                            </div>
-                            <div className="relative">
-                                <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-                                    Our Location
-                                </h4>
-                                <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                                    Serving all of California
-                                </p>
-                            </div>
+                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                    <MapPin className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
+                                </div>
+                                <div className="relative">
+                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                                        Our Location
+                                    </h4>
+                                    <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                                        Serving all of California
+                                    </p>
+                                </div>
 
-                            <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
-                        </a>
+                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
+                            </a>
                     </div>
                     <div className="col-span-4 relative overflow-hidden rounded-2xl">
                         <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A]/60 to-[#0D0D0D]/60 backdrop-blur-sm" />
@@ -408,37 +427,37 @@ export function Navbar() {
                         <div className="relative p-10 flex flex-col items-center justify-center text-center h-full">
                             
                             {/* Tagline */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-10"
-          >
-            <p
-              className="text-[#CEA53D]/90 text-sm md:text-base"
-              style={{
-                fontFamily: "var(--font-space-mono)",
-                letterSpacing: "0.1em",
-                textShadow: "0 0 3px rgba(255,165,0,0.3)",
-              }}
-            >
-              DON&apos;T BE A SUCKER!
-            </p>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="mb-10"
+                >
+                  <p
+                    className="text-[#CEA53D]/90 text-sm md:text-base"
+                    style={{
+                      fontFamily: "var(--font-space-mono)",
+                      letterSpacing: "0.1em",
+                      textShadow: "0 0 3px rgba(255,165,0,0.3)",
+                    }}
+                  >
+                    DON&apos;T BE A SUCKER!
+                  </p>
 
-            <p
-              className="text-[#EB0A08] mb-2"
-              style={{
-                fontFamily: "var(--font-dancing-script)",
-                fontSize: "clamp(2rem, 4vw, 3.5rem)",
-                fontWeight: 700,
-                textShadow:
-                "0 0 6px rgba(255, 30, 30, 0.7), 0 0 12px rgba(255, 30, 30, 0.4), 1px 1px 0 rgba(0,0,0,0.6)",
-                transform: "rotate(-3deg)",
-              }}
-            >
-              Call Tucker!
-            </p>
-          </motion.div>
+                  <p
+                    className="text-[#EB0A08] mb-2"
+                    style={{
+                      fontFamily: "var(--font-dancing-script)",
+                      fontSize: "clamp(2rem, 4vw, 3.5rem)",
+                      fontWeight: 700,
+                      textShadow:
+                      "0 0 6px rgba(255, 30, 30, 0.7), 0 0 12px rgba(255, 30, 30, 0.4), 1px 1px 0 rgba(0,0,0,0.6)",
+                      transform: "rotate(-3deg)",
+                    }}
+                  >
+                    Call Tucker!
+                  </p>
+                </motion.div>
                             <a href="tel:909-345-1350" className="group relative">
                                 <button
                                     className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-8 py-3 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
