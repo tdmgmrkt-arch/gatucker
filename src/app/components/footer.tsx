@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Phone, Mail, MapPin, Shield, Facebook, Twitter, Instagram } from 'lucide-react';
 import { Input } from './ui/input';
 import { ImageWithFallback } from './figma/ImageWithFallback'; // Assuming you have this component
@@ -11,7 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 lg:gap-16 mb-10 sm:mb-12">
           {/* Column 1: Logo, Company Info, & Socials */}
           <div className="md:col-span-1 lg:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
-            <a href="/" className="mb-4 w-48 cursor-pointer hover:opacity-80 transition-opacity"> {/* Adjust width as needed for your logo */}
+            <Link href="/" className="mb-4 w-48 cursor-pointer hover:opacity-80 transition-opacity"> {/* Adjust width as needed for your logo */}
               {/* This is the placeholder for your logo image */}
               <ImageWithFallback
                 src="/gatuckernavlogo.png"
@@ -20,7 +21,7 @@ export function Footer() {
                 height={50}
                 className="w-full h-auto"
               />
-            </a>
+            </Link>
             
             <p
               className="text-[#EDEDED]/70 mb-6 leading-relaxed text-sm max-w-sm"
@@ -51,16 +52,26 @@ export function Footer() {
                 { name: 'Services', href: '/services' },
                 { name: 'Pricing', href: '#pricing' },
                 { name: 'Testimonials', href: '#testimonials' },
-                
+
               ].map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href}
-                    className="text-[#EDEDED]/70 hover:text-[#CEA53D] transition-colors text-sm font-light"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
-                  >
-                    {link.name}
-                  </a>
+                  {link.href.startsWith('/') ? (
+                    <Link
+                      href={link.href}
+                      className="text-[#EDEDED]/70 hover:text-[#CEA53D] transition-colors text-sm font-light"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-[#EDEDED]/70 hover:text-[#CEA53D] transition-colors text-sm font-light"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
