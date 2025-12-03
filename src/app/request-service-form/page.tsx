@@ -1,23 +1,17 @@
 import { Navbar } from '../components/navbar';
 import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
+import { RequestServiceForm } from '../components/request-service-form';
 
-export default function RequestServiceFormPage() {
+export default function RequestServicePage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
       <Navbar />
 
-      <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#1A1A1A]">
-        <div className="max-w-7xl mx-auto">
-          <h1
-            className="text-4xl md:text-6xl font-black uppercase text-[#EDEDED] mb-6"
-            style={{ fontFamily: "'Bebas Neue', sans-serif" }}
-          >
-            Request Service Form
-          </h1>
-          <p className="text-[#EDEDED]/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>
-            Content coming soon...
-          </p>
+      {/* Form Section */}
+      <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0D0D0D] via-[#1A1A1A] to-[#0D0D0D]">
+        <div className="max-w-4xl mx-auto">
+          <RequestServiceForm />
         </div>
       </section>
 

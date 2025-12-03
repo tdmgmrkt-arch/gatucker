@@ -139,6 +139,19 @@ export function RequestServiceForm({ defaultService }: RequestServiceFormProps =
       className="bg-black/90 border-2 border-[#CEA53D]/30 rounded-xl p-6 md:p-8 max-w-5xl mx-auto"
       style={{ boxShadow: '0 0 30px rgba(255, 215, 0, 0.25), inset 0 0 50px rgba(255, 215, 0, 0.05)' }}
     >
+      {/* Form Header */}
+      <div className="mb-6">
+        <h2
+          className="text-2xl font-black uppercase text-[#EDEDED] mb-2"
+          style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+        >
+          Request Service
+        </h2>
+        <p className="text-[#EDEDED]/60 text-sm">
+          Need investigation services? Submit a detailed inquiry.
+        </p>
+      </div>
+
       {/* Full Name */}
       <div className="mb-4">
         <label className="block mb-3">

@@ -103,9 +103,26 @@ export function HeroSection() {
                 HIRE CALIFORNIA&apos;S LEADING
               </span>
 
-              {/* PRIVATE INVESTIGATOR */}
+              {/* PRIVATE INVESTIGATOR - Mobile (reduced glow) */}
               <span
-                className="block relative animate-neon-flicker"
+                className="block md:hidden relative animate-neon-flicker"
+                style={{
+                  fontFamily: "'Bebas Neue', 'Anton', sans-serif",
+                  fontSize: "clamp(3.5rem, 10vw, 8rem)",
+                  fontWeight: 900,
+                  color: "#CEA53D",
+                  textShadow:
+                    "0 0 2px rgba(255, 255, 255, 0.4), 0 0 4px rgba(255, 255, 255, 0.2), 2px 2px 0 rgba(0,0,0,0.6)",
+                  letterSpacing: "0.02em",
+                  WebkitTextStroke: "1px rgba(0, 0, 0, 0.6)",
+                  mixBlendMode: "normal",
+                }}
+              >
+                PRIVATE INVESTIGATOR
+              </span>
+              {/* PRIVATE INVESTIGATOR - Desktop (original glow) */}
+              <span
+                className="hidden md:block relative animate-neon-flicker"
                 style={{
                   fontFamily: "'Bebas Neue', 'Anton', sans-serif",
                   fontSize: "clamp(3.5rem, 10vw, 8rem)",
@@ -115,7 +132,7 @@ export function HeroSection() {
                     "0 0 3px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 255, 255, 0.7), 0 0 14px rgba(255, 255, 255, 0.5), 2px 2px 0 rgba(0,0,0,0.6)",
                   letterSpacing: "0.02em",
                   WebkitTextStroke: "1px rgba(0, 0, 0, 0.6)",
-                  mixBlendMode: "normal", // FIXED: stops the yellow blending
+                  mixBlendMode: "normal",
                 }}
               >
                 PRIVATE INVESTIGATOR

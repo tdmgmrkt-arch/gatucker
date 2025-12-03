@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 // 1. Import 'Variants' for explicit typing and better error checking
-import { motion, Variants } from 'framer-motion'; 
+import { motion, Variants, AnimatePresence } from 'framer-motion'; 
 import { Button } from './ui/button';
 import {
   Menu,
@@ -58,25 +58,25 @@ const navItems = [
     { name: 'Contact', dropdown: contact, panel: 'contact' },
 ];
 
-// 2. Corrected: The 'ease' transition property must be a string that Framer Motion recognizes (e.g., 'easeInOut') or an array (e.g., a cubic bezier array).
+// Desktop dropdown variants
 const dropdownVariants: Variants = {
-    open: { 
-        opacity: 1, 
-        maxHeight: "100vh", 
-        y: 0, 
-        transition: { 
-            duration: 0.3, 
-            ease: [0.42, 0, 0.58, 1] // Fixed: Using cubic-bezier array for custom easing
-        } 
+    open: {
+        opacity: 1,
+        maxHeight: "100vh",
+        y: 0,
+        transition: {
+            duration: 0.3,
+            ease: [0.42, 0, 0.58, 1]
+        }
     },
-    closed: { 
-        opacity: 0, 
-        maxHeight: 0, 
-        y: -10, 
-        transition: { 
-            duration: 0.3, 
-            ease: [0.42, 0, 0.58, 1] // Fixed
-        } 
+    closed: {
+        opacity: 0,
+        maxHeight: 0,
+        y: -10,
+        transition: {
+            duration: 0.3,
+            ease: [0.42, 0, 0.58, 1]
+        }
     },
 };
 
@@ -117,7 +117,7 @@ export function Navbar() {
                 alt="G.A. Tucker PI Logo"
                 width={140}
                 height={100}
-                className="h-auto w-[280px] sm:w-[120px] md:w-[140px] transition-all duration-300 group-hover:brightness-110"
+                className="h-auto w-[100px] sm:w-[120px] md:w-[140px] transition-all duration-300 group-hover:brightness-110"
               />
               {/* Subtle glow on hover */}
               <div className="absolute inset-0 bg-[#CEA53D]/0 group-hover:bg-[#CEA53D]/5 rounded-lg transition-all duration-300 blur-xl" />
@@ -169,7 +169,7 @@ export function Navbar() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <a href="/request-service" className="group relative inline-block">
+              <a href="/request-service-form" className="group relative inline-block">
                 <button
                   className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-6 py-2 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105"
                   style={{
@@ -207,7 +207,7 @@ export function Navbar() {
           animate="open"
           exit="closed"
           variants={dropdownVariants}
-          className="absolute left-0 w-full z-40 hidden md:block"
+          className="absolute left-0 w-full z-100 hidden md:block"
           onMouseEnter={() => handleDropdown(activeDropdown)}
           onMouseLeave={() => handleDropdown(null)}
         >
@@ -378,26 +378,26 @@ export function Navbar() {
                                 <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
                             </a>
                         ))}
-                           <a
-                                href="mailto:info@gatuckerpi.com"
-                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                           <div
+                                onClick={() => window.location.href = 'mailto:gatuckerpi@gmail.com'}
+                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60 cursor-pointer"
                             >
-                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
+                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500 pointer-events-none" />
 
-                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg pointer-events-none">
                                     <Mail className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
                                 </div>
-                                <div className="relative">
+                                <div className="relative pointer-events-none">
                                     <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                                         Email Us
                                     </h4>
                                     <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                                        info@gatuckerpi.com
+                                        gatuckerpi@gmail.com
                                     </p>
                                 </div>
 
-                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
-                            </a>
+                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1 pointer-events-none" />
+                            </div>
                             <a
                                 href="#"
                                 className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
@@ -479,46 +479,44 @@ export function Navbar() {
       )}
 
       {/* Mobile Menu */}
-      <motion.div
-        initial="closed"
-        animate={isOpen ? 'open' : 'closed'}
-        variants={dropdownVariants}
-        className="md:hidden overflow-hidden bg-[#0D0D0D] border-t border-[#CEA53D]/10 shadow-xl"
-      >
-        <div className="px-5 pt-4 pb-6 space-y-5 max-h-[calc(100vh-80px)] overflow-y-auto">
-            {navItems.map((item) => (
-                <div key={item.name} className="border-b border-[#2C2C2C] pb-4">
-                    <h3 className="text-[#CEA53D] font-bold uppercase tracking-wider text-sm mb-3 pt-2">{item.name}</h3>
-                    <div className="space-y-2 pl-3">
-                        {item.dropdown.map((subItem) => (
-                            <a
-                                key={subItem.title}
-                                href={subItem.href}
-                                onClick={() => setIsOpen(false)}
-                                className="block text-[#EDEDED] hover:text-[#CEA53D] active:text-[#CEA53D] transition-colors duration-300 font-light py-2.5 text-base touch-manipulation"
-                                style={{ fontFamily: "'Inter', sans-serif" }}
-                            >
-                                {subItem.title}
-                            </a>
-                        ))}
-                    </div>
-                </div>
-            ))}
-            <div className="pt-4">
-                <button
-                    onClick={() => setIsOpen(false)}
-                    className="w-full bg-black border-4 border-[#CEA53D] text-[#CEA53D] py-4 font-black uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black active:scale-95 touch-manipulation"
-                    style={{
-                      fontFamily: "'Bebas Neue', sans-serif",
-                      boxShadow: '0 0 25px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
-                      textShadow: '0 0 8px rgba(255, 215, 0, 0.7)'
-                    }}
-                >
-                    Get Consultation
-                </button>
-            </div>
+      {isOpen && (
+        <div className="md:hidden relative z-50 bg-[#0D0D0D] border-t border-[#CEA53D]/10 shadow-xl">
+          <div className="px-5 pt-4 pb-6 space-y-5 max-h-[calc(100vh-80px)] overflow-y-auto">
+              {navItems.map((item) => (
+                  <div key={item.name} className="border-b border-[#2C2C2C] pb-4">
+                      <h3 className="text-[#CEA53D] font-bold uppercase tracking-wider text-sm mb-3 pt-2">{item.name}</h3>
+                      <div className="space-y-2 pl-3">
+                          {item.dropdown.map((subItem) => (
+                              <a
+                                  key={subItem.title}
+                                  href={subItem.href}
+                                  onClick={() => setIsOpen(false)}
+                                  className="block text-[#EDEDED] hover:text-[#CEA53D] active:text-[#CEA53D] transition-colors duration-300 font-light py-2.5 text-base touch-manipulation"
+                                  style={{ fontFamily: "'Inter', sans-serif" }}
+                              >
+                                  {subItem.title}
+                              </a>
+                          ))}
+                      </div>
+                  </div>
+              ))}
+              <div className="pt-4">
+                  <a
+                      href="/request-service-form"
+                      onClick={() => setIsOpen(false)}
+                      className="block w-full bg-black border-4 border-[#CEA53D] text-[#CEA53D] py-4 font-black uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black active:scale-95 touch-manipulation text-center"
+                      style={{
+                        fontFamily: "'Bebas Neue', sans-serif",
+                        boxShadow: '0 0 25px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
+                        textShadow: '0 0 8px rgba(255, 215, 0, 0.7)'
+                      }}
+                  >
+                      Get Consultation
+                  </a>
+              </div>
+          </div>
         </div>
-      </motion.div>
+      )}
     </nav>
   );
 }

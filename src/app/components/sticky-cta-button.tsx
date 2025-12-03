@@ -23,7 +23,7 @@ export function StickyCTAButton() {
 
   const handleClick = () => {
     // Scroll to contact section or open contact modal
-    const ctaSection = document.querySelector('/request-service');
+    const ctaSection = document.querySelector('/request-service-form');
     if (ctaSection) {
       ctaSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -37,7 +37,7 @@ export function StickyCTAButton() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.8 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8"
+          className="hidden md:block fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8"
         >
           <div className="group relative">
             {/* Retro thick border button */}
