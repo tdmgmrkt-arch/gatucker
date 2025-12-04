@@ -139,7 +139,7 @@ export default function InvestigationsPage() {
                     >
                       <Phone className="w-4 h-4 text-[#CEA53D]" />
                       <span className="text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
-                        (909) 345-1350
+                        909-964-8976
                       </span>
                     </a>
                     <a
@@ -636,7 +636,7 @@ export default function InvestigationsPage() {
                 }}
               >
                 <Phone className="w-5 h-5" />
-                Call (909) 345-1350
+                Call 909-964-8976
               </a>
               <a
                 href="mailto:greg@gatucker.com"

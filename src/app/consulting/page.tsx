@@ -263,7 +263,7 @@ export default function ConsultingPage() {
                           Call 24/7
                         </p>
                         <p className="font-bold" style={{ fontFamily: "'Inter', sans-serif" }}>
-                          (909) 345-1350
+                          909-964-8976
                         </p>
                       </div>
                     </a>

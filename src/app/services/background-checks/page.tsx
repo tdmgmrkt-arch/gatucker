@@ -123,7 +123,7 @@ export default function BackgroundChecksPage() {
                   className="relative border-2 border-[#E7AD41]/60 bg-[#0D0D0D]/50 backdrop-blur-sm text-[#E7AD41] hover:border-[#E7AD41] hover:bg-[#E7AD41]/10 px-10 py-6 text-base font-bold transition-all duration-300 rounded-full"
                 >
                   <Phone className="w-5 h-5 mr-2" />
-                  (909) 345-1350
+                  909-964-8976
                 </Button>
               </a>
             </motion.div>

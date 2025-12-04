@@ -97,7 +97,7 @@ export function CTASection() {
                     '0 0 25px rgba(255, 165, 0, 0.5), inset 0 0 15px rgba(255, 165, 0, 0.15)',
                 }}
               >
-                Call (909) 345-1350
+                Call 909-964-8976
               </button>
             </a>
           </motion.div>

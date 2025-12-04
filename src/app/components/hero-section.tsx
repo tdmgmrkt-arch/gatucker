@@ -29,11 +29,11 @@ export function HeroSection() {
         >
           <source src="/tuckervidhero3.webm" type="video/webm" />
         </video>
-        {/* Warm-toned overlay */}
+        {/* Warm-toned overlay for neon aesthetic */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a0a00]/40 via-[#0D0D0D]/30 to-[#0D0D0D]" />
       </div>
 
-      {/* VHS Grain */}
+      {/* VHS Grain Overlay */}
       <div
         className="absolute inset-0 z-[1] opacity-[0.15] mix-blend-overlay pointer-events-none"
         style={{
@@ -42,30 +42,17 @@ export function HeroSection() {
         }}
       />
 
-      {/* Background Glows — UPDATED WITH MOBILE SIZING */}
+      {/* Background Glows (Bronze Tone) - Fluid sizing */}
       <div
-        className="
-          absolute top-1/4 left-1/4
-          w-[50vw] h-[50vw] blur-[30px]
-          md:w-[min(800px,80vw)] md:h-[min(800px,80vw)] md:blur-[60px]
-          bg-[#3A2A0C]/8 rounded-full z-0
-        "
+        className="absolute top-1/4 left-1/4 w-[min(800px,80vw)] h-[min(800px,80vw)] bg-[#3A2A0C]/8 rounded-full blur-[60px] z-0"
         style={{ animationDuration: "4s" }}
       />
 
-      <div
-        className="
-          absolute top-1/2 right-1/4
-          w-[35vw] h-[35vw] blur-[40px]
-          md:w-[min(600px,60vw)] md:h-[min(600px,60vw)] md:blur-[120px]
-          bg-[#FF6B35]/15 rounded-full z-0
-        "
-      />
+      <div className="absolute top-1/2 right-1/4 w-[min(600px,60vw)] h-[min(600px,60vw)] bg-[#FF6B35]/15 rounded-full blur-[120px] z-0" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center" style={{ padding: "0 clamp(1rem, 4vw, 2rem)" }}>
         <div className="w-full mx-auto text-center" style={{ maxWidth: "min(100%, 80rem)" }}>
-          
           {/* License Badge */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -73,7 +60,8 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="absolute top-25 left-1/2 -translate-x-1/2 md:relative md:top-auto md:left-auto md:translate-x-0 inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 mb-0 md:mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
             style={{
-              boxShadow: "0 0 15px rgba(206,165,61,0.25), inset 0 0 10px rgba(206,165,61,0.1)",
+              boxShadow:
+                "0 0 15px rgba(206,165,61,0.25), inset 0 0 10px rgba(206,165,61,0.1)",
             }}
           >
             <Shield
@@ -84,7 +72,8 @@ export function HeroSection() {
               className="text-[#CEA53D] text-[0.65rem] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
               style={{
                 fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
-                textShadow: "0 0 4px rgba(206,165,61,0.5), 0 0 8px rgba(206,165,61,0.3)",
+                textShadow:
+                  "0 0 4px rgba(206,165,61,0.5), 0 0 8px rgba(206,165,61,0.3)",
               }}
             >
               California Licensed PI #188351
@@ -92,9 +81,12 @@ export function HeroSection() {
           </motion.div>
 
           {/* Main Headline */}
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <h1 className="mb-6 leading-[0.95]">
-              
               {/* Top Line */}
               <span
                 className="block mb-2"
@@ -111,16 +103,16 @@ export function HeroSection() {
                 HIRE CALIFORNIA&apos;S LEADING
               </span>
 
-              {/* PRIVATE INVESTIGATOR — MOBILE VERSION (GLOW REDUCED) */}
+              {/* PRIVATE INVESTIGATOR - Mobile (reduced glow) */}
               <span
-                className="block md:hidden relative animate-neon-flicker"
+                className="block md:hidden relative"
                 style={{
                   fontFamily: "'Bebas Neue', 'Anton', sans-serif",
                   fontSize: "clamp(3.5rem, 10vw, 8rem)",
                   fontWeight: 900,
                   color: "#CEA53D",
                   textShadow:
-                    "0 0 1px rgba(255, 255, 255, 0.25), 0 0 2px rgba(255, 255, 255, 0.15), 1px 1px 0 rgba(0,0,0,0.5)",
+                    "0 0 2px rgba(255, 255, 255, 0.4), 0 0 4px rgba(255, 255, 255, 0.2), 2px 2px 0 rgba(0,0,0,0.6)",
                   letterSpacing: "0.02em",
                   WebkitTextStroke: "1px rgba(0, 0, 0, 0.6)",
                   mixBlendMode: "normal",
@@ -128,8 +120,7 @@ export function HeroSection() {
               >
                 PRIVATE INVESTIGATOR
               </span>
-
-              {/* PRIVATE INVESTIGATOR — DESKTOP VERSION (unchanged) */}
+              {/* PRIVATE INVESTIGATOR - Desktop (original glow) */}
               <span
                 className="hidden md:block relative animate-neon-flicker"
                 style={{
@@ -150,7 +141,12 @@ export function HeroSection() {
           </motion.div>
 
           {/* Tagline */}
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.4 }} className="mb-6 sm:mb-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mb-6 sm:mb-10"
+          >
             <p
               className="text-[#CEA53D]/90 text-sm md:text-base"
               style={{
@@ -168,7 +164,8 @@ export function HeroSection() {
                 fontFamily: "var(--font-dancing-script)",
                 fontSize: "clamp(2rem, 4vw, 3.5rem)",
                 fontWeight: 700,
-                textShadow: "0 0 6px rgba(255, 30, 30, 0.7), 0 0 12px rgba(255, 30, 30, 0.4), 1px 1px 0 rgba(0,0,0,0.6)",
+                textShadow:
+                "0 0 6px rgba(255, 30, 30, 0.7), 0 0 12px rgba(255, 30, 30, 0.4), 1px 1px 0 rgba(0,0,0,0.6)",
                 transform: "rotate(-3deg)",
               }}
             >
@@ -177,7 +174,12 @@ export function HeroSection() {
           </motion.div>
 
           {/* Phone Number */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.6 }} className="mb-8 sm:mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mb-8 sm:mb-12"
+          >
             <a href="tel:909-345-1350" className="inline-block group">
               <div className="relative">
                 <div
@@ -191,19 +193,25 @@ export function HeroSection() {
                     fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
                     fontWeight: 900,
                     color: "#FFFF",
-                    textShadow: "0 0 10px rgba(255,165,0,0.4), 0 0 20px rgba(255,165,0,0.2), 2px 2px 0 rgba(0,0,0,0.6)",
+                    textShadow:
+                    "0 0 10px rgba(255,165,0,0.4), 0 0 20px rgba(255,165,0,0.2), 2px 2px 0 rgba(0,0,0,0.6)",
                     letterSpacing: "0.1em",
                     transition: "all 0.3s ease",
                   }}
                 >
-                  (909) 345-1350
+                  909-964-8976
                 </span>
               </div>
             </a>
           </motion.div>
 
           {/* CTA Button */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.8 }} className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4"
+          >
             <a href="tel:909-345-1350" className="group relative inline-block w-full sm:w-auto max-w-sm">
               <div
                 className="absolute -inset-1 bg-gradient-to-r from-[#8B6C2F] to-[#FFA500] blur-md opacity-70 group-hover:opacity-100 transition duration-300"
@@ -214,7 +222,8 @@ export function HeroSection() {
                 style={{
                   fontFamily: "'Bebas Neue', sans-serif",
                   fontSize: "clamp(1.1rem, 2.5vw, 1.8rem)",
-                  boxShadow: "0 0 15px rgba(130,100,35,0.3), inset 0 0 8px rgba(130,100,35,0.15)",
+                  boxShadow:
+                    "0 0 15px rgba(130,100,35,0.3), inset 0 0 8px rgba(130,100,35,0.15)",
                   textShadow: "0 0 5px rgba(130,100,35,0.4)",
                 }}
               >
@@ -230,9 +239,21 @@ export function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
-            onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() =>
+              document.getElementById("about")?.scrollIntoView({
+                behavior: "smooth",
+              })
+            }
           >
-            <motion.div animate={{ y: [0, 12, 0] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }} className="flex flex-col items-center gap-2">
+            <motion.div
+              animate={{ y: [0, 12, 0] }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="flex flex-col items-center gap-2"
+            >
               <div
                 className="w-6 h-10 border-2 border-[#CEA53D]/60 rounded-full flex items-start justify-center p-2 group-hover:border-[#CEA53D] transition-colors"
                 style={{ boxShadow: "0 0 5px rgba(130,100,35,0.3)" }}
@@ -241,10 +262,17 @@ export function HeroSection() {
                   className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full"
                   style={{ boxShadow: "0 0 5px rgba(130,100,35,0.4)" }}
                   animate={{ y: [0, 12, 0] }}
-                  transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
                 />
               </div>
-              <ChevronDown className="w-5 h-5 text-[#CEA53D]/70 group-hover:text-[#CEA53D] transition-colors" style={{ filter: "drop-shadow(0 0 3px rgba(130,100,35,0.4))" }} />
+              <ChevronDown
+                className="w-5 h-5 text-[#CEA53D]/70 group-hover:text-[#CEA53D] transition-colors"
+                style={{ filter: "drop-shadow(0 0 3px rgba(130,100,35,0.4))" }}
+              />
             </motion.div>
           </motion.div>
         </div>

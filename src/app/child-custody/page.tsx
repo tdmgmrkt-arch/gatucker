@@ -6,6 +6,7 @@ import { StickyCTAButton } from '../components/sticky-cta-button';
 import { RequestServiceForm } from '../components/request-service-form';
 import { Phone, Mail, Shield, CheckCircle, Heart, Camera, FileText, AlertCircle, Home, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const relatedServices = [
   { title: 'Background Checks', href: '/background-checks' },
@@ -139,7 +140,7 @@ export default function ChildCustodyPage() {
                     >
                       <Phone className="w-4 h-4 text-[#CEA53D]" />
                       <span className="text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
-                        (909) 345-1350
+                        909-964-8976
                       </span>
                     </a>
                     <a
@@ -241,19 +242,54 @@ export default function ChildCustodyPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2
-                  className="text-3xl sm:text-4xl font-black uppercase text-[#CEA53D] mb-6"
-                  style={{ fontFamily: "'Bebas Neue', sans-serif" }}
-                >
-                  Professional Custody Investigations
-                </h2>
-                <div className="space-y-4 text-[#EDEDED]/80" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  <p className="leading-relaxed">
-                    Child custody cases are among the most emotionally challenging legal matters families face. Our investigators provide objective, professional documentation of parenting practices, living conditions, and child welfare concerns to support your custody case.
-                  </p>
-                  <p className="leading-relaxed">
-                    We understand that children&apos;s wellbeing is paramount. Our investigations focus on gathering factual evidence that demonstrates each parent&apos;s fitness, living environment, and ability to provide a safe, nurturing home for the child.
-                  </p>
+                <div className="grid md:grid-cols-2 gap-8 items-start">
+                  <div>
+                    <h2
+                      className="text-3xl md:text-4xl font-black uppercase mb-4 leading-tight"
+                      style={{
+                        fontFamily: "'Bebas Neue', sans-serif",
+                        background: "linear-gradient(135deg, #CEA53D 0%, #F0D78C 50%, #CEA53D 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        textShadow: "none",
+                      }}
+                    >
+                      Professional Custody Investigations
+                    </h2>
+                    <div
+                      className="h-1 w-24 bg-[#CEA53D] mb-6"
+                      style={{ boxShadow: "0 0 15px rgba(255, 215, 0, 0.6)" }}
+                    ></div>
+                    <p
+                      className="text-[#EDEDED]/80 leading-relaxed mb-4"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    >
+                      Child custody cases are among the most emotionally challenging legal matters families face. Our investigators provide objective, professional documentation of parenting practices, living conditions, and child welfare concerns to support your custody case.
+                    </p>
+                    <p
+                      className="text-[#EDEDED]/80 leading-relaxed"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    >
+                      We understand that children&apos;s wellbeing is paramount. Our investigations focus on gathering factual evidence that demonstrates each parent&apos;s fitness, living environment, and ability to provide a safe, nurturing home for the child.
+                    </p>
+                  </div>
+                  <div className="relative">
+                    <div
+                      className="relative p-3 bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D] rounded-xl border-2 border-[#CEA53D]/30 overflow-hidden"
+                      style={{
+                        boxShadow: "0 0 30px rgba(255,215,0,0.2)",
+                      }}
+                    >
+                      <div className="relative w-full rounded-lg overflow-hidden" style={{ aspectRatio: "4/5" }}>
+                        <Image
+                          src="/julia_profile_2.webp"
+                          alt="Julia Tucker - Child Custody Specialist"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
 
@@ -563,7 +599,7 @@ export default function ChildCustodyPage() {
                 }}
               >
                 <Phone className="w-5 h-5" />
-                Call (909) 345-1350
+                Call 909-964-8976
               </a>
               <a
                 href="mailto:greg@gatucker.com"

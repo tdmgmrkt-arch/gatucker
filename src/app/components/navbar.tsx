@@ -466,7 +466,7 @@ export function Navbar() {
                                         boxShadow: '0 0 20px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
                                     }}
                                 >
-                                    <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" /> (909) 345-1350
+                                    <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" /> 909-964-8976
                                 </button>
                             </a>
                         </div>

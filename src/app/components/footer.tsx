@@ -93,7 +93,7 @@ export function Footer() {
                   className="text-[#EDEDED] hover:text-[#CEA53D] transition-colors text-sm font-light"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
-                  (909) 345-1350
+                  909-964-8976
                 </a>
               </div>
               <div className="flex items-center justify-center md:justify-end gap-2">

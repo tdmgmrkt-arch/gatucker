@@ -117,7 +117,7 @@ export default function FAQsPage() {
                     boxShadow: '0 0 20px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
                   }}
                 >
-                  Call (909) 345-1350
+                  Call 909-964-8976
                 </button>
               </a>
               <a href="/request-service-form" className="group">

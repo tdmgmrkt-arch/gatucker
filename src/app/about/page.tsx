@@ -478,7 +478,7 @@ export default function AboutPage() {
               </p>
             </motion.div>
 
-            {/* Right: Julia Images - Dual Photo Collage */}
+            {/* Right: Julia Image */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -493,49 +493,33 @@ export default function AboutPage() {
                     "0 0 30px rgba(255,215,0,0.2), inset 0 0 20px rgba(255,215,0,0.05)",
                 }}
               >
-                <div className="grid grid-cols-2 gap-2 md:gap-3 rounded-2xl overflow-hidden">
-                  {/* First Julia Image */}
-                  <div className="relative group aspect-[3/4]">
-                    <Image
-                      src="/julia_profile.webp"
-                      alt="Julia Tucker - Co-Owner & COO"
-                      fill
-                      className="object-cover object-[0%_50%] transition-all duration-700 ease-in-out group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                  </div>
-
-                  {/* Second Julia Image */}
-                  <div className="relative group aspect-[3/4]">
-                    <Image
-                      src="/julia_profile_2.webp"
-                      alt="Julia Tucker - Co-Owner & COO"
-                      fill
-                      className="object-cover object-center transition-all duration-700 ease-in-out group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                  </div>
-                </div>
-
-                {/* Shared hover overlay for the whole collage */}
-                <div className="absolute inset-0 m-3 md:m-4 rounded-2xl bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 flex items-end p-6 md:p-8">
-                  <div>
-                    <h3
-                      className="text-white text-xl font-bold mb-1"
-                      style={{ fontFamily: "'Bebas Neue', sans-serif" }}
-                    >
-                      Julia Tucker
-                    </h3>
-                    <p
-                      className="text-[#CEA53D] text-sm font-bold uppercase"
-                      style={{
-                        fontFamily: "'Bebas Neue', sans-serif",
-                        letterSpacing: "0.1em",
-                        textShadow: "0 0 10px rgba(255,215,0,0.8)",
-                      }}
-                    >
-                      Co-Owner & COO
-                    </p>
+                <div className="relative rounded-2xl overflow-hidden group">
+                  <Image
+                    src="/julia_profile.webp"
+                    alt="Julia Tucker - Co-Owner & COO"
+                    width={800}
+                    height={800}
+                    className="w-full h-auto object-cover transition-all duration-700 ease-in-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                    <div>
+                      <h3
+                        className="text-white text-xl font-bold mb-1"
+                        style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+                      >
+                        Julia Tucker
+                      </h3>
+                      <p
+                        className="text-[#CEA53D] text-sm font-bold uppercase"
+                        style={{
+                          fontFamily: "'Bebas Neue', sans-serif",
+                          letterSpacing: "0.1em",
+                          textShadow: "0 0 10px rgba(255,215,0,0.8)",
+                        }}
+                      >
+                        Co-Owner & COO
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
