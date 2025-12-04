@@ -143,12 +143,12 @@ export default function InvestigationsPage() {
                       </span>
                     </a>
                     <a
-                      href="mailto:greg@gatucker.com"
+                      href="mailto:gatuckerpi@gmail.com"
                       className="flex items-center gap-3 text-[#EDEDED]/80 hover:text-[#CEA53D] transition-colors group"
                     >
                       <Mail className="w-4 h-4 text-[#CEA53D]" />
                       <span className="text-sm break-all" style={{ fontFamily: "'Inter', sans-serif" }}>
-                        greg@gatucker.com
+                        gatuckerpi@gmail.com
                       </span>
                     </a>
                   </div>
@@ -639,7 +639,7 @@ export default function InvestigationsPage() {
                 Call 909-964-8976
               </a>
               <a
-                href="mailto:greg@gatucker.com"
+                href="mailto:gatuckerpi@gmail.com"
                 className="bg-black border-2 border-[#CEA53D] text-[#CEA53D] px-8 py-4 font-black uppercase text-sm tracking-wider transition-all hover:bg-[#CEA53D] hover:text-black active:scale-95 inline-flex items-center gap-3"
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >

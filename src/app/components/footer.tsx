@@ -99,11 +99,11 @@ export function Footer() {
               <div className="flex items-center justify-center md:justify-end gap-2">
                 <Mail className="w-4 h-4 text-[#CEA53D] flex-shrink-0" />
                 <a
-                  href="mailto:greg@gatucker.com"
+                  href="mailto:gatuckerpi@gmail.com"
                   className="text-[#EDEDED] hover:text-[#CEA53D] transition-colors text-sm font-light"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
-                  greg@gatucker.com
+                  gatuckerpi@gmail.com
                 </a>
               </div>
               <div className="flex items-start justify-center md:justify-end gap-2">

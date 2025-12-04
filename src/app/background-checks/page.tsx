@@ -226,7 +226,7 @@ export default function BackgroundChecksPage() {
                       </div>
                     </a>
                     <a
-                      href="mailto:greg@gatucker.com"
+                      href="mailto:gatuckerpi@gmail.com"
                       className="flex items-center gap-3 text-[#EDEDED]/80 hover:text-[#CEA53D] transition-colors"
                     >
                       <Mail className="w-5 h-5 flex-shrink-0 text-[#CEA53D]/70" />
@@ -235,7 +235,7 @@ export default function BackgroundChecksPage() {
                           Email
                         </p>
                         <p className="text-sm font-medium" style={{ fontFamily: "'Inter', sans-serif" }}>
-                          greg@gatucker.com
+                          gatuckerpi@gmail.com
                         </p>
                       </div>
                     </a>
