@@ -77,7 +77,7 @@ export function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="services" className="relative py-32 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="services" className="relative overflow-hidden" style={{ padding: "clamp(4rem, 10vw, 8rem) clamp(1rem, 4vw, 2rem)" }}>
       {/* Background Image with Next.js Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -93,12 +93,12 @@ export function ServicesSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/70 via-[#0D0D0D]/80 to-[#0D0D0D]/95 mix-blend-multiply z-10" />
       </div>
 
-      {/* Enhanced Glow Effects */}
-      <div className="absolute top-1/4 left-0 w-[700px] h-[700px] bg-[#CEA53D]/8 rounded-full blur-[150px] z-10" />
-      <div className="absolute bottom-1/4 right-0 w-[700px] h-[700px] bg-[#FFA500]/8 rounded-full blur-[150px] z-10" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#CEA53D]/5 rounded-full blur-[120px] z-10" />
+      {/* Enhanced Glow Effects - Fluid sizing */}
+      <div className="absolute top-1/4 left-0 w-[min(700px,80vw)] h-[min(700px,80vw)] bg-[#CEA53D]/8 rounded-full blur-[150px] z-10" />
+      <div className="absolute bottom-1/4 right-0 w-[min(700px,80vw)] h-[min(700px,80vw)] bg-[#FFA500]/8 rounded-full blur-[150px] z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(500px,60vw)] h-[min(500px,60vw)] bg-[#CEA53D]/5 rounded-full blur-[120px] z-10" />
 
-      <div className="relative max-w-7xl mx-auto z-20">
+      <div className="relative mx-auto z-20" style={{ maxWidth: "min(100%, 80rem)" }}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -138,8 +138,8 @@ export function ServicesSection() {
           </p>
         </motion.div>
 
-        {/* Featured Services Grid (No Change) */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        {/* Featured Services Grid */}
+        <div className="grid lg:grid-cols-3" style={{ gap: "clamp(1.5rem, 3vw, 2rem)", marginBottom: "clamp(2rem, 5vw, 4rem)" }}>
           {featuredServices.map((service, index) => (
             <motion.div
               key={service.title}
@@ -222,7 +222,7 @@ export function ServicesSection() {
             Complete Service List
           </h3>
           
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid md:grid-cols-3" style={{ gap: "clamp(1.5rem, 4vw, 3rem)" }}>
             
             {serviceGroups.map((group, groupIndex) => (
                 <div key={group.title}>

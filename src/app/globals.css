@@ -5,7 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --font-size: 16px;
+  /* Fluid base font size: 14px at 320px viewport, 16px at 1200px viewport */
+  --font-size: clamp(0.875rem, 0.8rem + 0.25vw, 1rem);
   --background: #0D0D0D;
   --foreground: #EDEDED;
   --card: #2C2C2C;
@@ -133,55 +134,88 @@
   }
 }
 
+/* === Fluid Responsive System === */
+
+/* Responsive Container */
+.container-fluid {
+  width: min(92%, 1400px);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3vw, 2rem);
+}
+
+/* Fluid Spacing Custom Properties */
+:root {
+  --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+  --space-sm: clamp(0.5rem, 1vw, 0.75rem);
+  --space-md: clamp(0.75rem, 1.5vw, 1.25rem);
+  --space-lg: clamp(1rem, 2vw, 2rem);
+  --space-xl: clamp(1.5rem, 3vw, 3rem);
+  --space-2xl: clamp(2rem, 4vw, 4rem);
+  --space-3xl: clamp(3rem, 6vw, 6rem);
+
+  /* Fluid Typography Sizes */
+  --text-fluid-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-fluid-sm: clamp(0.8125rem, 0.75rem + 0.3vw, 0.9375rem);
+  --text-fluid-base: clamp(0.875rem, 0.8rem + 0.4vw, 1rem);
+  --text-fluid-lg: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-fluid-xl: clamp(1.125rem, 1rem + 0.6vw, 1.25rem);
+  --text-fluid-2xl: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+  --text-fluid-3xl: clamp(1.5rem, 1.2rem + 1.5vw, 1.875rem);
+  --text-fluid-4xl: clamp(1.875rem, 1.5rem + 2vw, 2.25rem);
+  --text-fluid-5xl: clamp(2.25rem, 1.75rem + 2.5vw, 3rem);
+  --text-fluid-6xl: clamp(2.75rem, 2rem + 3.5vw, 3.75rem);
+  --text-fluid-7xl: clamp(3.5rem, 2.5rem + 5vw, 4.5rem);
+}
+
 /**
- * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ * Base typography with fluid sizing
  */
 @layer base {
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
-      font-size: var(--text-2xl);
+      font-size: var(--text-fluid-5xl);
       font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      line-height: 1.2;
     }
 
     h2 {
-      font-size: var(--text-xl);
+      font-size: var(--text-fluid-4xl);
       font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      line-height: 1.25;
     }
 
     h3 {
-      font-size: var(--text-lg);
+      font-size: var(--text-fluid-3xl);
       font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      line-height: 1.3;
     }
 
     h4 {
-      font-size: var(--text-base);
+      font-size: var(--text-fluid-2xl);
       font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      line-height: 1.4;
     }
 
     p {
-      font-size: var(--text-base);
+      font-size: var(--text-fluid-base);
       font-weight: var(--font-weight-normal);
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     label {
-      font-size: var(--text-base);
+      font-size: var(--text-fluid-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
 
     button {
-      font-size: var(--text-base);
+      font-size: var(--text-fluid-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
 
     input {
-      font-size: var(--text-base);
+      font-size: var(--text-fluid-base);
       font-weight: var(--font-weight-normal);
       line-height: 1.5;
     }
@@ -387,3 +421,63 @@ html {
 
 /* Retro Font Fallbacks */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* === Fluid Layout Utilities === */
+
+/* Fluid Section Padding */
+.section-padding {
+  padding-block: clamp(3rem, 8vw, 6rem);
+}
+
+.section-padding-sm {
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+/* Fluid Gap Utilities */
+.gap-fluid-sm {
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.gap-fluid-md {
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.gap-fluid-lg {
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.gap-fluid-xl {
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+/* Responsive Grid Auto-fit */
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+.grid-auto-fit-lg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+/* Fluid Max Width Containers */
+.max-w-fluid-sm {
+  max-width: min(100%, 640px);
+}
+
+.max-w-fluid-md {
+  max-width: min(100%, 768px);
+}
+
+.max-w-fluid-lg {
+  max-width: min(100%, 1024px);
+}
+
+.max-w-fluid-xl {
+  max-width: min(100%, 1280px);
+}
+
+.max-w-fluid-2xl {
+  max-width: min(100%, 1400px);
+}

@@ -7,9 +7,9 @@ import { ImageWithFallback } from './figma/ImageWithFallback'; // Assuming you h
 
 export function Footer() {
   return (
-    <footer className="relative bg-[#0D0D0D] border-t border-[#CEA53D]/30 py-12 sm:py-16 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 lg:gap-16 mb-10 sm:mb-12">
+    <footer className="relative bg-[#0D0D0D] border-t border-[#CEA53D]/30" style={{ padding: "clamp(3rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)" }}>
+      <div className="mx-auto" style={{ maxWidth: "min(100%, 80rem)" }}>
+        <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: "clamp(2rem, 4vw, 4rem)", marginBottom: "clamp(2rem, 4vw, 3rem)" }}>
           {/* Column 1: Logo, Company Info, & Socials */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <Link href="/" className="mb-4 w-48 cursor-pointer hover:opacity-80 transition-opacity"> {/* Adjust width as needed for your logo */}

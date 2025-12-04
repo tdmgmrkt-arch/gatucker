@@ -31,7 +31,8 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#1A1A1A] overflow-hidden"
+      className="relative bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#1A1A1A] overflow-hidden"
+      style={{ padding: "clamp(4rem, 10vw, 8rem) clamp(1rem, 4vw, 2rem)" }}
     >
       {/* Decorative gradient lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/40 to-transparent z-20" />
@@ -39,16 +40,16 @@ export function AboutSection() {
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/40 to-transparent z-20" />
       <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#CEA53D]/20 to-transparent blur-sm z-20" />
 
-      {/* Background glow */}
+      {/* Background glow - fluid sizing */}
       <div
-        className="absolute top-1/3 right-0 w-[600px] h-[600px] bg-[#CEA53D]/10 rounded-full blur-[140px] animate-pulse"
+        className="absolute top-1/3 right-0 w-[min(600px,70vw)] h-[min(600px,70vw)] bg-[#CEA53D]/10 rounded-full blur-[140px] animate-pulse"
         style={{ animationDuration: "5s" }}
       />
-      <div className="absolute bottom-1/3 left-0 w-[600px] h-[600px] bg-[#FFA500]/8 rounded-full blur-[140px]" />
+      <div className="absolute bottom-1/3 left-0 w-[min(600px,70vw)] h-[min(600px,70vw)] bg-[#FFA500]/8 rounded-full blur-[140px]" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="mx-auto relative z-10" style={{ maxWidth: "min(100%, 80rem)" }}>
         {/* Two-column layout */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 items-center" style={{ gap: "clamp(2rem, 5vw, 5rem)" }}>
           {/* Left Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -171,7 +172,7 @@ export function AboutSection() {
               className="mb-8 text-[#EDEDED]/85 font-light"
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: "1.1rem",
+                fontSize: "clamp(0.95rem, 0.9rem + 0.5vw, 1.1rem)",
                 lineHeight: "1.8",
               }}
             >
@@ -183,7 +184,7 @@ export function AboutSection() {
             </p>
 
             {/* Credentials */}
-            <div className="grid sm:grid-cols-2 gap-y-6 gap-x-8 mt-8">
+            <div className="grid sm:grid-cols-2 mt-8" style={{ gap: "clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 3vw, 2rem)" }}>
               {credentials.map((cred, index) => (
                 <motion.div
                   key={cred.title}

@@ -39,7 +39,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero Section with Dark Alley Background */}
-      <section className="relative pt-28 pb-10 px-4 sm:px-6 lg:px-8">
+      <section className="relative" style={{ paddingTop: "clamp(6rem, 12vw, 8rem)", paddingBottom: "clamp(2rem, 4vw, 3rem)", paddingInline: "clamp(1rem, 4vw, 2rem)" }}>
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -53,8 +53,8 @@ export default function ContactPage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+        <div className="relative z-10 mx-auto" style={{ maxWidth: "min(100%, 72rem)" }}>
+          <div className="flex flex-col lg:flex-row items-center justify-between" style={{ gap: "clamp(2rem, 4vw, 3rem)" }}>
             {/* Left: Tagline Image */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -172,9 +172,9 @@ export default function ContactPage() {
       </section>
 
       {/* Forms Section */}
-      <section className="relative py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0D0D0D] to-[#1A1A1A]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-[3fr_7fr] gap-10 items-start">
+      <section className="relative bg-gradient-to-b from-[#0D0D0D] to-[#1A1A1A]" style={{ padding: "clamp(2rem, 5vw, 3rem) clamp(1rem, 4vw, 2rem)" }}>
+        <div className="mx-auto" style={{ maxWidth: "min(100%, 72rem)" }}>
+          <div className="grid lg:grid-cols-[3fr_7fr] items-start" style={{ gap: "clamp(1.5rem, 3vw, 2.5rem)" }}>
             {/* Quick Contact Form */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

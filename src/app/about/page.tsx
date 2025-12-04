@@ -15,7 +15,7 @@ const education = [
     logoSrc: "/alliant_international_university.webp",
   },
   {
-    university: "Washington University in St. Louis",
+    university: "Washington University School of Law - St. Louis",
     degree: "Master's degree, Legal Studies, General",
     logoSrc: "/washington_university_in_st_louis.webp",
   },

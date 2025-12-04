@@ -51,7 +51,7 @@ const combinedAffiliationsData = [
   },
   {
     icon: GraduationCap,
-    name: "Washington University School of Law",
+    name: "Washington University School of Law -St Louis",
     description: "Academic Credential",
     logoSrc: "/washington_university_in_st_louis.webp", // Added path
   },
