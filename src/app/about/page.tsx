@@ -471,7 +471,7 @@ export default function AboutPage() {
               >
                 Julia Tucker serves as Co-Owner and COO of GA Tucker PI Investigative Services LLC.
                 A dedicated advocate for children&apos;s well-being, she brings over 17 years of experience
-                in psychology. With master&apos;s degrees in Education and Child Psychology,
+                as a pyschologist. With master&apos;s degrees in Education and Child Psychology,
                 Julia specializes in supporting investigations involving missing children, domestic disputes,
                 and child custody cases. Her compassion and expertise ensure that each case is approached with
                 empathy, professionalism, and insight.
@@ -629,7 +629,7 @@ export default function AboutPage() {
                     lineHeight: "1.8",
                   }}
                 >
-                  Julia, the firm’s Co-Owner and COO, adds more than 17 years as a licensed school psychologist, supported by dual master’s degrees in education and child psychology and a paralegal certification. Her background makes her a strong advocate for children and families, and she plays an active role in investigations involving missing children and domestic issues.
+                  Julia, the firm’s Co-Owner and COO, adds more than 17 years of experience as a psychologist, supported by dual master’s degrees in education and child psychology and a paralegal certification. Her background makes her a strong advocate for children and families, and she plays an active role in investigations involving missing children and domestic issues.
                 </p>
 
                 <p
