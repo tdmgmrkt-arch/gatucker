@@ -98,8 +98,7 @@ export function RequestServiceForm({ defaultService }: RequestServiceFormProps =
     setSubmitStatus('idle');
 
     try {
-      // Dummy API endpoint - replace with actual Lead Connector/Go HighLevel webhook URL
-      const response = await fetch('https://example.com/api/lead-connector-webhook', {
+      const response = await fetch('https://services.leadconnectorhq.com/hooks/Fbaga5wnVErEPV0kaAo2/webhook-trigger/54592061-870e-42c8-9b28-a303ced456a1', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -2,28 +2,32 @@
 
 import { motion } from 'framer-motion';
 // Imported all lucide icons used for categories and items
-import { Search, Shield, Brain, ArrowRight, FileText, Briefcase, Heart, Users, Scale, Target } from 'lucide-react'; 
+import { Search, Shield, Brain, ArrowRight, FileText, Briefcase, Heart, Users, Scale, Target } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const featuredServices = [
   {
     icon: Search,
     title: "Background Checks",
     description: "GA Tucker PI can conduct background checks on individuals to identify criminal records, vehicle registration, social media activity, marriage history, and more.",
-    category: "Digital Investigation Tools"
+    category: "Digital Investigation Tools",
+    href: "/background-checks"
   },
   {
     icon: Shield,
     title: "Risk Management",
     description: "Risk management allows you to identify potential deficiencies and vulnerabilities in security and safety in your business. Call today and we can identify any potential threats or risks.",
-    category: "Threat Assessment"
+    category: "Threat Assessment",
+    href: "/risk-management"
   },
   {
     icon: Brain,
     title: "Investigations",
     description: "Our professional investigative services at GA Tucker PI include civil investigations, criminal investigations, domestic investigations, and legal process server capabilities.",
-    category: "Criminal and Behavioral Casework"
+    category: "Criminal and Behavioral Casework",
+    href: "/investigations"
   }
 ];
 
@@ -151,57 +155,59 @@ export function ServicesSection() {
               onHoverEnd={() => setHoveredIndex(null)}
               className="group relative"
             >
-              <div className="relative h-full bg-black/90 border-2 border-[#CEA53D]/30 rounded-xl p-8 md:p-10 hover:border-[#CEA53D] transition-all duration-500 overflow-hidden shadow-lg hover:shadow-[0_0_50px_rgba(255,215,0,0.4)] group-hover:scale-[1.02]" style={{ boxShadow: '0 0 25px rgba(255, 215, 0, 0.2), inset 0 0 40px rgba(255, 215, 0, 0.05)' }}>
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
+              <Link href={service.href}>
+                <div className="relative h-full bg-black/90 border-2 border-[#CEA53D]/30 rounded-xl p-8 md:p-10 hover:border-[#CEA53D] transition-all duration-500 overflow-hidden shadow-lg hover:shadow-[0_0_50px_rgba(255,215,0,0.4)] group-hover:scale-[1.02]" style={{ boxShadow: '0 0 25px rgba(255, 215, 0, 0.2), inset 0 0 40px rgba(255, 215, 0, 0.05)' }}>
+                  {/* Gradient overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
 
-                {/* Animated corner accent */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-[#CEA53D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  {/* Animated corner accent */}
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-[#CEA53D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                <div className="relative z-10">
-                  <div className="mb-6 w-16 h-16 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center group-hover:border-[#CEA53D] transition-all duration-300 group-hover:scale-110" style={{ boxShadow: '0 0 15px rgba(255, 215, 0, 0.3)' }}>
-                    <service.icon className="w-8 h-8 text-[#CEA53D]" strokeWidth={2.5} />
+                  <div className="relative z-10">
+                    <div className="mb-6 w-16 h-16 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center group-hover:border-[#CEA53D] transition-all duration-300 group-hover:scale-110" style={{ boxShadow: '0 0 15px rgba(255, 215, 0, 0.3)' }}>
+                      <service.icon className="w-8 h-8 text-[#CEA53D]" strokeWidth={2.5} />
+                    </div>
+                    <p
+                      className="text-[#CEA53D] text-xs uppercase tracking-[0.2em] mb-3 font-bold"
+                      style={{
+                        fontFamily: "'Inter', sans-serif",
+                        textShadow: '0 0 15px rgba(231, 173, 65, 0.3)'
+                      }}
+                    >
+                      {service.category}
+                    </p>
+                    <h3
+                      className="mb-5 text-[#EDEDED] font-black uppercase group-hover:text-[#CEA53D] transition-colors"
+                      style={{
+                        fontFamily: "'Bebas Neue', sans-serif",
+                        fontSize: '1.75rem',
+                        lineHeight: '1.3',
+                        letterSpacing: '0.02em'
+                      }}
+                    >
+                      {service.title}
+                    </h3>
+                    <p
+                      className="mb-6 text-[#EDEDED]/85 font-light"
+                      style={{
+                        fontFamily: "'Inter', sans-serif",
+                        fontSize: '1rem',
+                        lineHeight: '1.75'
+                      }}
+                    >
+                      {service.description}
+                    </p>
+                    <motion.div
+                      className="text-[#CEA53D] text-sm flex items-center gap-2 uppercase tracking-wider font-bold group-hover:text-[#F0C674] transition-colors"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                      animate={{ x: hoveredIndex === index ? 8 : 0 }}
+                    >
+                      <span>Learn More</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+                    </motion.div>
                   </div>
-                  <p
-                    className="text-[#CEA53D] text-xs uppercase tracking-[0.2em] mb-3 font-bold"
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      textShadow: '0 0 15px rgba(231, 173, 65, 0.3)'
-                    }}
-                  >
-                    {service.category}
-                  </p>
-                  <h3
-                    className="mb-5 text-[#EDEDED] font-black uppercase group-hover:text-[#CEA53D] transition-colors"
-                    style={{
-                      fontFamily: "'Bebas Neue', sans-serif",
-                      fontSize: '1.75rem',
-                      lineHeight: '1.3',
-                      letterSpacing: '0.02em'
-                    }}
-                  >
-                    {service.title}
-                  </h3>
-                  <p
-                    className="mb-6 text-[#EDEDED]/85 font-light"
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      fontSize: '1rem',
-                      lineHeight: '1.75'
-                    }}
-                  >
-                    {service.description}
-                  </p>
-                  <motion.div
-                    className="text-[#CEA53D] text-sm flex items-center gap-2 uppercase tracking-wider font-bold group-hover:text-[#F0C674] transition-colors"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
-                    animate={{ x: hoveredIndex === index ? 8 : 0 }}
-                  >
-                    <span>Learn More</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
-                  </motion.div>
                 </div>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </div>
