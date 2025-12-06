@@ -101,7 +101,7 @@ export function ThreeStepsSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-center lg:text-left"
             >
-              <div className="group relative inline-block">
+              <a href="/request-service-form" className="group relative inline-block">
                 <button
                   className="relative px-10 py-4 bg-black border-4 border-[#CEA53D] font-black text-[#CEA53D] uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
                   style={{
@@ -112,7 +112,7 @@ export function ThreeStepsSection() {
                 >
                   Request Consultation <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
-              </div>
+              </a>
             </motion.div>
           </motion.div>
 

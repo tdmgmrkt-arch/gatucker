@@ -22,11 +22,7 @@ export function StickyCTAButton() {
   }, []);
 
   const handleClick = () => {
-    // Scroll to contact section or open contact modal
-    const ctaSection = document.querySelector('/request-service-form');
-    if (ctaSection) {
-      ctaSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = '/request-service-form';
   };
 
   return (

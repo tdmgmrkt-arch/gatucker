@@ -72,7 +72,7 @@ export function CTASection() {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
             {/* Primary CTA */}
-            <div className="group relative">
+            <a href="/request-service-form" className="group relative">
               <button
                 className="relative px-10 py-4 bg-black border-4 border-[#CEA53D] font-black text-[#FFFF] uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105"
                 style={{
@@ -84,7 +84,7 @@ export function CTASection() {
               >
                 Request Consultation
               </button>
-            </div>
+            </a>
 
             {/* Secondary CTA */}
             <a href="tel:909-345-1350" className="group">
