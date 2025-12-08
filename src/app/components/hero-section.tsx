@@ -180,7 +180,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mb-8 sm:mb-12"
           >
-            <a href="tel:909-345-1350" className="inline-block group">
+            <a href="tel:909-964-8976" className="inline-block group">
               <div className="relative">
                 <div
                   className="absolute -inset-4 bg-[#8B6C2F]/10 blur-2xl rounded-full animate-pulse"
@@ -212,7 +212,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4"
           >
-            <a href="tel:909-345-1350" className="group relative inline-block w-full sm:w-auto max-w-sm">
+            <a href="tel:909-964-8976" className="group relative inline-block w-full sm:w-auto max-w-sm">
               <div
                 className="absolute -inset-1 bg-gradient-to-r from-[#8B6C2F] to-[#FFA500] blur-md opacity-70 group-hover:opacity-100 transition duration-300"
                 style={{ animation: "pulse 2s infinite" }}

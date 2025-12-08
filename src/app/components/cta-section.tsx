@@ -87,7 +87,7 @@ export function CTASection() {
             </a>
 
             {/* Secondary CTA */}
-            <a href="tel:909-345-1350" className="group">
+            <a href="tel:909-964-8976" className="group">
               <button
                 className="relative px-10 py-4 bg-transparent border-4 border-[#FFFF] font-black text-[#FFFF] uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105"
                 style={{

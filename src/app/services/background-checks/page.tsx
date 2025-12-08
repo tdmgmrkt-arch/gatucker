@@ -116,7 +116,7 @@ export default function BackgroundChecksPage() {
                 </Button>
               </div>
 
-              <a href="tel:909-345-1350" className="group relative">
+              <a href="tel:909-964-8976" className="group relative">
                 <Button
                   size="lg"
                   variant="outline"
@@ -197,7 +197,7 @@ export default function BackgroundChecksPage() {
 
                     <div className="mt-8 pt-8 border-t border-[#E7AD41]/20">
                       <p className="text-[#EDEDED]/60 text-sm mb-4">Need immediate assistance?</p>
-                      <a href="tel:909-345-1350" className="group relative inline-block w-full">
+                      <a href="tel:909-964-8976" className="group relative inline-block w-full">
                         <div className="absolute -inset-0.5 bg-gradient-to-r from-[#E7AD41] to-[#D79D31] rounded-lg blur opacity-30 group-hover:opacity-60 transition" />
                         <Button className="relative w-full bg-gradient-to-r from-[#E7AD41] to-[#D79D31] hover:from-[#F5D68A] hover:to-[#E7AD41] text-[#0D0D0D] font-bold">
                           <Phone className="w-4 h-4 mr-2" />

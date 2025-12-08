@@ -226,7 +226,7 @@ export default function RiskManagementPage() {
                   </h3>
                   <div className="space-y-4 mb-5">
                     <a
-                      href="tel:909-345-1350"
+                      href="tel:909-964-8976"
                       className="flex items-center gap-3 text-[#CEA53D] hover:text-[#FFA500] transition-colors"
                     >
                       <Phone className="w-5 h-5 flex-shrink-0" />
@@ -803,7 +803,7 @@ export default function RiskManagementPage() {
             >
               Submit Contact Form or Call Our California Private Investigator — (909)602-1930
             </p>
-            <a href="tel:909-345-1350" className="inline-block">
+            <a href="tel:909-964-8976" className="inline-block">
               <button
                 className="bg-black border-4 border-[#CEA53D] text-[#CEA53D] px-12 py-5 font-black uppercase tracking-wider transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 active:scale-95"
                 style={{

@@ -134,7 +134,7 @@ export default function InvestigationsPage() {
                   </h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:909-345-1350"
+                      href="tel:909-964-8976"
                       className="flex items-center gap-3 text-[#EDEDED]/80 hover:text-[#CEA53D] transition-colors group"
                     >
                       <Phone className="w-4 h-4 text-[#CEA53D]" />
@@ -628,7 +628,7 @@ export default function InvestigationsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:909-345-1350"
+                href="tel:909-964-8976"
                 className="bg-[#CEA53D] text-black px-8 py-4 font-black uppercase text-sm tracking-wider transition-all hover:bg-[#CEA53D]/90 active:scale-95 inline-flex items-center gap-3"
                 style={{
                   fontFamily: "'Bebas Neue', sans-serif",

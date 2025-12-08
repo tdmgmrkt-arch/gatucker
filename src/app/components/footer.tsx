@@ -89,7 +89,7 @@ export function Footer() {
               <div className="flex items-center justify-center md:justify-end gap-2">
                 <Phone className="w-4 h-4 text-[#CEA53D] flex-shrink-0" />
                 <a
-                  href="tel:909-345-1350"
+                  href="tel:909-964-8976"
                   className="text-[#EDEDED] hover:text-[#CEA53D] transition-colors text-sm font-light"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
