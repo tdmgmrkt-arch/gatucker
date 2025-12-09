@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, Shield, Users, FileCheck, Phone, Search, Scale, FileText, Lock, Mail, Award, Target, Brain } from "lucide-react";
+import { CheckCircle2, Shield, Phone, Scale, FileText, Lock, Mail, Brain } from "lucide-react";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
 import { StickyCTAButton } from "../components/sticky-cta-button";

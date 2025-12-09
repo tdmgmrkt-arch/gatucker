@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { Navbar } from './components/navbar';
+
+export const metadata: Metadata = {
+  title: "G.A. Tucker PI | California Private Investigator | 27+ Years Experience",
+  description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
+};
 import { HeroSection } from './components/hero-section';
 import { AboutSection } from './components/about-section';
 import { ServicesSection } from './components/services-section';

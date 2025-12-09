@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { Phone, Mail, MapPin, Shield, Facebook, Twitter, Instagram } from 'lucide-react';
-import { Input } from './ui/input';
-import { ImageWithFallback } from './figma/ImageWithFallback'; // Assuming you have this component
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Footer() {
   return (
@@ -52,26 +51,15 @@ export function Footer() {
                 { name: 'Services', href: '/services' },
                 { name: 'Pricing', href: '/#pricing' },
                 { name: 'Testimonials', href: '/#testimonials' },
-
               ].map((link) => (
                 <li key={link.name}>
-                  {link.href.startsWith('/') ? (
-                    <Link
-                      href={link.href}
-                      className="text-[#EDEDED]/70 hover:text-[#CEA53D] transition-colors text-sm font-light"
-                      style={{ fontFamily: "'Inter', sans-serif" }}
-                    >
-                      {link.name}
-                    </Link>
-                  ) : (
-                    <a
-                      href={link.href}
-                      className="text-[#EDEDED]/70 hover:text-[#CEA53D] transition-colors text-sm font-light"
-                      style={{ fontFamily: "'Inter', sans-serif" }}
-                    >
-                      {link.name}
-                    </a>
-                  )}
+                  <Link
+                    href={link.href}
+                    className="text-[#EDEDED]/70 hover:text-[#CEA53D] transition-colors text-sm font-light"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

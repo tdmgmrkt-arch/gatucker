@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Dancing_Script, Space_Mono } from "next/font/google";
+import { Dancing_Script, Space_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-
-// ✅ Load fonts properly
-const geistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-});
 
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
@@ -20,7 +9,6 @@ const dancingScript = Dancing_Script({
   variable: "--font-dancing-script",
 });
 
-// ✅ Add a Courier-style font (Space Mono)
 const spaceMono = Space_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -41,13 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`
-          ${geistSans.variable}
-          ${geistMono.variable}
-          ${dancingScript.variable}
-          ${spaceMono.variable}
-          antialiased
-        `}
+        className={`${dancingScript.variable} ${spaceMono.variable} antialiased`}
       >
         {children}
 

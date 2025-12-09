@@ -78,14 +78,7 @@ export function StatsSection() {
                 color: "#FFF",
               }}
             >
-              CHASING TRUTH{" "}
-              <span
-                className="text-[#CEA53D]"
-                style={{
-                  textShadow:
-                    "0 0 30px rgba(255, 215, 0, 0.9), 0 0 60px rgba(255, 215, 0, 0.5), 3px 3px 0 rgba(0,0,0,0.8)",
-                }}
-              ></span>
+              CHASING TRUTH
             </h2>
 
             <div

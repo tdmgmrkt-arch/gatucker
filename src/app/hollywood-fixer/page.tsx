@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Award, CheckCircle2, Eye, Lock, Shield, Users } from "lucide-react";
+import { Eye, Lock, Shield, Users } from "lucide-react";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
 import { StickyCTAButton } from "../components/sticky-cta-button";
@@ -143,7 +143,7 @@ export default function HollywoodFixerPage() {
               transition={{ duration: 0.8 }}
               className="order-1 lg:order-2"
             >
-              <h2
+              <h1
                 className="mb-4 font-black uppercase tracking-tight leading-tight"
                 style={{
                   fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
@@ -152,7 +152,7 @@ export default function HollywoodFixerPage() {
                 }}
               >
                 Hollywood&apos;s Preferred Fixer
-              </h2>
+              </h1>
 
               <p
                 className="mb-3 text-[#CEA53D] text-xs md:text-sm uppercase font-bold"

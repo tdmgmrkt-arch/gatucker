@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { Navbar } from '../components/navbar';
+
+export const metadata: Metadata = {
+  title: "Request Service | Free Consultation | G.A. Tucker PI",
+  description: "Request a free consultation with G.A. Tucker PI. Submit your inquiry for expert private investigation services in California.",
+};
 import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
 import { RequestServiceForm } from '../components/request-service-form';
