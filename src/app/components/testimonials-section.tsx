@@ -33,7 +33,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="relative py-24 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="testimonials" className="relative py-24 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Decorative gradient separator - top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D]/30 to-transparent z-30" />
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#CEA53D]/10 to-transparent blur-sm z-30" />
