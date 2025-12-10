@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Dancing_Script, Space_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -14,11 +13,6 @@ const spaceMono = Space_Mono({
   weight: ["400", "700"],
   variable: "--font-space-mono",
 });
-
-export const metadata: Metadata = {
-  title: "Call Tucker | Private Investigator",
-  description: "California's leading private investigator — retro-inspired site design.",
-};
 
 // ✅ Root Layout
 export default function RootLayout({

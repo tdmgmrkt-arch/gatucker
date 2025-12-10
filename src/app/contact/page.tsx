@@ -54,6 +54,20 @@ export default function ContactPage() {
 
         {/* Content */}
         <div className="relative z-10 mx-auto" style={{ maxWidth: "min(100%, 72rem)" }}>
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-8 font-black uppercase tracking-tight"
+            style={{
+              fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
+              fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
+              color: "#EDEDED",
+              textShadow: "0 0 30px rgba(206, 165, 61, 0.3)",
+            }}
+          >
+            Contact Us
+          </motion.h1>
           <div className="flex flex-col lg:flex-row items-center justify-between" style={{ gap: "clamp(2rem, 4vw, 3rem)" }}>
             {/* Left: Tagline Image */}
             <motion.div

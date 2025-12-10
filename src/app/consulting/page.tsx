@@ -221,12 +221,12 @@ export default function ConsultingPage() {
                   className="bg-black/60 border-2 border-[#CEA53D]/30 rounded-lg p-5"
                   style={{ boxShadow: "0 0 20px rgba(206,165,61,0.1)" }}
                 >
-                  <h3
+                  <h2
                     className="text-xl font-black uppercase text-[#CEA53D] mb-4 pb-3 border-b border-[#CEA53D]/30"
                     style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.05em" }}
                   >
                     Our Services
-                  </h3>
+                  </h2>
                   <nav className="space-y-1">
                     {relatedServices.map((service) => (
                       <a
@@ -254,12 +254,12 @@ export default function ConsultingPage() {
                   className="bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D] border-2 border-[#CEA53D]/40 rounded-lg p-5"
                   style={{ boxShadow: "0 0 30px rgba(206,165,61,0.15)" }}
                 >
-                  <h3
+                  <h2
                     className="text-lg font-black uppercase text-[#EDEDED] mb-4"
                     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                   >
                     Get Started Now
-                  </h3>
+                  </h2>
                   <div className="space-y-4 mb-5">
                     <a
                       href="tel:909-964-8976"
@@ -310,12 +310,12 @@ export default function ConsultingPage() {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="bg-black/60 border-2 border-[#CEA53D]/30 rounded-lg p-5"
                 >
-                  <h3
+                  <h2
                     className="text-xl font-black uppercase text-[#CEA53D] mb-4 pb-3 border-b border-[#CEA53D]/30"
                     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                   >
                     Services Offered
-                  </h3>
+                  </h2>
                   <ul className="space-y-3">
                     {['Attorney Support', 'Trial Consulting', 'Jury Consulting', 'Expert Witness', 'Case Analysis'].map((service) => (
                       <li key={service} className="flex items-center gap-2 text-[#EDEDED]/70 text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -334,12 +334,12 @@ export default function ConsultingPage() {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="bg-black/60 border-2 border-[#CEA53D]/30 rounded-lg p-5"
                 >
-                  <h3
+                  <h2
                     className="text-xl font-black uppercase text-[#CEA53D] mb-4 pb-3 border-b border-[#CEA53D]/30"
                     style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                   >
                     Why Choose Us
-                  </h3>
+                  </h2>
                   <ul className="space-y-3">
                     {reasonsToHire.map((reason) => (
                       <li key={reason} className="flex items-start gap-2 text-[#EDEDED]/70 text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -534,12 +534,12 @@ export default function ConsultingPage() {
                           <capability.icon className="w-7 h-7 text-[#CEA53D]" />
                         </div>
                       </div>
-                      <h4
+                      <h3
                         className="text-[#CEA53D] text-lg font-bold uppercase mb-2"
                         style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                       >
                         {capability.title}
-                      </h4>
+                      </h3>
                       <p
                         className="text-[#EDEDED]/75 text-sm"
                         style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.6" }}
@@ -687,12 +687,12 @@ export default function ConsultingPage() {
                           <capability.icon className="w-7 h-7 text-[#CEA53D]" />
                         </div>
                       </div>
-                      <h4
+                      <h3
                         className="text-[#CEA53D] text-lg font-bold uppercase mb-2"
                         style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                       >
                         {capability.title}
-                      </h4>
+                      </h3>
                       <p
                         className="text-[#EDEDED]/75 text-sm"
                         style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.6" }}
@@ -817,12 +817,12 @@ export default function ConsultingPage() {
                       key={index}
                       className="bg-black/40 border-2 border-[#CEA53D]/30 rounded-lg p-5 hover:border-[#CEA53D]/70 transition-all duration-300"
                     >
-                      <h4
+                      <h3
                         className="text-[#CEA53D] text-lg font-bold mb-2"
                         style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                       >
                         {service.title}
-                      </h4>
+                      </h3>
                       <p
                         className="text-[#EDEDED]/80 text-sm"
                         style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.6" }}
@@ -937,12 +937,12 @@ export default function ConsultingPage() {
 
             {/* Testimonials */}
             <div className="mt-10">
-              <h4
+              <h3
                 className="text-[#CEA53D] text-xl font-black uppercase mb-6"
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >
                 See What Our Clients Have to Say About Us
-              </h4>
+              </h3>
               <div className="grid md:grid-cols-2 gap-5">
                 {[
                   {

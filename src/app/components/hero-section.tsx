@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { ChevronDown, Phone, Shield } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, Phone, Shield, Play, X } from "lucide-react";
 
 export function HeroSection() {
   const mobileVideoRef = useRef<HTMLVideoElement>(null);
   const desktopVideoRef = useRef<HTMLVideoElement>(null);
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   // Defer video loading until after first paint for better LCP
   useEffect(() => {
@@ -27,7 +28,7 @@ export function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Mobile Video */}
         <video
           ref={mobileVideoRef}
@@ -261,6 +262,42 @@ export function HeroSection() {
             </a>
           </motion.div>
 
+          {/* Secondary CTA - Watch Introduction */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            className="mt-7 sm:mt-8 flex justify-center px-4"
+          >
+            <button
+              onClick={() => setVideoModalOpen(true)}
+              className="group flex items-center gap-2 px-4 py-2 rounded-full border border-[#CEA53D]/40 bg-black/50 backdrop-blur-sm hover:border-[#CEA53D]/70 hover:bg-black/60 transition-all duration-300"
+              style={{
+                boxShadow: "0 0 15px rgba(206,165,61,0.12), 0 0 30px rgba(206,165,61,0.06)",
+              }}
+              aria-label="Play introduction video"
+            >
+              {/* Play icon */}
+              <div
+                className="w-8 h-8 rounded-full flex items-center justify-center border border-[#CEA53D]/60 group-hover:border-[#CEA53D] group-hover:scale-105 transition-all duration-300"
+                style={{
+                  background: "linear-gradient(135deg, rgba(206,165,61,0.15) 0%, rgba(206,165,61,0.05) 100%)",
+                }}
+              >
+                <Play className="w-4 h-4 text-[#CEA53D] ml-0.5" fill="currentColor" strokeWidth={0} />
+              </div>
+              {/* Text */}
+              <span
+                className="text-sm uppercase tracking-[0.15em] text-[#CEA53D]/80 group-hover:text-[#CEA53D] transition-colors duration-300"
+                style={{
+                  fontFamily: "'Bebas Neue', sans-serif",
+                }}
+              >
+                Watch Introduction
+              </span>
+            </button>
+          </motion.div>
+
           {/* Scroll Indicator */}
           <motion.div
             className="absolute bottom-6 sm:bottom-12 left-1/2 -translate-x-1/2 cursor-pointer group touch-manipulation"
@@ -305,6 +342,55 @@ export function HeroSection() {
           </motion.div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      <AnimatePresence>
+        {videoModalOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
+            onClick={() => setVideoModalOpen(false)}
+          >
+            <button
+              onClick={() => setVideoModalOpen(false)}
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#CEA53D]/20 hover:bg-[#CEA53D]/40 transition-colors flex items-center justify-center"
+              aria-label="Close video"
+            >
+              <X className="w-5 h-5 sm:w-6 sm:h-6 text-[#CEA53D]" />
+            </button>
+
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="relative w-full max-w-4xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div
+                className="relative p-1 sm:p-1.5 bg-gradient-to-br from-[#CEA53D] via-[#8B6C2F] to-[#CEA53D] rounded-sm"
+                style={{ boxShadow: "0 0 60px rgba(206,165,61,0.4)" }}
+              >
+                <div className="relative bg-black rounded-sm overflow-hidden">
+                  <video
+                    controls
+                    autoPlay
+                    playsInline
+                    className="w-full h-auto aspect-video"
+                  >
+                    <source src="/TuckerIntorVideo.mp4" type="video/mp4" />
+                    <track kind="captions" srcLang="en" label="English captions" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
