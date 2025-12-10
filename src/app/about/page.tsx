@@ -630,7 +630,7 @@ export default function AboutPage() {
                   }}
                 >
                   Julia, the firm’s Co-Owner and COO, brings over 17 years of experience as a psychologist, backed by a paralegal certification and dual master’s degrees in both education and child psychology. Her background makes her a strong advocate for children and families, and she plays an active role in investigations related to missing children and domestic issues.
-
+                  </p>
                 <p
                   className="mb-6 text-[#EDEDED]/85 font-light"
                   style={{
