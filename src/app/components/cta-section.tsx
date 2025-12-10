@@ -2,18 +2,23 @@
 
 import { motion } from 'framer-motion';
 import { Shield } from 'lucide-react';
+import Image from 'next/image';
 
 export function CTASection() {
   return (
     <section
       id="contact"
       className="relative py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0D0D0D] via-[#1A1A1A] to-[#0D0D0D] overflow-hidden"
-      style={{
-        backgroundImage: "url('/greg-tucker-home-cta.bg.webp')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
     >
+      {/* Background Image */}
+      <Image
+        src="/greg-tucker-home-cta.bg.webp"
+        alt="GA Tucker PI Contact Background"
+        fill
+        loading="lazy"
+        className="object-cover object-center"
+        sizes="100vw"
+      />
       {/* Background Overlay for Readability */}
       <div className="absolute inset-0 bg-black/80" />
 
@@ -60,7 +65,9 @@ export function CTASection() {
             <strong className="text-[#CEA53D]">&ldquo;CONFIDENTIAL&rdquo;</strong>{' '}
             our clients are the only persons privy to the information we obtain.
             As our client your anonymity is maintained throughout our
-            investigations ensuring you peace of mind.
+            investigations ensuring you peace of mind. Have questions? Check our{' '}
+            <a href="/faqs" className="text-[#CEA53D] hover:underline">FAQs</a> or{' '}
+            <a href="/contact" className="text-[#CEA53D] hover:underline">contact us</a> directly.
           </p>
 
           {/* CTA Buttons */}

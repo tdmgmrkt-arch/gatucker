@@ -7,6 +7,7 @@ import { RequestServiceForm } from '../components/request-service-form';
 import { FAQAccordion } from '../components/faq-accordion';
 import { Phone, Mail, Shield, CheckCircle, AlertCircle, Users, Brain, Search, Lock } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const relatedServices = [
   { title: 'Background Checks', href: '/background-checks' },
@@ -27,9 +28,18 @@ export default function ProfilingPage() {
 
       {/* Hero Section */}
       <section
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/profilin-hero.webp')" }}
+        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
       >
+        {/* Background Image - LCP optimized */}
+        <Image
+          src="/profilin-hero.webp"
+          alt="Profiling Services"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover object-center"
+          sizes="100vw"
+        />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
 

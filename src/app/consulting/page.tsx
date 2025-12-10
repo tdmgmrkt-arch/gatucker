@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { CheckCircle2, Shield, Phone, Scale, FileText, Lock, Mail, Brain } from "lucide-react";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
@@ -32,17 +33,17 @@ const capabilities = [
   {
     icon: Scale,
     title: "Attorney Relations",
-    description: "We work directly with attorneys and ensure our commitment to providing the information needed to solidify a good defense.",
+    description: "We work directly with attorneys to gather the information needed for a strong defense.",
   },
   {
     icon: FileText,
     title: "Collect All Evidence",
-    description: "We utilize our sophisticated databases to collect any and all evidence.",
+    description: "We use advanced databases to find and collect all relevant evidence.",
   },
   {
     icon: Lock,
     title: "Record of Activities",
-    description: "All evidence and activities will be recorded and organized to strengthen the case.",
+    description: "We record and organize all evidence to strengthen your case.",
   },
 ];
 
@@ -50,60 +51,60 @@ const trialCapabilities = [
   {
     icon: Brain,
     title: "Trial Consulting",
-    description: "We use forensic behavioral science techniques to aid attorneys in the presentation of a criminal trial or civil lawsuit.",
+    description: "We use behavioral science methods to help attorneys present criminal and civil cases.",
   },
   {
     icon: FileText,
     title: "Collect All Evidence",
-    description: "We utilize our sophisticated databases to collect any and all evidence.",
+    description: "We use advanced databases to find and collect all relevant evidence.",
   },
   {
     icon: Lock,
     title: "Record of Activities",
-    description: "All evidence and activities will be recorded and organized to strengthen the case.",
+    description: "We record and organize all evidence to strengthen your case.",
   },
 ];
 
 const juryConsiderations = [
-  "Does your proposed strategy work?",
-  "Does your story have themes and a plot that resonate?",
-  "Is your presentation understandable and compelling?",
-  "Which potential jurors are most likely to become your advocates in deliberations?",
-  "What tools do those jurors need to evaluate, understand, and advocate for your case?",
+  "Does your strategy work?",
+  "Does your story connect with jurors?",
+  "Is your presentation clear and convincing?",
+  "Which jurors will support you in deliberations?",
+  "What do those jurors need to understand and defend your case?",
 ];
 
 const researchServices = [
   {
     title: "Mock Trial Research",
-    description: "Simulated in-person or online trial presentations that assess which arguments are persuasive by uncovering jurors' decision-making processes as they forge consensus on specific verdict questions during deliberations.",
+    description: "Test your case with simulated trials. We watch how mock jurors reach their verdict, so you learn which arguments work best.",
   },
   {
     title: "Mock Arbitration Research",
-    description: "Simulated in-person or online mock arbitrations and bench trials featuring experienced arbitrators and judges to provide insights into the persuasiveness of your case themes, arguments, and presentations.",
+    description: "Practice your case with experienced arbitrators and judges. Get feedback on your themes, arguments, and presentation style.",
   },
   {
     title: "Focus Group Research",
-    description: "Facilitated in person or online discussions with mock jurors that provide insights into trial jurors' likely reactions to key issues, case themes, and arguments.",
+    description: "Hear directly from mock jurors about how they react to your key issues, themes, and arguments.",
   },
   {
     title: "Jury Selection",
-    description: "Assistance tracking and interpreting juror comments and comparative analysis of questionnaire answers, enabling data-driven recommendations to be offered in real time.",
+    description: "We track juror comments and analyze questionnaire answers. This lets us give you real-time recommendations on who to pick.",
   },
   {
     title: "Voir Dire Strategy",
-    description: "Development of voir dire questions that effectively identify dangerous jurors and provide an opportunity for them to express a bias that may support a challenge for cause.",
+    description: "We craft questions that spot risky jurors and give them a chance to reveal biases you can challenge.",
   },
   {
     title: "Juror Questionnaires",
-    description: "Artful development of supplemental juror questionnaires that identify the most dangerous jurors without exposing favorable jurors.",
+    description: "We design questionnaires that find problem jurors without tipping off the ones who favor your side.",
   },
   {
     title: "Community Attitude Survey",
-    description: "Telephone and online surveys designed to identify public impressions of the parties, assess reactions to the positions of the parties, and uncover preexisting attitudes within your likely venire.",
+    description: "Phone and online surveys that reveal public opinions about the parties and issues in your case.",
   },
   {
     title: "Witness Preparation",
-    description: "Enhances the clarity and confidence of fact and expert witness testimony at trial and depositions through communication skills training and strategic recommendations.",
+    description: "We train your witnesses to speak clearly and confidently at trial and depositions.",
   },
 ];
 
@@ -127,11 +128,18 @@ export default function ConsultingPage() {
 
       {/* Hero Section - Full Width with Background Image */}
       <section
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/consulting-hero-background.webp')",
-        }}
+        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
       >
+        {/* Background Image - LCP optimized */}
+        <Image
+          src="/consulting-hero-background.webp"
+          alt="Consulting and Attorney Services"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover object-center"
+          sizes="100vw"
+        />
         {/* Dark Gradient Overlay (on top of background image) */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
 
@@ -404,13 +412,13 @@ export default function ConsultingPage() {
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    Due to an attorney&apos;s profession, they are constantly handling multitudes of clients. Each case is unique and needs to be handled with specificity and priority, which can be difficult when the caseload is high. Cases consist of hundreds of documents that require observation, witnesses that require interviews, as well as an emphasis on case law. Since the nature of being an attorney is often accommodated with the responsibility of accomplishing demanding tasks.
+                    Attorneys handle many clients at once. Each case is unique and needs careful attention. High caseloads make it hard to review hundreds of documents, interview witnesses, and research case law.
                   </p>
                   <p
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    Many attorneys reach out to private investigators with the aim of providing support in the investigation. The investigative team at GA Tucker PI has the educational background, experience, and necessary skills that are extremely beneficial in regard to attorney support. Our team of private investigators is eager and committed to providing our clients with exceptional attorney support to ensure our clients are granted the best defense possible.
+                    That&apos;s why many attorneys turn to private investigators for support. Our team at GA Tucker PI has the education, experience, and skills to help. We are committed to helping our clients build the best defense possible.
                   </p>
                   <div className="bg-[#CEA53D]/10 border-l-4 border-[#CEA53D] p-5 rounded-r">
                     <p
@@ -473,7 +481,18 @@ export default function ConsultingPage() {
                   className="text-[#EDEDED]/85 mb-6 leading-relaxed"
                   style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                 >
-                  Attorney support means finding and reviewing necessary intelligence documents in order to prepare dossiers on the relevant subjects in the case. Private investigators have access to verified databases similar to that of law enforcement that allow them to build comprehensive background checks on relevant subjects. They are experienced in bringing crucial context to a subject&apos;s background check—reviewing items such as criminal history, work history, and address history. These facts are placed in context to the investigation, and private investigators provide recommendations based on facts found.
+                  We find and review key documents to prepare reports on people involved in your case. Our investigators use databases similar to those used by law enforcement. We build thorough background checks that cover:
+                </p>
+                <ul className="text-[#EDEDED]/85 mb-6 list-disc list-inside space-y-2" style={{ fontFamily: "'Inter', sans-serif" }}>
+                  <li>Criminal history</li>
+                  <li>Work history</li>
+                  <li>Address history</li>
+                </ul>
+                <p
+                  className="text-[#EDEDED]/85 mb-6 leading-relaxed"
+                  style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
+                >
+                  We put these facts in context and give you clear recommendations based on what we find.
                 </p>
 
               </motion.div>
@@ -539,24 +558,24 @@ export default function ConsultingPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h3
+                <h2
                   className="text-2xl md:text-3xl font-black uppercase text-[#EDEDED] mb-4"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   Trial Consulting in Southern California
-                </h3>
+                </h2>
                 <div className="bg-black/40 border-2 border-[#CEA53D]/30 rounded-lg p-6 space-y-4">
                   <p
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    GA Tucker PI can provide insight into how jurors will perceive key issues, evidence, and testimony, enabling you to select the jurors most likely to become your advocates in deliberations.
+                    We help you understand how jurors will view the key issues, evidence, and witnesses in your case. This lets you pick jurors who are most likely to support your side.
                   </p>
                   <p
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    This is accomplished by using our proven forensic behavioral science techniques that uncover the factors that motivate jurors&apos; decision-making, create and test persuasion strategies, and ultimately provide you with the strategies that will spark jurors to lean toward your client. On trial day, your case will be solid, persuasive, and powerful.
+                    We use proven behavioral science methods to learn what drives juror decisions. Then we build and test strategies that will persuade them. On trial day, your case will be strong and convincing.
                   </p>
                 </div>
               </motion.div>
@@ -568,12 +587,12 @@ export default function ConsultingPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h3
+                <h2
                   className="text-2xl md:text-3xl font-black uppercase text-[#EDEDED] mb-6"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   Reviews
-                </h3>
+                </h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {reviews.map((review, index) => (
                     <div
@@ -623,18 +642,29 @@ export default function ConsultingPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h3
+                <h2
                   className="text-2xl md:text-3xl font-black uppercase text-[#EDEDED] mb-4"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   Experienced Trial Consultants
-                </h3>
+                </h2>
                 <div className="bg-black/40 border-2 border-[#CEA53D]/30 rounded-lg p-6 mb-6">
+                  <p
+                    className="text-[#EDEDED]/85 leading-relaxed mb-4"
+                    style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
+                  >
+                    Our trial consultants help you present evidence smoothly in court. We work with you remotely or on-site to organize your trial materials:
+                  </p>
+                  <ul className="text-[#EDEDED]/85 mb-4 list-disc list-inside space-y-2" style={{ fontFamily: "'Inter', sans-serif" }}>
+                    <li>Documents and photos</li>
+                    <li>Visual aids and exhibits</li>
+                    <li>Deposition transcripts and video clips</li>
+                  </ul>
                   <p
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    Our trial consultants provide the expertise and the tools necessary to ensure a seamless presentation of evidence during trial. We will work with you remotely or on-site to organize your trial database including documents, photos, demonstratives, deposition transcripts and video clips, and advise on the best and most efficient methods for courtroom presentation.
+                    We also advise on the best ways to present your case in the courtroom.
                   </p>
                 </div>
 
@@ -681,24 +711,24 @@ export default function ConsultingPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h3
+                <h2
                   className="text-2xl md:text-3xl font-black uppercase text-[#EDEDED] mb-4"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   California Jury Consultants
-                </h3>
+                </h2>
                 <div className="bg-black/40 border-2 border-[#CEA53D]/30 rounded-lg p-6 space-y-4">
                   <p
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    At GA Tucker PI, we provide insight into how jurors will perceive key issues, evidence, and testimony, enabling you to select the jurors most likely to become your advocates in deliberations.
+                    We show you how jurors will view your evidence and testimony. This helps you pick jurors who will support your case.
                   </p>
                   <p
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    There&apos;s a reason our clients trust us. We help them validate their strategy, story, and witnesses. Using our proven years of trial experience, we uncover the factors that motivate jurors&apos; decision-making, create and test persuasion strategies, and ultimately provide you with the strategies that will spark jurors to lean toward your client. On trial day, your case will be solid, persuasive, and powerful.
+                    Our clients trust us because we deliver results. We help test your strategy, story, and witnesses. With our years of trial experience, we find what moves jurors and build winning approaches. On trial day, your case will be strong, clear, and convincing.
                   </p>
                   <div className="bg-[#CEA53D]/10 border-l-4 border-[#CEA53D] p-5 rounded-r">
                     <p
@@ -718,18 +748,18 @@ export default function ConsultingPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h3
+                <h2
                   className="text-2xl md:text-3xl font-black uppercase text-[#EDEDED] mb-4"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   Why Hire Us for Our Consultation Services?
-                </h3>
+                </h2>
                 <div className="bg-black/40 border-2 border-[#CEA53D]/30 rounded-lg p-6">
                   <p
                     className="text-[#EDEDED]/85 mb-4 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    We help you motivate jurors to see the case your way. Our jury consultants use a variety of tools to help you understand how jurors will receive and process your case. The following are our jury selection considerations:
+                    We help you win jurors to your side. Our consultants use proven tools to predict how jurors will respond to your case. Here&apos;s what we consider during jury selection:
                   </p>
                   <ul className="space-y-3">
                     {juryConsiderations.map((consideration, index) => (
@@ -753,24 +783,30 @@ export default function ConsultingPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h3
+                <h2
                   className="text-2xl md:text-3xl font-black uppercase text-[#EDEDED] mb-4"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   Serving All of Southern California
-                </h3>
+                </h2>
                 <div className="bg-black/40 border-2 border-[#CEA53D]/30 rounded-lg p-6 mb-6">
+                  <p
+                    className="text-[#EDEDED]/85 leading-relaxed mb-4"
+                    style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
+                  >
+                    Our jury consultants help shape your trial strategy. We use proven methods to understand what drives juror decisions:
+                  </p>
+                  <ul className="text-[#EDEDED]/85 mb-4 list-disc list-inside space-y-2" style={{ fontFamily: "'Inter', sans-serif" }}>
+                    <li>Behavioral science techniques</li>
+                    <li>Decades of hands-on experience</li>
+                    <li>Jury psychology research</li>
+                    <li>Group dynamics analysis</li>
+                  </ul>
                   <p
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
                   >
-                    Our jury consultants make substantive contributions to your litigation strategies by relying on a combination of rigorous forensic behavioral science methods, social science methods, decades of practical experience, communication theory, jury psychology, information processing theory, group dynamics, which examines attitudes and beliefs that motivate jurors&apos; decision-making.
-                  </p>
-                  <p
-                    className="text-[#EDEDED]/85 mt-4 leading-relaxed"
-                    style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.8" }}
-                  >
-                    Validation of your trial strategy requires jury research to maximize the chances your client will win. This research includes both qualitative and quantitative analyses that steer you toward effective trial strategies.
+                    Jury research helps validate your trial strategy. We use both qualitative and quantitative analysis to guide you toward winning approaches.
                   </p>
                 </div>
 
@@ -805,12 +841,12 @@ export default function ConsultingPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h3
+                <h2
                   className="text-2xl md:text-3xl font-black uppercase text-[#EDEDED] mb-6"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   FAQs About Consulting Services
-                </h3>
+                </h2>
                 <FAQAccordion faqs={[
                   {
                     question: 'Should I hire a private investigator for my civil case?',
@@ -850,12 +886,12 @@ export default function ConsultingPage() {
             className="text-center bg-black/80 border-2 border-[#CEA53D]/40 rounded-xl p-10"
             style={{ boxShadow: "0 0 40px rgba(206,165,61,0.2)" }}
           >
-            <h3
+            <h2
               className="text-3xl md:text-5xl font-black uppercase text-[#EDEDED] mb-3"
               style={{ fontFamily: "'Bebas Neue', sans-serif" }}
             >
               Greg Tucker – Private Investigator California
-            </h3>
+            </h2>
             <p
               className="text-[#EB0A08] text-2xl md:text-3xl mb-6"
               style={{

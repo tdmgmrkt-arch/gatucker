@@ -68,7 +68,7 @@ export default function ContactPage() {
                 width={400}
                 height={200}
                 className="w-full max-w-sm"
-                priority
+                loading="lazy"
               />
             </motion.div>
 

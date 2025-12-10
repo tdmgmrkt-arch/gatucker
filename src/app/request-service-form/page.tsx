@@ -17,6 +17,12 @@ export default function RequestServicePage() {
       {/* Form Section */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0D0D0D] via-[#1A1A1A] to-[#0D0D0D]">
         <div className="max-w-4xl mx-auto">
+          <h1
+            className="text-3xl md:text-4xl font-black uppercase text-[#EDEDED] mb-8 text-center"
+            style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+          >
+            Request a Free Consultation
+          </h1>
           <RequestServiceForm />
         </div>
       </section>

@@ -49,6 +49,8 @@ export function Footer() {
               {[
                 { name: 'About', href: '/about' },
                 { name: 'Services', href: '/services' },
+                { name: 'Contact', href: '/contact' },
+                { name: 'FAQs', href: '/faqs' },
                 { name: 'Pricing', href: '/#pricing' },
                 { name: 'Testimonials', href: '/#testimonials' },
               ].map((link) => (

@@ -1,19 +1,41 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Phone, Shield } from "lucide-react";
 
 export function HeroSection() {
+  const mobileVideoRef = useRef<HTMLVideoElement>(null);
+  const desktopVideoRef = useRef<HTMLVideoElement>(null);
+
+  // Defer video loading until after first paint for better LCP
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (mobileVideoRef.current) {
+          mobileVideoRef.current.load();
+          mobileVideoRef.current.play().catch(() => {});
+        }
+        if (desktopVideoRef.current) {
+          desktopVideoRef.current.load();
+          desktopVideoRef.current.play().catch(() => {});
+        }
+      });
+    });
+  }, []);
+
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         {/* Mobile Video */}
         <video
-          autoPlay
+          ref={mobileVideoRef}
           loop
           muted
           playsInline
+          preload="none"
+          poster="/hero-poster-mobile.webp"
           className="md:hidden absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "40% 35%", transform: "scale(1.05)" }}
         >
@@ -21,10 +43,12 @@ export function HeroSection() {
         </video>
         {/* Desktop Video */}
         <video
-          autoPlay
+          ref={desktopVideoRef}
           loop
           muted
           playsInline
+          preload="none"
+          poster="/hero-poster-desktop.webp"
           className="hidden md:block absolute inset-0 w-full h-full object-cover object-right-top"
         >
           <source src="/tuckervidhero3.webm" type="video/webm" />

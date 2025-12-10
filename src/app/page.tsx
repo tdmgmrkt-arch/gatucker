@@ -1,21 +1,42 @@
 import type { Metadata } from "next";
+import dynamic from 'next/dynamic';
 import { Navbar } from './components/navbar';
+import { HeroSection } from './components/hero-section';
 
 export const metadata: Metadata = {
   title: "G.A. Tucker PI | California Private Investigator | 27+ Years Experience",
   description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
 };
-import { HeroSection } from './components/hero-section';
-import { AboutSection } from './components/about-section';
-import { ServicesSection } from './components/services-section';
-import { ThreeStepsSection } from './components/three-steps-section';
-import { PricingSection } from './components/pricing-section';
-import { StatsSection } from './components/stats-section';
-import { TestimonialsSection } from './components/testimonials-section';
-import { AffiliationsSection } from './components/affiliations-section';
-import { CTASection } from './components/cta-section';
-import { Footer } from './components/footer';
-import { StickyCTAButton } from './components/sticky-cta-button';
+
+// Lazy load below-fold components to reduce initial bundle size and TBT
+const AboutSection = dynamic(() => import('./components/about-section').then(mod => ({ default: mod.AboutSection })), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const ServicesSection = dynamic(() => import('./components/services-section').then(mod => ({ default: mod.ServicesSection })), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const ThreeStepsSection = dynamic(() => import('./components/three-steps-section').then(mod => ({ default: mod.ThreeStepsSection })), {
+  loading: () => <div className="min-h-[300px]" />,
+});
+const PricingSection = dynamic(() => import('./components/pricing-section').then(mod => ({ default: mod.PricingSection })), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const StatsSection = dynamic(() => import('./components/stats-section').then(mod => ({ default: mod.StatsSection })), {
+  loading: () => <div className="min-h-[200px]" />,
+});
+const TestimonialsSection = dynamic(() => import('./components/testimonials-section').then(mod => ({ default: mod.TestimonialsSection })), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const AffiliationsSection = dynamic(() => import('./components/affiliations-section').then(mod => ({ default: mod.AffiliationsSection })), {
+  loading: () => <div className="min-h-[200px]" />,
+});
+const CTASection = dynamic(() => import('./components/cta-section').then(mod => ({ default: mod.CTASection })), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const Footer = dynamic(() => import('./components/footer').then(mod => ({ default: mod.Footer })), {
+  loading: () => <div className="min-h-[200px]" />,
+});
+const StickyCTAButton = dynamic(() => import('./components/sticky-cta-button').then(mod => ({ default: mod.StickyCTAButton })));
 
 export default function App() {
   return (

@@ -27,9 +27,18 @@ export default function ChildCustodyPage() {
 
       {/* Hero Section */}
       <section
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/child-custody-hero.webp')" }}
+        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
       >
+        {/* Background Image - LCP optimized */}
+        <Image
+          src="/child-custody-hero.webp"
+          alt="Child Custody Investigation Services"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover object-center"
+          sizes="100vw"
+        />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/85 to-black/90"></div>
 

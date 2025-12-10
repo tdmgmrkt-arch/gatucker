@@ -7,6 +7,7 @@ import { RequestServiceForm } from '../components/request-service-form';
 import { FAQAccordion } from '../components/faq-accordion';
 import { Phone, Mail, Shield, CheckCircle, AlertTriangle, Camera, Eye, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const relatedServices = [
   { title: 'Background Checks', href: '/background-checks' },
@@ -27,9 +28,18 @@ export default function InfidelityPage() {
 
       {/* Hero Section */}
       <section
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/infideliity-hero.webp')" }}
+        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
       >
+        {/* Background Image - LCP optimized */}
+        <Image
+          src="/infideliity-hero.webp"
+          alt="Infidelity Investigation Services"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover object-center"
+          sizes="100vw"
+        />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
 

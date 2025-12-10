@@ -6,6 +6,7 @@ import { StickyCTAButton } from '../components/sticky-cta-button';
 import { RequestServiceForm } from '../components/request-service-form';
 import { Phone, Mail, Shield, CheckCircle, Search, MapPin, Clock, Users, Database, AlertCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const relatedServices = [
   { title: 'Background Checks', href: '/background-checks' },
@@ -26,9 +27,18 @@ export default function MissingPersonsPage() {
 
       {/* Hero Section */}
       <section
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/missing-persons-hero.webp')" }}
+        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
       >
+        {/* Background Image - LCP optimized */}
+        <Image
+          src="/missing-persons-hero.webp"
+          alt="Missing Persons Investigation Services"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover object-center"
+          sizes="100vw"
+        />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
 

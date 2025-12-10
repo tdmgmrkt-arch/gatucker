@@ -1,14 +1,25 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run build:*)",
-      "Bash(npm install:*)",
-      "Bash(find:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "Bash(npx tsc:*)",
-      "Bash(done)"
+      "Bash(tar:*)",
+      "Bash(\"C:\\Users\\Owner\\Downloads\\ffmpeg-8.0.1-essentials_build\\bin\\ffmpeg.exe\" -version)",
+      "Bash(/c/Users/Owner/Downloads/ffmpeg-8.0.1-essentials_build/ffmpeg-8.0.1-essentials_build/bin/ffmpeg.exe:*)",
+      "Bash(ls:*)",
+      "Bash(/c/Users/Owner/Downloads/ffmpeg-8.0.1-essentials_build/ffmpeg-8.0.1-essentials_build/bin/ffprobe.exe:*)",
+      "Bash(FFMPEG=\"/c/Users/Owner/Downloads/ffmpeg-8.0.1-essentials_build/ffmpeg-8.0.1-essentials_build/bin/ffmpeg.exe\")",
+      "Bash($FFMPEG -y -i tuckervidhero1.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 1 -f null /dev/null)",
+      "Bash($FFMPEG -y -i tuckervidhero1.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 2 tuckervidhero1_compressed.webm)",
+      "Bash($FFMPEG -y -i tuckervidheromobile.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 1 -passlogfile ffmpeg2pass-mobile -f null /dev/null)",
+      "Bash($FFMPEG -y -i tuckervidheromobile.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 2 -passlogfile ffmpeg2pass-mobile tuckervidheromobile_compressed.webm)",
+      "Bash($FFMPEG -y -i tuckervidheromobile1.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 1 -passlogfile ffmpeg2pass-mobile1 -f null /dev/null)",
+      "Bash($FFMPEG -y -i tuckervidheromobile1.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 2 -passlogfile ffmpeg2pass-mobile1 tuckervidheromobile1_compressed.webm)",
+      "Bash($FFMPEG -y -i tuckervidhero2.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 1 -passlogfile ffmpeg2pass-hero2 -f null /dev/null)",
+      "Bash($FFMPEG -y -i tuckervidhero2.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 2 -passlogfile ffmpeg2pass-hero2 tuckervidhero2_compressed.webm)",
+      "Bash($FFMPEG -y -i tuckervidhero3.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 1 -passlogfile ffmpeg2pass-hero3 -f null /dev/null)",
+      "Bash($FFMPEG -y -i tuckervidhero3.webm -c:v libvpx-vp9 -b:v 200k -maxrate 250k -bufsize 400k -an -pass 2 -passlogfile ffmpeg2pass-hero3 tuckervidhero3_compressed.webm)",
+      "Bash($FFMPEG -y -i tuckervidheromobile.webm -c:v libvpx-vp9 -b:v 180k -crf 38 -an tuckervidheromobile_compressed.webm)",
+      "Bash($FFMPEG -y -i tuckervidheromobile1.webm -c:v libvpx-vp9 -b:v 180k -crf 38 -an tuckervidheromobile1_compressed.webm)",
+      "Bash($FFMPEG -y -i tuckervidheromobile1.webm -c:v libvpx-vp9 -b:v 150k -crf 42 -an tuckervidheromobile1_compressed.webm)"
     ],
     "deny": [],
     "ask": []

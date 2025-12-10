@@ -71,6 +71,7 @@ export function AboutSection() {
                   alt="Greg Tucker - Licensed Private Investigator"
                   width={800}
                   height={800}
+                  loading="lazy"
                   className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
@@ -124,6 +125,7 @@ export function AboutSection() {
                 alt="Don't be a sucker"
                 width={300}
                 height={150}
+                loading="lazy"
                 className="w-32 sm:w-48 md:w-64 h-auto object-contain rounded-lg"
               />
             </div>
@@ -178,8 +180,8 @@ export function AboutSection() {
             >
               G.A. Tucker P.I. Investigative Services L.L.C&apos;s investigative
               team uses both experience and education to effectively solve
-              investigative issues in an effective and professional manner. Get
-              in touch with our team to hire a private detective in Los Angeles,
+              investigative issues in an effective and professional manner.{' '}
+              <a href="/contact" className="text-[#CEA53D] hover:underline">Contact our team</a> to hire a private detective in Los Angeles,
               CA.
             </p>
 
@@ -267,6 +269,7 @@ export function AboutSection() {
                 alt="G.A. Tucker Portrait"
                 width={70}
                 height={70}
+                loading="lazy"
                 className="rounded-lg shadow-lg object-cover"
               />
             </div>
@@ -278,6 +281,7 @@ export function AboutSection() {
                 alt="G.A. Tucker PI Signature"
                 width={180}
                 height={45}
+                loading="lazy"
                 className="h-auto relative mb-0"
               />
               <p className="text-[#CEA53D] font-semibold tracking-wider uppercase text-xs md:text-sm mt-1">

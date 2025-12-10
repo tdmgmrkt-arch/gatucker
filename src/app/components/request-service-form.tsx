@@ -140,12 +140,12 @@ export function RequestServiceForm({ defaultService }: RequestServiceFormProps =
     >
       {/* Form Header */}
       <div className="mb-6">
-        <h1
+        <h2
           className="text-2xl font-black uppercase text-[#EDEDED] mb-2"
           style={{ fontFamily: "'Bebas Neue', sans-serif" }}
         >
           Request Service
-        </h1>
+        </h2>
         <p className="text-[#EDEDED]/60 text-sm">
           Need investigation services? Submit a detailed inquiry.
         </p>

@@ -99,11 +99,18 @@ export default function RiskManagementPage() {
 
       {/* Hero Section - Full Width with Background Image */}
       <section
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/risk-management-hero.webp')",
-        }}
+        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
       >
+        {/* Background Image - LCP optimized */}
+        <Image
+          src="/risk-management-hero.webp"
+          alt="Risk Management Services"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover object-center"
+          sizes="100vw"
+        />
         {/* Dark Gradient Overlay (on top of background image) */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
 

@@ -38,13 +38,17 @@ export default function HollywoodFixerPage() {
       <section
         id="hollywood-fixer"
         className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden"
-        style={{
-          backgroundImage: "url('/hollywood_fixer_background.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
       >
+        {/* Background Image - LCP optimized */}
+        <Image
+          src="/hollywood_fixer_background.webp"
+          alt="Hollywood Fixer Services Background"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover object-center"
+          sizes="100vw"
+        />
         {/* Dark Overlay for Readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80 z-0" />
         {/* Gradient Borders */}
