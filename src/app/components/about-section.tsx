@@ -76,12 +76,12 @@ export function AboutSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                   <div>
-                    <h3
+                    <p
                       className="text-white text-xl font-bold mb-1"
                       style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                     >
                       Greg Tucker
-                    </h3>
+                    </p>
                     <p
                       className="text-[#CEA53D] text-sm font-bold uppercase"
                       style={{
@@ -215,7 +215,7 @@ export function AboutSection() {
                     />
                   </div>
                   <div>
-                    <h4
+                    <h3
                       className="text-[#EDEDED] font-bold mb-2 tracking-wide group-hover:text-[#F0C674] transition-colors"
                       style={{
                         fontFamily: "'Inter', sans-serif",
@@ -224,7 +224,7 @@ export function AboutSection() {
                       }}
                     >
                       {cred.title}
-                    </h4>
+                    </h3>
                     <p
                       className="text-[#EDEDED]/80 text-sm font-light"
                       style={{

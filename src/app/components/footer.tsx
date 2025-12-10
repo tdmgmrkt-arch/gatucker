@@ -39,12 +39,12 @@ export function Footer() {
 
           {/* Column 2: Navigation Links */}
           <div className="flex flex-col items-center text-center">
-            <h4 
+            <p
               className="mb-4 text-[#EDEDED] uppercase tracking-wider text-sm font-bold"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
               Navigation
-            </h4>
+            </p>
             <ul className="space-y-3">
               {[
                 { name: 'About', href: '/about' },
@@ -69,12 +69,12 @@ export function Footer() {
           
           {/* Column 3: Contact and Newsletter */}
           <div className="flex flex-col items-center md:items-end text-center md:text-right">
-            <h4 
+            <p
               className="mb-4 text-[#EDEDED] uppercase tracking-wider text-sm font-bold"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
               Contact Us
-            </h4>
+            </p>
             <div className="space-y-3 mb-6">
               <div className="flex items-center justify-center md:justify-end gap-2">
                 <Phone className="w-4 h-4 text-[#CEA53D] flex-shrink-0" />
@@ -107,17 +107,17 @@ export function Footer() {
               </div>
               {/* Social Links - Retro square style */}
             <div className="flex gap-4 mt-auto justify-center md:justify-end">
-              <a href="https://facebook.com/161146941379347" target="_blank" rel="noopener noreferrer" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
-                <Facebook className="w-5 h-5 text-[#CEA53D]" />
+              <a href="https://facebook.com/161146941379347" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+                <Facebook className="w-5 h-5 text-[#CEA53D]" aria-hidden="true" />
               </a>
-              <a href="https://twitter.com/ginvestigative" target="_blank" rel="noopener noreferrer" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
-                <Twitter className="w-5 h-5 text-[#CEA53D]" />
+              <a href="https://twitter.com/ginvestigative" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+                <Twitter className="w-5 h-5 text-[#CEA53D]" aria-hidden="true" />
               </a>
-              <a href="https://instagram.com/gatuckerpi" target="_blank" rel="noopener noreferrer" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
-                <Instagram className="w-5 h-5 text-[#CEA53D]" />
+              <a href="https://instagram.com/gatuckerpi" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+                <Instagram className="w-5 h-5 text-[#CEA53D]" aria-hidden="true" />
               </a>
-              <a href="https://yelp.com/biz/g-a-tucker-p-i-investigative-services-murrieta" target="_blank" rel="noopener noreferrer" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
-                <svg className="w-5 h-5 text-[#CEA53D]" viewBox="0 0 24 24" fill="currentColor">
+              <a href="https://yelp.com/biz/g-a-tucker-p-i-investigative-services-murrieta" target="_blank" rel="noopener noreferrer" aria-label="View us on Yelp" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+                <svg className="w-5 h-5 text-[#CEA53D]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.985a1.072 1.072 0 0 1-.865 1.262 9.2 9.2 0 0 1-3.955-.085 1.072 1.072 0 0 1-.736-1.387l1.796-4.885c.347-.94 1.63-.89 1.937.076l1.823 5.019zm-8.847-1.837l2.83-4.358c.564-.868-.272-1.922-1.262-1.59l-5.034 1.68a1.073 1.073 0 0 1-1.324-.776 9.2 9.2 0 0 1 .243-3.97 1.072 1.072 0 0 1 1.535-.584l4.449 2.497c.866.486.79 1.756-.114 2.131l-4.557 1.89a1.073 1.073 0 0 0-.485 1.591 9.19 9.19 0 0 0 2.824 2.763c.497.313 1.14.127 1.405-.357l2.49-4.917zm.712-8.498l4.89 1.797c.94.346.89 1.63-.076 1.936l-5.018 1.823a1.072 1.072 0 0 1-1.262-.866 9.2 9.2 0 0 1 .085-3.954 1.073 1.073 0 0 1 1.38-.736z"/>
                 </svg>
               </a>

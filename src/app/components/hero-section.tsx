@@ -36,10 +36,12 @@ export function HeroSection() {
           playsInline
           preload="none"
           poster="/hero-poster-mobile.webp"
+          aria-label="Decorative background video"
           className="md:hidden absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "40% 35%", transform: "scale(1.05)" }}
         >
           <source src="/tuckervidheromobile1.webm" type="video/webm" />
+          <track kind="captions" srcLang="en" label="No captions needed - decorative background" />
         </video>
         {/* Desktop Video */}
         <video
@@ -49,9 +51,11 @@ export function HeroSection() {
           playsInline
           preload="none"
           poster="/hero-poster-desktop.webp"
+          aria-label="Decorative background video"
           className="hidden md:block absolute inset-0 w-full h-full object-cover object-right-top"
         >
           <source src="/tuckervidhero3.webm" type="video/webm" />
+          <track kind="captions" srcLang="en" label="No captions needed - decorative background" />
         </video>
         {/* Warm-toned overlay for neon aesthetic */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a0a00]/40 via-[#0D0D0D]/30 to-[#0D0D0D]" />
