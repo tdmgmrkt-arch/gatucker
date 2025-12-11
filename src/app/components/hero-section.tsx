@@ -262,7 +262,7 @@ export function HeroSection() {
             </a>
           </motion.div>
 
-          {/* Secondary CTA - Watch Introduction */}
+          {/* Secondary CTA - Watch Introduction - Clean Animated Style */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -271,31 +271,79 @@ export function HeroSection() {
           >
             <button
               onClick={() => setVideoModalOpen(true)}
-              className="group flex items-center gap-2 px-4 py-2 rounded-full border border-[#CEA53D]/40 bg-black/50 backdrop-blur-sm hover:border-[#CEA53D]/70 hover:bg-black/60 transition-all duration-300"
-              style={{
-                boxShadow: "0 0 15px rgba(206,165,61,0.12), 0 0 30px rgba(206,165,61,0.06)",
-              }}
+              className="watch-intro-btn group relative flex items-center gap-3 px-7 py-3.5 rounded-md bg-black/90 hover:bg-black transition-all duration-300"
               aria-label="Play introduction video"
             >
+              {/* Animated border */}
+              <div className="absolute inset-0 rounded-md overflow-hidden">
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background: "linear-gradient(90deg, #4169E1, #6495ED, #4169E1, #6495ED)",
+                    backgroundSize: "300% 100%",
+                    animation: "borderFlow 3s linear infinite",
+                  }}
+                />
+                <div className="absolute inset-[2px] rounded-[4px] bg-black/95" />
+              </div>
+
+              {/* Pulsing glow */}
+              <div
+                className="absolute inset-0 rounded-md pointer-events-none"
+                style={{
+                  animation: "glowPulse 2s ease-in-out infinite",
+                }}
+              />
+
               {/* Play icon */}
               <div
-                className="w-8 h-8 rounded-full flex items-center justify-center border border-[#CEA53D]/60 group-hover:border-[#CEA53D] group-hover:scale-105 transition-all duration-300"
+                className="relative w-9 h-9 rounded-full flex items-center justify-center border-2 border-[#4169E1] group-hover:scale-110 transition-transform duration-300"
                 style={{
-                  background: "linear-gradient(135deg, rgba(206,165,61,0.15) 0%, rgba(206,165,61,0.05) 100%)",
+                  background: "rgba(65,105,225,0.1)",
+                  animation: "iconPulse 2s ease-in-out infinite",
                 }}
               >
-                <Play className="w-4 h-4 text-[#CEA53D] ml-0.5" fill="currentColor" strokeWidth={0} />
+                <Play
+                  className="w-4 h-4 ml-0.5"
+                  fill="#4169E1"
+                  strokeWidth={0}
+                />
               </div>
+
               {/* Text */}
               <span
-                className="text-sm uppercase tracking-[0.15em] text-[#CEA53D]/80 group-hover:text-[#CEA53D] transition-colors duration-300"
+                className="relative text-lg uppercase tracking-[0.15em] font-bold"
                 style={{
                   fontFamily: "'Bebas Neue', sans-serif",
+                  color: "#4169E1",
                 }}
               >
                 Watch Introduction
               </span>
             </button>
+
+            <style jsx>{`
+              @keyframes borderFlow {
+                0% { background-position: 0% 50%; }
+                100% { background-position: 100% 50%; }
+              }
+              @keyframes glowPulse {
+                0%, 100% {
+                  box-shadow: 0 0 15px rgba(65,105,225,0.3), 0 0 30px rgba(65,105,225,0.15);
+                }
+                50% {
+                  box-shadow: 0 0 25px rgba(65,105,225,0.5), 0 0 50px rgba(65,105,225,0.25);
+                }
+              }
+              @keyframes iconPulse {
+                0%, 100% {
+                  box-shadow: 0 0 8px rgba(65,105,225,0.4);
+                }
+                50% {
+                  box-shadow: 0 0 15px rgba(65,105,225,0.7);
+                }
+              }
+            `}</style>
           </motion.div>
 
           {/* Scroll Indicator */}
