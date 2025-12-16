@@ -27,6 +27,20 @@ export default function RootLayout({
       >
         {children}
 
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4M0SQ0VYEM"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4M0SQ0VYEM');
+          `}
+        </Script>
+
         {/* EqualWeb ADA Accessibility Widget */}
         <Script
           id="equalweb-config"
