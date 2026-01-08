@@ -4,6 +4,20 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 
+// reCAPTCHA Enterprise type declaration
+declare global {
+  interface Window {
+    grecaptcha: {
+      enterprise: {
+        ready: (callback: () => void) => void;
+        execute: (siteKey: string, options: { action: string }) => Promise<string>;
+      };
+    };
+  }
+}
+
+const RECAPTCHA_SITE_KEY = '6LcMW0QsAAAAAH5CNz1Xt0yG2GSgfHqBpqK90N11';
+
 const serviceOptions = [
   "Background Checks",
   "Investigations",
@@ -40,6 +54,7 @@ export function RequestServiceForm({ defaultService }: RequestServiceFormProps =
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const validatePhone = (phone: string) => {
     const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
@@ -96,8 +111,37 @@ export function RequestServiceForm({ defaultService }: RequestServiceFormProps =
 
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setErrorMessage('');
 
     try {
+      // Get reCAPTCHA token
+      const token = await new Promise<string>((resolve, reject) => {
+        window.grecaptcha.enterprise.ready(async () => {
+          try {
+            const token = await window.grecaptcha.enterprise.execute(RECAPTCHA_SITE_KEY, { action: 'request_service' });
+            resolve(token);
+          } catch (err) {
+            reject(err);
+          }
+        });
+      });
+
+      // Verify reCAPTCHA token
+      const recaptchaResponse = await fetch('/api/verify-recaptcha', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token, action: 'request_service' }),
+      });
+
+      const recaptchaResult = await recaptchaResponse.json();
+
+      if (!recaptchaResult.success) {
+        setSubmitStatus('error');
+        setErrorMessage(recaptchaResult.error || 'Verification failed');
+        return;
+      }
+
+      // reCAPTCHA passed - submit to webhook
       const response = await fetch('https://services.leadconnectorhq.com/hooks/Fbaga5wnVErEPV0kaAo2/webhook-trigger/54592061-870e-42c8-9b28-a303ced456a1', {
         method: 'POST',
         headers: {
@@ -120,10 +164,12 @@ export function RequestServiceForm({ defaultService }: RequestServiceFormProps =
         });
       } else {
         setSubmitStatus('error');
+        setErrorMessage('Failed to submit request');
       }
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
+      setErrorMessage('Something went wrong');
     } finally {
       setIsSubmitting(false);
     }
@@ -376,7 +422,7 @@ export function RequestServiceForm({ defaultService }: RequestServiceFormProps =
         >
           <AlertCircle className="w-4 h-4 text-[#EB0A08]" />
           <p className="text-[#EB0A08] font-semibold text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
-            Something went wrong. Please try again or call us directly.
+            {errorMessage || 'Something went wrong. Please try again or call us directly.'}
           </p>
         </motion.div>
       )}

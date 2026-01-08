@@ -9,6 +9,20 @@ import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
 import { RequestServiceForm } from '../components/request-service-form';
 
+// reCAPTCHA Enterprise type declaration
+declare global {
+  interface Window {
+    grecaptcha: {
+      enterprise: {
+        ready: (callback: () => void) => void;
+        execute: (siteKey: string, options: { action: string }) => Promise<string>;
+      };
+    };
+  }
+}
+
+const RECAPTCHA_SITE_KEY = '6LcMW0QsAAAAAH5CNz1Xt0yG2GSgfHqBpqK90N11';
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -18,13 +32,43 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setErrorMessage('');
 
     try {
+      // Get reCAPTCHA token
+      const token = await new Promise<string>((resolve, reject) => {
+        window.grecaptcha.enterprise.ready(async () => {
+          try {
+            const token = await window.grecaptcha.enterprise.execute(RECAPTCHA_SITE_KEY, { action: 'contact_form' });
+            resolve(token);
+          } catch (err) {
+            reject(err);
+          }
+        });
+      });
+
+      // Verify reCAPTCHA token
+      const recaptchaResponse = await fetch('/api/verify-recaptcha', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token, action: 'contact_form' }),
+      });
+
+      const recaptchaResult = await recaptchaResponse.json();
+
+      if (!recaptchaResult.success) {
+        setSubmitStatus('error');
+        setErrorMessage(recaptchaResult.error || 'Verification failed');
+        return;
+      }
+
+      // reCAPTCHA passed - submit to webhook
       const response = await fetch('https://services.leadconnectorhq.com/hooks/Fbaga5wnVErEPV0kaAo2/webhook-trigger/7We98XydU51JDbMt3Y7Z', {
         method: 'POST',
         headers: {
@@ -38,10 +82,12 @@ export default function ContactPage() {
         setFormData({ name: '', phone: '', email: '', message: '' });
       } else {
         setSubmitStatus('error');
+        setErrorMessage('Failed to send message');
       }
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
+      setErrorMessage('Something went wrong');
     } finally {
       setIsSubmitting(false);
     }
@@ -298,7 +344,7 @@ export default function ContactPage() {
                 {submitStatus === 'error' && (
                   <div className="p-3 border border-[#EB0A08] rounded-lg bg-[#EB0A08]/10 flex items-center gap-2">
                     <AlertCircle className="w-4 h-4 text-[#EB0A08]" />
-                    <p className="text-[#EB0A08] text-sm">Something went wrong.</p>
+                    <p className="text-[#EB0A08] text-sm">{errorMessage || 'Something went wrong.'}</p>
                   </div>
                 )}
               </form>

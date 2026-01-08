@@ -30,6 +30,12 @@ export default function RootLayout({
       >
         {children}
 
+        {/* reCAPTCHA Enterprise */}
+        <Script
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LcMW0QsAAAAAH5CNz1Xt0yG2GSgfHqBpqK90N11"
+          strategy="afterInteractive"
+        />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-4M0SQ0VYEM"
