@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const RECAPTCHA_SITE_KEY = '6LcMW0QsAAAAAH5CNz1Xt0yG2GSgfHqBpqK90N11';
+const RECAPTCHA_SITE_KEY = '6LdK8EssAAAAAB-R5wUOej0apHMJrN4VhixbkJke';
 
 interface RecaptchaAssessmentResponse {
   tokenProperties?: {

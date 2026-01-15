@@ -32,7 +32,7 @@ export default function RootLayout({
 
         {/* reCAPTCHA Enterprise */}
         <Script
-          src="https://www.google.com/recaptcha/enterprise.js?render=6LcMW0QsAAAAAH5CNz1Xt0yG2GSgfHqBpqK90N11"
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LdK8EssAAAAAB-R5wUOej0apHMJrN4VhixbkJke"
           strategy="afterInteractive"
         />
 
