@@ -1,6 +1,119 @@
 import { Dancing_Script, Space_Mono } from "next/font/google";
 import Script from "next/script";
+import type { Metadata } from "next";
 import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://gatuckerpi.com"),
+  title: {
+    default: "G.A. Tucker PI | California Private Investigator | 27+ Years Experience",
+    template: "%s | G.A. Tucker PI"
+  },
+  description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://gatuckerpi.com",
+    siteName: "G.A. Tucker PI",
+    title: "G.A. Tucker PI | California Private Investigator",
+    description: "Licensed California private investigator with 27+ years experience. Background checks, surveillance, infidelity investigations, and more. CA License #PI188351.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "G.A. Tucker PI - California Private Investigator"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "G.A. Tucker PI | California Private Investigator",
+    description: "Licensed California PI with 27+ years experience. Background checks, surveillance, infidelity investigations. CA License #PI188351.",
+    images: ["/og-image.png"]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  }
+};
+
+// Organization Schema
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://gatuckerpi.com/#organization",
+  name: "G.A. Tucker PI",
+  alternateName: "G.A. Tucker Private Investigations",
+  url: "https://gatuckerpi.com",
+  logo: "https://gatuckerpi.com/logo.png",
+  image: "https://gatuckerpi.com/og-image.png",
+  description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
+  telephone: "+1-909-964-8976",
+  email: "info@gatuckerpi.com",
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "CA",
+    addressCountry: "US"
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    addressCountry: "US"
+  },
+  areaServed: {
+    "@type": "State",
+    name: "California"
+  },
+  priceRange: "$$",
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "00:00",
+    closes: "23:59"
+  },
+  sameAs: [
+    "https://www.facebook.com/gatuckerpi",
+    "https://twitter.com/gatuckerpi",
+    "https://www.instagram.com/gatuckerpi",
+    "https://www.yelp.com/biz/ga-tucker-pi"
+  ],
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "Professional License",
+    name: "California Private Investigator License",
+    recognizedBy: {
+      "@type": "Organization",
+      name: "State of California"
+    },
+    validIn: {
+      "@type": "State",
+      name: "California"
+    }
+  },
+  founder: {
+    "@type": "Person",
+    name: "Greg Tucker",
+    jobTitle: "Private Investigator"
+  },
+  knowsAbout: [
+    "Private Investigation",
+    "Background Checks",
+    "Surveillance",
+    "Infidelity Investigations",
+    "Missing Persons",
+    "Child Custody Investigations",
+    "Risk Management",
+    "Criminal Profiling",
+    "Trial Consulting"
+  ]
+};
 
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
@@ -23,7 +136,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZ38HCWF');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
         <meta name="google-site-verification" content="pzONJWnaDXpKm02ynxCvlOeza4l6lrt2tE4YD4cOEEY" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </head>
       <body
         className={`${dancingScript.variable} ${spaceMono.variable} antialiased`}
@@ -115,6 +243,22 @@ export default function RootLayout({
           crossOrigin="anonymous"
           data-cfasync="true"
         />
+
+        {/* Google Ads Conversion Tracking */}
+        <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`
+            document.addEventListener('click', function(e) {
+              if (e.target.closest('button') && e.target.closest('button').innerText.includes("REQUEST SERVICE")) {
+                setTimeout(function () {
+                  var textToTrack = "Request submitted successfully! We'll contact you soon.";
+                  if (document.body.textContent.includes(textToTrack)) {
+                    gtag('event', 'conversion', {'send_to': 'AW-396350967/F3CuCNuwrfEaEPer_7wB'});
+                  }
+                }, 3000);
+              }
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
