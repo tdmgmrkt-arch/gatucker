@@ -134,7 +134,15 @@ export function Footer() {
             className="text-[#EDEDED]/50 text-sm mb-4 md:mb-0 font-light"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Copyright © 2025 GA Tucker, Private Investigator | Powered by TD Marketing Group
+            Copyright © 2025 GA Tucker, Private Investigator | Powered by{' '}
+            <a
+              href="https://tdmarketinggroup.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#CEA53D] transition-colors"
+            >
+              TD Marketing Group
+            </a>
           </p>
         </div>
       </div>
