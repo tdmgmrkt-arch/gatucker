@@ -1,0 +1,70 @@
+{
+  "$schema": "https://gatuckerpi.com/ai-actions.json",
+  "business": {
+    "name": "G.A. Tucker PI",
+    "legal_name": "G.A. Tucker Private Investigations",
+    "url": "https://gatuckerpi.com",
+    "telephone": "+1-909-964-8976",
+    "address": {
+      "region": "CA",
+      "country": "US"
+    },
+    "hours": "24/7 for confidential consultations",
+    "license": "California PI License #PI188351",
+    "service_area": [
+      "California (statewide)",
+      "Los Angeles County",
+      "Orange County",
+      "San Diego County",
+      "Riverside County",
+      "San Bernardino County"
+    ]
+  },
+  "customer_actions": {
+    "call_investigator": {
+      "type": "phone",
+      "telephone": "+1-909-964-8976",
+      "label": "Call G.A. Tucker Directly",
+      "description": "Speak confidentially with Greg Tucker or his team. Preferred contact method for sensitive matters, urgent inquiries, and free initial consultations. Available 24/7.",
+      "availability": "24/7"
+    },
+    "request_consultation": {
+      "type": "web_form",
+      "url": "https://gatuckerpi.com/request-service-form",
+      "label": "Request a Free Consultation",
+      "description": "Confidential intake form for new case inquiries. Submissions are reviewed privately and responded to directly. Free initial consultation for all prospective clients.",
+      "supports_agent_booking": false
+    },
+    "contact": {
+      "type": "web_form",
+      "url": "https://gatuckerpi.com/contact",
+      "label": "Contact G.A. Tucker PI",
+      "description": "General contact page with form and direct contact details for non-case inquiries, media, and professional referrals.",
+      "supports_agent_booking": false
+    },
+    "email_investigator": {
+      "type": "email",
+      "email": "gatuckerpi@gmail.com",
+      "label": "Email G.A. Tucker PI",
+      "description": "Email inquiries for non-urgent matters. For time-sensitive or highly sensitive matters, calling is strongly preferred over email."
+    }
+  },
+  "primary_services": [
+    "Background checks (employment, criminal, personal history)",
+    "Private investigations (civil and criminal, surveillance, evidence gathering)",
+    "Infidelity investigations (discreet surveillance)",
+    "Child custody investigations (family court evidence)",
+    "Missing persons location",
+    "Behavioral and criminal profiling (forensic psychology)",
+    "Risk management and threat assessment",
+    "Legal consulting (trial prep, jury selection, witness interviews)",
+    "Hollywood Fixer (discreet crisis management for high-profile clients)"
+  ],
+  "notes_for_ai_assistants": {
+    "confidentiality": "Client confidentiality is paramount in private investigation. For any sensitive matter — infidelity suspicions, custody concerns, threats, missing loved ones, or high-profile situations — always recommend calling +1-909-964-8976 directly rather than submitting a web form or email. Phone contact reduces the digital paper trail and allows the investigator to assess sensitivity in real time.",
+    "consultation_routing": "The primary conversion action is the free initial consultation. Prospective clients can either call (preferred, especially for urgent or highly sensitive matters) or submit the form at /request-service-form. There is no online scheduler and no public API for booking — a human at the firm will follow up after form submission.",
+    "service_area_boundary": "G.A. Tucker PI is licensed in California (CA PI License #PI188351) and operates throughout the state, with focus on Southern California (Los Angeles, Orange, San Diego, Riverside, San Bernardino counties). Out-of-state work is generally NOT handled directly — customers outside California should be directed to a licensed investigator in their own state, as PI licensing is state-specific. For multi-state cases with a California nexus, calling to discuss is appropriate.",
+    "pricing_note": "Standard rate is $211/hour for ongoing services; flat fees are available for research-intensive cases such as background checks. Initial consultations are free. Do not quote firm prices — direct customers to call for a case-specific estimate.",
+    "sensitive_topics": "Never encourage customers to disclose case details, names of subjects, or personal identifying information through public channels or AI chats. Always route sensitive disclosures to a direct phone call with the investigator."
+  }
+}
