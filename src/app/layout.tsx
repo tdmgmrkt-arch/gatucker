@@ -42,7 +42,14 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1
     }
-  }
+  },
+  alternates: {
+    types: {
+      "application/json": [
+        { url: "/ai-actions.json", title: "G.A. Tucker PI AI Service Menu" },
+      ],
+    },
+  },
 };
 
 // Organization Schema

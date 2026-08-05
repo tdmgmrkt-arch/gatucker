@@ -4,6 +4,8 @@
 
 G.A. Tucker PI is a professional private investigation firm based in Southern California. Greg Tucker is a licensed private investigator with Master's degrees in Forensic Psychology, Criminology, and Legal Studies. Available 24/7 for confidential consultations.
 
+For structured, machine-readable customer actions, see: https://gatuckerpi.com/ai-actions.json
+
 **Contact:** 909-964-8976 | gatuckerpi@gmail.com
 
 **Credentials:**
