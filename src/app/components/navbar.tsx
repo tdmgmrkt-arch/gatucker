@@ -10,21 +10,22 @@ import {
   ChevronDown,
   Phone,
   FileText,
-  Users, 
+  Users,
   MessageSquare,
   ArrowRight,
-  BookOpen, 
-  Search, 
-  Shield, 
-  Fingerprint, 
-  Brain, 
-  Target, 
-  UserCheck, 
-  Heart, 
-  Award, 
-  Mail, 
-  MapPin, 
-  Star, 
+  BookOpen,
+  Search,
+  Shield,
+  Fingerprint,
+  Brain,
+  Target,
+  UserCheck,
+  Heart,
+  Award,
+  Mail,
+  MapPin,
+  Star,
+  Navigation,
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -52,8 +53,18 @@ const contact = [
   { title: 'Request Service Form', description: 'Submit a detailed inquiry for expert assessment.', href: '/request-service-form', icon: FileText },
 ];
 
+const locations = [
+  { title: 'All Service Areas', description: 'View every city and county we serve.', href: '/locations', icon: Navigation },
+  { title: 'Riverside County', description: 'Murrieta, Temecula, Riverside, and surrounding areas.', href: '/locations/riverside-county', icon: MapPin },
+  { title: 'Los Angeles County', description: 'Long Beach, Pasadena, and greater LA.', href: '/locations/los-angeles-county', icon: MapPin },
+  { title: 'San Bernardino County', description: 'Rancho Cucamonga and the Inland Empire.', href: '/locations/san-bernardino-county', icon: MapPin },
+  { title: 'San Francisco', description: 'Bay Area investigations — statewide CA license.', href: '/locations/san-francisco', icon: MapPin },
+  { title: 'Las Vegas', description: 'Cross-border matters with California connections.', href: '/locations/las-vegas', icon: MapPin },
+];
+
 const navItems = [
     { name: 'Investigative Services', dropdown: services, panel: 'services' },
+    { name: 'Locations', dropdown: locations, panel: 'locations' },
     { name: 'About', dropdown: about, panel: 'about' },
     { name: 'Contact', dropdown: contact, panel: 'contact' },
 ];
@@ -279,6 +290,58 @@ export function Navbar() {
                                     }}
                                 >
                                     View All Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </>
+            )}
+
+            {/* Locations Mega Panel */}
+            {activeDropdown === 'Locations' && (
+                <>
+                    <div className="col-span-8 grid grid-cols-2 gap-6">
+                        {locations.map((item) => (
+                            <a
+                                key={item.title}
+                                href={item.href}
+                                className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
+                            >
+                                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
+                                <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-[#CEA53D]/10 to-[#FFA500]/5 flex items-center justify-center flex-shrink-0 mr-5 group-hover:from-[#CEA53D]/20 group-hover:to-[#FFA500]/10 transition-all duration-300 group-hover:scale-110 shadow-lg">
+                                    <item.icon className="w-6 h-6 text-[#CEA53D] group-hover:text-[#CEA53D] transition-colors" strokeWidth={2.5}/>
+                                </div>
+                                <div className="relative">
+                                    <h4 className="text-[#EDEDED] text-lg font-bold mb-1.5 group-hover:text-[#CEA53D] transition-colors" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                                        {item.title}
+                                    </h4>
+                                    <p className="text-[#EDEDED]/60 text-sm font-light leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                                        {item.description}
+                                    </p>
+                                </div>
+                                <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1" />
+                            </a>
+                        ))}
+                    </div>
+                    <div className="col-span-4 relative overflow-hidden rounded-2xl">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A]/60 to-[#0D0D0D]/60 backdrop-blur-sm" />
+                        <div className="absolute inset-0 border border-[#CEA53D]/30 rounded-2xl" />
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-[#CEA53D]/10 rounded-full blur-3xl" />
+                        <div className="relative p-10 flex flex-col items-center justify-center text-center h-full">
+                            <Navigation className="w-12 h-12 text-[#CEA53D] mb-6" strokeWidth={1.5} />
+                            <p className="text-[#EDEDED]/70 text-sm mb-8 max-w-xs leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                                Serving Southern California, the Bay Area, and clients with cross-border matters from Las Vegas. CA License #PI188351.
+                            </p>
+                            <a href="/locations" className="group relative">
+                                <button
+                                    className="relative bg-black border-3 border-[#CEA53D] text-[#CEA53D] px-8 py-3 font-black uppercase tracking-wider text-xs transition-all duration-300 hover:bg-[#CEA53D] hover:text-black hover:scale-105 flex items-center gap-2"
+                                    style={{
+                                        fontFamily: "'Bebas Neue', sans-serif",
+                                        boxShadow: '0 0 20px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.15)',
+                                        textShadow: '0 0 8px rgba(255, 215, 0, 0.7)'
+                                    }}
+                                >
+                                    All Locations <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
                             </a>
                         </div>
