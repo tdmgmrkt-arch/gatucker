@@ -207,6 +207,7 @@ const pageProps: LocationPageProps = {
   ],
   schema,
   lastUpdated: "August 2026",
+  heroImage: "/san-francisco-hero.webp",
 };
 
 // ---------------------------------------------------------------------------

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Phone, Mail, Shield, MapPin, ChevronRight, ArrowRight } from "lucide-react";
 import { Navbar } from "./navbar";
@@ -60,6 +61,10 @@ export interface LocationPageProps {
   schema: Record<string, unknown>;
   /** Last-updated display string, e.g. "August 2026" */
   lastUpdated?: string;
+  /** Hero background image path (from /public), e.g. "/riverside-county-hero.webp" */
+  heroImage?: string;
+  /** Alt text for hero image; falls back to a sensible default if omitted */
+  heroImageAlt?: string;
 }
 
 // ---------------------------------------------------------------------------
@@ -223,6 +228,8 @@ export function LocationPage({
   bodyContent,
   schema: _schema, // consumed by parent page.tsx for JSON-LD injection
   lastUpdated,
+  heroImage,
+  heroImageAlt,
 }: LocationPageProps) {
   const isContentReady = bodyContent.length > 0;
 
@@ -235,6 +242,21 @@ export function LocationPage({
       {/* Hero Section                                                        */}
       {/* ------------------------------------------------------------------ */}
       <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black via-[#0D0D0D] to-[#0D0D0D]">
+        {heroImage && (
+          <>
+            <Image
+              src={heroImage}
+              alt={heroImageAlt || `${region} — GA Tucker PI service area`}
+              fill
+              priority
+              fetchPriority="high"
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/75 to-black/95" />
+          </>
+        )}
+
         {/* Gold gradient borders */}
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D] to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D] to-transparent" />

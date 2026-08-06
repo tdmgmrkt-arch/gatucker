@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, ChevronRight, ArrowRight } from "lucide-react";
 import { Navbar } from "../components/navbar";
@@ -72,6 +73,16 @@ export function LocationsHub() {
 
       {/* Hero */}
       <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <Image
+          src="/locations-hero.webp"
+          alt="Southern California service area — GA Tucker PI"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/75 to-black/95" />
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D] to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#CEA53D] to-transparent" />
 

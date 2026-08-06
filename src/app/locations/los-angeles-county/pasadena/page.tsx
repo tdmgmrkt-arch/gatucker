@@ -208,6 +208,7 @@ const pageProps: LocationPageProps = {
   ],
   schema,
   lastUpdated: "August 2026",
+  heroImage: "/los-angeles-county-pasadena-hero.webp",
 };
 
 // ---------------------------------------------------------------------------

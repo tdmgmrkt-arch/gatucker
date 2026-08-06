@@ -259,6 +259,7 @@ const pageProps: LocationPageProps = {
   ],
   schema,
   lastUpdated: "August 2026",
+  heroImage: "/las-vegas-hero.webp",
 };
 
 // ---------------------------------------------------------------------------

@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Source PNGs for hero images (shipped as .webp)
+/public/*-hero.png
