@@ -1,5 +1,6 @@
 "use client";
 
+import { breadcrumbSchema } from '@/lib/schema';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CheckCircle2, Shield, Users, FileCheck, Phone, Search, Eye, UserCheck, Mail, AlertTriangle, FileText, Lock } from "lucide-react";
@@ -95,6 +96,14 @@ const reviews = [
 export default function RiskManagementPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'Risk Management', path: '/risk-management' }])
+          ),
+        }}
+      />
       <Navbar />
 
       {/* Hero Section - Full Width with Background Image */}

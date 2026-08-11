@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 // Organization Schema
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   "@id": "https://gatuckerpi.com/#organization",
   name: "G.A. Tucker PI",
   alternateName: "G.A. Tucker Private Investigations",
@@ -164,6 +164,26 @@ export default async function RootLayout({
 
   const schema = { ...organizationSchema, aggregateRating };
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://gatuckerpi.com/#website",
+    url: "https://gatuckerpi.com",
+    name: "G.A. Tucker PI",
+    description:
+      "California licensed private investigator (CA PI #188351) — background checks, surveillance, infidelity, child custody, missing persons.",
+    publisher: { "@id": "https://gatuckerpi.com/#organization" },
+    inLanguage: "en-US",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://gatuckerpi.com/blog?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <html lang="en">
       <head>
@@ -182,6 +202,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body

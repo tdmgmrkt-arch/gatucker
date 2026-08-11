@@ -57,10 +57,10 @@ const services = [
     href: '/missing-persons',
   },
   {
-    title: 'Hollywood Fixer',
-    description: 'Elite discretionary services for high-profile clients, celebrities, and Fortune 500 companies requiring absolute confidentiality.',
+    title: 'High-Profile Clients',
+    description: 'Discreet investigations, background checks, and risk management for celebrities, executives, and Fortune 500 clients — court-admissible and absolutely confidential.',
     image: '/hollywood_fixer_background.webp',
-    href: '/hollywood-fixer',
+    href: '/high-profile-investigations',
   },
 ];
 

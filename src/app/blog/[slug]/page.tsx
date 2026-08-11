@@ -6,6 +6,7 @@ import { Navbar } from '../../components/navbar';
 import { Footer } from '../../components/footer';
 import { StickyCTAButton } from '../../components/sticky-cta-button';
 import { getAllSlugs, getPostBySlug, getSortedPosts, type ContentBlock } from '../posts';
+import { breadcrumbSchema } from '@/lib/schema';
 import { Phone, Mail, Calendar, Clock, Tag, ExternalLink, ArrowLeft, ChevronRight } from 'lucide-react';
 
 export async function generateStaticParams() {
@@ -223,11 +224,13 @@ export default async function BlogPostPage({ params }: Params) {
     dateModified: post.date,
     author: {
       '@type': 'Person',
+      '@id': 'https://gatuckerpi.com/about#greg-tucker',
       name: 'Greg A. Tucker',
-      url: 'https://gatuckerpi.com/about',
+      sameAs: 'https://gatuckerpi.com/about',
     },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://gatuckerpi.com/#organization',
       name: 'G.A. Tucker PI',
       logo: {
         '@type': 'ImageObject',
@@ -241,11 +244,20 @@ export default async function BlogPostPage({ params }: Params) {
     keywords: post.keywords.join(', '),
   };
 
+  const breadcrumb = breadcrumbSchema([
+    { name: 'Blog', path: '/blog' },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ]);
+
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
       <Navbar />
 

@@ -71,7 +71,7 @@ export const posts: BlogPost[] = [
         items: [
           'Domestic cases — infidelity, custody, and family disputes require investigators who blend surveillance skill with courtroom-ready documentation. See our [infidelity investigations](/infidelity) and [child custody](/child-custody) pages for more.',
           'Corporate and legal — background checks, asset searches, and executive due diligence require different tools entirely. Our [consulting](/consulting) and [background checks](/background-checks) services cover these needs.',
-          'High-profile and sensitive — celebrities, executives, and public figures need a PI who understands discretion beyond a signed NDA. That is exactly what the [Hollywood Fixer](/hollywood-fixer) role was built for.',
+          'High-profile and sensitive — celebrities, executives, and public figures need a PI who understands discretion beyond a signed NDA. See our [discreet investigations for high-profile clients](/high-profile-investigations).',
         ],
       },
       { type: 'h2', text: 'Step 3: Understand What Private Investigation Actually Costs' },
@@ -765,7 +765,7 @@ export const posts: BlogPost[] = [
       { type: 'h3', text: 'Response Planning Where Necessary' },
       {
         type: 'p',
-        text: 'When de-escalation is not the path, a coordinated response follows: cease-and-desist, restraining order, criminal referral, or in serious cases a full civil action. The investigator provides the underlying documentation the legal steps depend on. See our [Hollywood Fixer](/hollywood-fixer) service page for the full scope.',
+        text: 'When de-escalation is not the path, a coordinated response follows: cease-and-desist, restraining order, criminal referral, or in serious cases a full civil action. The investigator provides the underlying documentation the legal steps depend on. See our [high-profile client investigations](/high-profile-investigations) page for the full scope.',
       },
       { type: 'h2', text: 'What This Is Not' },
       {
@@ -784,7 +784,7 @@ export const posts: BlogPost[] = [
       },
     ],
     internalLinks: [
-      { href: '/hollywood-fixer', label: 'Hollywood Fixer' },
+      { href: '/high-profile-investigations', label: 'High-Profile Client Investigations' },
       { href: '/risk-management', label: 'Risk Management' },
       { href: '/consulting', label: 'Consulting' },
     ],

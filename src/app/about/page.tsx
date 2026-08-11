@@ -1,5 +1,6 @@
 "use client";
 
+import { breadcrumbSchema } from '@/lib/schema';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Award, CheckCircle2, FileCheck, Shield, BookOpen, UserCheck, Users, Briefcase } from "lucide-react"; 
@@ -92,6 +93,14 @@ const affiliations = [
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'About Greg A. Tucker', path: '/about' }])
+          ),
+        }}
+      />
       <Navbar />
 
       <section

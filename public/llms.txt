@@ -1,46 +1,63 @@
 # G.A. Tucker PI
 
-> Licensed California Private Investigator with 27+ years of experience. Professional investigation services including background checks, surveillance, infidelity investigations, missing persons, and legal consulting. CA License #PI188351.
+> California licensed private investigator (License #PI188351) based in Murrieta, CA. Greg A. Tucker offers 27+ years of investigative experience across background checks, infidelity investigations, child custody documentation, missing persons, criminal profiling, and legal expert-witness support.
 
-G.A. Tucker PI is a professional private investigation firm based in Southern California. Greg Tucker is a licensed private investigator with Master's degrees in Forensic Psychology, Criminology, and Legal Studies. Available 24/7 for confidential consultations.
+## Business
 
-For structured, machine-readable customer actions, see: https://gatuckerpi.com/ai-actions.json
+- Owner & Lead Investigator: Greg A. Tucker
+- California PI License: PI188351 (issued by California Bureau of Security and Investigative Services)
+- Base of operations: Murrieta, California
+- Service area: Riverside County, Los Angeles County, San Bernardino County, and California statewide
+- Phone (preferred contact): 909-964-8976
+- Email: info@gatuckerpi.com
+- Website: https://gatuckerpi.com
+- Free confidential consultations
+- Google rating: 4.9 out of 5 stars from 67+ verified reviews
 
-**Contact:** 909-964-8976 | gatuckerpi@gmail.com
+## Primary services
 
-**Credentials:**
-- California PI License #PI188351
-- M.S. Forensic Psychology - Alliant International University
-- M.S. Legal Studies - Washington University School of Law
-- M.S. Criminology - Kaplan University
-- Member: California Association of Licensed Investigators
-- Member: World Association of Detectives
+- [Background checks](https://gatuckerpi.com/background-checks): FCRA + ICRAA compliant, licensed investigative database access, 1–2 business day turnaround
+- [Infidelity investigations](https://gatuckerpi.com/infidelity): court-admissible surveillance, timestamped evidence, complete discretion
+- [Child custody investigations](https://gatuckerpi.com/child-custody): family court evidence for California courts including Southwest Justice Center
+- [Missing persons](https://gatuckerpi.com/missing-persons): skip traces, address confirmation, national database searches
+- [Criminal profiling](https://gatuckerpi.com/profiling): subject profiling and behavioral analysis for legal matters
+- [Discreet investigations for high-profile clients](https://gatuckerpi.com/high-profile-investigations): confidential PI work for celebrities, executives, and HNW clients
+- [Risk management & pre-employment screening](https://gatuckerpi.com/risk-management)
+- [PI consulting & expert witness](https://gatuckerpi.com/consulting)
 
-**Service Area:** All of California, focusing on Southern California including Los Angeles, Orange County, San Diego, Riverside, and San Bernardino counties.
+## Credentials
 
-**Pricing:** $211/hour for ongoing services. Flat fees available for research-intensive cases. Free initial consultation.
+- California Bureau of Security and Investigative Services License #PI188351
+- 27+ years experience — US Army veteran, former TDCJ Lieutenant, former FDOC Senior Parole Officer
+- MS Forensic Psychology, MS Criminology, MS Legal Studies
 
-## Docs
+## Locations covered
 
-- [About Greg Tucker](https://gatuckerpi.com/about): Meet the licensed California PI with 27+ years experience and advanced degrees in forensic psychology and criminology
-- [All Services](https://gatuckerpi.com/services): Overview of all private investigation services offered
-- [FAQs](https://gatuckerpi.com/faqs): Frequently asked questions about private investigation services, licensing, confidentiality, and pricing
+- [Service area overview](https://gatuckerpi.com/locations)
+- [Murrieta, CA](https://gatuckerpi.com/locations/riverside-county/murrieta)
+- [Temecula, CA](https://gatuckerpi.com/locations/riverside-county/temecula)
+- [Riverside, CA](https://gatuckerpi.com/locations/riverside-county/riverside)
+- [Riverside County](https://gatuckerpi.com/locations/riverside-county)
+- [Long Beach, CA](https://gatuckerpi.com/locations/los-angeles-county/long-beach)
+- [Pasadena, CA](https://gatuckerpi.com/locations/los-angeles-county/pasadena)
+- [Los Angeles County](https://gatuckerpi.com/locations/los-angeles-county)
+- [Rancho Cucamonga, CA](https://gatuckerpi.com/locations/san-bernardino-county/rancho-cucamonga)
+- [San Bernardino County](https://gatuckerpi.com/locations/san-bernardino-county)
+- [San Francisco, CA](https://gatuckerpi.com/locations/san-francisco)
+- [Las Vegas, NV — California-licensed PI serving Vegas-origin matters](https://gatuckerpi.com/locations/las-vegas)
 
-## Services
+## Reviews & reputation
 
-- [Background Checks](https://gatuckerpi.com/background-checks): Comprehensive background investigations including employment verification, criminal records, and personal history research
-- [Private Investigations](https://gatuckerpi.com/investigations): Full-service investigation for civil and criminal cases including surveillance and evidence gathering
-- [Consulting Services](https://gatuckerpi.com/consulting): Trial preparation, jury selection, witness interviews, and case analysis for attorneys
-- [Risk Management](https://gatuckerpi.com/risk-management): Threat assessment and mitigation strategies for businesses and individuals
-- [Infidelity Investigations](https://gatuckerpi.com/infidelity): Discreet surveillance and evidence gathering for suspected cheating spouses
-- [Child Custody](https://gatuckerpi.com/child-custody): Evidence gathering for family court proceedings to protect children's interests
-- [Missing Persons](https://gatuckerpi.com/missing-persons): Locate lost family members, runaways, or individuals using advanced techniques
-- [Behavioral Profiling](https://gatuckerpi.com/profiling): Forensic psychology services for legal strategies and criminal analysis
-- [Hollywood Fixer](https://gatuckerpi.com/hollywood-fixer): Discreet crisis management for celebrities, executives, and Fortune 500 companies
+- [Verified Google reviews](https://gatuckerpi.com/reviews) — 4.9★ / 67+ reviews
+- Named in Yelp's 2026 "Top 10 Private Investigators in Murrieta"
 
-## Optional
+## Contact
 
-- [Homepage](https://gatuckerpi.com/)
-- [Contact](https://gatuckerpi.com/contact): Available 24/7 for confidential consultations
-- [Request Consultation](https://gatuckerpi.com/request-service-form): Submit inquiry for free consultation
-- [Blog](https://gatuckerpi.com/blog): Articles and insights on private investigation
+- [Contact page](https://gatuckerpi.com/contact)
+- [Request service form](https://gatuckerpi.com/request-service-form)
+- Phone: 909-964-8976
+- Email: info@gatuckerpi.com
+
+## Structured actions
+
+See [ai-actions.json](https://gatuckerpi.com/ai-actions.json) for machine-readable customer actions.

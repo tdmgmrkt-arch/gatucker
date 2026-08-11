@@ -1,5 +1,7 @@
 "use client";
 
+import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CheckCircle2, Shield, Users, FileCheck, Phone, Search, Eye, UserCheck, Mail, MapPin } from "lucide-react";
@@ -78,9 +80,38 @@ const reviews = [
   },
 ];
 
+const backgroundChecksFaqs = [
+  {
+    question: 'How long do background checks take?',
+    answer: 'Background checks usually take one to two business days to pull. We begin by gathering information through our comprehensive check and then have our technical analyst dig further into the content to establish connections.',
+  },
+  {
+    question: 'What are the charges of this investigation?',
+    answer: 'Prices vary based on the details and conditions of each particular case. Contact us for a consultation.',
+  },
+  {
+    question: 'What are the benefits of choosing GA Tucker PI?',
+    answer: "We work closely with all of our clients to provide the best service possible. We manage our client's hours and prioritize efficiency.",
+  },
+];
+
 export default function BackgroundChecksPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'Background Checks', path: '/background-checks' }])
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqPageSchema(backgroundChecksFaqs)),
+        }}
+      />
       <Navbar />
 
       {/* Hero Section - Full Width */}
@@ -864,20 +895,7 @@ export default function BackgroundChecksPage() {
                 >
                   Frequently Asked Questions
                 </h3>
-                <FAQAccordion faqs={[
-                  {
-                    question: 'How long do background checks take?',
-                    answer: 'Background checks usually take one to two business days to pull. We begin by gathering information through our comprehensive check and then have our technical analyst dig further into the content to establish connections.'
-                  },
-                  {
-                    question: 'What are the charges of this investigation?',
-                    answer: 'Prices vary based on the details and conditions of each particular case. Contact us for a consultation.'
-                  },
-                  {
-                    question: 'What are the benefits of choosing GA Tucker PI?',
-                    answer: 'We work closely with all of our clients to provide the best service possible. We manage our client\'s hours and prioritize efficiency.'
-                  }
-                ]} />
+                <FAQAccordion faqs={backgroundChecksFaqs} />
               </motion.div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 "use client";
 
+import { breadcrumbSchema } from '@/lib/schema';
 import { Navbar } from '../components/navbar';
 import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
@@ -18,12 +19,20 @@ const relatedServices = [
   { title: 'General Investigations', href: '/investigations' },
   { title: 'Child Custody', href: '/child-custody' },
   { title: 'Missing Persons', href: '/missing-persons' },
-  { title: 'Hollywood Fixer', href: '/hollywood-fixer' },
+  { title: 'High-Profile Clients', href: '/high-profile-investigations' },
 ];
 
 export default function ProfilingPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'Criminal Profiling', path: '/profiling' }])
+          ),
+        }}
+      />
       <Navbar />
 
       {/* Hero Section */}

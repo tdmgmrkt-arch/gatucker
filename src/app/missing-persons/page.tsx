@@ -1,5 +1,6 @@
 "use client";
 
+import { breadcrumbSchema } from '@/lib/schema';
 import { Navbar } from '../components/navbar';
 import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
@@ -17,12 +18,20 @@ const relatedServices = [
   { title: 'General Investigations', href: '/investigations' },
   { title: 'Child Custody', href: '/child-custody' },
   { title: 'Missing Persons', href: '/missing-persons', current: true },
-  { title: 'Hollywood Fixer', href: '/hollywood-fixer' },
+  { title: 'High-Profile Clients', href: '/high-profile-investigations' },
 ];
 
 export default function MissingPersonsPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'Missing Persons', path: '/missing-persons' }])
+          ),
+        }}
+      />
       <Navbar />
 
       {/* Hero Section */}

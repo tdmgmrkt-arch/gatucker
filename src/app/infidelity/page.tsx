@@ -1,5 +1,7 @@
 "use client";
 
+import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
+
 import { Navbar } from '../components/navbar';
 import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
@@ -18,12 +20,53 @@ const relatedServices = [
   { title: 'General Investigations', href: '/investigations' },
   { title: 'Child Custody', href: '/child-custody' },
   { title: 'Missing Persons', href: '/missing-persons' },
-  { title: 'Hollywood Fixer', href: '/hollywood-fixer' },
+  { title: 'High-Profile Clients', href: '/high-profile-investigations' },
+];
+
+const infidelityFaqs = [
+  {
+    question: 'How long does an infidelity investigation typically take?',
+    answer: "Investigation timelines vary based on your specific circumstances. Some cases require only a few days of surveillance, while others may need several weeks to establish patterns and gather conclusive evidence. We'll discuss the optimal timeline during your consultation.",
+  },
+  {
+    question: 'Is the evidence you gather admissible in court?',
+    answer: 'Yes. All our investigations are conducted legally and ethically. The evidence we gather meets legal standards and can be used in divorce proceedings, custody battles, or other legal matters. We can also provide expert testimony if required.',
+  },
+  {
+    question: "Will my partner know they're being investigated?",
+    answer: 'No. Our investigators are highly trained in discreet surveillance techniques. We use unmarked vehicles, maintain safe distances, and employ professional methods to ensure your partner remains unaware of the investigation.',
+  },
+  {
+    question: "What happens if you don't find evidence of infidelity?",
+    answer: "While we hope to provide you with peace of mind either way, if we don't find evidence of infidelity during the agreed-upon investigation period, we'll provide a full report of our findings. Many clients find relief in knowing the truth, regardless of the outcome.",
+  },
+  {
+    question: 'How much does an infidelity investigation cost?',
+    answer: 'Costs vary depending on the complexity and duration of the investigation. We offer customized packages to fit different budgets and needs. Contact us for a confidential consultation and detailed pricing information.',
+  },
+  {
+    question: 'Can you investigate digital evidence like texts and emails?',
+    answer: "We can guide you on legally obtaining digital evidence and analyze information you have legal access to. However, all digital investigations must comply with privacy laws and regulations. We'll advise you on legal methods during your consultation.",
+  },
 ];
 
 export default function InfidelityPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'Infidelity Investigations', path: '/infidelity' }])
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqPageSchema(infidelityFaqs)),
+        }}
+      />
       <Navbar />
 
       {/* Hero Section */}
@@ -506,32 +549,7 @@ export default function InfidelityPage() {
                 >
                   Frequently Asked Questions
                 </h2>
-                <FAQAccordion faqs={[
-                  {
-                    question: 'How long does an infidelity investigation typically take?',
-                    answer: 'Investigation timelines vary based on your specific circumstances. Some cases require only a few days of surveillance, while others may need several weeks to establish patterns and gather conclusive evidence. We\'ll discuss the optimal timeline during your consultation.',
-                  },
-                  {
-                    question: 'Is the evidence you gather admissible in court?',
-                    answer: 'Yes. All our investigations are conducted legally and ethically. The evidence we gather meets legal standards and can be used in divorce proceedings, custody battles, or other legal matters. We can also provide expert testimony if required.',
-                  },
-                  {
-                    question: 'Will my partner know they\'re being investigated?',
-                    answer: 'No. Our investigators are highly trained in discreet surveillance techniques. We use unmarked vehicles, maintain safe distances, and employ professional methods to ensure your partner remains unaware of the investigation.',
-                  },
-                  {
-                    question: 'What happens if you don\'t find evidence of infidelity?',
-                    answer: 'While we hope to provide you with peace of mind either way, if we don\'t find evidence of infidelity during the agreed-upon investigation period, we\'ll provide a full report of our findings. Many clients find relief in knowing the truth, regardless of the outcome.',
-                  },
-                  {
-                    question: 'How much does an infidelity investigation cost?',
-                    answer: 'Costs vary depending on the complexity and duration of the investigation. We offer customized packages to fit different budgets and needs. Contact us for a confidential consultation and detailed pricing information.',
-                  },
-                  {
-                    question: 'Can you investigate digital evidence like texts and emails?',
-                    answer: 'We can guide you on legally obtaining digital evidence and analyze information you have legal access to. However, all digital investigations must comply with privacy laws and regulations. We\'ll advise you on legal methods during your consultation.',
-                  },
-                ]} />
+                <FAQAccordion faqs={infidelityFaqs} />
               </motion.div>
         </div>
       </section>

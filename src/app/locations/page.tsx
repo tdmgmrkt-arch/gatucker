@@ -34,10 +34,11 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "@id": "https://gatuckerpi.com/#organization",
-  name: "G.A. Tucker PI",
-  url: "https://gatuckerpi.com",
+  "@id": "https://gatuckerpi.com/locations#service",
+  name: "G.A. Tucker PI — Service Areas",
+  url: "https://gatuckerpi.com/locations",
   telephone: "+1-909-964-8976",
+  parentOrganization: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: [
     { "@type": "State", name: "California" },
   ],
@@ -45,6 +46,7 @@ const schema = {
     "@type": "EducationalOccupationalCredential",
     credentialCategory: "Professional License",
     name: "California Private Investigator License #PI188351",
+    credentialID: "PI188351",
   },
 };
 

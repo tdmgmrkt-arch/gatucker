@@ -7,6 +7,7 @@ import { RequestServiceForm } from '../components/request-service-form';
 import { Phone, Mail, Shield, CheckCircle, Heart, Camera, FileText, AlertCircle, Home, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { breadcrumbSchema } from '@/lib/schema';
 
 const relatedServices = [
   { title: 'Background Checks', href: '/background-checks' },
@@ -17,12 +18,20 @@ const relatedServices = [
   { title: 'General Investigations', href: '/investigations' },
   { title: 'Child Custody', href: '/child-custody', current: true },
   { title: 'Missing Persons', href: '/missing-persons' },
-  { title: 'Hollywood Fixer', href: '/hollywood-fixer' },
+  { title: 'High-Profile Clients', href: '/high-profile-investigations' },
 ];
 
 export default function ChildCustodyPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'Child Custody Investigations', path: '/child-custody' }])
+          ),
+        }}
+      />
       <Navbar />
 
       {/* Hero Section */}

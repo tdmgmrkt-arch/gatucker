@@ -51,12 +51,11 @@ const schema = {
   name: "G.A. Tucker PI — Las Vegas Cross-Border Cases",
   url: "https://gatuckerpi.com/locations/las-vegas",
   telephone: "+1-909-964-8976",
-  // areaServed here indicates matter-origin geography, not claimed service jurisdiction
+  // areaServed here indicates matter-origin geography, not claimed service jurisdiction.
+  // Scope note lives in the page body copy — City schema does not support `description`.
   areaServed: {
     "@type": "City",
     name: "Las Vegas",
-    // Noted as matter-origin, not a California service location
-    description: "Cases originating in or connected to Las Vegas, handled by a California-licensed PI",
   },
   hasCredential: {
     "@type": "EducationalOccupationalCredential",

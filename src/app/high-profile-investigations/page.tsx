@@ -1,5 +1,6 @@
 "use client";
 
+import { breadcrumbSchema } from '@/lib/schema';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Eye, Lock, Shield, Users } from "lucide-react";
@@ -33,16 +34,24 @@ const credentials = [
 export default function HollywoodFixerPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'High-Profile Client Investigations', path: '/high-profile-investigations' }])
+          ),
+        }}
+      />
       <Navbar />
 
       <section
-        id="hollywood-fixer"
-        className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden"
+        id="high-profile-investigations"
+        className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 md:pt-44 md:pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden"
       >
         {/* Background Image - LCP optimized */}
         <Image
           src="/hollywood_fixer_background.webp"
-          alt="Hollywood Fixer Services Background"
+          alt="Discreet investigations for high-profile clients — background image"
           fill
           priority
           fetchPriority="high"
@@ -91,7 +100,7 @@ export default function HollywoodFixerPage() {
                 <div className="relative rounded-2xl overflow-hidden group">
                   <Image
                     src="/ga_tucker_hollywood_fixer.webp"
-                    alt="Greg Tucker - Hollywood Fixer"
+                    alt="Greg Tucker — licensed California private investigator for high-profile clients"
                     width={800}
                     height={800}
                     className="w-full h-auto object-cover transition-all duration-700 ease-in-out group-hover:scale-105"
@@ -112,7 +121,7 @@ export default function HollywoodFixerPage() {
                           textShadow: "0 0 10px rgba(255,215,0,0.8)",
                         }}
                       >
-                        Hollywood&apos;s Preferred Fixer
+                        Trusted by Entertainment &amp; Corporate Clients
                       </p>
                     </div>
                   </div>
@@ -148,14 +157,21 @@ export default function HollywoodFixerPage() {
               className="order-1 lg:order-2"
             >
               <h1
-                className="mb-4 font-black uppercase tracking-tight leading-tight"
+                className="mb-4 font-black uppercase leading-[0.95]"
                 style={{
                   fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
-                  fontSize: "clamp(2.5rem,5vw,4rem)",
+                  fontSize: "clamp(2rem,3.6vw,3rem)",
+                  letterSpacing: "-0.01em",
                   color: "#FFF",
                 }}
               >
-                Hollywood&apos;s Preferred Fixer
+                <span className="block">Discreet Investigations</span>
+                <span
+                  className="block mt-1 text-[#EDEDED]/90"
+                  style={{ fontSize: "0.72em" }}
+                >
+                  for High-Profile Clients
+                </span>
               </h1>
 
               <p
@@ -186,7 +202,7 @@ export default function HollywoodFixerPage() {
                   lineHeight: "1.8",
                 }}
               >
-                Greg Tucker is the trusted professional for representatives of top celebrities, high-profile Fortune 500 companies, and international corporations. Whether you have a high-profile case or simply need help with everyday challenges, Greg is prepared to serve you with professionalism and discretion.
+                Greg Tucker is a licensed California private investigator retained by representatives of top celebrities, high-profile Fortune 500 companies, and international clients. Whether the matter is a sensitive investigation, a background inquiry on a new business partner, or ongoing risk management, Greg brings the same professionalism and discretion to every engagement.
               </p>
 
               <p
@@ -197,7 +213,7 @@ export default function HollywoodFixerPage() {
                   lineHeight: "1.8",
                 }}
               >
-                Renowned for his discreet and ethical approach, he specializes in resolving sensitive issues with integrity and precision. His expertise allows clients to navigate complex situations while safeguarding their reputation.
+                His work is defined by two non-negotiables: absolute confidentiality and legal integrity. Every case is documented and conducted to a court-admissible standard, which is why entertainment lawyers, business managers, and general counsel repeatedly bring their most sensitive matters to his office.
               </p>
 
               <p
@@ -208,7 +224,7 @@ export default function HollywoodFixerPage() {
                   lineHeight: "1.8",
                 }}
               >
-                Trusted across Hollywood, corporate America, and around the world, Greg Tucker is the premier fixer for those who require confidential and effective resolution of delicate matters.
+                With clients spanning the entertainment industry, corporate America, and international markets, Greg provides confidential and effective resolution of delicate matters — without shortcuts, and without risk to the reputations he is hired to protect.
               </p>
 
               {/* Credentials Grid */}
@@ -305,7 +321,7 @@ export default function HollywoodFixerPage() {
                   className="h-auto relative mb-0"
                 />
                 <p className="text-[#CEA53D] font-semibold tracking-wider uppercase text-xs md:text-sm mt-1">
-                  Hollywood&apos;s Preferred Fixer
+                  Trusted by Entertainment &amp; Corporate Clients
                 </p>
               </div>
             </div>

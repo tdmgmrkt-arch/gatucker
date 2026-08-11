@@ -1,5 +1,6 @@
 "use client";
 
+import { breadcrumbSchema } from '@/lib/schema';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CheckCircle2, Shield, Phone, Scale, FileText, Lock, Mail, Brain } from "lucide-react";
@@ -124,6 +125,14 @@ const reviews = [
 export default function ConsultingPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: 'PI Consulting & Expert Witness', path: '/consulting' }])
+          ),
+        }}
+      />
       <Navbar />
 
       {/* Hero Section - Full Width with Background Image */}
@@ -850,15 +859,15 @@ export default function ConsultingPage() {
                 <FAQAccordion faqs={[
                   {
                     question: 'Should I hire a private investigator for my civil case?',
-                    answer: 'We have worked on cases with attorneys all across Southern California and have formed business relationships due to our reliability and close rate.'
+                    answer: 'Yes — a licensed PI can locate and interview witnesses, run background checks on opposing parties, gather admissible surveillance evidence, and serve legal documents. We have worked civil matters with attorneys across Southern California and understand how to build a case file that holds up in court.'
                   },
                   {
                     question: 'Should I hire a private investigator for my trial consulting?',
-                    answer: 'We have worked on cases with attorneys all across Southern California and have formed business relationships due to our reliability and close rate.'
+                    answer: 'Trial consulting is where a PI adds the most leverage before a case even reaches the courtroom. We help attorneys with pre-trial fact investigation, exhibit and evidence verification, witness preparation, and expert testimony from a licensed California investigator on surveillance methodology, chain of custody, and interview technique.'
                   },
                   {
                     question: 'Should I hire a private investigator for my jury consulting?',
-                    answer: 'We have worked on cases with attorneys all across Southern California and have formed business relationships due to our reliability and close rate.'
+                    answer: 'For jury consulting we conduct discreet, legally-compliant background research on prospective jurors during voir dire — public records, social media presence, prior civil involvement, and community affiliations — so your trial team walks into selection with a data-backed profile of each panelist rather than a gut read.'
                   },
                   {
                     question: 'What are the charges of this investigation?',
