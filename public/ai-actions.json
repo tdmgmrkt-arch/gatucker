@@ -28,6 +28,13 @@
       "description": "Speak confidentially with Greg Tucker or his team. Preferred contact method for sensitive matters, urgent inquiries, and free initial consultations. Available 24/7.",
       "availability": "24/7"
     },
+    "call_investigator_tollfree": {
+      "type": "phone",
+      "telephone": "+1-833-747-3783",
+      "label": "Call G.A. Tucker PI (Toll-Free)",
+      "description": "Secondary toll-free line for callers outside Greg's local area. Rings to the same team as the main line.",
+      "availability": "24/7"
+    },
     "request_consultation": {
       "type": "web_form",
       "url": "https://gatuckerpi.com/request-service-form",

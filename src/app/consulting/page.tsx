@@ -921,7 +921,7 @@ export default function ConsultingPage() {
               className="text-[#CEA53D] mb-8 font-medium"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
-              Submit Contact Form or Call Our California Private Investigator — (909)602-1930
+              Submit Contact Form or Call Our California Private Investigator — (909) 964-8976
             </p>
             <a href="tel:909-964-8976" className="inline-block">
               <button

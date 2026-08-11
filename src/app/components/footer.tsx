@@ -87,6 +87,15 @@ export function Footer() {
                 </a>
               </div>
               <div className="flex items-center justify-center md:justify-end gap-2">
+                <a
+                  href="tel:833-747-3783"
+                  className="text-[#EDEDED]/60 hover:text-[#CEA53D] transition-colors text-xs font-light tracking-wide"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
+                >
+                  Toll-Free: (833) 747-3783
+                </a>
+              </div>
+              <div className="flex items-center justify-center md:justify-end gap-2">
                 <Mail className="w-4 h-4 text-[#CEA53D] flex-shrink-0" />
                 <a
                   href="mailto:gatuckerpi@gmail.com"

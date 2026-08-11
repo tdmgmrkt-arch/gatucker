@@ -66,6 +66,23 @@ const organizationSchema = {
   description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
   telephone: "+1-909-964-8976",
   email: "info@gatuckerpi.com",
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+1-909-964-8976",
+      contactType: "customer service",
+      areaServed: "US",
+      availableLanguage: "English",
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: "+1-833-747-3783",
+      contactType: "customer service",
+      areaServed: "US",
+      availableLanguage: "English",
+      description: "Toll-free line",
+    },
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: "25185 Madison Ave Ste A",

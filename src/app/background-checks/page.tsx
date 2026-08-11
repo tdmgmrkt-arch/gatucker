@@ -822,7 +822,7 @@ export default function BackgroundChecksPage() {
                     className="text-[#EDEDED]/85 leading-relaxed"
                     style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.7" }}
                   >
-                    GA Tucker PI also offers professional asset searches for our customers. For a FREE estimate from our fully licensed private investigator in San Diego, CA, call (909) 220-4006 today! We&apos;re here for you 24 hours a day, 7 days a week!
+                    GA Tucker PI also offers professional asset searches for our customers. For a FREE estimate from a fully licensed California private investigator, call (909) 964-8976 today. We&apos;re available around the clock for urgent matters.
                   </p>
                 </div>
               </motion.div>
