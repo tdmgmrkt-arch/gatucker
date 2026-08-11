@@ -2,6 +2,7 @@ import { Dancing_Script, Space_Mono } from "next/font/google";
 import Script from "next/script";
 import type { Metadata } from "next";
 import "./globals.css";
+import { getGoogleReviews, formatRating } from "@/lib/google-reviews";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gatuckerpi.com"),
@@ -67,12 +68,16 @@ const organizationSchema = {
   email: "info@gatuckerpi.com",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "25185 Madison Ave Ste A",
+    addressLocality: "Murrieta",
     addressRegion: "CA",
+    postalCode: "92562",
     addressCountry: "US"
   },
   geo: {
     "@type": "GeoCoordinates",
-    addressCountry: "US"
+    latitude: 33.5539,
+    longitude: -117.2139
   },
   areaServed: {
     "@type": "State",
@@ -83,21 +88,23 @@ const organizationSchema = {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     opens: "00:00",
-    closes: "23:59"
+    closes: "00:00"
   },
   sameAs: [
     "https://www.facebook.com/gatuckerpi",
     "https://twitter.com/gatuckerpi",
     "https://www.instagram.com/gatuckerpi",
-    "https://www.yelp.com/biz/ga-tucker-pi"
+    "https://www.yelp.com/biz/ga-tucker-pi",
+    "https://www.google.com/maps/place/?q=place_id:ChIJayO7FOV924AR4ZhvEEuHDBg"
   ],
   hasCredential: {
     "@type": "EducationalOccupationalCredential",
     credentialCategory: "Professional License",
-    name: "California Private Investigator License",
+    name: "California Private Investigator License #PI188351",
+    credentialID: "PI188351",
     recognizedBy: {
       "@type": "Organization",
-      name: "State of California"
+      name: "California Bureau of Security and Investigative Services"
     },
     validIn: {
       "@type": "State",
@@ -106,7 +113,8 @@ const organizationSchema = {
   },
   founder: {
     "@type": "Person",
-    name: "Greg Tucker",
+    "@id": "https://gatuckerpi.com/about#greg-tucker",
+    name: "Greg A. Tucker",
     jobTitle: "Private Investigator"
   },
   knowsAbout: [
@@ -135,11 +143,27 @@ const spaceMono = Space_Mono({
 });
 
 // ✅ Root Layout
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const googleReviews = await getGoogleReviews();
+
+  const aggregateRating = {
+    "@type": "AggregateRating",
+    ratingValue: googleReviews.isLive && googleReviews.rating != null
+      ? formatRating(googleReviews.rating)
+      : "4.9",
+    reviewCount: googleReviews.isLive && googleReviews.userRatingCount != null
+      ? String(googleReviews.userRatingCount)
+      : "67",
+    bestRating: "5",
+    worstRating: "1",
+  };
+
+  const schema = { ...organizationSchema, aggregateRating };
+
   return (
     <html lang="en">
       <head>
@@ -157,7 +181,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta name="google-site-verification" content="pzONJWnaDXpKm02ynxCvlOeza4l6lrt2tE4YD4cOEEY" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
       <body

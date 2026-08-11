@@ -6,7 +6,7 @@ import { Award, Target, UserCheck, Timer } from "lucide-react";
 
 const stats = [
   { icon: Target, number: "95%", title: "Success Rate" },
-  { icon: Award, number: "20+", title: "Years Experience" },
+  { icon: Award, number: "27+", title: "Years Experience" },
   { icon: UserCheck, number: "500+", title: "Cases Solved" },
   { icon: Timer, number: "24/7", title: "Availability" },
 ];
