@@ -139,7 +139,25 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#CEA53D]/20 text-center">
-          <p 
+          <div
+            className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-3 text-[#EDEDED]/50 text-xs font-light"
+            style={{ fontFamily: "'Inter', sans-serif" }}
+          >
+            <Link
+              href="/privacy-policy"
+              className="hover:text-[#CEA53D] transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-[#CEA53D]/30">|</span>
+            <Link
+              href="/terms-and-conditions"
+              className="hover:text-[#CEA53D] transition-colors"
+            >
+              Terms and Conditions
+            </Link>
+          </div>
+          <p
             className="text-[#EDEDED]/50 text-sm mb-4 md:mb-0 font-light"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >

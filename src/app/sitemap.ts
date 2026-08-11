@@ -133,6 +133,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: mtime('privacy-policy/page.tsx'),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms-and-conditions`,
+      lastModified: mtime('terms-and-conditions/page.tsx'),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
     // Location hub
     {
       url: `${baseUrl}/locations`,
