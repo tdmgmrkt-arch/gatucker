@@ -77,7 +77,7 @@ const whyChoose = [
   "99% success rate solving cases",
   "100% confidential",
   "Expert surveillance agents and technical analysts",
-  "Over 15 years experience",
+  "Over 27 years experience",
 ];
 
 const reviews = [
