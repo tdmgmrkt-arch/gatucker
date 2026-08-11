@@ -4,7 +4,15 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Phone, Shield, Play, X } from "lucide-react";
 
-export function HeroSection() {
+const GBP_URL =
+  "https://www.google.com/maps/place/?q=place_id:ChIJayO7FOV924AR4ZhvEEuHDBg";
+
+type HeroSectionProps = {
+  rating?: string;
+  count?: string;
+};
+
+export function HeroSection({ rating = "4.9", count = "67" }: HeroSectionProps) {
   const mobileVideoRef = useRef<HTMLVideoElement>(null);
   const desktopVideoRef = useRef<HTMLVideoElement>(null);
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -82,32 +90,77 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center" style={{ padding: "0 clamp(1rem, 4vw, 2rem)" }}>
         <div className="w-full mx-auto text-center" style={{ maxWidth: "min(100%, 80rem)" }}>
-          {/* License Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="absolute top-25 left-1/2 -translate-x-1/2 md:relative md:top-auto md:left-auto md:translate-x-0 inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 mb-0 md:mb-6 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
-            style={{
-              boxShadow:
-                "0 0 15px rgba(206,165,61,0.25), inset 0 0 10px rgba(206,165,61,0.1)",
-            }}
-          >
-            <Shield
-              className="w-4 h-4 sm:w-5 sm:h-5 text-[#CEA53D] flex-shrink-0"
-              style={{ filter: "drop-shadow(0 0 3px #CEA53D)" }}
-            />
-            <span
-              className="text-[#CEA53D] text-[0.65rem] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+          {/* Trust cluster: License badge + Google reviews badge — wrapped in w-fit so both chips stretch to the widest (license) width for a symmetric pair */}
+          <div className="absolute top-25 left-1/2 -translate-x-1/2 md:relative md:top-auto md:left-auto md:translate-x-0 flex flex-col items-center mb-0 md:mb-6">
+            <div className="w-fit flex flex-col items-stretch">
+            {/* License Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="flex items-center justify-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm"
               style={{
-                fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
-                textShadow:
-                  "0 0 4px rgba(206,165,61,0.5), 0 0 8px rgba(206,165,61,0.3)",
+                boxShadow:
+                  "0 0 15px rgba(206,165,61,0.25), inset 0 0 10px rgba(206,165,61,0.1)",
               }}
             >
-              California Licensed PI #188351
-            </span>
-          </motion.div>
+              <Shield
+                className="w-4 h-4 sm:w-5 sm:h-5 text-[#CEA53D] flex-shrink-0"
+                style={{ filter: "drop-shadow(0 0 3px #CEA53D)" }}
+              />
+              <span
+                className="text-[#CEA53D] text-[0.65rem] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+                style={{
+                  fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
+                  textShadow:
+                    "0 0 4px rgba(206,165,61,0.5), 0 0 8px rgba(206,165,61,0.3)",
+                }}
+              >
+                California Licensed PI #188351
+              </span>
+            </motion.div>
+
+            {/* Google Reviews Badge */}
+            <motion.a
+              href={GBP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Rated ${rating} out of 5 stars from ${count} Google reviews — opens in new tab`}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-2 flex items-center justify-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 bg-black/40 backdrop-blur-sm border-2 border-[#CEA53D]/40 rounded-sm transition-all duration-300 hover:border-[#CEA53D]/70 hover:bg-black/60"
+              style={{
+                boxShadow:
+                  "0 0 15px rgba(206,165,61,0.25), inset 0 0 10px rgba(206,165,61,0.1)",
+              }}
+            >
+              {/* Star SVG */}
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
+                style={{ filter: "drop-shadow(0 0 3px #CEA53D)" }}
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  fill="#CEA53D"
+                />
+              </svg>
+              <span
+                className="text-[#CEA53D] text-[0.65rem] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+                style={{
+                  fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
+                  textShadow:
+                    "0 0 4px rgba(206,165,61,0.5), 0 0 8px rgba(206,165,61,0.3)",
+                }}
+              >
+                {rating} · {count} Google Reviews
+              </span>
+            </motion.a>
+            </div>
+          </div>
 
           {/* Main Headline */}
           <motion.div

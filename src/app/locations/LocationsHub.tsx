@@ -91,7 +91,7 @@ export function LocationsHub() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center max-w-5xl mx-auto"
+            className="text-center"
           >
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 border border-[#CEA53D]/40 rounded-full bg-black/40">
               <MapPin className="w-4 h-4 text-[#CEA53D]" />
@@ -116,7 +116,7 @@ export function LocationsHub() {
             </h1>
 
             <p
-              className="text-lg sm:text-xl text-[#EDEDED]/80 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg sm:text-xl text-[#EDEDED]/80 leading-relaxed"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
               GA Tucker PI is a licensed California private investigator (CA PI #188351) based

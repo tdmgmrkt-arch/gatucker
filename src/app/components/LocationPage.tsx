@@ -279,7 +279,7 @@ export function LocationPage({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center max-w-5xl mx-auto"
+            className="text-center"
           >
             {/* MapPin badge */}
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 border border-[#CEA53D]/40 rounded-full bg-black/40">
@@ -314,7 +314,7 @@ export function LocationPage({
             )}
 
             <p
-              className="text-lg sm:text-xl text-[#EDEDED]/80 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg sm:text-xl text-[#EDEDED]/80 leading-relaxed"
               style={bodyStyle}
             >
               {/* CONTENT: hero_subtitle from content-drafts/locations/{slug}.md */}

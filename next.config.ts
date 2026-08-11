@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
   },
   // Target modern browsers only - removes legacy polyfills
   transpilePackages: [],
+  async redirects() {
+    return [
+      {
+        source: '/testimonials',
+        destination: '/reviews',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

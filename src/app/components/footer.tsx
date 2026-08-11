@@ -52,7 +52,7 @@ export function Footer() {
                 { name: 'Contact', href: '/contact' },
                 { name: 'FAQs', href: '/faqs' },
                 { name: 'Pricing', href: '/#pricing' },
-                { name: 'Testimonials', href: '/#testimonials' },
+                { name: 'Reviews', href: '/reviews' },
               ].map((link) => (
                 <li key={link.name}>
                   <Link

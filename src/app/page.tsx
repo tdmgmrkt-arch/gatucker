@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import dynamic from 'next/dynamic';
-import { Navbar } from './components/navbar';
+import NavbarShell from './components/navbar-shell';
 import { HeroSection } from './components/hero-section';
+import { ReviewsSection } from './components/reviews-section';
+import { getGoogleReviews, formatRating, formatReviewCount } from '@/lib/google-reviews';
 
 export const metadata: Metadata = {
   title: "G.A. Tucker PI | California Private Investigator | 27+ Years Experience",
@@ -24,9 +26,6 @@ const PricingSection = dynamic(() => import('./components/pricing-section').then
 const StatsSection = dynamic(() => import('./components/stats-section').then(mod => ({ default: mod.StatsSection })), {
   loading: () => <div className="min-h-[200px]" />,
 });
-const TestimonialsSection = dynamic(() => import('./components/testimonials-section').then(mod => ({ default: mod.TestimonialsSection })), {
-  loading: () => <div className="min-h-[400px]" />,
-});
 const AffiliationsSection = dynamic(() => import('./components/affiliations-section').then(mod => ({ default: mod.AffiliationsSection })), {
   loading: () => <div className="min-h-[200px]" />,
 });
@@ -38,17 +37,27 @@ const Footer = dynamic(() => import('./components/footer').then(mod => ({ defaul
 });
 const StickyCTAButton = dynamic(() => import('./components/sticky-cta-button').then(mod => ({ default: mod.StickyCTAButton })));
 
-export default function App() {
+export default async function App() {
+  const reviewData = await getGoogleReviews();
+
+  const rating = formatRating(reviewData.rating) ?? '4.9';
+  const count = formatReviewCount(reviewData.userRatingCount) ?? '67';
+  const reviews = reviewData.reviews;
+
   return (
     <div className="min-h-screen bg-[#0D0D0D] overflow-x-hidden">
-      <Navbar />
-      <HeroSection />
+      <NavbarShell />
+      <HeroSection rating={rating} count={count} />
       <AboutSection />
       <ServicesSection />
       <ThreeStepsSection />
       <PricingSection />
       <StatsSection />
-      <TestimonialsSection />
+      <ReviewsSection
+        rating={rating}
+        count={count}
+        reviews={reviews}
+      />
       <AffiliationsSection />
       <CTASection />
       <Footer />

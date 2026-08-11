@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from 'react';
+import type { ReactNode } from 'react';
 // 1. Import 'Variants' for explicit typing and better error checking
-import { motion, Variants, AnimatePresence } from 'framer-motion'; 
+import { motion, Variants, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import {
   Menu,
@@ -92,7 +93,7 @@ const dropdownVariants: Variants = {
 };
 
 // --- Navbar Component ---
-export function Navbar() {
+export function Navbar({ ratingBadge }: { ratingBadge?: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
@@ -114,26 +115,40 @@ export function Navbar() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 relative">
         <div className="flex justify-between items-center h-20 sm:h-24">
-          {/* Premium Logo */}
-          <motion.a
-            href="/"
-            className="flex-shrink-0 relative group"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="relative">
-              <Image
-                src="/gatuckerlogotest2.webp"
-                alt="G.A. Tucker PI Logo"
-                width={140}
-                height={100}
-                className="h-auto w-[100px] sm:w-[120px] md:w-[140px] transition-all duration-300 group-hover:brightness-110"
-              />
-              {/* Subtle glow on hover */}
-              <div className="absolute inset-0 bg-[#CEA53D]/0 group-hover:bg-[#CEA53D]/5 rounded-lg transition-all duration-300 blur-xl" />
-            </div>
-          </motion.a>
+          {/* Left brand cluster: Logo + Google rating badge */}
+          <div className="flex items-center">
+            <motion.a
+              href="/"
+              className="flex-shrink-0 relative group"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="relative">
+                <Image
+                  src="/gatuckerlogotest2.webp"
+                  alt="G.A. Tucker PI Logo"
+                  width={140}
+                  height={100}
+                  className="h-auto w-[100px] sm:w-[120px] md:w-[140px] transition-all duration-300 group-hover:brightness-110"
+                />
+                {/* Subtle glow on hover */}
+                <div className="absolute inset-0 bg-[#CEA53D]/0 group-hover:bg-[#CEA53D]/5 rounded-lg transition-all duration-300 blur-xl" />
+              </div>
+            </motion.a>
+
+            {/* Google Rating Badge — right of logo on md+, hidden on mobile collapsed header */}
+            {ratingBadge && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.35 }}
+                className="hidden md:block ml-4"
+              >
+                {ratingBadge}
+              </motion.div>
+            )}
+          </div>
 
           {/* Premium Desktop Menu */}
           <div className="hidden md:flex items-center space-x-2">
@@ -175,7 +190,7 @@ export function Navbar() {
             
             {/* Retro CTA Button */}
             <motion.div
-              className="ml-6 pl-6 border-l border-[#CEA53D]/20"
+              className="ml-4 pl-4 border-l border-[#CEA53D]/20"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
@@ -462,7 +477,7 @@ export function Navbar() {
                                 <ArrowRight className="absolute top-6 right-6 w-4 h-4 text-[#CEA53D]/0 group-hover:text-[#CEA53D]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1 pointer-events-none" />
                             </div>
                             <a
-                                href="#"
+                                href="/locations"
                                 className="group relative flex items-start p-6 rounded-xl transition-all duration-500 border border-[#CEA53D]/10 hover:border-[#CEA53D]/30 bg-gradient-to-br from-[#1A1A1A]/40 to-[#0D0D0D]/40 hover:from-[#1A1A1A]/60 hover:to-[#0D0D0D]/60"
                             >
                                 <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#CEA53D]/0 to-[#CEA53D]/0 group-hover:from-[#CEA53D]/5 group-hover:to-transparent transition-all duration-500" />
@@ -563,6 +578,13 @@ export function Navbar() {
                       </div>
                   </div>
               ))}
+              {/* Google rating — mobile */}
+              {ratingBadge && (
+                <div className="flex justify-center py-3 border-b border-[#2C2C2C]">
+                  {ratingBadge}
+                </div>
+              )}
+
               <div className="pt-4">
                   <a
                       href="/request-service-form"
