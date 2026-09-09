@@ -1,12 +1,13 @@
 # Active Work — Greg A. Tucker (PI)
 
-_Last updated: 2026-08-11_
+_Last updated: 2026-09-09_
 
 ---
 
 ## In Progress
 _Currently being worked on. One line each: what / who (agent) / status / notes._
 
+- **Pricing rate increase + "Shop for Experience" section (2026-09-09 — SHIPPED)** — Hourly rate raised $211 -> **$375** per Greg (email 2026-09-09). Changed `src/app/components/pricing-section.tsx` + `public/ai-actions.json` pricing_note. Pricing card rebuilt on a single 50/50 grid spine: equal-height option panels, shared consultation/veterans row, then the "Shop for Experience-Not Just Price" rationale in two columns with a full-width closing line. Copy is Greg's tightened v2 (drops "you get what you pay for" and the unverifiable "99% of private investigators" claim). **"Custom Quote" label on the Flat Fee panel is agency wording, not Greg's — confirm with him.** Also fixed a live bug: literal `**consultation**` markdown was rendering as asterisks.
 - **Full SEO re-audit complete (2026-08-11)** — Health Score **58/100** (up from ~46). Aggregate report at `seo-audit-2026-08-11/FULL-AUDIT-REPORT.md` + prioritized punch list at `seo-audit-2026-08-11/ACTION-PLAN.md`. Sub-reports: schema.md, sxo.md, content-eeat.md. Awaiting Greg on phone canonical + GBP dashboard access + NV licensure confirmation. Dev-only P1 items can ship this week.
 - **NAP canonicalized (2026-08-11 — via BBB + Yelp + GBP screenshots)**: Name = "GA Tucker PI" (short) / "G.A. Tucker PI Investigative Services LLC" (legal); Address = 25185 Madison Ave Ste A, Murrieta CA 92562; Phone = (909) 964-8976; GBP rating = **4.9★ / 67 reviews** (ready for AggregateRating schema). Yelp = 3.6★/9 (diverges — schema will anchor on GBP).
 
@@ -53,6 +54,10 @@ _Queued — agreed but not started._
 
 ## Blocked
 _Waiting on something or someone. List the blocker._
+
+- **Bebas Neue font never loads site-wide** — `src/app/globals.css:422` has `@import url(...Bebas+Neue...)` placed mid-file. CSS ignores `@import` after any rule, so every `Bebas Neue` declaration falls back to Arial Black across the whole site. Fix is moving the import to the top of the file, but that changes typography on every page — needs Greg's sign-off before shipping.
+
+- Blog post pricing range conflict — `src/app/blog/posts.ts` says most reputable CA PIs charge "$95 to $250 per hour," which contradicts the new $375 rate. Suggested fix: raise to "$150 to $400" + note that advanced degrees/forensic credentials command the upper end. Greg must approve (his written opinion, not agency copy).
 
 - City confirmation (addressLocality for schema PostalAddress) — waiting on client. Murrieta strongly inferred (LocationsHub copy publicly says "based in Murrieta, CA") but not in CLIENT.md.
 - Old domain name — client must confirm so citation bleed can be found and corrected.
