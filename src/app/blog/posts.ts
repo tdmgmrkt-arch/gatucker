@@ -77,7 +77,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'Step 3: Understand What Private Investigation Actually Costs' },
       {
         type: 'p',
-        text: 'The single most common question we get is: "How much does it cost?" Honest answer — it depends on scope, complexity, and how quickly you need answers. In California, most reputable PIs charge between $95 and $250 per hour, plus expenses such as mileage, database access, and equipment. Complex cases involving multiple investigators, extended surveillance, or forensic analysis run higher.',
+        text: 'The single most common question we get is: "How much does it cost?" Honest answer — it depends on scope, complexity, and how quickly you need answers. In California, most reputable PIs charge between $150 and $400 per hour, plus expenses such as mileage, database access, and equipment. Investigators with advanced degrees, forensic training, and a long track record command the upper end of that range. Complex cases involving multiple investigators, extended surveillance, or forensic analysis run higher.',
       },
       {
         type: 'p',
