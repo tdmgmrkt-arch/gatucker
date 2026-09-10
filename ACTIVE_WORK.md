@@ -1,12 +1,13 @@
 # Active Work — Greg A. Tucker (PI)
 
-_Last updated: 2026-09-09_
+_Last updated: 2026-09-10_
 
 ---
 
 ## In Progress
 _Currently being worked on. One line each: what / who (agent) / status / notes._
 
+- **Pricing section copy v2 from Greg (2026-09-10 — SHIPPED)** — Greg sent a fine-tuned rewrite. Section H2 is now "Investigation Services and Pricing"; "Flat Fee" -> "Flat-Fee Packages"; "Shop for Experience" -> "Choose Experience". New content: 5th hourly bullet, discounted-package block (infidelity / child custody / missing-person), the "inquire about packages / tell us which option you prefer" paragraph, and veteran discounts. Greg adopted the agency-suggested "Custom Quote" label, so that open question is closed. Layout call: his "Because the scope and circumstances..." paragraph sits in the shared row (it applies to both options and asks the client to choose), which also keeps the two panels balanced. **Note: "Discounted package rates" and veteran "discounts or special considerations" are new public commitments the site did not previously make.**
 - **Pricing rate increase + "Shop for Experience" section (2026-09-09 — SHIPPED)** — Hourly rate raised $211 -> **$375** per Greg (email 2026-09-09). Changed `src/app/components/pricing-section.tsx` + `public/ai-actions.json` pricing_note. Pricing card rebuilt on a single 50/50 grid spine: equal-height option panels, shared consultation/veterans row, then the "Shop for Experience-Not Just Price" rationale in two columns with a full-width closing line. Copy is Greg's tightened v2 (drops "you get what you pay for" and the unverifiable "99% of private investigators" claim). **"Custom Quote" label on the Flat Fee panel is agency wording, not Greg's — confirm with him.** Also fixed a live bug: literal `**consultation**` markdown was rendering as asterisks.
 - **Full SEO re-audit complete (2026-08-11)** — Health Score **58/100** (up from ~46). Aggregate report at `seo-audit-2026-08-11/FULL-AUDIT-REPORT.md` + prioritized punch list at `seo-audit-2026-08-11/ACTION-PLAN.md`. Sub-reports: schema.md, sxo.md, content-eeat.md. Awaiting Greg on phone canonical + GBP dashboard access + NV licensure confirmation. Dev-only P1 items can ship this week.
 - **NAP canonicalized (2026-08-11 — via BBB + Yelp + GBP screenshots)**: Name = "GA Tucker PI" (short) / "G.A. Tucker PI Investigative Services LLC" (legal); Address = 25185 Madison Ave Ste A, Murrieta CA 92562; Phone = (909) 964-8976; GBP rating = **4.9★ / 67 reviews** (ready for AggregateRating schema). Yelp = 3.6★/9 (diverges — schema will anchor on GBP).
