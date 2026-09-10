@@ -12,6 +12,13 @@ const HOURLY_SERVICES = [
   'Locating a person',
   'Civil investigations',
   'Criminal investigations',
+  'Other cases requiring ongoing investigative services',
+];
+
+const PACKAGE_CASES = [
+  'Infidelity investigations',
+  'Child custody investigations',
+  'Missing-person investigations',
 ];
 
 export function PricingSection() {
@@ -29,11 +36,11 @@ export function PricingSection() {
             className="mb-4 font-black uppercase tracking-tight leading-tight"
             style={{
               fontFamily: BEBAS,
-              fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              fontSize: 'clamp(1.85rem, 3.6vw, 2.75rem)',
               color: '#FFFF',
             }}
           >
-            Pricing
+            Investigation Services and Pricing
           </h2>
           <div className="h-1 w-32 bg-[#CEA53D] mx-auto my-5" style={{ boxShadow: GOLD_GLOW }}></div>
           <p
@@ -64,20 +71,23 @@ export function PricingSection() {
                   style={{ fontFamily: BEBAS, fontSize: 'clamp(1.25rem, 2.4vw, 2rem)', color: '#FFFF' }}
                 >
                   Hourly Rate
-                  <span className="text-[#CEA53D]" style={{ fontSize: 'clamp(1.4rem, 2.8vw, 2.25rem)' }}>
+                  <span className="text-[#CEA53D] whitespace-nowrap" style={{ fontSize: 'clamp(1.4rem, 2.8vw, 2.25rem)' }}>
                     $375
+                    <span className="text-[#EDEDED]/55 ml-2.5 tracking-wide" style={{ fontSize: 'clamp(0.9rem, 1.5vw, 1.15rem)' }}>
+                      per hour
+                    </span>
                   </span>
                 </h3>
               </div>
 
               <p className="text-[#EDEDED]/70 leading-relaxed mb-4 font-light" style={{ fontFamily: INTER }}>
-                For ongoing services requiring continuous effort, like:
+                Our hourly rate is available for ongoing investigations that require continuous effort, such as:
               </p>
 
               <ul className="space-y-2 text-[#EDEDED]/80 text-sm md:text-base font-light">
                 {HOURLY_SERVICES.map((service) => (
-                  <li key={service} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#CEA53D] rounded-full flex-shrink-0" />
+                  <li key={service} className="flex items-start gap-3">
+                    <div className="w-1.5 h-1.5 mt-2 bg-[#CEA53D] rounded-full flex-shrink-0" />
                     {service}
                   </li>
                 ))}
@@ -93,7 +103,7 @@ export function PricingSection() {
                   className="uppercase tracking-tight leading-none flex items-baseline gap-3 flex-wrap"
                   style={{ fontFamily: BEBAS, fontSize: 'clamp(1.25rem, 2.4vw, 2rem)', color: '#FFFF' }}
                 >
-                  Flat Fee
+                  Flat-Fee Packages
                   <span className="text-[#CEA53D]/85 whitespace-nowrap" style={{ fontSize: 'clamp(0.95rem, 1.65vw, 1.35rem)' }}>
                     Custom Quote
                   </span>
@@ -101,16 +111,25 @@ export function PricingSection() {
               </div>
 
               <p className="text-[#EDEDED]/70 leading-relaxed mb-4 font-light" style={{ fontFamily: INTER }}>
-                For short-term or research-intensive cases, a flat fee will be charged to meet your specific needs. This provides clarity and predictability on your total cost upfront.
+                For short-term, research-intensive, or commonly requested cases, we may offer a flat-fee package. Flat-rate pricing provides greater cost clarity and predictability from the outset.
               </p>
 
-              <p className="text-[#EDEDED]/50 text-sm leading-relaxed font-light italic" style={{ fontFamily: INTER }}>
-                Each case is unique, and our costs are tailored to the specific needs of your investigation.
+              <p className="text-[#EDEDED]/70 leading-relaxed mb-4 font-light" style={{ fontFamily: INTER }}>
+                Discounted package rates may be available for certain common types of cases, including:
               </p>
+
+              <ul className="space-y-2 text-[#EDEDED]/80 text-sm md:text-base font-light">
+                {PACKAGE_CASES.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <div className="w-1.5 h-1.5 mt-2 bg-[#CEA53D] rounded-full flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          {/* Zone 2 — shared details, same 50/50 spine */}
+          {/* Zone 2 — details that apply to both options, same 50/50 spine */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -120,13 +139,17 @@ export function PricingSection() {
           >
             <div className="grid md:grid-cols-2 gap-6 md:gap-12">
               <p className="text-[#EDEDED]/75 leading-relaxed font-light" style={{ fontFamily: INTER }}>
-                Every service begins with a professional consultation. This allows us to assess your unique situation and provide a precise quote for a successful resolution.
+                Because the scope and circumstances of every case are different, package availability and pricing will depend on your specific needs. Please inquire about the available packages and let us know which pricing option you prefer: hourly billing or a flat-fee package.
               </p>
               <p className="text-[#EDEDED]/75 leading-relaxed font-light" style={{ fontFamily: INTER }}>
-                <Star className="inline w-4 h-4 mr-2 align-[-0.15em] text-[#CEA53D]" />
-                <span className="text-[#CEA53D] font-medium">Veterans:</span> Please inform us of your service when discussing your case with an investigator.
+                Every case begins with a professional consultation. This allows us to understand your situation, determine the appropriate investigative approach, and provide an accurate quote.
               </p>
             </div>
+
+            <p className="mt-7 pt-6 border-t border-[#CEA53D]/10 max-w-[90%] text-[#EDEDED]/75 leading-relaxed font-light" style={{ fontFamily: INTER }}>
+              <Star className="inline w-4 h-4 mr-2 align-[-0.15em] text-[#CEA53D]" />
+              <span className="text-[#CEA53D] font-medium">Veterans:</span> Please mention your military service when discussing your case with an investigator. Discounts or special considerations may be available.
+            </p>
           </motion.div>
 
           {/* Zone 3 — rationale, same 50/50 spine */}
@@ -141,25 +164,25 @@ export function PricingSection() {
               className="text-center uppercase tracking-[0.08em] leading-none"
               style={{ fontFamily: BEBAS, fontSize: 'clamp(1.35rem, 2.4vw, 1.75rem)', color: '#FFFF' }}
             >
-              Shop for Experience&mdash;Not Just Price
+              Choose Experience&mdash;Not Just Price
             </h3>
             <div className="h-1 w-24 bg-[#CEA53D] mx-auto mt-4 mb-9" style={{ boxShadow: GOLD_GLOW }}></div>
 
             <div className="grid md:grid-cols-2 gap-6 md:gap-12 text-[0.95rem] text-[#EDEDED]/70 leading-relaxed font-light" style={{ fontFamily: INTER }}>
               <div className="space-y-4">
                 <p>
-                  When hiring a professional, the lowest price is not always the best value. Experience, education, and sound judgment can make a significant difference in the outcome of your case.
+                  When hiring a professional, the lowest price is not always the best value. Experience, education, sound judgment, and specialized training can make a significant difference in the outcome of your case.
                 </p>
                 <p>
-                  Consider hiring an attorney: when your freedom is at stake, you would look beyond the hourly rate to the attorney&rsquo;s qualifications and ability to handle your case.
+                  Consider hiring an attorney: when your freedom is at stake, you would look beyond the hourly rate and evaluate the attorney&rsquo;s qualifications, experience, and ability to handle your case effectively.
                 </p>
               </div>
               <div className="space-y-4">
                 <p>
-                  The same principle applies when hiring a private investigator. An inexperienced investigator may overlook critical details, mishandle evidence, or lack the knowledge needed to conduct a complex investigation.
+                  The same principle applies when hiring a private investigator. An inexperienced investigator may overlook important details, mishandle evidence, or lack the knowledge required to manage a complex investigation.
                 </p>
                 <p>
-                  When you hire Greg Tucker, you are hiring a professional with a proven track record, extensive education, and specialized qualifications. As a <span className="text-[#CEA53D] font-semibold">Forensic Behavioral Scientist</span>, Greg also brings an understanding of human behavior to his investigative work.
+                  When you hire Greg Tucker, you are hiring a professional with a proven track record, extensive education, and specialized qualifications. As a <span className="text-[#CEA53D] font-semibold">Forensic Behavioral Scientist</span>, Greg also brings a deeper understanding of human behavior to his investigative work.
                 </p>
               </div>
             </div>
@@ -168,7 +191,7 @@ export function PricingSection() {
               className="mt-9 pt-8 border-t border-[#CEA53D]/10 text-center text-[#EDEDED]/85 font-light leading-relaxed"
               style={{ fontFamily: INTER, fontSize: 'clamp(1.05rem, 1.8vw, 1.25rem)' }}
             >
-              The goal is not simply to find the cheapest investigator. It is to hire <span className="text-[#CEA53D] font-medium">the right investigator</span>&mdash;someone equipped to give your case the skill, care, and attention it deserves.
+              The goal is not simply to find the least expensive investigator. It is to hire <span className="text-[#CEA53D] font-medium">the right investigator</span>&mdash;someone with the skill, care, and attention necessary to handle your case properly.
             </p>
           </motion.div>
         </motion.div>
