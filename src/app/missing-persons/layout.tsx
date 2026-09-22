@@ -19,11 +19,7 @@ const serviceSchema = {
   name: "Missing Persons Investigations",
   description: "Specialized missing persons investigations in California. Locate lost family members, runaways, or individuals using advanced investigative techniques and databases.",
   url: "https://gatuckerpi.com/missing-persons",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"

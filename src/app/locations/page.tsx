@@ -33,12 +33,12 @@ export const metadata: Metadata = {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "Service",
+  serviceType: "Private Investigation",
   "@id": "https://gatuckerpi.com/locations#service",
   name: "G.A. Tucker PI — Service Areas",
   url: "https://gatuckerpi.com/locations",
-  telephone: "+1-909-964-8976",
-  parentOrganization: { "@id": "https://gatuckerpi.com/#organization" },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: [
     { "@type": "State", name: "California" },
   ],

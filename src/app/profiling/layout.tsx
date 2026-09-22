@@ -19,11 +19,7 @@ const serviceSchema = {
   name: "Behavioral Profiling Services",
   description: "Professional behavioral profiling and forensic psychology services for legal strategies and insights. Expert analysis by a licensed California PI with Master's degrees in Forensic Psychology and Criminology.",
   url: "https://gatuckerpi.com/profiling",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"

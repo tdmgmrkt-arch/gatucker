@@ -19,11 +19,7 @@ const serviceSchema = {
   name: "Background Check Services",
   description: "Comprehensive background check services in California including employment verification, criminal records search, personal history research, and social media analysis using exclusive databases.",
   url: "https://gatuckerpi.com/background-checks",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"

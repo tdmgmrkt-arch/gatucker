@@ -72,7 +72,6 @@ export default async function ReviewsPage() {
   // JSON-LD: AggregateRating on this page (reinforces the root layout schema)
   const aggregateRatingSchema = {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
     '@id': `${BASE_URL}/#organization`,
     name: 'G.A. Tucker PI',
     aggregateRating: {

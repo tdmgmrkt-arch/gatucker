@@ -33,22 +33,17 @@ export const metadata: Metadata = {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "Service",
+  serviceType: "Private Investigation",
   "@id": "https://gatuckerpi.com/locations/san-bernardino-county#service",
   name: "G.A. Tucker PI — San Bernardino County",
   url: "https://gatuckerpi.com/locations/san-bernardino-county",
-  telephone: "+1-909-964-8976",
   areaServed: {
     "@type": "AdministrativeArea",
     name: "San Bernardino County",
     containedInPlace: { "@type": "State", name: "California" },
   },
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "Professional License",
-    name: "California Private Investigator License #PI188351",
-  },
-  parentOrganization: { "@id": "https://gatuckerpi.com/#organization" },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
 };
 
 const breadcrumbSchema = {

@@ -33,11 +33,11 @@ export const metadata: Metadata = {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "Service",
+  serviceType: "Private Investigation",
   "@id": "https://gatuckerpi.com/locations/riverside-county/riverside#service",
   name: "G.A. Tucker PI — City of Riverside",
   url: "https://gatuckerpi.com/locations/riverside-county/riverside",
-  telephone: "+1-909-964-8976",
   areaServed: {
     "@type": "City",
     name: "Riverside",
@@ -47,12 +47,7 @@ const schema = {
       containedInPlace: { "@type": "State", name: "California" },
     },
   },
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "Professional License",
-    name: "California Private Investigator License #PI188351",
-  },
-  parentOrganization: { "@id": "https://gatuckerpi.com/#organization" },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
 };
 
 const breadcrumbSchema = {

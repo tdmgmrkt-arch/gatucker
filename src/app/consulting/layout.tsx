@@ -19,11 +19,7 @@ const serviceSchema = {
   name: "Trial & Jury Consulting Services",
   description: "Expert consulting services for attorneys including trial preparation, jury selection, witness interviews, and comprehensive case analysis in California.",
   url: "https://gatuckerpi.com/consulting",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"

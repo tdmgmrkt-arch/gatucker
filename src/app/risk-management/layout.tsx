@@ -19,11 +19,7 @@ const serviceSchema = {
   name: "Risk Management Services",
   description: "Professional risk assessment and mitigation strategies for businesses in California. Identify threats, protect resources, and safeguard your interests.",
   url: "https://gatuckerpi.com/risk-management",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"

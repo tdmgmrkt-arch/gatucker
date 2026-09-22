@@ -19,11 +19,7 @@ const serviceSchema = {
   name: "Private Investigation Services",
   description: "Comprehensive private investigation services for civil and criminal cases in California. Expert investigators with 27+ years of experience.",
   url: "https://gatuckerpi.com/investigations",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"

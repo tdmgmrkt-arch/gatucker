@@ -33,11 +33,11 @@ export const metadata: Metadata = {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "Service",
+  serviceType: "Private Investigation",
   "@id": "https://gatuckerpi.com/locations/san-bernardino-county/rancho-cucamonga#service",
   name: "G.A. Tucker PI — Rancho Cucamonga",
   url: "https://gatuckerpi.com/locations/san-bernardino-county/rancho-cucamonga",
-  telephone: "+1-909-964-8976",
   areaServed: {
     "@type": "City",
     name: "Rancho Cucamonga",
@@ -47,12 +47,7 @@ const schema = {
       containedInPlace: { "@type": "State", name: "California" },
     },
   },
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "Professional License",
-    name: "California Private Investigator License #PI188351",
-  },
-  parentOrganization: { "@id": "https://gatuckerpi.com/#organization" },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
 };
 
 const breadcrumbSchema = {

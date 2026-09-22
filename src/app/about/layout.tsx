@@ -19,11 +19,7 @@ const gregTuckerSchema = {
   name: "Greg Tucker",
   jobTitle: "Private Investigator",
   description: "Licensed California Private Investigator with over 27 years of experience. Holds Master's degrees in Forensic Psychology and Criminology.",
-  worksFor: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  worksFor: { "@id": "https://gatuckerpi.com/#organization" },
   hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
@@ -57,39 +53,6 @@ const gregTuckerSchema = {
   url: "https://gatuckerpi.com/about"
 };
 
-// LocalBusiness Schema
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://gatuckerpi.com/about#localbusiness",
-  name: "G.A. Tucker PI",
-  image: "https://gatuckerpi.com/og-image.png",
-  telephone: "+1-909-964-8976",
-  email: "info@gatuckerpi.com",
-  url: "https://gatuckerpi.com",
-  priceRange: "$$",
-  address: {
-    "@type": "PostalAddress",
-    addressRegion: "CA",
-    addressCountry: "US"
-  },
-  areaServed: {
-    "@type": "State",
-    name: "California"
-  },
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    opens: "00:00",
-    closes: "23:59"
-  },
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "Professional License",
-    name: "California Private Investigator License #PI188351"
-  }
-};
-
 export default function AboutLayout({
   children,
 }: {
@@ -100,10 +63,6 @@ export default function AboutLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(gregTuckerSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       {children}
     </>

@@ -19,11 +19,7 @@ const serviceSchema = {
   name: "Infidelity Investigations",
   description: "Discreet and confidential infidelity investigations in California. Professional surveillance and evidence gathering for suspected cheating spouses with court-admissible documentation.",
   url: "https://gatuckerpi.com/infidelity",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"

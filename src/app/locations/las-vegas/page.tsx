@@ -46,25 +46,18 @@ export const metadata: Metadata = {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "Service",
+  serviceType: "Private Investigation",
   "@id": "https://gatuckerpi.com/locations/las-vegas#service",
   name: "G.A. Tucker PI — Las Vegas Cross-Border Cases",
   url: "https://gatuckerpi.com/locations/las-vegas",
-  telephone: "+1-909-964-8976",
   // areaServed here indicates matter-origin geography, not claimed service jurisdiction.
   // Scope note lives in the page body copy — City schema does not support `description`.
   areaServed: {
     "@type": "City",
     name: "Las Vegas",
   },
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "Professional License",
-    // Explicitly California only — no Nevada claim
-    name: "California Private Investigator License #PI188351",
-    validIn: { "@type": "State", name: "California" },
-  },
-  parentOrganization: { "@id": "https://gatuckerpi.com/#organization" },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
 };
 
 const breadcrumbSchema = {

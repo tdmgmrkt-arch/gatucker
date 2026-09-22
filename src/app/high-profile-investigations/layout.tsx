@@ -21,11 +21,7 @@ const serviceSchema = {
   name: "High-Profile Client Investigations",
   description: "Confidential investigations and risk management for celebrities, executives, athletes, and Fortune 500 clients. Licensed, ethical, and court-admissible work performed by a California Private Investigator (#PI188351).",
   url: "https://gatuckerpi.com/high-profile-investigations",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"

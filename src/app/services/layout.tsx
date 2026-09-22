@@ -27,10 +27,7 @@ const servicesSchema = {
         name: "Background Checks",
         description: "Comprehensive background check services including criminal records, employment verification, and personal history research.",
         url: "https://gatuckerpi.com/background-checks",
-        provider: {
-          "@type": "ProfessionalService",
-          "@id": "https://gatuckerpi.com/#organization"
-        }
+        provider: { "@id": "https://gatuckerpi.com/#organization" }
       }
     },
     {
@@ -41,10 +38,7 @@ const servicesSchema = {
         name: "Infidelity Investigations",
         description: "Discreet and confidential infidelity investigations with professional surveillance and evidence gathering.",
         url: "https://gatuckerpi.com/infidelity",
-        provider: {
-          "@type": "ProfessionalService",
-          "@id": "https://gatuckerpi.com/#organization"
-        }
+        provider: { "@id": "https://gatuckerpi.com/#organization" }
       }
     },
     {
@@ -55,10 +49,7 @@ const servicesSchema = {
         name: "Missing Persons",
         description: "Professional missing persons investigations to locate individuals using advanced search techniques.",
         url: "https://gatuckerpi.com/missing-persons",
-        provider: {
-          "@type": "ProfessionalService",
-          "@id": "https://gatuckerpi.com/#organization"
-        }
+        provider: { "@id": "https://gatuckerpi.com/#organization" }
       }
     },
     {
@@ -69,10 +60,7 @@ const servicesSchema = {
         name: "Child Custody Investigations",
         description: "Thorough child custody investigations to protect the best interests of children.",
         url: "https://gatuckerpi.com/child-custody",
-        provider: {
-          "@type": "ProfessionalService",
-          "@id": "https://gatuckerpi.com/#organization"
-        }
+        provider: { "@id": "https://gatuckerpi.com/#organization" }
       }
     },
     {
@@ -83,10 +71,7 @@ const servicesSchema = {
         name: "Risk Management",
         description: "Comprehensive threat assessment and risk management services for individuals and businesses.",
         url: "https://gatuckerpi.com/risk-management",
-        provider: {
-          "@type": "ProfessionalService",
-          "@id": "https://gatuckerpi.com/#organization"
-        }
+        provider: { "@id": "https://gatuckerpi.com/#organization" }
       }
     },
     {
@@ -97,10 +82,7 @@ const servicesSchema = {
         name: "Criminal Profiling",
         description: "Expert criminal profiling and behavioral analysis services.",
         url: "https://gatuckerpi.com/profiling",
-        provider: {
-          "@type": "ProfessionalService",
-          "@id": "https://gatuckerpi.com/#organization"
-        }
+        provider: { "@id": "https://gatuckerpi.com/#organization" }
       }
     },
     {
@@ -111,10 +93,7 @@ const servicesSchema = {
         name: "Trial Consulting",
         description: "Professional trial consulting including jury selection and witness preparation.",
         url: "https://gatuckerpi.com/consulting",
-        provider: {
-          "@type": "ProfessionalService",
-          "@id": "https://gatuckerpi.com/#organization"
-        }
+        provider: { "@id": "https://gatuckerpi.com/#organization" }
       }
     }
   ]

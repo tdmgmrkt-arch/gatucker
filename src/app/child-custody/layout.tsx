@@ -19,11 +19,7 @@ const serviceSchema = {
   name: "Child Custody Investigations",
   description: "Professional child custody investigations in California. Gather objective evidence for family court proceedings to protect your children's best interests.",
   url: "https://gatuckerpi.com/child-custody",
-  provider: {
-    "@type": "ProfessionalService",
-    "@id": "https://gatuckerpi.com/#organization",
-    name: "G.A. Tucker PI"
-  },
+  provider: { "@id": "https://gatuckerpi.com/#organization" },
   areaServed: {
     "@type": "State",
     name: "California"
