@@ -7,7 +7,7 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Murrieta Private Investigator | GA Tucker PI | CA #188351",
+  title: "Murrieta Private Investigator",
   description:
     "Greg Tucker is a licensed private investigator based in Murrieta, CA. Background checks, infidelity, child custody, and more. CA PI #188351. Call 909-964-8976.",
   alternates: {

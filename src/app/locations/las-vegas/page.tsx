@@ -18,7 +18,7 @@ import type { LocationPageProps } from "../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Las Vegas PI Services | California PI for Vegas Matters",
+  title: "Las Vegas PI Services | California Investigator",
   description:
     "California PI Greg Tucker handles cross-border cases involving Las Vegas — background checks, skip traces, CA-side surveillance, and litigation support. CA PI #188351.",
   alternates: {

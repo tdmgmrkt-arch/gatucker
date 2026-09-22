@@ -6,7 +6,7 @@ import { LocationsHub } from "./LocationsHub";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Service Area | GA Tucker PI | California PI",
+  title: "Service Area | California & Nevada",
   description:
     "GA Tucker PI serves clients across Southern California and beyond. Licensed California PI (CA #188351) based in Murrieta. View service areas by county and city.",
   alternates: {

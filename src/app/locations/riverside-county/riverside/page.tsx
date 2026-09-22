@@ -7,7 +7,7 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Riverside CA Private Investigator | GA Tucker PI",
+  title: "Riverside CA Private Investigator",
   description:
     "GA Tucker PI serves Riverside, CA. Licensed PI based in Murrieta, 45 min from Riverside County's courthouse hub. Background checks, surveillance. CA PI #188351.",
   alternates: {

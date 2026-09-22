@@ -7,7 +7,7 @@ import { getGoogleReviews, formatRating } from "@/lib/google-reviews";
 export const metadata: Metadata = {
   metadataBase: new URL("https://gatuckerpi.com"),
   title: {
-    default: "G.A. Tucker PI | California Private Investigator | 27+ Years Experience",
+    default: "California Private Investigator | G.A. Tucker PI",
     template: "%s | G.A. Tucker PI"
   },
   description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",

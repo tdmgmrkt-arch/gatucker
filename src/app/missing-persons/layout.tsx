@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Missing Persons Investigations | Locate People | G.A. Tucker PI",
+  title: "Missing Persons Investigations | Locate People",
   description: "Specialized missing persons investigations in California. Locate lost family members, runaways, or individuals using advanced investigative techniques.",
   openGraph: {
     title: "Missing Persons Investigations | G.A. Tucker PI",

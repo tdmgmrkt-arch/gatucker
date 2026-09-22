@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | G.A. Tucker PI",
+  title: "Privacy Policy",
   description: "How G.A. Tucker PI collects, uses, and protects your personal information on gatuckerpi.com. Last updated May 29, 2025.",
   alternates: { canonical: "/privacy-policy" },
   openGraph: {

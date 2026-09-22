@@ -7,7 +7,7 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Temecula Private Investigator | GA Tucker PI | Murrieta",
+  title: "Temecula Private Investigator",
   description:
     "GA Tucker PI serves Temecula, CA. Licensed private investigator based in nearby Murrieta. Background checks, infidelity, child custody. CA PI #188351.",
   alternates: {

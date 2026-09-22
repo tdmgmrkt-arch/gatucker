@@ -6,7 +6,7 @@ import { ReviewsSection } from './components/reviews-section';
 import { getGoogleReviews, formatRating, formatReviewCount } from '@/lib/google-reviews';
 
 export const metadata: Metadata = {
-  title: "G.A. Tucker PI | California Private Investigator | 27+ Years Experience",
+  title: { absolute: "California Private Investigator | G.A. Tucker PI" },
   description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
 };
 

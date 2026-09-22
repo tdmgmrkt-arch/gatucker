@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | G.A. Tucker PI",
+  title: "Terms and Conditions",
   description: "Terms of use for the G.A. Tucker PI website. Please read carefully before using gatuckerpi.com. Last updated May 29, 2025.",
   alternates: { canonical: "/terms-and-conditions" },
   openGraph: {

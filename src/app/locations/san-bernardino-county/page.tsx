@@ -7,7 +7,7 @@ import type { LocationPageProps } from "../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "San Bernardino County Private Investigator | GA Tucker PI",
+  title: "San Bernardino County Private Investigator",
   description:
     "Licensed PI serving San Bernardino County from Murrieta, CA. Background checks, surveillance, litigation support across the Inland Empire. CA PI #188351.",
   alternates: {

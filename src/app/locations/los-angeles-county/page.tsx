@@ -7,7 +7,7 @@ import type { LocationPageProps } from "../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Los Angeles County Private Investigator | GA Tucker PI",
+  title: "Los Angeles County Private Investigator",
   description:
     "GA Tucker PI provides licensed PI services across Los Angeles County. Based in Murrieta, CA. Background checks, surveillance, litigation support. CA PI #188351.",
   alternates: {

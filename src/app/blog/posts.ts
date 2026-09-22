@@ -10,6 +10,7 @@ export type ContentBlock =
 export type BlogPost = {
   slug: string;
   title: string;
+  metaTitle?: string;
   description: string;
   date: string;
   readTime: string;
@@ -27,6 +28,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'how-to-hire-private-investigator-california',
     title: 'How to Hire a Private Investigator in California: The Complete 2026 Guide',
+    metaTitle: 'How to Hire a Private Investigator in California',
     description:
       'Learn how to hire a licensed private investigator in California. Verify PI licenses, understand costs, service areas, and what to expect from your first consultation.',
     date: '2026-07-15',
@@ -124,6 +126,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'signs-spouse-cheating-when-to-hire-pi',
     title: '10 Warning Signs Your Spouse Is Cheating — And When to Hire a Private Investigator',
+    metaTitle: '10 Warning Signs Your Spouse Is Cheating',
     description:
       'The behavioral, digital, and financial warning signs of infidelity — plus a clear-eyed look at when hiring a licensed private investigator makes sense.',
     date: '2026-06-12',
@@ -217,6 +220,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'employment-background-checks-california-employers',
     title: 'Employment Background Checks: What California Employers Need to Know in 2026',
+    metaTitle: 'Employment Background Checks in California',
     description:
       'California has some of the strictest background check laws in the country. Here is what employers must do — and must never do — when screening candidates.',
     date: '2026-05-14',
@@ -328,6 +332,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'child-custody-investigations-evidence-wins-cases',
     title: 'Child Custody Investigations: How the Right Evidence Wins Cases',
+    metaTitle: 'Child Custody Investigations: Winning Evidence',
     description:
       'Family court runs on evidence, not accusations. Here is how a private investigator builds a defensible custody case that protects children and holds up under scrutiny.',
     date: '2026-04-10',
@@ -417,6 +422,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'missing-persons-first-48-hours',
     title: 'The First 48 Hours: What to Do When a Loved One Goes Missing',
+    metaTitle: 'Missing Person: What to Do in the First 48 Hours',
     description:
       'The first two days after a disappearance are the most important. Here is what to do, who to call, and how a private investigator complements law enforcement.',
     date: '2026-03-18',
@@ -507,6 +513,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'surveillance-and-the-law-california',
     title: 'Surveillance and the Law: How Private Investigators Stay Compliant in California',
+    metaTitle: 'Surveillance Law for California Investigators',
     description:
       'What licensed PIs can and cannot legally do while conducting surveillance in California, including recording, GPS tracking, trespass, and evidence admissibility.',
     date: '2026-02-20',
@@ -608,6 +615,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'executive-protection-risk-management-guide',
     title: 'Executive Protection & Risk Management: A Guide for High-Net-Worth Families',
+    metaTitle: 'Executive Protection & Risk Management Guide',
     description:
       'How high-net-worth individuals and executives use private investigators for personal risk management, threat assessment, and family security planning.',
     date: '2026-01-15',
@@ -704,6 +712,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'hollywood-fixer-discreet-crisis-management',
     title: 'The Hollywood Fixer: Discreet Crisis Management for Public Figures',
+    metaTitle: 'The Hollywood Fixer: Discreet Crisis Management',
     description:
       'What a modern Hollywood fixer actually does — and how licensed investigators help public figures manage sensitive situations before they become headlines.',
     date: '2025-12-11',
@@ -798,6 +807,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'digital-forensics-modern-pi-online-evidence',
     title: 'Digital Forensics: How Modern Private Investigators Uncover Online Evidence',
+    metaTitle: 'Digital Forensics for Private Investigators',
     description:
       'From metadata analysis to open-source intelligence, here is how licensed private investigators recover, preserve, and present digital evidence in 2026.',
     date: '2025-11-16',
@@ -905,6 +915,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'criminal-profiling-investigative-science',
     title: 'Criminal Profiling Explained: The Science Behind the Investigation',
+    metaTitle: 'Criminal Profiling Explained',
     description:
       'What criminal profiling actually is — and is not — and how behavioral analysis supports investigations of unknown or unidentified subjects.',
     date: '2025-10-14',

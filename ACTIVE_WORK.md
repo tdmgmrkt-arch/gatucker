@@ -1,11 +1,13 @@
 # Active Work — Greg A. Tucker (PI)
 
-_Last updated: 2026-09-10_
+_Last updated: 2026-09-22_
 
 ---
 
 ## In Progress
 _Currently being worked on. One line each: what / who (agent) / status / notes._
+
+- **Title tag length fix — all 43 pages (2026-09-22 — DONE, unpushed)** — Semrush flagged 10 pages with titles >70 chars, all showing a doubled brand ("... | G.A. Tucker PI | G.A. Tucker PI"). Root cause: `src/app/layout.tsx` sets `template: "%s | G.A. Tucker PI"` while every child page title already ended in the brand. Fix: stripped the brand from all child titles (template supplies it once), shortened them to fit 70 chars incl. the 17-char suffix, made the homepage title `{ absolute: ... }`, shortened the root `default` title (was 71), and added an optional `metaTitle` field to `BlogPost` with short SEO titles for 10 long post headlines (H1s unchanged). Verified against the production build: 43/43 titles under 70 chars, 0 duplicated brands. The Semrush `/hollywood-fixer` row is stale — that URL already 301s to `/high-profile-investigations`.
 
 - **Pricing section copy v2 from Greg (2026-09-10 — SHIPPED)** — Greg sent a fine-tuned rewrite. Section H2 is now "Investigation Services and Pricing"; "Flat Fee" -> "Flat-Fee Packages"; "Shop for Experience" -> "Choose Experience". New content: 5th hourly bullet, discounted-package block (infidelity / child custody / missing-person), the "inquire about packages / tell us which option you prefer" paragraph, and veteran discounts. Greg adopted the agency-suggested "Custom Quote" label, so that open question is closed. Layout call: his "Because the scope and circumstances..." paragraph sits in the shared row (it applies to both options and asks the client to choose), which also keeps the two panels balanced. **Note: "Discounted package rates" and veteran "discounts or special considerations" are new public commitments the site did not previously make.**
 - **Pricing rate increase + "Shop for Experience" section (2026-09-09 — SHIPPED)** — Hourly rate raised $211 -> **$375** per Greg (email 2026-09-09). Changed `src/app/components/pricing-section.tsx` + `public/ai-actions.json` pricing_note. Pricing card rebuilt on a single 50/50 grid spine: equal-height option panels, shared consultation/veterans row, then the "Shop for Experience-Not Just Price" rationale in two columns with a full-width closing line. Copy is Greg's tightened v2 (drops "you get what you pay for" and the unverifiable "99% of private investigators" claim). **"Custom Quote" label on the Flat Fee panel is agency wording, not Greg's — confirm with him.** Also fixed a live bug: literal `**consultation**` markdown was rendering as asterisks.

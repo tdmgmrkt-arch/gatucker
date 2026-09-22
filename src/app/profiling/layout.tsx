@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Behavioral Profiling Services | Forensic Psychology | G.A. Tucker PI",
+  title: "Behavioral Profiling & Forensic Psychology",
   description: "Professional behavioral profiling and forensic psychology services for legal strategies and insights. Expert analysis by a licensed California PI.",
   openGraph: {
     title: "Behavioral Profiling & Forensic Psychology | G.A. Tucker PI",

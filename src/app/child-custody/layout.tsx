@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Child Custody Investigations | Family Court Evidence | G.A. Tucker PI",
+  title: "Child Custody Investigations | Court Evidence",
   description: "Professional child custody investigations in California. Gather objective evidence for family court proceedings to protect your children's best interests.",
   openGraph: {
     title: "Child Custody Investigations | G.A. Tucker PI",

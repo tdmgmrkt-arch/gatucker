@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from '../components/navbar';
 
 export const metadata: Metadata = {
-  title: "Request Service | Free Consultation | G.A. Tucker PI",
+  title: "Request Service | Free Consultation",
   description: "Request a free consultation with G.A. Tucker PI. Submit your inquiry for expert private investigation services in California.",
   openGraph: {
     title: "Request a Free Consultation | G.A. Tucker PI",

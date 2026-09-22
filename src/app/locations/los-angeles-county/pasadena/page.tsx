@@ -7,7 +7,7 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Pasadena Private Investigator | GA Tucker PI | CA #188351",
+  title: "Pasadena Private Investigator",
   description:
     "GA Tucker PI serves Pasadena, CA. Licensed PI based in Murrieta. Background checks, infidelity, litigation support for Pasadena and San Gabriel Valley. CA PI #188351.",
   alternates: {

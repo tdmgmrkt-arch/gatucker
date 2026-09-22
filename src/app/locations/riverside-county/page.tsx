@@ -7,7 +7,7 @@ import type { LocationPageProps } from "../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Riverside County Private Investigator | GA Tucker PI",
+  title: "Riverside County Private Investigator",
   description:
     "GA Tucker PI is a licensed Riverside County private investigator based in Murrieta, CA. Background checks, surveillance, child custody, infidelity, and more. CA #188351.",
   alternates: {

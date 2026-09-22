@@ -7,7 +7,7 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: "Rancho Cucamonga Private Investigator | GA Tucker PI",
+  title: "Rancho Cucamonga Private Investigator",
   description:
     "GA Tucker PI serves Rancho Cucamonga, CA. Licensed PI from Murrieta via I-15. Background checks, surveillance, litigation support. CA PI #188351.",
   alternates: {

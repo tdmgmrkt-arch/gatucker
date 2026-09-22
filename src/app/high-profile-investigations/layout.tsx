@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Discreet Investigations for High-Profile Clients | G.A. Tucker PI",
+  title: "Discreet High-Profile Investigations",
   description: "Licensed California PI providing confidential investigations, background checks, and risk management for celebrities, executives, and high-net-worth clients. CA License #PI188351.",
   openGraph: {
     title: "Discreet Investigations for High-Profile Clients | G.A. Tucker PI",
