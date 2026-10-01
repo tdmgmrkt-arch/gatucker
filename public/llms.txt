@@ -1,6 +1,6 @@
 # G.A. Tucker PI
 
-> California licensed private investigator (License #PI188351) based in Murrieta, CA. Greg A. Tucker offers 27+ years of investigative experience across background checks, infidelity investigations, child custody documentation, missing persons, criminal profiling, and legal expert-witness support.
+> California licensed private investigator (License #PI188351) based in Murrieta, CA. Greg A. Tucker offers 27+ years of investigative experience across background checks, infidelity investigations, child custody documentation, missing persons, criminal profiling, forensic behavioral profiling, forensic linguistics, and legal expert-witness support.
 
 ## Business
 
@@ -20,8 +20,10 @@
 - [Background checks](https://gatuckerpi.com/background-checks): FCRA + ICRAA compliant, licensed investigative database access, 1–2 business day turnaround
 - [Infidelity investigations](https://gatuckerpi.com/infidelity): court-admissible surveillance, timestamped evidence, complete discretion
 - [Child custody investigations](https://gatuckerpi.com/child-custody): family court evidence for California courts including Southwest Justice Center
+- [High-net-worth child custody investigations](https://gatuckerpi.com/high-net-worth-child-custody): confidential custody work for high-asset and high-profile families — lifestyle vs. declared income, actual vs. claimed parenting time, multi-residence household conditions, relocation/move-away matters; frequently retained through family law counsel
 - [Missing persons](https://gatuckerpi.com/missing-persons): skip traces, address confirmation, national database searches
 - [Criminal profiling](https://gatuckerpi.com/profiling): subject profiling and behavioral analysis for legal matters
+- [Forensic behavioral profiling & forensic linguistics](https://gatuckerpi.com/forensic-behavioral-profiling): forensic behavioral science applied to case facts, plus forensic linguistic analysis of texts, emails, letters, anonymous and threatening messages, disputed authorship, contracts, and transcripts
 - [Discreet investigations for high-profile clients](https://gatuckerpi.com/high-profile-investigations): confidential PI work for celebrities, executives, and HNW clients
 - [Risk management & pre-employment screening](https://gatuckerpi.com/risk-management)
 - [PI consulting & expert witness](https://gatuckerpi.com/consulting)

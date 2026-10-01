@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Child Custody Investigations | Court Evidence",
-  description: "Professional child custody investigations in California. Gather objective evidence for family court proceedings to protect your children's best interests.",
+  title: "Child Custody Private Investigator, Murrieta CA",
+  description: "Licensed California PI documenting parenting practices, living conditions, and custody concerns for family court. Based in Murrieta. Free consultation.",
+  alternates: {
+    canonical: "https://gatuckerpi.com/child-custody",
+  },
   openGraph: {
-    title: "Child Custody Investigations | G.A. Tucker PI",
-    description: "Professional child custody investigations in California. Gather objective evidence for family court proceedings.",
+    title: "Child Custody Private Investigator, Murrieta CA | G.A. Tucker PI",
+    description: "Objective documentation for California family court — parenting practices, living conditions, and child welfare concerns.",
     url: "https://gatuckerpi.com/child-custody",
     type: "website",
   },

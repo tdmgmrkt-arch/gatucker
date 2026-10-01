@@ -26,7 +26,8 @@ const serviceOptions = [
   "Infidelity",
   "Risk Management",
   "Consulting",
-  "Profiling"
+  "Profiling",
+  "Forensic Behavioral Profiling"
 ];
 
 const contactTypeOptions = [

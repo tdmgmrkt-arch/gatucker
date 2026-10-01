@@ -21,6 +21,8 @@ import {
   Brain,
   Target,
   UserCheck,
+  Microscope,
+  Gem,
   Heart,
   Award,
   Mail,
@@ -38,8 +40,10 @@ const services = [
   { title: 'Consulting', description: 'Expert guidance for complex behavioral and forensic cases.', href: '/consulting', icon: Brain },
   { title: 'Missing Persons', description: 'Specialized resources for locating individuals.', href: '/missing-persons', icon: Target },
   { title: 'Profiling', description: 'Behavioral analysis for legal strategies and insights.', href: '/profiling', icon: UserCheck },
+  { title: 'Forensic Behavioral Profiling', description: 'Forensic behavioral science and forensic linguistic analysis.', href: '/forensic-behavioral-profiling', icon: Microscope },
   { title: 'Infidelity', description: 'Discreet and sensitive domestic relationship investigations.', href: '/infidelity', icon: Heart },
   { title: 'Child Custody', description: 'Objective evidence for family court proceedings.', href: '/child-custody', icon: Award },
+  { title: 'High-Net-Worth Child Custody', description: 'Discreet custody investigations for high-asset families.', href: '/high-net-worth-child-custody', icon: Gem },
 ];
 
 const about = [

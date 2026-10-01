@@ -15,9 +15,11 @@ const relatedServices = [
   { title: 'Risk Management', href: '/risk-management' },
   { title: 'Consulting', href: '/consulting' },
   { title: 'Profiling', href: '/profiling', current: true },
+  { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling' },
   { title: 'Infidelity Investigations', href: '/infidelity' },
   { title: 'General Investigations', href: '/investigations' },
   { title: 'Child Custody', href: '/child-custody' },
+  { title: 'High-Net-Worth Child Custody', href: '/high-net-worth-child-custody' },
   { title: 'Missing Persons', href: '/missing-persons' },
   { title: 'High-Profile Clients', href: '/high-profile-investigations' },
 ];
@@ -637,7 +639,8 @@ export default function ProfilingPage() {
                 </div>
               </motion.div>
 
-              {/* Forensic Linguistics Section */}
+
+              {/* Forensic Linguistics Section — summary; full treatment lives on /forensic-behavioral-profiling */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -653,28 +656,18 @@ export default function ProfilingPage() {
                 </h2>
                 <div className="space-y-4">
                   <p className="text-[#EDEDED]/80 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                    Forensic linguistics analyzes language patterns to identify authorship, detect deception, and understand communication intent. This specialized profiling technique is invaluable in cases involving:
+                    Forensic linguistics analyzes written and spoken language to examine authorship, meaning, intent, and communication patterns. It applies to anonymous threatening letters, extortion and ransom messages, disputed document authorship, online harassment, and contract wording disputes.
                   </p>
-                  <ul className="grid md:grid-cols-2 gap-4">
-                    {[
-                      'Anonymous threatening letters',
-                      'Ransom notes and extortion messages',
-                      'Disputed document authorship',
-                      'Online harassment communications',
-                      'Plagiarism and intellectual property theft',
-                      'Contract dispute analysis',
-                    ].map((application, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-[#CEA53D] flex-shrink-0 mt-0.5" />
-                        <span className="text-[#EDEDED]/80" style={{ fontFamily: "'Inter', sans-serif" }}>
-                          {application}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-[#EDEDED]/80 leading-relaxed mt-6" style={{ fontFamily: "'Inter', sans-serif" }}>
-                    Our linguistic experts analyze vocabulary, syntax, grammar patterns, and stylistic choices to create detailed profiles and attribution reports that stand up to legal scrutiny.
+                  <p className="text-[#EDEDED]/80 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                    Greg Tucker offers forensic linguistic analysis as a dedicated service alongside forensic behavioral profiling, with a full breakdown of what the analysis examines and what it can and cannot establish.
                   </p>
+                  <a
+                    href="/forensic-behavioral-profiling"
+                    className="inline-flex items-center gap-2 mt-2 bg-[#CEA53D] text-black px-6 py-3 font-black uppercase text-sm tracking-wider transition-all hover:bg-[#CEA53D]/90 active:scale-95"
+                    style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+                  >
+                    Forensic Behavioral Profiling &amp; Forensic Linguistics
+                  </a>
                 </div>
               </motion.div>
 

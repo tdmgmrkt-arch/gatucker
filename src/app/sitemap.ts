@@ -80,6 +80,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/high-net-worth-child-custody`,
+      lastModified: mtime('high-net-worth-child-custody/page.tsx'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/missing-persons`,
       lastModified: mtime('missing-persons/page.tsx'),
       changeFrequency: 'monthly',
@@ -90,6 +96,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: mtime('profiling/page.tsx'),
       changeFrequency: 'monthly',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/forensic-behavioral-profiling`,
+      lastModified: mtime('forensic-behavioral-profiling/page.tsx'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/high-profile-investigations`,

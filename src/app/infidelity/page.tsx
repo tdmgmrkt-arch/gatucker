@@ -16,9 +16,11 @@ const relatedServices = [
   { title: 'Risk Management', href: '/risk-management' },
   { title: 'Consulting', href: '/consulting' },
   { title: 'Profiling', href: '/profiling' },
+  { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling' },
   { title: 'Infidelity Investigations', href: '/infidelity', current: true },
   { title: 'General Investigations', href: '/investigations' },
   { title: 'Child Custody', href: '/child-custody' },
+  { title: 'High-Net-Worth Child Custody', href: '/high-net-worth-child-custody' },
   { title: 'Missing Persons', href: '/missing-persons' },
   { title: 'High-Profile Clients', href: '/high-profile-investigations' },
 ];

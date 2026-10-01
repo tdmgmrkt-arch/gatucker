@@ -33,6 +33,12 @@ const services = [
     href: '/profiling',
   },
   {
+    title: 'Forensic Behavioral Profiling',
+    description: 'Forensic behavioral science and forensic linguistic analysis for attorneys, corporations, and private individuals — examining behavior, disputed communications, and authorship within the full context of a case.',
+    image: '/profilin-hero.webp',
+    href: '/forensic-behavioral-profiling',
+  },
+  {
     title: 'Infidelity Investigations',
     description: 'Discreet surveillance and investigative services to uncover the truth about suspected infidelity with court-admissible evidence.',
     image: '/infideliity-hero.webp',
@@ -49,6 +55,12 @@ const services = [
     description: 'Thorough investigations to document parental fitness, living conditions, and child welfare for custody proceedings.',
     image: '/child-custody-hero.webp',
     href: '/child-custody',
+  },
+  {
+    title: 'High-Net-Worth Child Custody',
+    description: 'Confidential custody investigations for high-asset and high-profile California families — lifestyle and parenting-time documentation prepared for your family law attorney.',
+    image: '/child-custody-hero.webp',
+    href: '/high-net-worth-child-custody',
   },
   {
     title: 'Missing Persons',

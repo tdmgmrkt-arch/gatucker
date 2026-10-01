@@ -17,8 +17,10 @@ const relatedServices = [
   { title: 'Consulting', href: '/consulting' },
   { title: 'Missing Persons', href: '/missing-persons' },
   { title: 'Profiling', href: '/profiling' },
+  { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling' },
   { title: 'Infidelity', href: '/infidelity' },
   { title: 'Child Custody', href: '/child-custody' },
+  { title: 'High-Net-Worth Child Custody', href: '/high-net-worth-child-custody' },
 ];
 
 const reasonsToHire = [

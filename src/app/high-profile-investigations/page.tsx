@@ -3,6 +3,7 @@
 import { breadcrumbSchema } from '@/lib/schema';
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { Eye, Lock, Shield, Users } from "lucide-react";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
@@ -390,6 +391,58 @@ export default function HollywoodFixerPage() {
                   Crisis doesn&apos;t wait for business hours. Greg is available around the clock to respond to urgent situations and provide immediate guidance.
                 </p>
               </div>
+            </div>
+          </motion.div>
+
+          {/* Family & Custody Matters */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mt-16 sm:mt-20 bg-gradient-to-br from-[#CEA53D]/10 to-black/40 border-2 border-[#CEA53D]/40 rounded-xl p-6 sm:p-8"
+          >
+            <h3
+              className="text-3xl md:text-4xl font-black uppercase text-[#CEA53D] mb-6"
+              style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+            >
+              Family and Custody Matters at This Level
+            </h3>
+            <div
+              className="space-y-4 text-[#EDEDED]/80 max-w-4xl"
+              style={{ fontFamily: "'Inter', sans-serif", lineHeight: "1.7" }}
+            >
+              <p>
+                A significant share of the firm&apos;s high-profile work is family matters —
+                contested custody, divorce, and the disputes that follow them. These cases are
+                harder than their public counterparts for specific reasons: multiple residences
+                across counties, income held inside entities rather than on a pay stub, parents who
+                travel constantly while household staff provide the actual day-to-day care, and
+                press interest that reaches the children first.
+              </p>
+              <p>
+                Greg A. Tucker documents what is actually happening — parenting time as exercised
+                rather than as claimed, household conditions across every residence, lifestyle and
+                spending relevant to support, and the circumstances behind a proposed relocation.
+                Reports are prepared for filing and frequently retained through family law counsel
+                rather than directly by the parent.
+              </p>
+            </div>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/high-net-worth-child-custody"
+                className="inline-flex items-center justify-center gap-2 bg-[#CEA53D] text-black px-6 py-3 font-black uppercase text-sm tracking-wider transition-all hover:bg-[#CEA53D]/90 active:scale-95"
+                style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+              >
+                High-Net-Worth Child Custody
+              </Link>
+              <Link
+                href="/child-custody"
+                className="inline-flex items-center justify-center gap-2 bg-black border-2 border-[#CEA53D] text-[#CEA53D] px-6 py-3 font-black uppercase text-sm tracking-wider transition-all hover:bg-[#CEA53D] hover:text-black active:scale-95"
+                style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+              >
+                Child Custody Investigations
+              </Link>
             </div>
           </motion.div>
 

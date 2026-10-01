@@ -7,18 +7,75 @@ import { RequestServiceForm } from '../components/request-service-form';
 import { Phone, Mail, Shield, CheckCircle, Heart, Camera, FileText, AlertCircle, Home, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { breadcrumbSchema } from '@/lib/schema';
+import Link from 'next/link';
+import { FAQAccordion } from '../components/faq-accordion';
+import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 
 const relatedServices = [
   { title: 'Background Checks', href: '/background-checks' },
   { title: 'Risk Management', href: '/risk-management' },
   { title: 'Consulting', href: '/consulting' },
   { title: 'Profiling', href: '/profiling' },
+  { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling' },
   { title: 'Infidelity Investigations', href: '/infidelity' },
   { title: 'General Investigations', href: '/investigations' },
   { title: 'Child Custody', href: '/child-custody', current: true },
+  { title: 'High-Net-Worth Child Custody', href: '/high-net-worth-child-custody' },
   { title: 'Missing Persons', href: '/missing-persons' },
   { title: 'High-Profile Clients', href: '/high-profile-investigations' },
+];
+
+const custodyFaqs = [
+  {
+    question: 'Can a private investigator help with my child custody case?',
+    answer:
+      'Yes, within limits worth understanding up front. California family courts decide custody on the best interest of the child, and a judge weighs the entire record. An investigator cannot promise you an outcome. What an investigator provides is documentation — timestamped observation, written field reports, and verifiable facts that replace assertion with evidence your attorney can put in front of the court.',
+  },
+  {
+    question: 'What can an investigator document in a custody case?',
+    answer:
+      'Common areas include who is actually caring for the child during custodial time, the condition and safety of the home environment, whether an unvetted adult has regular access to the child, compliance with the existing parenting plan, substance use or conduct raising supervision concerns, and the circumstances surrounding a proposed relocation. Documentation is limited to what can be lawfully observed and verified.',
+  },
+  {
+    question: 'Is surveillance evidence admissible in California family court?',
+    answer:
+      'Admissibility is decided by the court and depends on how the evidence was obtained and presented. Documentation gathered from lawful public vantage points, recorded continuously, logged with chain-of-custody discipline, and supported by an investigator declaration is positioned to be used. Material obtained by trespass, pretext, accessing someone else’s device or accounts, or recording a confidential conversation without consent creates a serious problem under California law.',
+  },
+  {
+    question: 'Can you investigate my child’s other parent’s new partner?',
+    answer:
+      'A background check on an adult who has regular, unsupervised access to your child is a routine and reasonable request, and it is frequently relevant to a custody matter. The scope is a records-based background investigation plus, where warranted, observation of the household environment. It is not a licence to surveil a private individual without a legitimate case-related purpose.',
+  },
+  {
+    question: 'How much does a child custody investigation cost?',
+    answer:
+      'Hourly work is billed at the firm standard rate of $375 per hour, and flat-fee packages are available for defined scopes. Discounted package rates may be available for child custody matters depending on the specifics of the case. Surveillance hours are the main cost driver, so scope is set after a consultation rather than quoted blind. Initial consultations are free.',
+  },
+  {
+    question: 'How long does a custody investigation take?',
+    answer:
+      'It depends entirely on what needs to be established. Confirming a single recurring pattern may take a few well-chosen days of surveillance. Documenting conduct across several weeks of a parenting schedule takes correspondingly longer. If you have a hearing date, say so on the first call so the work can be scheduled against it.',
+  },
+  {
+    question: 'Will the other parent know I hired an investigator?',
+    answer:
+      'Surveillance is conducted without contact and from lawful public vantage points, in a manner designed not to be noticed. No investigator can guarantee an opposing party never becomes aware of an investigation, and if the matter reaches a hearing the documentation itself gets disclosed through the normal process. What we control is that the work is conducted discreetly and the file is not exposed before your attorney chooses to use it.',
+  },
+  {
+    question: 'Do I need an attorney before hiring an investigator?',
+    answer:
+      'No, though many custody engagements are retained through counsel, and that structure has advantages. If you have not retained an attorney yet, call anyway. You will get a straight assessment of what is worth documenting now, which often matters most in the period before a filing.',
+  },
+  {
+    question: 'What should I do if I believe my child is in immediate danger?',
+    answer:
+      'Contact law enforcement or child protective services first. An investigator documents facts for a civil proceeding and is not a substitute for an emergency response. Once the child is safe, documentation can support an emergency custody request or a change to the existing order, and we can move quickly on that.',
+  },
+  {
+    question: 'Do you serve Murrieta and the surrounding area?',
+    answer:
+      'G.A. Tucker PI is based in Murrieta, California and licensed statewide (PI #188351). We regularly work custody matters heard at the Southwest Justice Center in Murrieta and throughout Riverside, San Bernardino, Los Angeles, and Orange counties, with statewide coverage for cases that require it.',
+  },
 ];
 
 export default function ChildCustodyPage() {
@@ -32,11 +89,15 @@ export default function ChildCustodyPage() {
           ),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(custodyFaqs)) }}
+      />
       <Navbar />
 
       {/* Hero Section */}
       <section
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
+        className="relative py-14 sm:py-20 px-4 sm:px-6 lg:px-8"
       >
         {/* Background Image - LCP optimized */}
         <Image
@@ -72,24 +133,26 @@ export default function ChildCustodyPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="pt-20 text-center max-w-6xl mx-auto"
+            className="pt-20 text-center max-w-7xl mx-auto"
           >
             <h1
-              className="mb-6 font-black uppercase tracking-tight leading-none"
+              className="mb-6 font-black uppercase tracking-tight leading-[1.05] text-balance"
               style={{
                 fontFamily: "'Bebas Neue', 'Arial Black', sans-serif",
-                fontSize: "clamp(2.5rem, 6vw, 5.5rem)",
+                fontSize: "clamp(1.875rem, 4vw, 3.75rem)",
                 color: "#FFF",
                 textShadow: "0 0 40px rgba(206, 165, 61, 0.3)",
               }}
             >
-              Child Custody Investigations
+              Child Custody Investigations in Murrieta, California
             </h1>
             <p
-              className="text-lg sm:text-xl text-[#EDEDED]/90 max-w-3xl mx-auto leading-relaxed"
+              className="text-base sm:text-lg text-[#EDEDED]/90 max-w-4xl mx-auto leading-relaxed"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
-              Protecting children&apos;s best interests through comprehensive custody investigations. Professional documentation and evidence gathering for family court proceedings.
+              Objective documentation for California family court. G.A. Tucker PI is a licensed
+              private investigator based in Murrieta, documenting parenting practices, living
+              conditions, and child welfare concerns in a form your attorney can file.
             </p>
           </motion.div>
         </div>
@@ -289,6 +352,17 @@ export default function ChildCustodyPage() {
                       style={{ fontFamily: "'Inter', sans-serif" }}
                     >
                       We understand that children&apos;s wellbeing is paramount. Our investigations focus on gathering factual evidence that demonstrates each parent&apos;s fitness, living environment, and ability to provide a safe, nurturing home for the child.
+                    </p>
+                    <p
+                      className="text-[#EDEDED]/80 leading-relaxed mt-4"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    >
+                      Custody files at this firm involve Julia Tucker, Co-Owner and COO, who brings
+                      a background in child psychology and education, a paralegal certification, and
+                      more than 17 years working with children and families. Greg A. Tucker holds
+                      master&apos;s degrees in forensic psychology, criminology, and legal studies
+                      alongside 27+ years of investigative experience and California PI license
+                      #188351.
                     </p>
                   </div>
                   <div className="relative">
@@ -583,6 +657,153 @@ export default function ChildCustodyPage() {
                   ))}
                 </div>
               </motion.div>
+        </div>
+      </section>
+
+      {/* California Family Court / Attorney / FAQs */}
+      <section className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1A1A1A] via-[#0D0D0D] to-[#0D0D0D]">
+        <div className="max-w-6xl mx-auto space-y-16">
+          {/* California Family Court */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2
+              className="text-3xl sm:text-4xl font-black uppercase text-[#CEA53D] mb-6"
+              style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+            >
+              California Family Court: What Actually Helps
+            </h2>
+            <div
+              className="space-y-4 text-[#EDEDED]/80 max-w-4xl"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              <p className="leading-relaxed">
+                California family courts decide custody on the best interest of the child. A judge
+                weighs the whole record, and no investigator can promise you an outcome. What an
+                investigator does is replace assertion with documentation — and in a contested
+                custody matter, that difference carries real weight.
+              </p>
+              <p className="leading-relaxed">
+                Evidence is only worth gathering if it survives contact with opposing counsel.
+                Documentation from this office is collected to that standard, whether the matter is
+                heard at the Southwest Justice Center in Murrieta, the Riverside Historic
+                Courthouse, or any other California family court:
+              </p>
+              <ul className="grid sm:grid-cols-2 gap-4 mt-6">
+                {[
+                  'Timestamped, continuous video and photo documentation',
+                  'Written field reports with investigator declarations',
+                  'Chain-of-custody discipline on every file',
+                  'Observation from lawful public vantage points only',
+                  'Nothing obtained by pretext, trespass, or device access',
+                  'Reports prepared in the form your attorney can file',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#CEA53D] flex-shrink-0 mt-0.5" />
+                    <span
+                      className="text-[#EDEDED]/80 leading-relaxed"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    >
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <p className="leading-relaxed mt-6">
+                Material obtained by trespass, pretext, accessing someone else&apos;s phone or
+                accounts, or recording a confidential conversation without consent creates a serious
+                problem under California law, and it tends to damage the case it was meant to help.
+                We decline that work and will tell you so on the first call.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Working With Your Attorney */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-gradient-to-br from-[#CEA53D]/10 to-black/40 border-2 border-[#CEA53D]/40 rounded-lg p-6 sm:p-8"
+          >
+            <h2
+              className="text-3xl sm:text-4xl font-black uppercase text-[#CEA53D] mb-6"
+              style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+            >
+              Working With Your Family Law Attorney
+            </h2>
+            <div
+              className="space-y-4 text-[#EDEDED]/80"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              <p className="leading-relaxed">
+                Many custody engagements are retained through counsel rather than directly by a
+                parent. That keeps the investigation aligned with the legal strategy and means
+                reports arrive in the form an attorney actually needs for a declaration, a custody
+                evaluation, or a hearing. If you have not retained an attorney yet, that is fine —
+                call anyway, and you will get a straight answer about what is worth documenting
+                first.
+              </p>
+              <p className="leading-relaxed">
+                Greg A. Tucker also provides{' '}
+                <Link href="/consulting" className="text-[#CEA53D] underline hover:text-[#CEA53D]/80">
+                  case consulting and expert-witness support
+                </Link>{' '}
+                for attorneys, and{' '}
+                <Link
+                  href="/forensic-behavioral-profiling"
+                  className="text-[#CEA53D] underline hover:text-[#CEA53D]/80"
+                >
+                  forensic behavioral profiling and forensic linguistic analysis
+                </Link>{' '}
+                where a custody file turns on disputed text messages, contested authorship, or
+                conduct that has to be evaluated in context.
+              </p>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-[#CEA53D]/30">
+              <h3
+                className="text-xl sm:text-2xl font-bold text-[#EDEDED] mb-3"
+                style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+              >
+                High-Asset or High-Profile Custody Matter?
+              </h3>
+              <p
+                className="text-[#EDEDED]/80 leading-relaxed mb-5"
+                style={{ fontFamily: "'Inter', sans-serif" }}
+              >
+                Cases involving multiple residences, income held inside entities, frequent travel,
+                household staff, or public visibility require a different approach and a different
+                level of discretion.
+              </p>
+              <Link
+                href="/high-net-worth-child-custody"
+                className="inline-flex items-center gap-2 bg-[#CEA53D] text-black px-6 py-3 font-black uppercase text-sm tracking-wider transition-all hover:bg-[#CEA53D]/90 active:scale-95"
+                style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+              >
+                High-Net-Worth Child Custody Investigations
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* FAQs */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2
+              className="text-3xl sm:text-4xl font-black uppercase text-[#CEA53D] mb-8"
+              style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+            >
+              Child Custody Investigation FAQs
+            </h2>
+            <FAQAccordion faqs={custodyFaqs} />
+          </motion.div>
         </div>
       </section>
 
