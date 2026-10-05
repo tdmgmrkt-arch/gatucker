@@ -271,10 +271,10 @@ export default function ProfilingPage() {
                 </h2>
                 <div className="space-y-4 text-[#EDEDED]/80" style={{ fontFamily: "'Inter', sans-serif" }}>
                   <p className="leading-relaxed">
-                    Profiling involves analyzing behavioral patterns, psychological characteristics, and evidence to understand and predict human behavior. Our expert profilers use advanced techniques to create comprehensive assessments that aid in investigations, risk management, and security planning.
+                    Profiling is the analysis of behavioral patterns, psychological characteristics, and evidence to better understand and anticipate human behavior. Although experience as a police officer, detective, or FBI agent can provide valuable investigative skills, it does not automatically qualify someone to conduct a professional profile. Professional profiling requires specialized education and experience beyond general investigative work.
                   </p>
                   <p className="leading-relaxed">
-                    Whether you need behavioral analysis for corporate security, criminal profiling for legal cases, or threat assessment for personal protection, our team provides detailed, actionable insights backed by extensive experience and proven methodologies.
+                    Greg Tucker brings both. A former law-enforcement officer, he also received formal training as a profiler. He provides behavioral analysis, criminal profiling, and threat assessments for corporate security, legal cases, and personal protection—delivering clear, actionable insights grounded in professional training and investigative experience.
                   </p>
                 </div>
               </motion.div>
