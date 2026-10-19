@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const TOP_LINKS: Array<{ href: string; label: string; desc: string }> = [
-  { href: "/", label: "Home", desc: "California's leading PI" },
+  { href: "/", label: "Home", desc: "Licensed California PI" },
   { href: "/investigations", label: "Investigations", desc: "Private investigation services" },
   { href: "/infidelity", label: "Infidelity", desc: "Discreet spousal surveillance" },
   { href: "/background-checks", label: "Background Checks", desc: "Employment & personal" },

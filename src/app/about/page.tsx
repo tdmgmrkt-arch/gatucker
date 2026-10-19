@@ -269,9 +269,9 @@ export default function AboutPage() {
                 }}
               >
                 
-                Holding three master&apos;s degrees in Criminology, Legal Studies, and Forensic Behavioral Science,
-                Greg combines 27 years of investigative experience with academic expertise to lead
-                one of California&apos;s most trusted investigation firms.
+                Holding three master&apos;s degrees in Forensic Psychology, Criminology, and Legal Studies,
+                Greg combines 27+ years of investigative experience with academic expertise, under
+                California BSIS Private Investigator License #PI188351.
               </p>
             </motion.div>
           </motion.div>
@@ -479,11 +479,11 @@ export default function AboutPage() {
                 }}
               >
                 Julia Tucker serves as Co-Owner and COO of GA Tucker PI Investigative Services LLC.
-                A dedicated advocate for children&apos;s well-being, she brings over 17 years of experience
-                as a pyschologist. With master&apos;s degrees in Education and Child Psychology,
-                Julia specializes in supporting investigations involving missing children, domestic disputes,
-                and child custody cases. Her compassion and expertise ensure that each case is approached with
-                empathy, professionalism, and insight.
+                A dedicated advocate for children&apos;s well-being, she brings more than 17 years working
+                with children and families, a background in child psychology and education, and a paralegal
+                certification. Julia specializes in supporting investigations involving missing children,
+                domestic disputes, and child custody cases. Her compassion and expertise ensure that each
+                case is approached with empathy, professionalism, and insight.
               </p>
             </motion.div>
 
@@ -627,7 +627,7 @@ export default function AboutPage() {
                     lineHeight: "1.8",
                   }}
                 >
-                  Greg and Julia Tucker bring nearly three decades of partnership and family-centered values to GA Tucker PI Investigative Services LLC. As Owner and CEO, Greg draws on his experience as a US Army Veteran, his work in the criminal justice system, and his **three master’s degrees** (in Criminology, Legal Studies, and Forensic Behavioral Science) to lead the firm with integrity and expertise—particularly in complex cases such as missing persons and child custody matters.
+                  Greg and Julia Tucker bring nearly three decades of partnership and family-centered values to GA Tucker PI Investigative Services LLC. As Owner and CEO, Greg draws on his experience as a US Army Veteran, his work in the criminal justice system, and his three master’s degrees (in Forensic Psychology, Criminology, and Legal Studies) to lead the firm with integrity and expertise—particularly in complex cases such as missing persons and child custody matters.
                 </p>
 
                 <p
@@ -638,7 +638,7 @@ export default function AboutPage() {
                     lineHeight: "1.8",
                   }}
                 >
-                  Julia, the firm’s Co-Owner and COO, brings over 17 years of experience as a psychologist, backed by a paralegal certification and dual master’s degrees in both education and child psychology. Her background makes her a strong advocate for children and families, and she plays an active role in investigations related to missing children and domestic issues.
+                  Julia, the firm’s Co-Owner and COO, brings a background in child psychology and education, a paralegal certification, and more than 17 years working with children and families. That experience makes her a strong advocate for children and families, and she plays an active role in investigations related to missing children and domestic issues.
                   </p>
                 <p
                   className="mb-6 text-[#EDEDED]/85 font-light"

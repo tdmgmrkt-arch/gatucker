@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "California Private Investigator | G.A. Tucker PI",
     template: "%s | G.A. Tucker PI"
   },
-  description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
+  description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -20,9 +20,11 @@ export const metadata: Metadata = {
     description: "Licensed California private investigator with 27+ years experience. Background checks, surveillance, infidelity investigations, and more. CA License #PI188351.",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        // /og-image.png never existed in public/. hero-poster-desktop.webp is the
+        // real homepage hero and is a true 1920x1080.
+        url: "/hero-poster-desktop.webp",
+        width: 1920,
+        height: 1080,
         alt: "G.A. Tucker PI - California Private Investigator"
       }
     ]
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "G.A. Tucker PI | California Private Investigator",
     description: "Licensed California PI with 27+ years experience. Background checks, surveillance, infidelity investigations. CA License #PI188351.",
-    images: ["/og-image.png"]
+    images: ["/hero-poster-desktop.webp"]
   },
   robots: {
     index: true,
@@ -61,11 +63,14 @@ const organizationSchema = {
   name: "G.A. Tucker PI",
   alternateName: "G.A. Tucker Private Investigations",
   url: "https://gatuckerpi.com",
-  logo: "https://gatuckerpi.com/logo.png",
-  image: "https://gatuckerpi.com/og-image.png",
-  description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
+  // /logo.png and /og-image.png do not exist in public/ -- both pointed at 404s.
+  logo: "https://gatuckerpi.com/GA-Tucker-PI-logo.webp",
+  image: "https://gatuckerpi.com/hero-poster-desktop.webp",
+  description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
   telephone: "+1-909-964-8976",
-  email: "info@gatuckerpi.com",
+  // gatuckerpi.com has NO MX records -- info@ receives nothing. Every human-facing
+  // link on the site already uses the Gmail address; schema now matches.
+  email: "gatuckerpi@gmail.com",
   contactPoint: [
     {
       "@type": "ContactPoint",
