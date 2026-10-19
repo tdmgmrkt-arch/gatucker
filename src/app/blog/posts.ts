@@ -34,8 +34,8 @@ export const posts: BlogPost[] = [
     date: '2026-07-15',
     readTime: '4 min read',
     category: 'Hiring a PI',
-    image: '/labackscape.webp',
-    imageAlt: 'Los Angeles skyline at night with long-exposure headlight trails curving along the freeway below',
+    image: '/hire-a-pi-hero.webp',
+    imageAlt: 'Two armchairs facing a low table in a dim office at night, lit by a single floor lamp',
     keywords: [
       'hire private investigator California',
       'California PI license',
@@ -132,8 +132,8 @@ export const posts: BlogPost[] = [
     date: '2026-06-12',
     readTime: '3 min read',
     category: 'Infidelity',
-    image: '/infideliity-hero.webp',
-    imageAlt: 'Silhouetted profiles of a man and a woman facing away from each other across a dimly lit room',
+    image: '/cheating-signs-hero.webp',
+    imageAlt: 'Two smartphones lying face-down on a dark kitchen counter at night, one glowing faintly beneath',
     keywords: [
       'signs of cheating spouse',
       'infidelity private investigator',
@@ -226,8 +226,8 @@ export const posts: BlogPost[] = [
     date: '2026-05-14',
     readTime: '4 min read',
     category: 'Background Checks',
-    image: '/background_check_hero_bg.webp',
-    imageAlt: 'Dark archive corridor lined with tall shelves of document binders lit by narrow strip lighting',
+    image: '/employment-screening-hero.webp',
+    imageAlt: 'An empty wooden office chair at a desk in a dim room, slatted light from a window blind falling on the wall behind',
     keywords: [
       'California background check laws',
       'employment background check',
@@ -338,8 +338,8 @@ export const posts: BlogPost[] = [
     date: '2026-04-10',
     readTime: '3 min read',
     category: 'Child Custody',
-    image: '/child-custody-hero.webp',
-    imageAlt: 'A young child holding a teddy bear stands alone in a dim living room while two adults talk on a couch behind',
+    image: '/custody-evidence-hero.webp',
+    imageAlt: 'A child\'s backpack hanging on a hook in a doorway, warm light from the next room spilling across the floor',
     keywords: [
       'child custody investigation',
       'custody private investigator',
@@ -428,8 +428,8 @@ export const posts: BlogPost[] = [
     date: '2026-03-18',
     readTime: '3 min read',
     category: 'Missing Persons',
-    image: '/missing-persons-hero.webp',
-    imageAlt: 'A map marked with a single red pushpin on a desk at night, beside open notebooks and a propped photograph',
+    image: '/missing-first-48-hero.webp',
+    imageAlt: 'A coat still hanging on a hook beside a part-open door, a lamp still lit in the room beyond',
     keywords: [
       'missing person first 48 hours',
       'missing person private investigator',
@@ -621,8 +621,8 @@ export const posts: BlogPost[] = [
     date: '2026-01-15',
     readTime: '3 min read',
     category: 'Risk Management',
-    image: '/risk-management-hero.webp',
-    imageAlt: 'A chess king standing on a board in a darkened office at night, city lights beyond the window blinds',
+    image: '/executive-protection-hero.webp',
+    imageAlt: 'The rear door of a black SUV standing open at a wet kerb at night, interior light on, city lights blurred beyond',
     keywords: [
       'executive protection California',
       'high net worth security',
@@ -718,8 +718,8 @@ export const posts: BlogPost[] = [
     date: '2025-12-11',
     readTime: '4 min read',
     category: 'Hollywood Fixer',
-    image: '/hollywood_fixer_background.webp',
-    imageAlt: 'An empty rain-slicked street at night looking up toward the illuminated Hollywood sign',
+    image: '/hollywood-fixer-hero.webp',
+    imageAlt: 'An unmarked service door in a dark alley under a single bulb, a rolled carpet and coiled stanchion rope beside it',
     keywords: [
       'Hollywood fixer',
       'celebrity private investigator',
@@ -813,8 +813,8 @@ export const posts: BlogPost[] = [
     date: '2025-11-16',
     readTime: '4 min read',
     category: 'Digital Forensics',
-    image: '/invetigating-services-hero.webp',
-    imageAlt: 'A figure silhouetted from behind facing a dark office with scattered papers and a wall of pinned documents',
+    image: '/digital-forensics-hero.webp',
+    imageAlt: 'A bare hard drive on an anti-static mat under a desk lamp, cables running off a dark workbench',
     keywords: [
       'digital forensics private investigator',
       'online evidence collection',
@@ -921,8 +921,8 @@ export const posts: BlogPost[] = [
     date: '2025-10-14',
     readTime: '3 min read',
     category: 'Profiling',
-    image: '/profilin-hero.webp',
-    imageAlt: 'An empty desk at night under an angled lamp, with a notepad, pen, and reading glasses resting on a closed book',
+    image: '/criminal-profiling-hero.webp',
+    imageAlt: 'Plain archive storage boxes stacked on a long table under a single overhead lamp in a dim room',
     keywords: [
       'criminal profiling',
       'behavioral analysis investigator',
@@ -1030,8 +1030,8 @@ export const posts: BlogPost[] = [
     date: '2026-08-22',
     readTime: '10 min read',
     category: 'Threat Assessment',
-    image: '/risk-management-hero.webp',
-    imageAlt: 'A chess king standing alone on a board in a darkened office, suggesting the deliberate pace of threat assessment',
+    image: '/threat-assessment-hero.webp',
+    imageAlt: 'The inside of a residential front door at night with a deadbolt and chain lock engaged',
     keywords: [
       'threat assessment California',
       'stalking investigation private investigator',
@@ -1535,9 +1535,9 @@ export const posts: BlogPost[] = [
     date: '2026-08-31',
     readTime: '9 min read',
     category: 'High-Net-Worth Custody',
-    image: '/child-custody-hero.webp',
+    image: '/custody-documentation-hero.webp',
     imageAlt:
-      'A young child with a teddy bear standing alone in a dim living room while two adults sit talking behind',
+      'A blank clipboard resting on a car dashboard at night, an empty road visible through the windshield',
     keywords: [
       'custody investigation evidence California',
       'high-asset custody investigator',
@@ -1653,9 +1653,9 @@ export const posts: BlogPost[] = [
     date: '2026-09-09',
     readTime: '9 min read',
     category: 'Legal Consulting',
-    image: '/consulting-hero-background.webp',
+    image: '/litigation-support-hero.webp',
     imageAlt:
-      'A corkboard of pinned documents connected by red string in a dim office at night, beside a lit desk lamp',
+      'Banker\'s boxes stacked against the wall of a long dark corridor, a lit doorway far down the hall',
     keywords: [
       'litigation support investigator California',
       'private investigator for attorneys',
@@ -1897,9 +1897,9 @@ export const posts: BlogPost[] = [
     date: '2026-09-28',
     readTime: '10 min read',
     category: 'Infidelity',
-    image: '/infideliity-hero.webp',
+    image: '/infidelity-digital-hero.webp',
     imageAlt:
-      'Two silhouetted figures facing opposite directions at either side of a dimly lit room',
+      'An open laptop glowing on a dark table beside two wine glasses, one still full',
     keywords: [
       "is it illegal to track my spouse's phone California",
       'infidelity evidence admissible California',
@@ -2010,9 +2010,9 @@ export const posts: BlogPost[] = [
     date: '2026-10-07',
     readTime: '10 min read',
     category: 'High-Net-Worth Custody',
-    image: '/locations-hero.webp',
+    image: '/relocation-custody-hero.webp',
     imageAlt:
-      'Aerial view at dusk of a Southern California valley city, a freeway curving through lit neighborhoods toward distant mountains',
+      'A small suitcase standing in a dim hallway beside a doorway filled with warm light',
     keywords: [
       'move away custody investigation California',
       'parental abduction risk factors',
@@ -2271,9 +2271,9 @@ export const posts: BlogPost[] = [
     date: '2025-10-30',
     readTime: '8 min read',
     category: 'Missing Persons',
-    image: '/missing-persons-hero.webp',
+    image: '/skip-tracing-hero.webp',
     imageAlt:
-      'A map marked with a single red pushpin on a desk at night, beside open notebooks and a propped photograph',
+      'A grid wall of apartment mailboxes in a dim lobby under a single overhead light',
     keywords: [
       'skip tracing California',
       'locate a witness investigator',
@@ -2391,9 +2391,9 @@ export const posts: BlogPost[] = [
     date: '2025-12-29',
     readTime: '8 min read',
     category: 'High-Profile Clients',
-    image: '/hollywood_fixer_background.webp',
+    image: '/household-staff-hero.webp',
     imageAlt:
-      'An empty rain-slicked street at night looking up toward the illuminated Hollywood sign',
+      'Several sets of keys and a plain jacket hanging on a row of hooks under a wall sconce in a dark hallway',
     keywords: [
       'household staff background check California',
       'nanny background check private investigator',
@@ -2516,9 +2516,9 @@ export const posts: BlogPost[] = [
     date: '2026-02-03',
     readTime: '8 min read',
     category: 'Investigations',
-    image: '/dark-alley.webp',
+    image: '/insurance-claims-hero.webp',
     imageAlt:
-      'A narrow brick alley at night lit by warm streetlamps, with a one-way sign on the wall',
+      'An extension ladder leaning against a garage wall beside an open toolbox, lit by a single overhead bulb',
     keywords: [
       'insurance fraud investigator California',
       'workers compensation surveillance investigator',
@@ -2874,9 +2874,9 @@ export const posts: BlogPost[] = [
     date: '2026-06-26',
     readTime: '8 min read',
     category: 'Risk Management',
-    image: '/servicesbg.webp',
+    image: '/digital-footprint-hero.webp',
     imageAlt:
-      'A person in a suit working at a laptop in a darkened office at night, case files stacked beside them and city lights beyond the window',
+      'A dark window at night reflecting the glow of screens, a quiet residential street visible beyond the glass',
     keywords: [
       'digital footprint audit executive',
       'doxxing protection family',
