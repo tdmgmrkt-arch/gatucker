@@ -7,7 +7,7 @@ import { getGoogleReviews, formatRating, formatReviewCount } from '@/lib/google-
 
 export const metadata: Metadata = {
   title: { absolute: "California Private Investigator | G.A. Tucker PI" },
-  description: "California's leading private investigator with over 27 years of experience. Confidential investigations, background checks, surveillance, and more.",
+  description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
 };
 
 // Lazy load below-fold components to reduce initial bundle size and TBT

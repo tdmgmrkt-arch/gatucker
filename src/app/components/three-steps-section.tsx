@@ -9,7 +9,7 @@ const steps = [
     number: "01",
     icon: Phone,
     title: "Contact Us",
-    description: "Click the 'Contact Us' button or call us directly at 833 PI Serve or (909) 220-4006."
+    description: "Click the 'Contact Us' button or call us directly at 833 PI Serve or (909) 964-8976."
   },
   {
     number: "02",

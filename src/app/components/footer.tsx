@@ -26,7 +26,7 @@ export function Footer() {
               className="text-[#EDEDED]/70 mb-6 leading-relaxed text-sm max-w-sm"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
-              California&apos;s most trusted private investigation firm. Providing discreet, professional investigative services.
+              Licensed California private investigation firm based in Murrieta. Providing discreet, professional investigative services.
             </p>
 
             <div className="flex items-center gap-2 text-[#CEA53D] text-sm mb-6">

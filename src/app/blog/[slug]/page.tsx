@@ -31,11 +31,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       type: 'article',
       publishedTime: post.date,
       url: `https://gatuckerpi.com/blog/${post.slug}`,
+      // No hardcoded width/height: the hero images are not 1200x630 (most are
+      // 1365x768), so declaring those dimensions made every card's metadata wrong.
+      // Omitting them lets each platform read the real size from the file.
       images: [
         {
           url: post.image,
-          width: 1200,
-          height: 630,
           alt: post.imageAlt,
         },
       ],
@@ -232,9 +233,12 @@ export default async function BlogPostPage({ params }: Params) {
       '@type': 'Organization',
       '@id': 'https://gatuckerpi.com/#organization',
       name: 'G.A. Tucker PI',
+      // /logo.png does not exist in public/ -- this pointed at a 404 on every
+      // blog post, making the publisher logo invalid. GA-Tucker-PI-logo.webp is
+      // the real asset.
       logo: {
         '@type': 'ImageObject',
-        url: 'https://gatuckerpi.com/logo.png',
+        url: 'https://gatuckerpi.com/GA-Tucker-PI-logo.webp',
       },
     },
     mainEntityOfPage: {
@@ -489,7 +493,7 @@ export default async function BlogPostPage({ params }: Params) {
                   </a>
                 </div>
                 <Link
-                  href="/request-service"
+                  href="/request-service-form"
                   className="mt-6 w-full bg-[#CEA53D] text-black px-4 py-3 font-black uppercase text-sm tracking-wider transition-all hover:bg-[#CEA53D]/90 active:scale-95 flex items-center justify-center gap-2"
                   style={{
                     fontFamily: "'Bebas Neue', sans-serif",

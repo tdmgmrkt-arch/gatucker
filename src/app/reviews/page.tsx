@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       'See verified Google reviews from clients of California PI Greg A. Tucker. Rated 4.9★ from 67 Google reviews.',
     url: '/reviews',
-    images: ['/og-image.png'],
+    images: ['/hero-poster-desktop.webp'],
   },
 };
 
