@@ -493,7 +493,7 @@ export default async function BlogPostPage({ params }: Params) {
                   </a>
                 </div>
                 <Link
-                  href="/request-service"
+                  href="/request-service-form"
                   className="mt-6 w-full bg-[#CEA53D] text-black px-4 py-3 font-black uppercase text-sm tracking-wider transition-all hover:bg-[#CEA53D]/90 active:scale-95 flex items-center justify-center gap-2"
                   style={{
                     fontFamily: "'Bebas Neue', sans-serif",
