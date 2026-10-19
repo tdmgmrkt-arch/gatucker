@@ -616,7 +616,7 @@ export default function BackgroundChecksPage() {
                 Asset Search Services Also Available
               </h3>
               <p className="text-[#EDEDED]/80 mb-6">
-                GA Tucker PI also offers professional asset searches for our customers. For a FREE estimate from our fully licensed private investigator in San Diego, CA, call (909) 220-4006 today! We&apos;re here for you 24 hours a day, 7 days a week!
+                GA Tucker PI also offers professional asset searches for our customers. For a FREE estimate from our fully licensed private investigator in Murrieta, CA, call (909) 964-8976 today! We&apos;re here for you 24 hours a day, 7 days a week!
               </p>
             </motion.div>
           </div>
