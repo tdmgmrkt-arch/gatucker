@@ -1178,9 +1178,9 @@ export const posts: BlogPost[] = [
     date: '2026-07-24',
     readTime: '7 min read',
     category: 'Forensic Linguistics',
-    image: '/GATRUTH.webp',
+    image: '/forensic-linguistics-hero.webp',
     imageAlt:
-      'Black-and-white portrait of Greg A. Tucker in a dark suit, lit from one side against a shadowed wall',
+      'A smartphone glowing with an unreadable message thread beside a fountain pen resting on a handwritten envelope, on a dark table',
     keywords: [
       'forensic linguistics investigator',
       'statement analysis for deception',
@@ -1293,9 +1293,9 @@ export const posts: BlogPost[] = [
     date: '2026-08-03',
     readTime: '8 min read',
     category: 'High-Net-Worth Custody',
-    image: '/child-custody-hero.webp',
+    image: '/hidden-assets-hero.webp',
     imageAlt:
-      'A child holding a teddy bear stands apart in a dim living room as two adults talk on a couch behind',
+      'A modest single-story house with one lit window at dusk, the wheel and fender of a late-model luxury sedan parked on the gravel driveway',
     keywords: [
       'hidden assets divorce investigator California',
       'lifestyle analysis divorce',
@@ -1413,9 +1413,9 @@ export const posts: BlogPost[] = [
     date: '2026-08-12',
     readTime: '9 min read',
     category: 'Background Checks',
-    image: '/background_check_hero_bg.webp',
+    image: '/executive-due-diligence-hero.webp',
     imageAlt:
-      'A dark records archive of shelved document binders, lit by strip lighting, with terminals along the aisle',
+      'An empty high-back leather chair at a boardroom table, city skyline lights beyond the glass wall at night',
     keywords: [
       'executive background check California',
       'C-suite due diligence investigator',
@@ -1766,9 +1766,9 @@ export const posts: BlogPost[] = [
     date: '2026-09-19',
     readTime: '8 min read',
     category: 'Profiling',
-    image: '/profilin-hero.webp',
+    image: '/profiling-myths-hero.webp',
     imageAlt:
-      'A quiet desk at night under a single lamp, with a notepad, pen, and reading glasses on a closed book',
+      'Looking up through a dark industrial stairwell toward a distant lit fixture many flights above, a closed file folder resting on the nearest step',
     keywords: [
       'criminal profiling myths',
       'what does a criminal profiler do',
@@ -2142,9 +2142,9 @@ export const posts: BlogPost[] = [
     date: '2026-10-16',
     readTime: '8 min read',
     category: 'Legal Consulting',
-    image: '/invetigating-services-hero.webp',
+    image: '/expert-witness-hero.webp',
     imageAlt:
-      'A figure seen from behind in a doorway light, facing a dark office with a desk, papers, and a wall of pinned documents',
+      'A leather portfolio, a blank legal pad, and a fountain pen on a dark conference table, city lights visible through the window at dusk',
     keywords: [
       'expert witness private investigator California',
       'investigative case consultation attorney',
@@ -2640,9 +2640,9 @@ export const posts: BlogPost[] = [
     date: '2026-03-30',
     readTime: '8 min read',
     category: 'Child Custody',
-    image: '/child-custody-hero.webp',
+    image: '/guardianship-hero.webp',
     imageAlt:
-      'A young child holding a teddy bear stands alone in a dim living room while two adults talk on a couch behind',
+      'A wooden cane leaning against an empty rocking chair on a porch at dusk, a child\'s alphabet block on the boards beside it',
     keywords: [
       'grandparent custody investigation California',
       'guardianship investigation private investigator',
@@ -2764,9 +2764,9 @@ export const posts: BlogPost[] = [
     date: '2026-04-28',
     readTime: '8 min read',
     category: 'Profiling',
-    image: '/profilin-hero.webp',
+    image: '/victimology-hero.webp',
     imageAlt:
-      'A quiet desk at night under a single lamp, with a notepad, pen, and reading glasses resting on a closed book',
+      'A house key, a blank card, and a closed umbrella lying in a circular pool of lamplight on a dark wood floor, seen from directly above',
     keywords: [
       'victimology',
       'victim risk assessment',
