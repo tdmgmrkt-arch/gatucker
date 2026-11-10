@@ -1,11 +1,13 @@
 # Active Work — Greg A. Tucker (PI)
 
-_Last updated: 2026-10-16_
+_Last updated: 2026-11-09_
 
 ---
 
 ## In Progress
 _Currently being worked on. One line each: what / who (agent) / status / notes._
+
+- **Redirect gap from the rebuild — 73 dead URLs, VERIFIED 2026-11-09, nothing fixed yet** — Troy posted an AI SEO diagnosis in the `gatucker` channel, granted `tdmgmrkt@gmail.com` **Google Search Console admin**, and asked for it fixed ASAP. Checked every claim live. **The core claim is true and understated: 73 of 93 historical URLs end in a 404** (54 are real content pages — city pages, service pages, blog posts). Only two redirects have ever existed on this site (`/testimonials`, `/hollywood-fixer`). Full URL→target map in [REDIRECT-AUDIT-2026-11-09.md](REDIRECT-AUDIT-2026-11-09.md). **Also true:** 20 of 34 pages have no self-referencing canonical (homepage and every core service page), and `/ai-actions.json` sits in the sitemap. **FALSE:** the report's "40 orphan pages" — crawled all 60 sitemap URLs against raw server HTML, zero orphans. **Unverified, needs GSC:** the branded "ga tucker" disappearance (check Manual Actions first) and the 263→1,267 referring-domain spike. **Timeline worth owning internally:** repo starts 2025-10-10, 47 commits across Nov–Dec 2025, and Wayback jumps from the old site on 2025-07-26 straight to the Next build on 2026-01-14 — so the drop Troy attributes to the December 2025 core update lands in the same window as our launch, and the missing redirects explain it without invoking the algorithm.
 
 - **Site-wide accuracy and legal-exposure fixes (2026-10-16 — DONE, unpushed)** — Cleared the `CANONICAL-FACTS.md` "phrasing to avoid" items that were still live in code, plus three broken asset references found while auditing them. Build green, `tsc` clean, 0 asset 404s across all rendered schema and meta.
   - **Julia's protected-title problem is fixed.** `/about` carried the claim twice — once spelled "pyschologist" — saying she "brings over 17 years of experience as a psychologist." California B&P §2903 restricts that title and she does not hold the licence. Both instances now use the approved wording already live on `/child-custody` and `/high-net-worth-child-custody`: "a background in child psychology and education, a paralegal certification, and more than 17 years working with children and families." **This was the only item on the board with real legal exposure.**
