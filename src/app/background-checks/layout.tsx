@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/background-checks",
+  },
   title: "Background Checks | Employment & Personal Records",
   description: "Comprehensive background check services in California. Employment verification, criminal records, personal history research using exclusive databases.",
   openGraph: {

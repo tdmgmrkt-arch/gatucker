@@ -140,12 +140,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/ai-actions.json`,
-      lastModified: mtime('../../public/ai-actions.json'),
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
-    {
       url: `${baseUrl}/privacy-policy`,
       lastModified: mtime('privacy-policy/page.tsx'),
       changeFrequency: 'yearly',

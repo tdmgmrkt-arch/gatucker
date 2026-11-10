@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/consulting",
+  },
   title: "Jury & Trial Consulting Services",
   description: "Expert consulting services for attorneys including trial preparation, jury selection, witness interviews, and comprehensive case analysis in California.",
   openGraph: {

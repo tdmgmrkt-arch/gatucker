@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/risk-management",
+  },
   title: "Risk Management & Threat Assessment",
   description: "Professional risk assessment and mitigation strategies for businesses in California. Identify threats, protect resources, and safeguard your interests.",
   openGraph: {

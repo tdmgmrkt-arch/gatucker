@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/missing-persons",
+  },
   title: "Missing Persons Investigations | Locate People",
   description: "Specialized missing persons investigations in California. Locate lost family members, runaways, or individuals using advanced investigative techniques.",
   openGraph: {

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/investigations",
+  },
   title: "Private Investigations | Civil & Criminal",
   description: "Comprehensive private investigation services for civil and criminal cases in California. Expert investigators with 27+ years of experience.",
   openGraph: {

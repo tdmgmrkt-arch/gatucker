@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/profiling",
+  },
   title: "Behavioral Profiling & Forensic Psychology",
   description: "Professional behavioral profiling and forensic psychology services for legal strategies and insights. Expert analysis by a licensed California PI.",
   openGraph: {

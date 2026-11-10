@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/infidelity",
+  },
   title: "Infidelity Investigations | Cheating Spouse",
   description: "Discreet and confidential infidelity investigations in California. Professional surveillance and evidence gathering for suspected cheating spouses.",
   openGraph: {

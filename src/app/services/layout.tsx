@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/services",
+  },
   title: "Private Investigation Services in California",
   description: "Comprehensive private investigation services in California including background checks, surveillance, missing persons, infidelity investigations, and more.",
   openGraph: {

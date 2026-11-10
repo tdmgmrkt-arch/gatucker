@@ -6,6 +6,9 @@ import { ReviewsSection } from './components/reviews-section';
 import { getGoogleReviews, formatRating, formatReviewCount } from '@/lib/google-reviews';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/",
+  },
   title: { absolute: "California Private Investigator | G.A. Tucker PI" },
   description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
 };

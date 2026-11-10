@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/faqs",
+  },
   title: "Private Investigator FAQs",
   description: "Frequently asked questions about private investigation services. Learn about surveillance, background checks, infidelity investigations, and more from G.A. Tucker PI.",
   openGraph: {

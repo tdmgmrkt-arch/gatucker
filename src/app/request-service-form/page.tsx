@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Navbar } from '../components/navbar';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://gatuckerpi.com/request-service-form",
+  },
   title: "Request Service | Free Consultation",
   description: "Request a free consultation with G.A. Tucker PI. Submit your inquiry for expert private investigation services in California.",
   openGraph: {
