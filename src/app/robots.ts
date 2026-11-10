@@ -8,9 +8,16 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
+        // Do NOT add '/_next/' back. Googlebot renders pages before judging
+        // them, and everything under /_next/static is the CSS, JS and fonts it
+        // needs to do that — blocking them was putting build assets in the
+        // "Blocked by robots.txt" report (first detected 2025-12-15) and
+        // denying Google the resources to assess layout and mobile usability.
+        // /_next/image is the image optimiser; blocking it also kept optimised
+        // images out of Google Images. Crawl cost is negligible: the files are
+        // content-hashed and immutable.
         disallow: [
           '/api/',
-          '/_next/',
           '/private/',
         ],
       },
