@@ -91,3 +91,14 @@
 /trial-consulting/
 /wpautoterms/privacy-policy/
 /wpautoterms/terms-and-conditions/
+/request-service
+/4-questions-to-ask-when-hiring-a-private-investigator
+/find-a-person
+/guidelines
+/merital-infidelity
+/833-747-3783
+/dmPageNotFound
+/elementor-hf/footer
+/elementor-hf/header
+/elementor-hf/site-footer
+/wpautoterms

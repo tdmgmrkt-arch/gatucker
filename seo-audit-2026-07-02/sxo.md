@@ -252,7 +252,7 @@ The site has only 2-3 reviews per page, most short ("Greg was extremely helpful!
 | P1 | /investigations | Repurpose as primary "Private Investigator Murrieta, CA" city landing page (3,000+ words, pricing range, zip codes, 20+ city service area list) | Targets head-term query with zero competition from own site |
 | P2 | /background-checks | Resolve phone number conflict (pick one canonical number); add city, add pricing range, surface turnaround time above fold | Quick wins on existing strongest page |
 | P2 | All pages | Add FAQPage schema (background-checks and infidelity already have FAQ components) | Featured snippet eligibility for PAA questions |
-| P2 | All pages | Fix LocalBusiness schema — add streetAddress (25185 Madison Ave Ste A), addressLocality (Murrieta), postalCode (92562) | NAP consistency for Map Pack reinforcement |
+| P2 | All pages | Fix LocalBusiness schema — add streetAddress (40477 Murrieta Hot Springs Rd, Ste D1 #123), addressLocality (Murrieta), postalCode (92563) | NAP consistency for Map Pack reinforcement |
 | P3 | New pages | Build 3-5 city landing pages (/murrieta-private-investigator/, /temecula-private-investigator/, /riverside-private-investigator/) | Expands head-term coverage; mirrors competitor playbook |
 | P3 | /consulting | Rewrite as attorney-referral / expert witness page | Targets B2B attorney segment with correct page type |
 | P3 | /risk-management | Reframe as "Corporate Investigation Services California" or "Pre-Employment Screening" | Targets rankable niche vs. competing with enterprise firms |

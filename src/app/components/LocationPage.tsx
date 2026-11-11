@@ -9,6 +9,7 @@ import { Footer } from "./footer";
 import { StickyCTAButton } from "./sticky-cta-button";
 import { RequestServiceForm } from "./request-service-form";
 import { FAQAccordion } from "./faq-accordion";
+import { MAIN_PHONE_DISPLAY, MAIN_PHONE_TEL, MAPS_PLACE_URL, officeAddressLines } from "@/lib/business";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -61,6 +62,11 @@ export interface LocationPageProps {
   schema: Record<string, unknown>;
   /** Last-updated display string, e.g. "August 2026" */
   lastUpdated?: string;
+  /**
+   * When true, and PUBLISH_STREET_ADDRESS is on, show the Murrieta office NAP.
+   * Only the Murrieta page should set this.
+   */
+  showOfficeAddress?: boolean;
   /** Hero background image path (from /public), e.g. "/riverside-county-hero.webp" */
   heroImage?: string;
   /** Alt text for hero image; falls back to a sensible default if omitted */
@@ -230,8 +236,10 @@ export function LocationPage({
   lastUpdated,
   heroImage,
   heroImageAlt,
+  showOfficeAddress = false,
 }: LocationPageProps) {
   const isContentReady = bodyContent.length > 0;
+  const office = showOfficeAddress ? officeAddressLines() : null;
 
   return (
     <div className={`min-h-screen bg-[${BG_DARK}] overflow-x-hidden`} style={{ backgroundColor: BG_DARK }}>
@@ -346,6 +354,36 @@ export function LocationPage({
 
               {/* Breadcrumb */}
               <Breadcrumb region={region} isCity={isCity} parentCounty={parentCounty} />
+
+              {office && (
+                <address className="not-italic bg-black/60 border-2 border-[#CEA53D]/30 rounded-lg p-5">
+                  <h2
+                    className="text-2xl font-black uppercase text-[#CEA53D] mb-3"
+                    style={headingStyle}
+                  >
+                    Murrieta Office
+                  </h2>
+                  <p className="text-[#EDEDED] leading-relaxed" style={bodyStyle}>
+                    {office.line1}
+                    <br />
+                    {office.line2}
+                  </p>
+                  <p className="mt-3" style={bodyStyle}>
+                    <a href={MAIN_PHONE_TEL} className="text-[#CEA53D] hover:underline">
+                      {MAIN_PHONE_DISPLAY}
+                    </a>
+                  </p>
+                  <a
+                    href={MAPS_PLACE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 text-sm text-[#EDEDED]/80 underline decoration-[#CEA53D]/50 underline-offset-2 hover:text-[#CEA53D]"
+                    style={bodyStyle}
+                  >
+                    Open in Google Maps
+                  </a>
+                </address>
+              )}
 
               {/* Body copy blocks (seo-writer content) */}
               {isContentReady ? (

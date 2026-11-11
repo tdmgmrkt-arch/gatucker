@@ -108,6 +108,19 @@ const nextConfig: NextConfig = {
 
       // --- Orphaned duplicate — SEO-PUNCHLIST A2/A3 (also carried the wrong 'San Diego, CA' line) ---
       { source: '/services/background-checks', destination: '/background-checks', permanent: true },
+
+      // --- Still 404 on 2026-11-10. Destinations confirmed in src/app before adding. ---
+      { source: '/request-service', destination: '/request-service-form', permanent: true },
+      { source: '/4-questions-to-ask-when-hiring-a-private-investigator', destination: '/blog/how-to-hire-private-investigator-california', permanent: true },
+      { source: '/find-a-person', destination: '/missing-persons', permanent: true },
+      { source: '/guidelines', destination: '/faqs', permanent: true },
+      { source: '/merital-infidelity', destination: '/infidelity', permanent: true },
+      { source: '/833-747-3783', destination: '/contact', permanent: true },
+      { source: '/dmPageNotFound', destination: '/', permanent: true },
+      { source: '/elementor-hf/footer', destination: '/', permanent: true },
+      { source: '/elementor-hf/header', destination: '/', permanent: true },
+      { source: '/elementor-hf/site-footer', destination: '/', permanent: true },
+      { source: '/wpautoterms', destination: '/privacy-policy', permanent: true },
     ];
   },
 

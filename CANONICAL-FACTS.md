@@ -17,7 +17,7 @@ _Last updated: 2026-10-01_
 |---|---|
 | **Legal name** | G.A. Tucker P.I. Investigative Services, LLC |
 | **Short/display name** | GA Tucker PI |
-| **Address** | 25185 Madison Ave, Ste A, Murrieta, CA 92562 |
+| **Address** | 40477 Murrieta Hot Springs Rd, Ste D1 #123, Murrieta, CA 92563 |
 | **Phone** | (909) 964-8976 |
 | **Website** | https://gatuckerpi.com |
 | **License** | California BSIS Private Investigator License #PI188351 |
@@ -25,7 +25,7 @@ _Last updated: 2026-10-01_
 | **Registered agent** | Gregory Arthur Tucker |
 | **Hours** | 24 hours, 7 days |
 
-Verified consistent across BBB, Yelp, and Yahoo Local as of 2026-10-01.
+Owner-corrected public office address, 2026-11-11. Directory listings may still show an older Murrieta street until those are updated.
 
 ---
 

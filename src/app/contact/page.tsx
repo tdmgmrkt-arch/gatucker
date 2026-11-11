@@ -8,6 +8,15 @@ import { Navbar } from '../components/navbar';
 import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
 import { RequestServiceForm } from '../components/request-service-form';
+import {
+  MAIN_PHONE_DISPLAY,
+  MAIN_PHONE_TEL,
+  MAPS_PLACE_URL,
+  SOCIAL,
+  SOCIAL_UNRESOLVED,
+  officeAddressLines,
+  officeMapEmbedSrc,
+} from '@/lib/business';
 
 // reCAPTCHA Enterprise type declaration
 declare global {
@@ -24,6 +33,8 @@ declare global {
 const RECAPTCHA_SITE_KEY = '6LdK8EssAAAAAB-R5wUOej0apHMJrN4VhixbkJke';
 
 export default function ContactPage() {
+  const office = officeAddressLines();
+  const mapEmbed = officeMapEmbedSrc();
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -224,16 +235,16 @@ export default function ContactPage() {
             <div className="flex items-center gap-3">
               <span className="text-[#EDEDED]/60 text-xs uppercase tracking-wider">Follow Us:</span>
               <div className="flex gap-2">
-                <a href="https://facebook.com/161146941379347" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="w-9 h-9 rounded bg-black border border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+                <a href={SOCIAL_UNRESOLVED.facebookFooter} target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="w-9 h-9 rounded bg-black border border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
                   <Facebook className="w-4 h-4 text-[#CEA53D]" aria-hidden="true" />
                 </a>
-                <a href="https://twitter.com/ginvestigative" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter" className="w-9 h-9 rounded bg-black border border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+                <a href={SOCIAL.x} target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" className="w-9 h-9 rounded bg-black border border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
                   <Twitter className="w-4 h-4 text-[#CEA53D]" aria-hidden="true" />
                 </a>
-                <a href="https://instagram.com/gatuckerpi" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="w-9 h-9 rounded bg-black border border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+                <a href={SOCIAL.instagram} target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="w-9 h-9 rounded bg-black border border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
                   <Instagram className="w-4 h-4 text-[#CEA53D]" aria-hidden="true" />
                 </a>
-                <a href="https://yelp.com/biz/g-a-tucker-p-i-investigative-services-murrieta" target="_blank" rel="noopener noreferrer" aria-label="View us on Yelp" className="w-9 h-9 rounded bg-black border border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
+                <a href={SOCIAL_UNRESOLVED.yelpFooter} target="_blank" rel="noopener noreferrer" aria-label="View us on Yelp" className="w-9 h-9 rounded bg-black border border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 transition-all">
                   <svg className="w-4 h-4 text-[#CEA53D]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                     <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.985a1.072 1.072 0 0 1-.865 1.262 9.2 9.2 0 0 1-3.955-.085 1.072 1.072 0 0 1-.736-1.387l1.796-4.885c.347-.94 1.63-.89 1.937.076l1.823 5.019zm-8.847-1.837l2.83-4.358c.564-.868-.272-1.922-1.262-1.59l-5.034 1.68a1.073 1.073 0 0 1-1.324-.776 9.2 9.2 0 0 1 .243-3.97 1.072 1.072 0 0 1 1.535-.584l4.449 2.497c.866.486.79 1.756-.114 2.131l-4.557 1.89a1.073 1.073 0 0 0-.485 1.591 9.19 9.19 0 0 0 2.824 2.763c.497.313 1.14.127 1.405-.357l2.49-4.917zm.712-8.498l4.89 1.797c.94.346.89 1.63-.076 1.936l-5.018 1.823a1.072 1.072 0 0 1-1.262-.866 9.2 9.2 0 0 1 .085-3.954 1.073 1.073 0 0 1 1.38-.736z"/>
                   </svg>
@@ -241,6 +252,39 @@ export default function ContactPage() {
               </div>
             </div>
           </motion.div>
+
+          {office && mapEmbed && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="grid lg:grid-cols-2 gap-4 mt-8"
+            >
+              <address className="not-italic p-6 bg-black/80 border border-[#CEA53D]/30 rounded-lg">
+                <p className="text-[#EDEDED]/70 text-xs uppercase tracking-wider mb-2">Office</p>
+                <p className="text-[#CEA53D] font-bold text-lg">{office.line1}</p>
+                <p className="text-[#EDEDED] text-sm mb-4">{office.line2}</p>
+                <a href={MAIN_PHONE_TEL} className="text-[#CEA53D] font-bold hover:underline">
+                  {MAIN_PHONE_DISPLAY}
+                </a>
+                <a
+                  href={MAPS_PLACE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block mt-3 text-sm text-[#EDEDED]/80 underline decoration-[#CEA53D]/50 underline-offset-2 hover:text-[#CEA53D]"
+                >
+                  Open in Google Maps
+                </a>
+              </address>
+              <iframe
+                title={`Map of the G.A. Tucker PI office at ${office.line1}, ${office.line2}`}
+                src={mapEmbed}
+                className="w-full min-h-64 h-full rounded-lg border border-[#CEA53D]/30 bg-black"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </motion.div>
+          )}
         </div>
       </section>
 

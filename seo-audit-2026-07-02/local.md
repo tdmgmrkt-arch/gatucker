@@ -39,7 +39,7 @@
 ### QW-2: Schema geo coordinates are empty (CRITICAL for SAB)
 - `layout.tsx` schema has `"geo": { "@type": "GeoCoordinates", "addressCountry": "US" }` — no latitude or longitude.
 - Google uses geo to anchor the business location. Without it, the profile floats.
-- **Fix:** Add precise lat/long for Murrieta, CA HQ (or wherever GBP is registered): `"latitude": 33.55400, "longitude": -117.21392` (5 decimal precision).
+- **Fix:** Do not publish `"latitude": 33.55400, "longitude": -117.21392`. That pin was for the previous office. No accurate coordinates were confirmed for 40477 Murrieta Hot Springs Rd, Ste D1 #123, Murrieta, CA 92563, so GeoCoordinates was omitted.
 
 ### QW-3: Schema address missing city/ZIP (CRITICAL)
 - `layout.tsx` schema `address` block only has `addressRegion: "CA"` and `addressCountry: "US"`. No `streetAddress`, `addressLocality`, or `postalCode`.

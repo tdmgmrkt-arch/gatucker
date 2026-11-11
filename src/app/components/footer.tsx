@@ -3,8 +3,13 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Shield, Facebook, Twitter, Instagram } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { VerifyLicenseLink } from './verify-license-link';
+import { MAPS_PLACE_URL, SOCIAL, SOCIAL_UNRESOLVED, officeAddressLines } from '@/lib/business';
 
 export function Footer() {
+  const address = officeAddressLines();
+  const year = new Date().getFullYear();
+
   return (
     <footer className="relative bg-[#0D0D0D] border-t border-[#CEA53D]/30" style={{ padding: "clamp(3rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)" }}>
       <div className="mx-auto" style={{ maxWidth: "min(100%, 80rem)" }}>
@@ -29,11 +34,12 @@ export function Footer() {
               Licensed California private investigation firm based in Murrieta. Providing discreet, professional investigative services.
             </p>
 
-            <div className="flex items-center gap-2 text-[#CEA53D] text-sm mb-6">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-2 gap-y-1 text-[#CEA53D] text-sm mb-6">
               <Shield className="w-4 h-4" />
               <span style={{ fontFamily: "'Inter', sans-serif" }}>
                 California PI License #188351
               </span>
+              <VerifyLicenseLink className="text-[#EDEDED]/70 text-sm" />
             </div>
           </div>
 
@@ -107,25 +113,43 @@ export function Footer() {
               </div>
               <div className="flex items-start justify-center md:justify-end gap-2">
                 <MapPin className="w-4 h-4 text-[#CEA53D] flex-shrink-0 mt-1" />
-                <p
-                  className="text-[#EDEDED] text-sm font-light"
-                  style={{ fontFamily: "'Inter', sans-serif" }}
-                >
-                  Southern California
-                </p>
+                {address ? (
+                  <address
+                    className="not-italic text-[#EDEDED] text-sm font-light"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    <span className="block">{address.line1}</span>
+                    <span className="block">{address.line2}</span>
+                    <a
+                      href={MAPS_PLACE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#CEA53D] hover:underline"
+                    >
+                      Map
+                    </a>
+                  </address>
+                ) : (
+                  <p
+                    className="text-[#EDEDED] text-sm font-light"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    Southern California
+                  </p>
+                )}
               </div>
               {/* Social Links - Retro square style */}
             <div className="flex gap-4 mt-auto justify-center md:justify-end">
-              <a href="https://facebook.com/161146941379347" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+              <a href={SOCIAL_UNRESOLVED.facebookFooter} target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
                 <Facebook className="w-5 h-5 text-[#CEA53D]" aria-hidden="true" />
               </a>
-              <a href="https://twitter.com/ginvestigative" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+              <a href={SOCIAL.x} target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
                 <Twitter className="w-5 h-5 text-[#CEA53D]" aria-hidden="true" />
               </a>
-              <a href="https://instagram.com/gatuckerpi" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+              <a href={SOCIAL.instagram} target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
                 <Instagram className="w-5 h-5 text-[#CEA53D]" aria-hidden="true" />
               </a>
-              <a href="https://yelp.com/biz/g-a-tucker-p-i-investigative-services-murrieta" target="_blank" rel="noopener noreferrer" aria-label="View us on Yelp" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
+              <a href={SOCIAL_UNRESOLVED.yelpFooter} target="_blank" rel="noopener noreferrer" aria-label="View us on Yelp" className="w-11 h-11 sm:w-10 sm:h-10 rounded-sm bg-black border-2 border-[#CEA53D]/30 flex items-center justify-center hover:border-[#CEA53D] hover:bg-[#CEA53D]/10 active:scale-95 transition-all touch-manipulation">
                 <svg className="w-5 h-5 text-[#CEA53D]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.985a1.072 1.072 0 0 1-.865 1.262 9.2 9.2 0 0 1-3.955-.085 1.072 1.072 0 0 1-.736-1.387l1.796-4.885c.347-.94 1.63-.89 1.937.076l1.823 5.019zm-8.847-1.837l2.83-4.358c.564-.868-.272-1.922-1.262-1.59l-5.034 1.68a1.073 1.073 0 0 1-1.324-.776 9.2 9.2 0 0 1 .243-3.97 1.072 1.072 0 0 1 1.535-.584l4.449 2.497c.866.486.79 1.756-.114 2.131l-4.557 1.89a1.073 1.073 0 0 0-.485 1.591 9.19 9.19 0 0 0 2.824 2.763c.497.313 1.14.127 1.405-.357l2.49-4.917zm.712-8.498l4.89 1.797c.94.346.89 1.63-.076 1.936l-5.018 1.823a1.072 1.072 0 0 1-1.262-.866 9.2 9.2 0 0 1 .085-3.954 1.073 1.073 0 0 1 1.38-.736z"/>
                 </svg>
@@ -161,7 +185,7 @@ export function Footer() {
             className="text-[#EDEDED]/50 text-sm mb-4 md:mb-0 font-light"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Copyright © 2025 GA Tucker, Private Investigator | Powered by{' '}
+            Copyright © {year} GA Tucker, Private Investigator | Powered by{' '}
             <a
               href="https://tdmarketinggroup.com/"
               target="_blank"
