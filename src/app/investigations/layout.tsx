@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/investigations",
-  },
-  title: "Private Investigations | Civil & Criminal",
-  description: "Comprehensive private investigation services for civil and criminal cases in California. Expert investigators with 27+ years of experience.",
-  openGraph: {
-    title: "Private Investigations | G.A. Tucker PI",
-    description: "Comprehensive private investigation services for civil and criminal cases in California. 27+ years of experience.",
-    url: "https://gatuckerpi.com/investigations",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/investigations",
+  title: "California Civil & Criminal Investigations | G.A. Tucker PI",
+  description:
+    "Civil and criminal case investigations with 27+ years of experience. Licensed California PI (PI188351). Call to discuss a case.",
+});
 
 // Service Schema for Investigations
 const serviceSchema = {

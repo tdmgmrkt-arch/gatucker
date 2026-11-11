@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions",
-  description: "Terms of use for the G.A. Tucker PI website. Please read carefully before using gatuckerpi.com. Last updated May 29, 2025.",
-  alternates: { canonical: "/terms-and-conditions" },
-  openGraph: {
+  ...pageMeta({
+    path: "/terms-and-conditions",
     title: "Terms and Conditions | G.A. Tucker PI",
-    description: "Terms of use for the G.A. Tucker PI website.",
-    url: "https://gatuckerpi.com/terms-and-conditions",
-    type: "website",
-  },
+    description:
+      "Terms for using the G.A. Tucker PI website. Licensed California PI (PI188351) in Murrieta. Contact the office with questions.",
+  }),
   robots: { index: true, follow: true },
 };
 

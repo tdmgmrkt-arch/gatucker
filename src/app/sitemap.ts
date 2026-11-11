@@ -92,12 +92,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/profiling`,
-      lastModified: mtime('profiling/page.tsx'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/forensic-behavioral-profiling`,
       lastModified: mtime('forensic-behavioral-profiling/page.tsx'),
       changeFrequency: 'monthly',

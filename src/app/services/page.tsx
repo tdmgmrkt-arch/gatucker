@@ -27,12 +27,6 @@ const services = [
     href: '/consulting',
   },
   {
-    title: 'Profiling',
-    description: 'Advanced behavioral analysis and criminal profiling services to identify patterns, assess threats, and support investigative efforts.',
-    image: '/profilin-hero.webp',
-    href: '/profiling',
-  },
-  {
     title: 'Forensic Behavioral Profiling',
     description: 'Forensic behavioral science and forensic linguistic analysis for attorneys, corporations, and private individuals — examining behavior, disputed communications, and authorship within the full context of a case.',
     image: '/profilin-hero.webp',

@@ -12,14 +12,14 @@ export const metadata: Metadata = {
     default: "California Private Investigator | G.A. Tucker PI",
     template: "%s | G.A. Tucker PI"
   },
-  description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
+  description: "Confidential investigations from a Murrieta private investigator. Licensed California PI (PI188351). Call for a consultation.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://gatuckerpi.com",
     siteName: "G.A. Tucker PI",
-    title: "G.A. Tucker PI | California Private Investigator",
-    description: "Licensed California private investigator with 27+ years experience. Background checks, surveillance, infidelity investigations, and more. CA License #PI188351.",
+    title: "California Private Investigator | G.A. Tucker PI",
+    description: "Confidential investigations from a Murrieta private investigator. Licensed California PI (PI188351). Call for a consultation.",
     images: [
       {
         // /og-image.png never existed in public/. hero-poster-desktop.webp is the
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "G.A. Tucker PI | California Private Investigator",
-    description: "Licensed California PI with 27+ years experience. Background checks, surveillance, infidelity investigations. CA License #PI188351.",
+    title: "California Private Investigator | G.A. Tucker PI",
+    description: "Confidential investigations from a Murrieta private investigator. Licensed California PI (PI188351). Call for a consultation.",
     images: ["/hero-poster-desktop.webp"]
   },
   robots: {

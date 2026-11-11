@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/services",
-  },
-  title: "Private Investigation Services in California",
-  description: "Comprehensive private investigation services in California including background checks, surveillance, missing persons, infidelity investigations, and more.",
-  openGraph: {
-    title: "Private Investigation Services | G.A. Tucker PI",
-    description: "Comprehensive private investigation services in California including background checks, surveillance, missing persons, and infidelity investigations.",
-    url: "https://gatuckerpi.com/services",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/services",
+  title: "California Investigation Services | G.A. Tucker PI",
+  description:
+    "Background checks, surveillance, custody, and locates across California. Licensed PI (PI188351) in Murrieta. Request a consultation.",
+});
 
 // Services Schema
 const servicesSchema = {
@@ -82,9 +76,9 @@ const servicesSchema = {
       position: 6,
       item: {
         "@type": "Service",
-        name: "Criminal Profiling",
+        name: "Forensic Behavioral Profiling",
         description: "Expert criminal profiling and behavioral analysis services.",
-        url: "https://gatuckerpi.com/profiling",
+        url: "https://gatuckerpi.com/forensic-behavioral-profiling",
         provider: { "@id": "https://gatuckerpi.com/#organization" }
       }
     },

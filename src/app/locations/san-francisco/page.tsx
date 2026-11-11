@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../components/LocationPage";
 import type { LocationPageProps } from "../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/san-francisco.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "San Francisco Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/san-francisco",
+  title: "San Francisco Private Investigator | G.A. Tucker PI",
   description:
-    "CA-licensed PI Greg Tucker serves San Francisco clients. Background checks, skip traces, records research, and in-person investigations. CA PI #188351. Based in Murrieta.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/san-francisco",
-  },
-  openGraph: {
-    title: "San Francisco Private Investigator | GA Tucker PI | CA #188351",
-    description:
-      "Licensed CA PI serving San Francisco. Surveillance, background checks, civil and domestic investigations. Call 909-964-8976.",
-    url: "https://gatuckerpi.com/locations/san-francisco",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "San Francisco Private Investigator | GA Tucker PI | CA #188351",
-    description: "Licensed CA PI Greg Tucker serves San Francisco. Call 909-964-8976.",
-  },
-};
+    "San Francisco matters handled under a California PI license, based in Murrieta (PI188351). Call to discuss a case.",
+});
 
 // ---------------------------------------------------------------------------
 // Schema
@@ -126,7 +113,7 @@ const pageProps: LocationPageProps = {
     { title: "Records Research", description: "California court records, Secretary of State filings, and public-record research for Bay Area cases.", href: "/investigations" },
     { title: "Infidelity Investigations", description: "In-person surveillance in San Francisco available when case scope warrants travel.", href: "/infidelity" },
     { title: "Child Custody", description: "Custody documentation for San Francisco parents prepared for SF Superior Court.", href: "/child-custody" },
-    { title: "Profiling & Risk Management", description: "Subject profiling and due diligence for Bay Area attorneys and corporate clients.", href: "/profiling" },
+    { title: "Profiling & Risk Management", description: "Subject profiling and due diligence for Bay Area attorneys and corporate clients.", href: "/forensic-behavioral-profiling" },
   ],
   courthouses: [
     { name: "San Francisco Superior Court — Civic Center Courthouse", address: "400 McAllister St, San Francisco, CA 94102" },

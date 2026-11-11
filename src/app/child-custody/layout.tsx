@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  title: "Child Custody Private Investigator, Murrieta CA",
-  description: "Licensed California PI documenting parenting practices, living conditions, and custody concerns for family court. Based in Murrieta. Free consultation.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/child-custody",
-  },
-  openGraph: {
-    title: "Child Custody Private Investigator, Murrieta CA | G.A. Tucker PI",
-    description: "Objective documentation for California family court — parenting practices, living conditions, and child welfare concerns.",
-    url: "https://gatuckerpi.com/child-custody",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/child-custody",
+  title: "Murrieta Child Custody Investigator | G.A. Tucker PI",
+  description:
+    "Parenting-time and living-condition documentation for family court. Licensed PI (PI188351) in Murrieta. Request a consultation.",
+});
 
 // Service Schema for Child Custody
 const serviceSchema = {

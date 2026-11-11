@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  title: "High-Net-Worth Child Custody Investigations",
+export const metadata: Metadata = pageMeta({
+  path: "/high-net-worth-child-custody",
+  title: "California HNW Child Custody Investigations | GA Tucker PI",
   description:
-    "Discreet custody investigations for high-asset California families. Lifestyle, parenting-time, and household documentation your family law attorney can file.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/high-net-worth-child-custody",
-  },
-  openGraph: {
-    title: "High-Net-Worth Child Custody Investigations | G.A. Tucker PI",
-    description:
-      "Confidential custody investigations for high-asset and high-profile California families, working alongside your family law attorney.",
-    url: "https://gatuckerpi.com/high-net-worth-child-custody",
-    type: "website",
-  },
-};
+    "Custody documentation for complex assets and multiple households. Licensed California PI (PI188351). Call for a consultation.",
+});
 
 // Service schema — nested entity references stay pure @id pointers (no @type),
 // or they declare a second, address-less LocalBusiness node.

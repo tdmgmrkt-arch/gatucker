@@ -97,5 +97,5 @@ Licensed California Private Investigator serving Murrieta, Temecula, the Inland 
 - /child-custody
 - /missing-persons
 - /investigations
-- /profiling
+- /forensic-behavioral-profiling
 - /risk-management

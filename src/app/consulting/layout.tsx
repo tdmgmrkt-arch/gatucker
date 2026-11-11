@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/consulting",
-  },
-  title: "Jury & Trial Consulting Services",
-  description: "Expert consulting services for attorneys including trial preparation, jury selection, witness interviews, and comprehensive case analysis in California.",
-  openGraph: {
-    title: "Trial & Jury Consulting | G.A. Tucker PI",
-    description: "Expert consulting services for attorneys including trial preparation, jury selection, and witness interviews.",
-    url: "https://gatuckerpi.com/consulting",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/consulting",
+  title: "California Jury & Trial Consulting | G.A. Tucker PI",
+  description:
+    "Trial preparation, jury selection, and case analysis for attorneys. Licensed California PI (PI188351). Request a consultation.",
+});
 
 // Service Schema for Consulting
 const serviceSchema = {

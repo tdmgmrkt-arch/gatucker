@@ -71,7 +71,7 @@ California attorneys with Riverside County cases engage GA Tucker PI for witness
 ### Profiling and Risk Management
 For corporate clients, employers, or high-net-worth individuals with Riverside County exposure, GA Tucker PI builds comprehensive subject profiles and threat assessments. Due diligence investigations prior to business transactions or hiring decisions have prevented significant losses for clients who engaged before signing.
 
-[Learn More About Profiling](/profiling) | [Learn More About Risk Management](/risk-management)
+[Learn More About Profiling](/forensic-behavioral-profiling) | [Learn More About Risk Management](/risk-management)
 
 ---
 
@@ -152,6 +152,6 @@ GA Tucker PI is based in Murrieta and available for consultations by phone, emai
 - /child-custody
 - /missing-persons
 - /investigations
-- /profiling
+- /forensic-behavioral-profiling
 - /risk-management
 - /contact

@@ -1,31 +1,17 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationsHub } from "./LocationsHub";
 
 // ---------------------------------------------------------------------------
 // Metadata — wired from content-drafts/locations/_hub.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Service Area | California & Nevada",
+export const metadata: Metadata = pageMeta({
+  path: "/locations",
+  title: "Service Area | California & Nevada | G.A. Tucker PI",
   description:
-    "GA Tucker PI serves clients across Southern California and beyond. Licensed California PI (CA #188351) based in Murrieta. View service areas by county and city.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations",
-  },
-  openGraph: {
-    title: "Service Area | GA Tucker PI | California PI",
-    description:
-      "Licensed California PI Greg Tucker serves Riverside County, LA County, San Bernardino County, San Francisco, and cross-border matters from Las Vegas.",
-    url: "https://gatuckerpi.com/locations",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Service Area | GA Tucker PI | California PI",
-    description:
-      "Licensed California PI Greg Tucker serves Riverside County, LA County, San Bernardino County, and more.",
-  },
-};
+    "Murrieta-based investigations across Southern California, with travel when a case needs it. Licensed PI (PI188351). Call to discuss a case.",
+});
 
 // ---------------------------------------------------------------------------
 // Schema

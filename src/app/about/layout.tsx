@@ -1,19 +1,13 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { gregTuckerSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/about",
-  },
-  title: "California Private Investigator | Greg Tucker",
-  description: "Meet Greg Tucker - Licensed California PI with 27+ years of experience, Master's degrees in Forensic Psychology and Criminology. CA License #PI188351.",
-  openGraph: {
-    title: "About Greg Tucker | California Private Investigator",
-    description: "Licensed California PI with 27+ years of experience, Master's degrees in Forensic Psychology and Criminology. CA License #PI188351.",
-    url: "https://gatuckerpi.com/about",
-    type: "profile",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/about",
+  title: "Greg Tucker, Murrieta Private Investigator | G.A. Tucker PI",
+  description:
+    "Meet Greg Tucker, a Murrieta investigator with 27+ years of experience. Licensed California PI (PI188351). Call the office.",
+});
 
 export default function AboutLayout({
   children,

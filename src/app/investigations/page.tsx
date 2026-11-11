@@ -13,7 +13,6 @@ const relatedServices = [
   { title: 'Background Checks', href: '/background-checks' },
   { title: 'Risk Management', href: '/risk-management' },
   { title: 'Consulting', href: '/consulting' },
-  { title: 'Profiling', href: '/profiling' },
   { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling' },
   { title: 'Infidelity Investigations', href: '/infidelity' },
   { title: 'General Investigations', href: '/investigations', current: true },

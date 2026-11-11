@@ -22,13 +22,20 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return { title: 'Post not found' };
 
+  const title = post.metaTitle ?? post.title;
+  if (title.length > 60) {
+    throw new Error(`Blog title is ${title.length} characters: ${title}`);
+  }
+  if (post.description.length > 155) {
+    throw new Error(`Blog description is ${post.description.length} characters for ${post.slug}`);
+  }
   return {
-    title: post.metaTitle ?? post.title,
+    title: { absolute: title },
     description: post.description,
     keywords: post.keywords,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: post.title,
+      title,
       description: post.description,
       type: 'article',
       publishedTime: post.date,
@@ -45,7 +52,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.title,
+      title,
       description: post.description,
       images: [post.image],
     },

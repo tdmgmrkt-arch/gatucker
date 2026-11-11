@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../../components/LocationPage";
 import type { LocationPageProps } from "../../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/riverside-county-murrieta.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Murrieta Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/riverside-county/murrieta",
+  title: "Murrieta Private Investigator | G.A. Tucker PI",
   description:
-    "Greg Tucker is a licensed private investigator based in Murrieta, CA. Background checks, infidelity, child custody, and more. CA PI #188351. Call 909-964-8976.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/riverside-county/murrieta",
-  },
-  openGraph: {
-    title: "Murrieta Private Investigator | GA Tucker PI | CA #188351",
-    description:
-      "Licensed CA PI based in Murrieta. Background checks, surveillance, infidelity investigations. Call 909-964-8976.",
-    url: "https://gatuckerpi.com/locations/riverside-county/murrieta",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Murrieta Private Investigator | GA Tucker PI | CA #188351",
-    description: "Licensed CA PI Greg Tucker is based in Murrieta. Call 909-964-8976.",
-  },
-};
+    "A licensed private investigator based in Murrieta for local and California cases. PI188351. Call (909) 964-8976.",
+});
 
 // ---------------------------------------------------------------------------
 // Schema

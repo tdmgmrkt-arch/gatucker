@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../../components/LocationPage";
 import type { LocationPageProps } from "../../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/san-bernardino-county-rancho-cucamonga.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Rancho Cucamonga Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/san-bernardino-county/rancho-cucamonga",
+  title: "Rancho Cucamonga Private Investigator | G.A. Tucker PI",
   description:
-    "GA Tucker PI serves Rancho Cucamonga, CA. Licensed PI from Murrieta via I-15. Background checks, surveillance, litigation support. CA PI #188351.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/san-bernardino-county/rancho-cucamonga",
-  },
-  openGraph: {
-    title: "Rancho Cucamonga Private Investigator | GA Tucker PI",
-    description:
-      "Licensed CA PI serving Rancho Cucamonga. Surveillance, background checks, infidelity. Call 909-964-8976.",
-    url: "https://gatuckerpi.com/locations/san-bernardino-county/rancho-cucamonga",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Rancho Cucamonga Private Investigator | GA Tucker PI",
-    description: "Licensed CA PI Greg Tucker serves Rancho Cucamonga. Call 909-964-8976.",
-  },
-};
+    "Rancho Cucamonga cases from a Murrieta PI via the I-15. Licensed in California (PI188351). Call for a consultation.",
+});
 
 // ---------------------------------------------------------------------------
 // Schema
@@ -131,7 +118,7 @@ const pageProps: LocationPageProps = {
     { title: "Child Custody", description: "Objective evidence for San Bernardino County family court.", href: "/child-custody" },
     { title: "Missing Persons", description: "Locate individuals in Rancho Cucamonga and the surrounding IE.", href: "/missing-persons" },
     { title: "Litigation Support", description: "Pre-trial support for Rancho Cucamonga Courthouse attorneys.", href: "/investigations" },
-    { title: "Corporate Profiling", description: "Due diligence and risk management for Inland Empire businesses.", href: "/profiling" },
+    { title: "Corporate Profiling", description: "Due diligence and risk management for Inland Empire businesses.", href: "/forensic-behavioral-profiling" },
   ],
   courthouses: [
     { name: "Rancho Cucamonga Courthouse", address: "8303 Haven Ave, Rancho Cucamonga, CA 91730" },

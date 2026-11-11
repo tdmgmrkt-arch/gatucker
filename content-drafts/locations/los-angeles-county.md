@@ -78,7 +78,7 @@ LA County attorneys handling civil litigation engage GA Tucker PI for pre-trial 
 ### Corporate Profiling and Risk Management
 Companies operating in Los Angeles County face complex due-diligence requirements — particularly in entertainment, real estate, finance, and professional services. GA Tucker PI provides pre-transaction subject profiles, executive background research, and threat assessments for corporate clients who need accurate intelligence before making significant decisions.
 
-[Learn More About Profiling](/profiling) | [Learn More About Risk Management](/risk-management)
+[Learn More About Profiling](/forensic-behavioral-profiling) | [Learn More About Risk Management](/risk-management)
 
 ---
 
@@ -150,6 +150,6 @@ GA Tucker PI accepts Los Angeles County cases. Initial consultations are by phon
 - /child-custody
 - /missing-persons
 - /investigations
-- /profiling
+- /forensic-behavioral-profiling
 - /risk-management
 - /contact
