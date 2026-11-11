@@ -7,6 +7,7 @@ import { Award, CheckCircle2, FileCheck, Shield, BookOpen, UserCheck, Users, Bri
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
 import { StickyCTAButton } from "../components/sticky-cta-button";
+import { VerifyLicenseLink } from "../components/verify-license-link";
 
 // --- Data for Greg's Education Credentials ---
 const education = [
@@ -123,11 +124,12 @@ export default function AboutPage() {
         <div className="pt-30 max-w-7xl mx-auto relative z-10">
           {/* ---------- GREG SECTION (TWO COLUMNS) ---------- */}
           <motion.div
+            id="greg-tucker"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12"
+            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12 scroll-mt-28"
           >
             {/* Left Image */}
             <motion.div
@@ -193,6 +195,7 @@ export default function AboutPage() {
                 >
                   License #188351
                 </p>
+                <VerifyLicenseLink className="block text-center normal-case tracking-normal text-[10px] sm:text-xs mt-1 font-semibold text-[#CEA53D]" />
               </div>
 
               {/* Don't Be a Sucker Badge */}
@@ -271,7 +274,8 @@ export default function AboutPage() {
                 
                 Holding three master&apos;s degrees in Forensic Psychology, Criminology, and Legal Studies,
                 Greg combines 27+ years of investigative experience with academic expertise, under
-                California BSIS Private Investigator License #PI188351.
+                California BSIS Private Investigator License #PI188351.{" "}
+                <VerifyLicenseLink className="text-[#CEA53D]" />
               </p>
             </motion.div>
           </motion.div>
@@ -367,6 +371,12 @@ export default function AboutPage() {
                                     </p>
                                     <p className="text-[#EDEDED]/70 text-xs font-light">
                                         {item.description}
+                                        {item.description.includes("188351") && (
+                                          <>
+                                            {" "}
+                                            <VerifyLicenseLink className="text-[#CEA53D]" />
+                                          </>
+                                        )}
                                     </p>
                                 </div>
                             </div>
@@ -425,11 +435,12 @@ export default function AboutPage() {
 
           {/* ---------- JULIA SECTION (No Change) ---------- */}
           <motion.div
+            id="julia-tucker"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center mt-16 sm:mt-20 md:mt-24"
+            className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center mt-16 sm:mt-20 md:mt-24 scroll-mt-28"
           >
             {/* Left: Text */}
             <motion.div

@@ -7,6 +7,8 @@ import { Footer } from '../../components/footer';
 import { StickyCTAButton } from '../../components/sticky-cta-button';
 import { getAllSlugs, getPostBySlug, getSortedPosts, type ContentBlock } from '../posts';
 import { breadcrumbSchema } from '@/lib/schema';
+import { VerifyLicenseLink } from '../../components/verify-license-link';
+import { LICENSE_NUMBER } from '@/lib/business';
 import { Phone, Mail, Calendar, Clock, Tag, ExternalLink, ArrowLeft, ChevronRight } from 'lucide-react';
 
 export async function generateStaticParams() {
@@ -227,7 +229,8 @@ export default async function BlogPostPage({ params }: Params) {
       '@type': 'Person',
       '@id': 'https://gatuckerpi.com/about#greg-tucker',
       name: 'Greg A. Tucker',
-      sameAs: 'https://gatuckerpi.com/about',
+      url: 'https://gatuckerpi.com/about#greg-tucker',
+      jobTitle: 'Owner, CEO and Lead Investigator',
     },
     publisher: {
       '@type': 'Organization',
@@ -309,6 +312,13 @@ export default async function BlogPostPage({ params }: Params) {
             >
               <Clock className="w-3.5 h-3.5" /> {post.readTime}
             </span>
+            <Link
+              href="/about#greg-tucker"
+              className="text-[#CEA53D] text-sm hover:underline"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              By Greg A. Tucker
+            </Link>
           </div>
 
           <h1
@@ -338,6 +348,47 @@ export default async function BlogPostPage({ params }: Params) {
             <div className="max-w-none">
               {post.content.map((block, i) => renderBlock(block, i))}
             </div>
+
+            <aside
+              aria-label="About the author"
+              className="mt-12 flex gap-4 p-6 border-2 border-[#CEA53D]/30 bg-black/40 rounded-lg"
+            >
+              <Image
+                src="/gatuckerbwport.png"
+                alt="Greg A. Tucker"
+                width={96}
+                height={96}
+                className="w-20 h-20 object-cover rounded flex-shrink-0"
+              />
+              <div>
+                <p
+                  className="text-xs uppercase tracking-widest text-[#CEA53D] mb-1"
+                  style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+                >
+                  About the author
+                </p>
+                <p
+                  className="text-2xl font-black uppercase text-[#EDEDED] leading-none mb-2"
+                  style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+                >
+                  Greg A. Tucker
+                </p>
+                <p
+                  className="text-sm text-[#EDEDED]/80 leading-relaxed mb-3"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
+                >
+                  Owner, CEO and lead investigator. California PI License #{LICENSE_NUMBER}.{" "}
+                  <VerifyLicenseLink className="text-[#CEA53D]" />
+                </p>
+                <Link
+                  href="/about#greg-tucker"
+                  className="text-sm text-[#CEA53D] underline decoration-[#CEA53D]/50 underline-offset-2 hover:decoration-[#CEA53D]"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
+                >
+                  About Greg A. Tucker
+                </Link>
+              </div>
+            </aside>
 
             {/* External Source Card */}
             <div className="mt-12 p-6 border-2 border-[#CEA53D]/30 bg-black/40 rounded-lg">

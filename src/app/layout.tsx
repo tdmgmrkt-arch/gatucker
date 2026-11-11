@@ -3,6 +3,8 @@ import Script from "next/script";
 import type { Metadata } from "next";
 import "./globals.css";
 import { getGoogleReviews, formatRating } from "@/lib/google-reviews";
+import { juliaTuckerSchema } from "@/lib/schema";
+import { postalAddressSchema, SOCIAL, SOCIAL_UNRESOLVED } from "@/lib/business";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gatuckerpi.com"),
@@ -88,14 +90,7 @@ const organizationSchema = {
       description: "Toll-free line",
     },
   ],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "25185 Madison Ave Ste A",
-    addressLocality: "Murrieta",
-    addressRegion: "CA",
-    postalCode: "92562",
-    addressCountry: "US"
-  },
+  address: postalAddressSchema(),
   geo: {
     "@type": "GeoCoordinates",
     latitude: 33.5539,
@@ -112,12 +107,15 @@ const organizationSchema = {
     opens: "00:00",
     closes: "00:00"
   },
+  // X and Instagram match the footer. Facebook and Yelp still disagree with
+  // the footer URLs (SOCIAL_UNRESOLVED) — left as the previous schema values
+  // until the owner confirms which profile is official.
   sameAs: [
-    "https://www.facebook.com/gatuckerpi",
-    "https://twitter.com/gatuckerpi",
-    "https://www.instagram.com/gatuckerpi",
-    "https://www.yelp.com/biz/ga-tucker-pi",
-    "https://www.google.com/maps/place/?q=place_id:ChIJayO7FOV924AR4ZhvEEuHDBg"
+    SOCIAL_UNRESOLVED.facebookSchema,
+    SOCIAL.x,
+    SOCIAL.instagram,
+    SOCIAL_UNRESOLVED.yelpSchema,
+    SOCIAL.googleMaps,
   ],
   hasCredential: {
     "@type": "EducationalOccupationalCredential",
@@ -137,8 +135,10 @@ const organizationSchema = {
     "@type": "Person",
     "@id": "https://gatuckerpi.com/about#greg-tucker",
     name: "Greg A. Tucker",
-    jobTitle: "Private Investigator"
+    jobTitle: "Owner, CEO and Lead Investigator",
+    url: "https://gatuckerpi.com/about#greg-tucker",
   },
+  employee: juliaTuckerSchema,
   knowsAbout: [
     "Private Investigation",
     "Background Checks",

@@ -202,6 +202,7 @@ const pageProps: LocationPageProps = {
     },
   ],
   schema,
+  showOfficeAddress: true,
   lastUpdated: "August 2026",
   heroImage: "/riverside-county-murrieta-hero.webp",
 };
