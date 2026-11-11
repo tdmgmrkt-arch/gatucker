@@ -51,7 +51,7 @@ These require Greg or Julia — we can't do them:
 - Update schema in `layout.tsx` and all visible references
 
 ### 2.2 Fix schema errors
-- Remove invalid `GeoCoordinates.addressCountry`, add real lat/long: `latitude: 33.55400, longitude: -117.21392`
+- Remove invalid `GeoCoordinates`. Do not publish `latitude: 33.55400, longitude: -117.21392` — that pin was for the previous office. No accurate coordinates were confirmed for 40477 Murrieta Hot Springs Rd.
 - Add `addressLocality: "Murrieta"`, `addressRegion: "CA"`, `postalCode: "<confirm>"` to `PostalAddress`
 - Add `credentialID: "PI188351"` inside `hasCredential`
 - Give `founder` an `@id` that matches the Person `@id` on `/about`

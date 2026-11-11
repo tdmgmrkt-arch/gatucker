@@ -470,7 +470,8 @@ address: {
   "@type": "PostalAddress",
   addressLocality: "Murrieta",    // ADD — pending client confirmation
   addressRegion: "CA",
-  postalCode: "92562",            // ADD — pending client confirmation (Murrieta west zip)
+  streetAddress: "40477 Murrieta Hot Springs Rd, Ste D1 #123",
+  postalCode: "92563",            // owner-corrected 2026-11-11
   addressCountry: "US"
 },
 

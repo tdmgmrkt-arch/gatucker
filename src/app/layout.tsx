@@ -91,11 +91,9 @@ const organizationSchema = {
     },
   ],
   address: postalAddressSchema(),
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 33.5539,
-    longitude: -117.2139
-  },
+  // GeoCoordinates removed: the previous pin was for the old Madison Ave
+  // office, and a public geocode of the Hot Springs Rd building was not
+  // precise enough to publish.
   areaServed: {
     "@type": "State",
     name: "California"

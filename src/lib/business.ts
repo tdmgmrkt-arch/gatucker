@@ -4,15 +4,16 @@
  * PUBLISH_STREET_ADDRESS is the single switch for the office street address.
  * Set it to false to hide the street on /contact, the footer, and the Murrieta
  * page, and to drop streetAddress / postalCode from Organization JSON-LD.
- * Never put any other street here (the registered-agent address is not public).
+ * Never substitute the registered-agent street. The owner corrected the
+ * public office to the Hot Springs Rd address on 2026-11-11.
  */
 export const PUBLISH_STREET_ADDRESS = true;
 
 export const OFFICE_ADDRESS = {
-  streetAddress: "25185 Madison Ave Ste A",
+  streetAddress: "40477 Murrieta Hot Springs Rd, Ste D1 #123",
   addressLocality: "Murrieta",
   addressRegion: "CA",
-  postalCode: "92562",
+  postalCode: "92563",
   addressCountry: "US",
 } as const;
 
@@ -23,9 +24,10 @@ export const MAIN_PHONE_TEL = "tel:909-964-8976";
 export const LICENSE_NUMBER = "PI188351";
 export const LICENSE_LOOKUP_URL = "https://search.dca.ca.gov/";
 
-/** Existing Google place already cited in Organization sameAs. */
-export const MAPS_PLACE_URL =
-  "https://www.google.com/maps/place/?q=place_id:ChIJayO7FOV924AR4ZhvEEuHDBg";
+/** Search link for the published office. Not the old Google place id. */
+export const MAPS_PLACE_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  `${OFFICE_ADDRESS.streetAddress}, ${OFFICE_ADDRESS.addressLocality}, ${OFFICE_ADDRESS.addressRegion} ${OFFICE_ADDRESS.postalCode}`,
+)}`;
 
 /**
  * Profiles that match between the footer and schema.
