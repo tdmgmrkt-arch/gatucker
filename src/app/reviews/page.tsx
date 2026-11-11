@@ -27,9 +27,9 @@ const BASE_URL = 'https://gatuckerpi.com';
 // ── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = pageMeta({
   path: "/reviews",
-  title: "California PI Client Reviews | G.A. Tucker PI",
+  title: "Murrieta Private Investigator | Client Reviews | G.A. Tucker PI",
   description:
-    "Google reviews of Greg A. Tucker, a Murrieta private investigator. Licensed California PI (PI188351). Call to discuss a case.",
+    "Read 4.9-star verified Google reviews of California private investigator Greg A. Tucker. 67 reviews from clients across Southern California, the Bay Area, and beyond.",
 });
 
 // ── Page ─────────────────────────────────────────────────────────────────────

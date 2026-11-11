@@ -28,9 +28,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'how-to-hire-private-investigator-california',
     title: 'How to Hire a Private Investigator in California: The Complete 2026 Guide',
-    metaTitle: "Hire a California Private Investigator | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | How to Hire | G.A. Tucker PI",
     description:
-      "How to check a California PI license, compare scope, and plan a first call. Licensed investigator (PI188351). Request a consultation.",
+      "Learn how to hire a licensed private investigator in California. Verify PI licenses, understand costs, service areas, and what to expect from your first consultation.",
     date: '2026-07-15',
     readTime: '4 min read',
     category: 'Hiring a PI',
@@ -126,9 +126,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'signs-spouse-cheating-when-to-hire-pi',
     title: '10 Warning Signs Your Spouse Is Cheating — And When to Hire a Private Investigator',
-    metaTitle: "10 Warning Signs Your Spouse Is Cheating | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Cheating Signs",
     description:
-      "Patterns that raise an infidelity question, and when a licensed investigator can help. California PI (PI188351). Call for a consultation.",
+      "The behavioral, digital, and financial warning signs of infidelity — plus a clear-eyed look at when hiring a licensed private investigator makes sense.",
     date: '2026-06-12',
     readTime: '3 min read',
     category: 'Infidelity',
@@ -220,9 +220,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'employment-background-checks-california-employers',
     title: 'Employment Background Checks: What California Employers Need to Know in 2026',
-    metaTitle: "Employment Background Checks in California | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Employer Screening",
     description:
-      "What California employers need to know before screening a candidate. Licensed PI (PI188351) in Murrieta. Call to discuss a check.",
+      "California has some of the strictest background check laws in the country. Here is what employers must do — and must never do — when screening candidates.",
     date: '2026-05-14',
     readTime: '4 min read',
     category: 'Background Checks',
@@ -332,9 +332,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'child-custody-investigations-evidence-wins-cases',
     title: 'Child Custody Investigations: How the Right Evidence Wins Cases',
-    metaTitle: "Child Custody Evidence in California | G.A. Tucker PI",
+    metaTitle: "Murrieta Private Investigator | Custody Evidence | G.A. Tucker PI",
     description:
-      "How documented parenting facts support a California custody case. Licensed PI (PI188351) in Murrieta. Request a consultation.",
+      "Family court runs on evidence, not accusations. Here is how a private investigator builds a defensible custody case that protects children and holds up under scrutiny.",
     date: '2026-04-10',
     readTime: '3 min read',
     category: 'Child Custody',
@@ -422,9 +422,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'missing-persons-first-48-hours',
     title: 'The First 48 Hours: What to Do When a Loved One Goes Missing',
-    metaTitle: "Missing Person: First 48 Hours in CA | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | First 48 Hours",
     description:
-      "What to do in the first two days after someone goes missing, and how a PI can help. Licensed in California (PI188351). Call the office.",
+      "The first two days after a disappearance are the most important. Here is what to do, who to call, and how a private investigator complements law enforcement.",
     date: '2026-03-18',
     readTime: '3 min read',
     category: 'Missing Persons',
@@ -513,9 +513,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'surveillance-and-the-law-california',
     title: 'Surveillance and the Law: How Private Investigators Stay Compliant in California',
-    metaTitle: "California Surveillance Law for PIs | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Surveillance Law",
     description:
-      "What a licensed investigator can and cannot do during surveillance in California. PI188351. Call with a question about your case.",
+      "What licensed PIs can and cannot legally do while conducting surveillance in California, including recording, GPS tracking, trespass, and evidence admissibility.",
     date: '2026-02-20',
     readTime: '4 min read',
     category: 'Investigations',
@@ -615,9 +615,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'executive-protection-risk-management-guide',
     title: 'Executive Protection & Risk Management: A Guide for High-Net-Worth Families',
-    metaTitle: "Executive Protection Guide, California | GA Tucker PI",
+    metaTitle: "California Private Investigator | Executive Protection",
     description:
-      "How investigators support threat assessment and family risk planning. Licensed California PI (PI188351). Call for a consultation.",
+      "How high-net-worth individuals and executives use private investigators for personal risk management, threat assessment, and family security planning.",
     date: '2026-01-15',
     readTime: '3 min read',
     category: 'Risk Management',
@@ -712,9 +712,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'hollywood-fixer-discreet-crisis-management',
     title: 'The Hollywood Fixer: Discreet Crisis Management for Public Figures',
-    metaTitle: "Hollywood Fixer: Discreet Crisis Management | GA Tucker PI",
+    metaTitle: "California Private Investigator | Hollywood Fixer",
     description:
-      "How a licensed investigator helps public figures and counsel keep a private matter factual. PI188351 in Murrieta. Call to discuss.",
+      "What a modern Hollywood fixer actually does — and how licensed investigators help public figures manage sensitive situations before they become headlines.",
     date: '2025-12-11',
     readTime: '4 min read',
     category: 'Hollywood Fixer',
@@ -807,9 +807,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'digital-forensics-modern-pi-online-evidence',
     title: 'Digital Forensics: How Modern Private Investigators Uncover Online Evidence',
-    metaTitle: "Digital Forensics for Private Investigators | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Digital Forensics",
     description:
-      "How licensed investigators collect and document online evidence. California PI (PI188351) in Murrieta. Request a consultation.",
+      "From metadata analysis to open-source intelligence, here is how licensed private investigators recover, preserve, and present digital evidence in 2026.",
     date: '2025-11-16',
     readTime: '4 min read',
     category: 'Digital Forensics',
@@ -915,9 +915,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'criminal-profiling-investigative-science',
     title: 'Criminal Profiling Explained: The Science Behind the Investigation',
-    metaTitle: "Criminal Profiling Explained | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Criminal Profiling",
     description:
-      "What behavioral analysis can and cannot add to an investigation. Licensed California PI (PI188351). Request a consultation.",
+      "What criminal profiling actually is — and is not — and how behavioral analysis supports investigations of unknown or unidentified subjects.",
     date: '2025-10-14',
     readTime: '3 min read',
     category: 'Profiling',
@@ -1024,9 +1024,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'behavioral-threat-assessment-families-executives',
     title: 'Behavioral Threat Assessment in California: How Investigators Evaluate Real Risk',
-    metaTitle: "Behavioral Threat Assessment in California | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Threat Assessment",
     description:
-      "How investigators assess stalking and other threats before they escalate. Licensed PI (PI188351) in Murrieta. Call to discuss a case.",
+      "How behavioral threat assessment works in California: evaluating stalkers, disgruntled employees, and family threats before risk escalates into violence.",
     date: '2026-08-22',
     readTime: '10 min read',
     category: 'Threat Assessment',
@@ -1172,9 +1172,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'forensic-linguistics-statement-analysis-evidence',
     title: 'Forensic Linguistics and Statement Analysis: How Language Becomes Evidence',
-    metaTitle: "Forensic Linguistics & Statement Analysis | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Forensic Linguistics",
     description:
-      "How language in documents and statements is examined for an investigation. Licensed California PI (PI188351). Request a consultation.",
+      "Forensic linguistics examines written and spoken language as evidence — authorship attribution, deception indicators, and what it can prove in California courts.",
     date: '2026-07-24',
     readTime: '7 min read',
     category: 'Forensic Linguistics',
@@ -1287,9 +1287,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'hidden-assets-lifestyle-discovery-high-asset-divorce',
     title: 'Hidden Assets and Lifestyle Discovery in High-Asset Divorce and Custody Cases',
-    metaTitle: "Hidden Assets in a California Divorce | GA Tucker PI",
+    metaTitle: "California Private Investigator | Hidden Assets | G.A. Tucker PI",
     description:
-      "What a licensed investigator can document when spending and reported income do not match. PI188351. Call for a consultation.",
+      "Why income declarations understate true wealth in high-asset California divorces, how spouses hide money, and what a licensed investigator can lawfully document.",
     date: '2026-08-03',
     readTime: '8 min read',
     category: 'High-Net-Worth Custody',
@@ -1407,9 +1407,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'executive-due-diligence-beyond-background-check',
     title: "When a Standard Background Check Isn't Enough: Executive Due Diligence in California",
-    metaTitle: "Executive Due Diligence in California | GA Tucker PI",
+    metaTitle: "California Private Investigator | Due Diligence",
     description:
-      "Due diligence beyond a basic background check for hires and deals. Licensed California PI (PI188351). Request a consultation.",
+      "A $40 background check misses civil suits, regulatory actions, and hidden directorships. Here's what executive due diligence actually covers in California.",
     date: '2026-08-12',
     readTime: '9 min read',
     category: 'Background Checks',
@@ -1529,9 +1529,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'what-investigators-document-high-asset-custody',
     title: 'What Private Investigators Document in High-Asset Custody Cases',
-    metaTitle: "High-Asset Custody Evidence, California | GA Tucker PI",
+    metaTitle: "California Private Investigator | Custody Documents",
     description:
-      "What investigators document in high-asset custody cases for counsel to review. Licensed PI (PI188351). Call for a consultation.",
+      "Private investigators document parenting time, caregiving, and household conditions in high-asset custody cases to build defensible courtroom evidence.",
     date: '2026-08-31',
     readTime: '9 min read',
     category: 'High-Net-Worth Custody',
@@ -1647,9 +1647,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'litigation-support-investigator-trial-strategy',
     title: 'Litigation Support: How a Licensed Investigator Supports Trial Strategy',
-    metaTitle: "Litigation Support Investigator in California | GA Tucker PI",
+    metaTitle: "California Private Investigator | Litigation Support",
     description:
-      "Witness locates, records, and trial-prep work for California attorneys. Licensed PI (PI188351) in Murrieta. Request a consultation.",
+      "A licensed California investigator supporting attorneys during active litigation: witness location, record checks, exhibits, and trial-ready work product.",
     date: '2026-09-09',
     readTime: '9 min read',
     category: 'Legal Consulting',
@@ -1760,9 +1760,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'profiling-myths-vs-forensic-reality',
     title: 'Profiling Myths vs. Forensic Reality: What a Profiler Actually Does',
-    metaTitle: "Profiling Myths vs. Forensic Reality | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Profiling Myths",
     description:
-      "What forensic behavioral analysis actually involves, beyond television. Licensed California PI (PI188351). Request a consultation.",
+      "Television makes profiling look instant. Real behavioral analysis is slow, documentary, and credential-dependent. Here's what the work actually requires.",
     date: '2026-09-19',
     readTime: '8 min read',
     category: 'Profiling',
@@ -1891,9 +1891,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'infidelity-digital-evidence-admissible-california',
     title: 'Is Digital Evidence From a Cheating Spouse Admissible in California?',
-    metaTitle: "Infidelity Digital Evidence in California | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Infidelity Evidence",
     description:
-      "Why DIY phone checks can hurt a California case, and what a licensed PI can document. PI188351. Call for a consultation.",
+      "Reading a partner's phone or tracking their location without consent can be illegal in California and can wreck your case. Here's what actually matters.",
     date: '2026-09-28',
     readTime: '10 min read',
     category: 'Infidelity',
@@ -2004,9 +2004,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'relocation-international-custody-risk-california',
     title: 'Relocation and International Custody Risk: What California Families Should Know',
-    metaTitle: "Move-Away Custody Risk in California | GA Tucker PI",
+    metaTitle: "California Private Investigator | Move-Away Custody",
     description:
-      "Relocation and travel facts California families can document before a move-away dispute. Licensed PI (PI188351). Call to discuss.",
+      "A California move-away filing or an international travel plan can trigger real child abduction risk factors courts and families should recognize early.",
     date: '2026-10-07',
     readTime: '10 min read',
     category: 'High-Net-Worth Custody',
@@ -2136,9 +2136,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'expert-witness-investigative-case-consultation',
     title: 'Expert Witness Support and Pre-Litigation Case Consultation',
-    metaTitle: "Expert Witness Consultation in California | GA Tucker PI",
+    metaTitle: "California Private Investigator | Expert Witness",
     description:
-      "How early case consultation helps attorneys prepare investigative work. Licensed California PI (PI188351). Request a consultation.",
+      "Learn how consulting experts differ from testifying experts, what standards expert opinions must meet in California, and when early case consultation matters.",
     date: '2026-10-16',
     readTime: '8 min read',
     category: 'Legal Consulting',
@@ -2265,9 +2265,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'skip-tracing-locating-people-california',
     title: "Skip Tracing in California: How Investigators Locate People Who Don't Want to Be Found",
-    metaTitle: "Skip Tracing in California | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Skip Tracing | G.A. Tucker PI",
     description:
-      "Lawful skip tracing to locate witnesses, heirs, and others who are hard to reach. Licensed PI (PI188351). Call for a consultation.",
+      "Skip tracing locates witnesses, debtors, heirs, and absent parents who are hard to reach in California. Learn the lawful methods a licensed investigator uses.",
     date: '2025-10-30',
     readTime: '8 min read',
     category: 'Missing Persons',
@@ -2385,9 +2385,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'vetting-household-staff-high-profile-families',
     title: 'Vetting Household Staff for High-Profile California Families',
-    metaTitle: "CA Household Staff Background Checks | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Household Staff",
     description:
-      "Background checks for nannies, drivers, and estate staff in California. Licensed PI (PI188351) in Murrieta. Call to discuss a check.",
+      "How California families vet nannies, housekeepers, drivers, and estate staff with background checks that go well beyond agency placement and an NDA.",
     date: '2025-12-29',
     readTime: '8 min read',
     category: 'High-Profile Clients',
@@ -2510,9 +2510,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'insurance-claim-workers-comp-investigation-california',
     title: "Insurance Claim and Workers' Compensation Investigations in California",
-    metaTitle: "Workers' Comp and Claims Investigator in CA | GA Tucker PI",
+    metaTitle: "California Private Investigator | Workers' Comp | G.A. Tucker PI",
     description:
-      "Insurance-claim and workers' compensation investigations in California. Licensed PI (PI188351) in Murrieta. Request a consultation.",
+      "California insurance claim and workers' compensation investigations: what gets examined, who commissions them, and how evidence holds up at a hearing.",
     date: '2026-02-03',
     readTime: '8 min read',
     category: 'Investigations',
@@ -2634,9 +2634,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'guardianship-third-party-custody-investigations',
     title: 'Guardianship and Third-Party Custody Investigations in California',
-    metaTitle: "Guardianship & Third-Party Custody Cases | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Guardianship | G.A. Tucker PI",
     description:
-      "Documentation for California guardianship and third-party custody matters. Licensed PI (PI188351). Request a consultation.",
+      "When a grandparent or relative seeks custody or guardianship in California, lawful documentation can support the case your family law attorney is building.",
     date: '2026-03-30',
     readTime: '8 min read',
     category: 'Child Custody',
@@ -2758,9 +2758,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'victimology-what-the-victim-tells-investigators',
     title: 'Victimology: What the Victim Tells Investigators About a Case',
-    metaTitle: "Victimology: What the Victim Tells Us | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Victimology | G.A. Tucker PI",
     description:
-      "How victim routines and relationships help narrow an investigation. Licensed California PI (PI188351). Request a consultation.",
+      "Victimology studies who a victim was, their routines, and relationships to help investigators narrow suspects without assigning blame. Learn how it works.",
     date: '2026-04-28',
     readTime: '8 min read',
     category: 'Profiling',
@@ -2867,9 +2867,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'digital-footprint-doxxing-exposure-audit',
     title: 'Digital Footprint and Doxxing Exposure Audits for Executives and Families',
-    metaTitle: "Doxxing & Digital Footprint Audits | G.A. Tucker PI",
+    metaTitle: "California Private Investigator | Digital Footprint",
     description:
-      "A review of what strangers can find online about a family or executive. Licensed California PI (PI188351). Call for a consultation.",
+      "A digital footprint audit maps what strangers can find about executives and families online, then reduces exposure to data brokers, doxxing, and stalking risk.",
     date: '2026-06-26',
     readTime: '8 min read',
     category: 'Risk Management',

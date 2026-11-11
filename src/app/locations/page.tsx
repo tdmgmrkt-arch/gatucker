@@ -8,9 +8,9 @@ import { LocationsHub } from "./LocationsHub";
 
 export const metadata: Metadata = pageMeta({
   path: "/locations",
-  title: "Service Area | California & Nevada | G.A. Tucker PI",
+  title: "California Private Investigator | Service Area | G.A. Tucker PI",
   description:
-    "Murrieta-based investigations across Southern California, with travel when a case needs it. Licensed PI (PI188351). Call to discuss a case.",
+    "GA Tucker PI serves clients across Southern California and beyond. Licensed California PI (CA #188351) based in Murrieta. View service areas by county and city.",
 });
 
 // ---------------------------------------------------------------------------

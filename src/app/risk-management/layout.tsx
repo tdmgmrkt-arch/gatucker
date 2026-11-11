@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/risk-management",
-  title: "California Risk & Threat Assessment | G.A. Tucker PI",
+  title: "California Private Investigator | Risk Management",
   description:
-    "Threat assessment and risk reviews for California families and businesses. Licensed PI (PI188351). Call for a consultation.",
+    "Professional risk assessment and mitigation strategies for businesses in California. Identify threats, protect resources, and safeguard your interests.",
 });
 
 // Service Schema for Risk Management

@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/infidelity",
-  title: "California Infidelity Investigations | G.A. Tucker PI",
+  title: "California Private Investigator | Infidelity | G.A. Tucker PI",
   description:
-    "Discreet surveillance when you need facts about a suspected affair. Licensed California PI (PI188351). Call for a consultation.",
+    "Discreet and confidential infidelity investigations in California. Professional surveillance and evidence gathering for suspected cheating spouses.",
 });
 
 // Service Schema for Infidelity Investigations

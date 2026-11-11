@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMeta({
   path: "/locations/riverside-county/temecula",
   title: "Temecula Private Investigator | G.A. Tucker PI",
   description:
-    "Temecula investigations from a licensed PI based in nearby Murrieta. California license PI188351. Call for a consultation.",
+    "GA Tucker PI serves Temecula, CA. Licensed private investigator based in nearby Murrieta. Background checks, infidelity, child custody. CA PI #188351.",
 });
 
 // ---------------------------------------------------------------------------

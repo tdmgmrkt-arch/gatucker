@@ -12,14 +12,14 @@ export const metadata: Metadata = {
     default: "California Private Investigator | G.A. Tucker PI",
     template: "%s | G.A. Tucker PI"
   },
-  description: "Confidential investigations from a Murrieta private investigator. Licensed California PI (PI188351). Call for a consultation.",
+  description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://gatuckerpi.com",
     siteName: "G.A. Tucker PI",
     title: "California Private Investigator | G.A. Tucker PI",
-    description: "Confidential investigations from a Murrieta private investigator. Licensed California PI (PI188351). Call for a consultation.",
+    description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
     images: [
       {
         // /og-image.png never existed in public/. hero-poster-desktop.webp is the
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "California Private Investigator | G.A. Tucker PI",
-    description: "Confidential investigations from a Murrieta private investigator. Licensed California PI (PI188351). Call for a consultation.",
+    description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
     images: ["/hero-poster-desktop.webp"]
   },
   robots: {
@@ -91,9 +91,9 @@ const organizationSchema = {
     },
   ],
   address: postalAddressSchema(),
-  // GeoCoordinates removed: the previous pin was for the old Madison Ave
-  // office, and a public geocode of the Hot Springs Rd building was not
-  // precise enough to publish.
+  // GeoCoordinates omitted: the previous pin belonged to an old office,
+  // and a public geocode of the current building was not precise enough
+  // to publish.
   areaServed: {
     "@type": "State",
     name: "California"

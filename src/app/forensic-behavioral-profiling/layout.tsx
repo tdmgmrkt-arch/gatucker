@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/forensic-behavioral-profiling",
-  title: "California Forensic Behavioral Profiler | G.A. Tucker PI",
+  title: "California Private Investigator | Profiling | G.A. Tucker PI",
   description:
-    "Behavioral and linguistic analysis for attorneys and private clients. Licensed California PI (PI188351). Request a consultation.",
+    "Forensic behavioral profiling and forensic linguistics for attorneys, corporations, and individuals. Greg A. Tucker, licensed CA PI, MS forensic psychology.",
 });
 
 // Service schema — nested entity references are pure @id pointers (no @type),

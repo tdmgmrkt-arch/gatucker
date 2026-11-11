@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/investigations",
-  title: "California Civil & Criminal Investigations | G.A. Tucker PI",
+  title: "California Private Investigator | Civil & Criminal",
   description:
-    "Civil and criminal case investigations with 27+ years of experience. Licensed California PI (PI188351). Call to discuss a case.",
+    "Comprehensive private investigation services for civil and criminal cases in California. Expert investigators with 27+ years of experience.",
 });
 
 // Service Schema for Investigations

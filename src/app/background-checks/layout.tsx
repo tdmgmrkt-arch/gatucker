@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/background-checks",
-  title: "California Background Checks | G.A. Tucker PI",
+  title: "California Private Investigator | Background Checks",
   description:
-    "Employment, criminal, and personal-history research in California. Licensed PI (PI188351) in Murrieta. Call for a consultation.",
+    "Comprehensive background check services in California. Employment verification, criminal records, personal history research using exclusive databases.",
 });
 
 // Service Schema for Background Checks

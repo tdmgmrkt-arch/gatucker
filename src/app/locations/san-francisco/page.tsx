@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMeta({
   path: "/locations/san-francisco",
   title: "San Francisco Private Investigator | G.A. Tucker PI",
   description:
-    "San Francisco matters handled under a California PI license, based in Murrieta (PI188351). Call to discuss a case.",
+    "CA-licensed PI Greg Tucker serves San Francisco clients. Background checks, skip traces, records research, and in-person investigations. CA PI #188351. Based in Murrieta.",
 });
 
 // ---------------------------------------------------------------------------

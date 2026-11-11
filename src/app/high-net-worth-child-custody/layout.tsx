@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/high-net-worth-child-custody",
-  title: "California HNW Child Custody Investigations | GA Tucker PI",
+  title: "California Private Investigator | HNW Custody | G.A. Tucker PI",
   description:
-    "Custody documentation for complex assets and multiple households. Licensed California PI (PI188351). Call for a consultation.",
+    "Discreet custody investigations for high-asset California families. Lifestyle, parenting-time, and household documentation your family law attorney can file.",
 });
 
 // Service schema — nested entity references stay pure @id pointers (no @type),

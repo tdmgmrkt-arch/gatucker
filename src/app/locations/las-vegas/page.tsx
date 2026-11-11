@@ -20,9 +20,9 @@ import type { LocationPageProps } from "../../components/LocationPage";
 
 export const metadata: Metadata = pageMeta({
   path: "/locations/las-vegas",
-  title: "California PI for Las Vegas Matters | G.A. Tucker PI",
+  title: "California Private Investigator | Las Vegas | G.A. Tucker PI",
   description:
-    "California-side work on matters that also involve Las Vegas. Licensed California PI (PI188351), not a Nevada office. Call to discuss.",
+    "California PI Greg Tucker handles cross-border cases involving Las Vegas — background checks, skip traces, CA-side surveillance, and litigation support. CA PI #188351.",
 });
 
 // ---------------------------------------------------------------------------

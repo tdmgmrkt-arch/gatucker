@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/contact",
-  title: "Contact a California Private Investigator | G.A. Tucker PI",
+  title: "California Private Investigator | Contact | G.A. Tucker PI",
   description:
-    "Reach Greg Tucker in Murrieta for a confidential consultation. Licensed California PI (PI188351). Call (909) 964-8976.",
+    "Contact Greg Tucker, licensed California private investigator with 27+ years experience. Available 24/7 for confidential consultations. Call 909-964-8976.",
 });
 
 // ContactPage Schema

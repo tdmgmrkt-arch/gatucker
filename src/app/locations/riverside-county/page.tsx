@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMeta({
   path: "/locations/riverside-county",
   title: "Riverside County Private Investigator | G.A. Tucker PI",
   description:
-    "Investigations across Riverside County from a Murrieta office. Licensed California PI (PI188351). Call for a consultation.",
+    "GA Tucker PI is a licensed Riverside County private investigator based in Murrieta, CA. Background checks, surveillance, child custody, infidelity, and more. CA #188351.",
 });
 
 // ---------------------------------------------------------------------------

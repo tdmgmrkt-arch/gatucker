@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     path: "/privacy-policy",
     title: "Privacy Policy | G.A. Tucker PI",
     description:
-      "How G.A. Tucker PI collects and protects information on this site. Licensed California PI (PI188351). Contact the office with questions.",
+    "How G.A. Tucker PI collects, uses, and protects your personal information on gatuckerpi.com. Last updated May 29, 2025.",
   }),
   robots: { index: true, follow: true },
 };

@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/consulting",
-  title: "California Jury & Trial Consulting | G.A. Tucker PI",
+  title: "California Private Investigator | Trial Consulting",
   description:
-    "Trial preparation, jury selection, and case analysis for attorneys. Licensed California PI (PI188351). Request a consultation.",
+    "Expert consulting services for attorneys including trial preparation, jury selection, witness interviews, and comprehensive case analysis in California.",
 });
 
 // Service Schema for Consulting

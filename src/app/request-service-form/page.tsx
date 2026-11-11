@@ -4,9 +4,9 @@ import { Navbar } from '../components/navbar';
 
 export const metadata: Metadata = pageMeta({
   path: "/request-service-form",
-  title: "California PI Consultation Request | G.A. Tucker PI",
+  title: "California Private Investigator | Request Service",
   description:
-    "Send a confidential inquiry to a Murrieta private investigator. Licensed California PI (PI188351). Request a consultation.",
+    "Request a free consultation with G.A. Tucker PI. Submit your inquiry for expert private investigation services in California.",
 });
 import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';

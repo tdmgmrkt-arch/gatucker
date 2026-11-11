@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     path: "/terms-and-conditions",
     title: "Terms and Conditions | G.A. Tucker PI",
     description:
-      "Terms for using the G.A. Tucker PI website. Licensed California PI (PI188351) in Murrieta. Contact the office with questions.",
+    "Terms of use for the G.A. Tucker PI website. Please read carefully before using gatuckerpi.com. Last updated May 29, 2025.",
   }),
   robots: { index: true, follow: true },
 };

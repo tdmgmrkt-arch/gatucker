@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMeta({
   path: "/locations/san-bernardino-county/rancho-cucamonga",
   title: "Rancho Cucamonga Private Investigator | G.A. Tucker PI",
   description:
-    "Rancho Cucamonga cases from a Murrieta PI via the I-15. Licensed in California (PI188351). Call for a consultation.",
+    "GA Tucker PI serves Rancho Cucamonga, CA. Licensed PI from Murrieta via I-15. Background checks, surveillance, litigation support. CA PI #188351.",
 });
 
 // ---------------------------------------------------------------------------

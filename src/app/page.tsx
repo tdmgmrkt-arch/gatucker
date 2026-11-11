@@ -10,7 +10,7 @@ export const metadata: Metadata = pageMeta({
   path: "/",
   title: "California Private Investigator | G.A. Tucker PI",
   description:
-    "Confidential investigations from a Murrieta private investigator. Licensed California PI (PI188351). Call for a consultation.",
+    "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
 });
 
 // Lazy load below-fold components to reduce initial bundle size and TBT

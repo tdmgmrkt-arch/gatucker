@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/services",
-  title: "California Investigation Services | G.A. Tucker PI",
+  title: "California Private Investigator | Services | G.A. Tucker PI",
   description:
-    "Background checks, surveillance, custody, and locates across California. Licensed PI (PI188351) in Murrieta. Request a consultation.",
+    "Comprehensive private investigation services in California including background checks, surveillance, missing persons, infidelity investigations, and more.",
 });
 
 // Services Schema

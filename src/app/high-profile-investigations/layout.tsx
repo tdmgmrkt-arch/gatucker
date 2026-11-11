@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/high-profile-investigations",
-  title: "California High-Profile Investigations | G.A. Tucker PI",
+  title: "California Private Investigator | High-Profile | G.A. Tucker PI",
   description:
-    "Confidential investigations for executives and high-net-worth clients. Licensed PI (PI188351) in Murrieta. Call to discuss a case.",
+    "Licensed California PI for confidential investigations, high-asset custody matters, and risk management serving executives and high-net-worth clients.",
 });
 
 const serviceSchema = {

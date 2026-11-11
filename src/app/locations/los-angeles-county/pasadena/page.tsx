@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMeta({
   path: "/locations/los-angeles-county/pasadena",
   title: "Pasadena Private Investigator | G.A. Tucker PI",
   description:
-    "Pasadena and San Gabriel Valley cases from a Murrieta-based PI. Licensed in California (PI188351). Call to discuss a case.",
+    "GA Tucker PI serves Pasadena, CA. Licensed PI based in Murrieta. Background checks, infidelity, litigation support for Pasadena and San Gabriel Valley. CA PI #188351.",
 });
 
 // ---------------------------------------------------------------------------

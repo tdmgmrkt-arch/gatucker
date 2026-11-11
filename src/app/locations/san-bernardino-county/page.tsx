@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMeta({
   path: "/locations/san-bernardino-county",
   title: "San Bernardino County Private Investigator | G.A. Tucker PI",
   description:
-    "San Bernardino County investigations from Murrieta. Licensed California PI (PI188351). Call for a consultation.",
+    "Licensed PI serving San Bernardino County from Murrieta, CA. Background checks, surveillance, litigation support across the Inland Empire. CA PI #188351.",
 });
 
 // ---------------------------------------------------------------------------

@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMeta({
   path: "/faqs",
   title: "California Private Investigator FAQs | G.A. Tucker PI",
   description:
-    "Answers on licensing, confidentiality, fees, and what an investigation includes. Licensed PI (PI188351). Call with a question.",
+    "Frequently asked questions about private investigation services. Learn about surveillance, background checks, infidelity investigations, and more from G.A. Tucker PI.",
 });
 
 const faqSchema = {

@@ -17,7 +17,7 @@ Greg Tucker holds California PI License #188351. He has conducted investigations
 
 ## Murrieta as a Case Environment
 
-Murrieta is one of the fastest-growing cities in California. It crossed 100,000 residents over a decade ago and continues to expand through master-planned communities along the I-15 and I-215 corridors. Jefferson Avenue, Murrieta Hot Springs Road, and the Clinton Keith Road corridor define the major arterials, and the city's residential grid of Copper Canyon, Bear Creek, and Greer Ranch neighborhoods creates predictable movement patterns that inform surveillance planning.
+Murrieta is one of the fastest-growing cities in California. It crossed 100,000 residents over a decade ago and continues to expand through master-planned communities along the I-15 and I-215 corridors. Jefferson Avenue, the I-15 corridor, and the Clinton Keith Road corridor define the major arterials, and the city's residential grid of Copper Canyon, Bear Creek, and Greer Ranch neighborhoods creates predictable movement patterns that inform surveillance planning.
 
 The city's demographics skew toward families with children, two-income households, and homeowners — which maps directly to the most common case types GA Tucker PI receives: infidelity investigations, child custody documentation, background checks on new partners or business associates, and missing persons matters involving estranged family members.
 
@@ -64,11 +64,11 @@ Murrieta attorneys — particularly those practicing family law, civil litigatio
 
 Murrieta is large and geographically varied. GA Tucker PI operates throughout:
 
-- **West Murrieta** — Copper Canyon, the neighborhoods along Murrieta Hot Springs Road west of the I-15
+- **West Murrieta** — Copper Canyon and the neighborhoods west of the I-15
 - **Central Murrieta** — Old Town Murrieta, the Madison Avenue commercial corridor
 - **East Murrieta** — Greer Ranch, Harveston, Spencer's Crossing
 - **South Murrieta** — neighborhoods approaching the Temecula border at Winchester Road and California Oaks Road
-- **North Murrieta** — Murrieta Hot Springs, Warm Springs areas approaching the Wildomar border
+- **North Murrieta** — the neighborhoods approaching the Wildomar border
 
 ---
 

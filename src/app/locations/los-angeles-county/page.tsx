@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMeta({
   path: "/locations/los-angeles-county",
   title: "Los Angeles County Private Investigator | G.A. Tucker PI",
   description:
-    "Los Angeles County cases handled by a licensed PI based in Murrieta. California license PI188351. Request a consultation.",
+    "GA Tucker PI provides licensed PI services across Los Angeles County. Based in Murrieta, CA. Background checks, surveillance, litigation support. CA PI #188351.",
 });
 
 // ---------------------------------------------------------------------------

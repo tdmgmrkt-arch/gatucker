@@ -9,7 +9,7 @@ import { Footer } from "./footer";
 import { StickyCTAButton } from "./sticky-cta-button";
 import { RequestServiceForm } from "./request-service-form";
 import { FAQAccordion } from "./faq-accordion";
-import { MAIN_PHONE_DISPLAY, MAIN_PHONE_TEL, MAPS_PLACE_URL, officeAddressLines } from "@/lib/business";
+import { MAIN_PHONE_DISPLAY, MAIN_PHONE_TEL, MAPS_PLACE_URL, localityLine, officeAddressLines } from "@/lib/business";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -63,7 +63,8 @@ export interface LocationPageProps {
   /** Last-updated display string, e.g. "August 2026" */
   lastUpdated?: string;
   /**
-   * When true, and PUBLISH_STREET_ADDRESS is on, show the Murrieta office NAP.
+   * When true, show the Murrieta office NAP. The street line is included only
+   * while PUBLISH_STREET_ADDRESS is on; otherwise the block is city and region.
    * Only the Murrieta page should set this.
    */
   showOfficeAddress?: boolean;
@@ -240,6 +241,7 @@ export function LocationPage({
 }: LocationPageProps) {
   const isContentReady = bodyContent.length > 0;
   const office = showOfficeAddress ? officeAddressLines() : null;
+  const cityLine = showOfficeAddress ? localityLine() : null;
 
   return (
     <div className={`min-h-screen bg-[${BG_DARK}] overflow-x-hidden`} style={{ backgroundColor: BG_DARK }}>
@@ -355,7 +357,7 @@ export function LocationPage({
               {/* Breadcrumb */}
               <Breadcrumb region={region} isCity={isCity} parentCounty={parentCounty} />
 
-              {office && (
+              {cityLine && (
                 <address className="not-italic bg-black/60 border-2 border-[#CEA53D]/30 rounded-lg p-5">
                   <h2
                     className="text-2xl font-black uppercase text-[#CEA53D] mb-3"
@@ -364,9 +366,15 @@ export function LocationPage({
                     Murrieta Office
                   </h2>
                   <p className="text-[#EDEDED] leading-relaxed" style={bodyStyle}>
-                    {office.line1}
-                    <br />
-                    {office.line2}
+                    {office ? (
+                      <>
+                        {office.line1}
+                        <br />
+                        {office.line2}
+                      </>
+                    ) : (
+                      cityLine
+                    )}
                   </p>
                   <p className="mt-3" style={bodyStyle}>
                     <a href={MAIN_PHONE_TEL} className="text-[#CEA53D] hover:underline">

@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMeta({
   path: "/locations/los-angeles-county/long-beach",
   title: "Long Beach Private Investigator | G.A. Tucker PI",
   description:
-    "Long Beach investigations planned from Murrieta by a licensed California PI (PI188351). Call for a consultation.",
+    "GA Tucker PI serves Long Beach, CA. Licensed PI based in Murrieta. Background checks, infidelity surveillance, child custody, litigation support. CA PI #188351.",
 });
 
 // ---------------------------------------------------------------------------

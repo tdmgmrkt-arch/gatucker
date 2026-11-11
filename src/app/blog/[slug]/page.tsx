@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!post) return { title: 'Post not found' };
 
   const title = post.metaTitle ?? post.title;
-  if (title.length > 60) {
+  if (title.length > 65) {
     throw new Error(`Blog title is ${title.length} characters: ${title}`);
   }
-  if (post.description.length > 155) {
+  if (post.description.length > 170) {
     throw new Error(`Blog description is ${post.description.length} characters for ${post.slug}`);
   }
   return {

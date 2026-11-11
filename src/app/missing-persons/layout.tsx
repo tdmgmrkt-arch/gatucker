@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/page-meta";
 
 export const metadata: Metadata = pageMeta({
   path: "/missing-persons",
-  title: "California Missing Persons Investigator | G.A. Tucker PI",
+  title: "California Private Investigator | Missing Persons",
   description:
-    "Help locating a missing family member or a person who is hard to find. Licensed PI (PI188351) in Murrieta. Call to discuss a case.",
+    "Specialized missing persons investigations in California. Locate lost family members, runaways, or individuals using advanced investigative techniques.",
 });
 
 // Service Schema for Missing Persons

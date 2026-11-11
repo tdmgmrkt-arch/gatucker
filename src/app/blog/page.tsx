@@ -9,9 +9,9 @@ import { getSortedPosts } from './posts';
 
 export const metadata: Metadata = pageMeta({
   path: "/blog",
-  title: "California Private Investigation Blog | G.A. Tucker PI",
+  title: "California Private Investigator Blog | G.A. Tucker PI",
   description:
-    "Guides on hiring a PI, custody evidence, surveillance law, and locates. Licensed California PI (PI188351). Call the office.",
+    "Guides, case perspectives, and expert insights from G.A. Tucker PI. Read about hiring a private investigator, background checks, surveillance law, custody evidence.",
 });
 
 function formatDate(iso: string): string {

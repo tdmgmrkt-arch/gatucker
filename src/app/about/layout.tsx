@@ -4,9 +4,9 @@ import { gregTuckerSchema } from "@/lib/schema";
 
 export const metadata: Metadata = pageMeta({
   path: "/about",
-  title: "Greg Tucker, Murrieta Private Investigator | G.A. Tucker PI",
+  title: "Murrieta Private Investigator | Greg Tucker",
   description:
-    "Meet Greg Tucker, a Murrieta investigator with 27+ years of experience. Licensed California PI (PI188351). Call the office.",
+    "Meet Greg Tucker - Licensed California PI with 27+ years of experience, Master's degrees in Forensic Psychology and Criminology. CA License #PI188351.",
 });
 
 export default function AboutLayout({
