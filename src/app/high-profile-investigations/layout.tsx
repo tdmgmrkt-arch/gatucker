@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  title: "Discreet High-Profile Investigations",
-  description: "Licensed California PI for confidential investigations, high-asset custody matters, and risk management serving executives and high-net-worth clients.",
-  openGraph: {
-    title: "Discreet Investigations for High-Profile Clients | G.A. Tucker PI",
-    description: "Confidential, court-admissible investigative work for entertainment industry, corporate leadership, and HNW clients — handled by a licensed California investigator.",
-    url: "https://gatuckerpi.com/high-profile-investigations",
-    type: "website",
-  },
-  alternates: {
-    canonical: "/high-profile-investigations",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/high-profile-investigations",
+  title: "California Private Investigator | High-Profile | G.A. Tucker PI",
+  description:
+    "Licensed California PI for confidential investigations, high-asset custody matters, and risk management serving executives and high-net-worth clients.",
+});
 
 const serviceSchema = {
   "@context": "https://schema.org",

@@ -71,7 +71,7 @@ Civil and family law attorneys practicing in San Bernardino County Superior Cour
 ### Corporate and Risk Management Investigations
 San Bernardino County's logistics, warehousing, construction, and healthcare sectors all produce due-diligence and risk-management investigation needs. GA Tucker PI provides pre-transaction profiling, executive background research, and operational risk assessments for corporate clients.
 
-[Learn More About Profiling](/profiling) | [Learn More About Risk Management](/risk-management)
+[Learn More About Profiling](/forensic-behavioral-profiling) | [Learn More About Risk Management](/risk-management)
 
 ---
 
@@ -140,6 +140,6 @@ GA Tucker PI serves clients across San Bernardino County's western Inland Empire
 - /child-custody
 - /missing-persons
 - /investigations
-- /profiling
+- /forensic-behavioral-profiling
 - /risk-management
 - /contact

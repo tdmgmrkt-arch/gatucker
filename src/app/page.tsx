@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import dynamic from 'next/dynamic';
 import NavbarShell from './components/navbar-shell';
 import { HeroSection } from './components/hero-section';
 import { ReviewsSection } from './components/reviews-section';
 import { getGoogleReviews, formatRating, formatReviewCount } from '@/lib/google-reviews';
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/",
-  },
-  title: { absolute: "California Private Investigator | G.A. Tucker PI" },
-  description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
-};
+export const metadata: Metadata = pageMeta({
+  path: "/",
+  title: "California Private Investigator | G.A. Tucker PI",
+  description:
+    "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
+});
 
 // Lazy load below-fold components to reduce initial bundle size and TBT
 const AboutSection = dynamic(() => import('./components/about-section').then(mod => ({ default: mod.AboutSection })), {

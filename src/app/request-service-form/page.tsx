@@ -1,19 +1,13 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { Navbar } from '../components/navbar';
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/request-service-form",
-  },
-  title: "Request Service | Free Consultation",
-  description: "Request a free consultation with G.A. Tucker PI. Submit your inquiry for expert private investigation services in California.",
-  openGraph: {
-    title: "Request a Free Consultation | G.A. Tucker PI",
-    description: "Request a free consultation with G.A. Tucker PI. Expert private investigation services in California.",
-    url: "https://gatuckerpi.com/request-service-form",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/request-service-form",
+  title: "California Private Investigator | Request Service",
+  description:
+    "Request a free consultation with G.A. Tucker PI. Submit your inquiry for expert private investigation services in California.",
+});
 import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
 import { RequestServiceForm } from '../components/request-service-form';

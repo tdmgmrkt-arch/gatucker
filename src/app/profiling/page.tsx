@@ -14,8 +14,7 @@ const relatedServices = [
   { title: 'Background Checks', href: '/background-checks' },
   { title: 'Risk Management', href: '/risk-management' },
   { title: 'Consulting', href: '/consulting' },
-  { title: 'Profiling', href: '/profiling', current: true },
-  { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling' },
+  { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling', current: true },
   { title: 'Infidelity Investigations', href: '/infidelity' },
   { title: 'General Investigations', href: '/investigations' },
   { title: 'Child Custody', href: '/child-custody' },
@@ -31,7 +30,7 @@ export default function ProfilingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            breadcrumbSchema([{ name: 'Criminal Profiling', path: '/profiling' }])
+            breadcrumbSchema([{ name: 'Forensic Behavioral Profiling', path: '/forensic-behavioral-profiling' }])
           ),
         }}
       />

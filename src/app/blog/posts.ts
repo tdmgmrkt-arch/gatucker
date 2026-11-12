@@ -28,9 +28,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'how-to-hire-private-investigator-california',
     title: 'How to Hire a Private Investigator in California: The Complete 2026 Guide',
-    metaTitle: 'How to Hire a Private Investigator in California',
+    metaTitle: "California Private Investigator | How to Hire | G.A. Tucker PI",
     description:
-      'Learn how to hire a licensed private investigator in California. Verify PI licenses, understand costs, service areas, and what to expect from your first consultation.',
+      "Learn how to hire a licensed private investigator in California. Verify PI licenses, understand costs, service areas, and what to expect from your first consultation.",
     date: '2026-07-15',
     readTime: '4 min read',
     category: 'Hiring a PI',
@@ -126,9 +126,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'signs-spouse-cheating-when-to-hire-pi',
     title: '10 Warning Signs Your Spouse Is Cheating — And When to Hire a Private Investigator',
-    metaTitle: '10 Warning Signs Your Spouse Is Cheating',
+    metaTitle: "California Private Investigator | Cheating Signs",
     description:
-      'The behavioral, digital, and financial warning signs of infidelity — plus a clear-eyed look at when hiring a licensed private investigator makes sense.',
+      "The behavioral, digital, and financial warning signs of infidelity — plus a clear-eyed look at when hiring a licensed private investigator makes sense.",
     date: '2026-06-12',
     readTime: '3 min read',
     category: 'Infidelity',
@@ -202,7 +202,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'Making the Decision' },
       {
         type: 'p',
-        text: "If you have been reading these warning signs and quietly counting how many apply, you already know why you are here. Waiting rarely produces clarity — evidence does. When you're ready to talk, our [services](/services) page shows the full range of ways we can help.",
+        text: "If you have been reading these warning signs and quietly counting how many apply, you already know why you are here. Waiting rarely produces clarity — evidence does. When you're ready to talk about [when to hire an infidelity investigator](/infidelity), our [services](/services) page shows the full range of ways we can help.",
       },
     ],
     internalLinks: [
@@ -220,9 +220,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'employment-background-checks-california-employers',
     title: 'Employment Background Checks: What California Employers Need to Know in 2026',
-    metaTitle: 'Employment Background Checks in California',
+    metaTitle: "California Private Investigator | Employer Screening",
     description:
-      'California has some of the strictest background check laws in the country. Here is what employers must do — and must never do — when screening candidates.',
+      "California has some of the strictest background check laws in the country. Here is what employers must do — and must never do — when screening candidates.",
     date: '2026-05-14',
     readTime: '4 min read',
     category: 'Background Checks',
@@ -309,7 +309,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'When to Bring in a Professional' },
       {
         type: 'p',
-        text: 'For most rank-and-file hires, a compliant automated background report is enough. For executives, sensitive positions, roles with access to money or minors, or any hire where the wrong decision could threaten the business — a professional investigator is the correct choice. That is where our [consulting](/consulting) and background check services fit.',
+        text: 'For most rank-and-file hires, a compliant automated background report is enough. For executives, sensitive positions, roles with access to money or minors, or any hire where the wrong decision could threaten the business — a professional investigator is the correct choice. That is where our [consulting](/consulting) and [California employment background checks](/background-checks) fit.',
       },
       { type: 'h2', text: 'The Cost of Getting It Wrong' },
       {
@@ -332,9 +332,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'child-custody-investigations-evidence-wins-cases',
     title: 'Child Custody Investigations: How the Right Evidence Wins Cases',
-    metaTitle: 'Child Custody Investigations: Winning Evidence',
+    metaTitle: "Murrieta Private Investigator | Custody Evidence | G.A. Tucker PI",
     description:
-      'Family court runs on evidence, not accusations. Here is how a private investigator builds a defensible custody case that protects children and holds up under scrutiny.',
+      "Family court runs on evidence, not accusations. Here is how a private investigator builds a defensible custody case that protects children and holds up under scrutiny.",
     date: '2026-04-10',
     readTime: '3 min read',
     category: 'Child Custody',
@@ -403,7 +403,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'Related Reading' },
       {
         type: 'p',
-        text: 'For clients whose custody concerns overlap with suspected infidelity or domestic misconduct, see also our page on [infidelity investigations](/infidelity). For a broader overview of how we work, visit [our services](/services). To speak with our office confidentially, use the [contact](/contact) form.',
+        text: 'See our [child custody investigation services in California](/child-custody). For clients whose custody concerns overlap with suspected infidelity or domestic misconduct, see also our page on [infidelity investigations](/infidelity). For a broader overview of how we work, visit [our services](/services). To speak with our office confidentially, use the [contact](/contact) form.',
       },
     ],
     internalLinks: [
@@ -422,9 +422,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'missing-persons-first-48-hours',
     title: 'The First 48 Hours: What to Do When a Loved One Goes Missing',
-    metaTitle: 'Missing Person: What to Do in the First 48 Hours',
+    metaTitle: "California Private Investigator | First 48 Hours",
     description:
-      'The first two days after a disappearance are the most important. Here is what to do, who to call, and how a private investigator complements law enforcement.',
+      "The first two days after a disappearance are the most important. Here is what to do, who to call, and how a private investigator complements law enforcement.",
     date: '2026-03-18',
     readTime: '3 min read',
     category: 'Missing Persons',
@@ -460,7 +460,7 @@ export const posts: BlogPost[] = [
           "Reach out to close friends, ex-partners, coworkers, and anyone the person had contact with in the last 72 hours.",
           "Preserve digital access — do not change email or social passwords, do not delete anything, and screenshot recent messages.",
           "Post a factual missing persons flyer in the geographic area of last contact.",
-          "Consider hiring a licensed [missing persons investigator](/missing-persons) if the police response is limited or if the case is not being treated with the urgency you believe it warrants.",
+          "Consider [missing person investigation services](/missing-persons) if the police response is limited or if the case is not being treated with the urgency you believe it warrants.",
         ],
       },
       { type: 'h2', text: 'What Private Investigators Do That Police Often Cannot' },
@@ -513,9 +513,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'surveillance-and-the-law-california',
     title: 'Surveillance and the Law: How Private Investigators Stay Compliant in California',
-    metaTitle: 'Surveillance Law for California Investigators',
+    metaTitle: "California Private Investigator | Surveillance Law",
     description:
-      'What licensed PIs can and cannot legally do while conducting surveillance in California, including recording, GPS tracking, trespass, and evidence admissibility.',
+      "What licensed PIs can and cannot legally do while conducting surveillance in California, including recording, GPS tracking, trespass, and evidence admissibility.",
     date: '2026-02-20',
     readTime: '4 min read',
     category: 'Investigations',
@@ -615,9 +615,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'executive-protection-risk-management-guide',
     title: 'Executive Protection & Risk Management: A Guide for High-Net-Worth Families',
-    metaTitle: 'Executive Protection & Risk Management Guide',
+    metaTitle: "California Private Investigator | Executive Protection",
     description:
-      'How high-net-worth individuals and executives use private investigators for personal risk management, threat assessment, and family security planning.',
+      "How high-net-worth individuals and executives use private investigators for personal risk management, threat assessment, and family security planning.",
     date: '2026-01-15',
     readTime: '3 min read',
     category: 'Risk Management',
@@ -712,9 +712,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'hollywood-fixer-discreet-crisis-management',
     title: 'The Hollywood Fixer: Discreet Crisis Management for Public Figures',
-    metaTitle: 'The Hollywood Fixer: Discreet Crisis Management',
+    metaTitle: "California Private Investigator | Hollywood Fixer",
     description:
-      'What a modern Hollywood fixer actually does — and how licensed investigators help public figures manage sensitive situations before they become headlines.',
+      "What a modern Hollywood fixer actually does — and how licensed investigators help public figures manage sensitive situations before they become headlines.",
     date: '2025-12-11',
     readTime: '4 min read',
     category: 'Hollywood Fixer',
@@ -807,9 +807,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'digital-forensics-modern-pi-online-evidence',
     title: 'Digital Forensics: How Modern Private Investigators Uncover Online Evidence',
-    metaTitle: 'Digital Forensics for Private Investigators',
+    metaTitle: "California Private Investigator | Digital Forensics",
     description:
-      'From metadata analysis to open-source intelligence, here is how licensed private investigators recover, preserve, and present digital evidence in 2026.',
+      "From metadata analysis to open-source intelligence, here is how licensed private investigators recover, preserve, and present digital evidence in 2026.",
     date: '2025-11-16',
     readTime: '4 min read',
     category: 'Digital Forensics',
@@ -915,9 +915,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'criminal-profiling-investigative-science',
     title: 'Criminal Profiling Explained: The Science Behind the Investigation',
-    metaTitle: 'Criminal Profiling Explained',
+    metaTitle: "California Private Investigator | Criminal Profiling",
     description:
-      'What criminal profiling actually is — and is not — and how behavioral analysis supports investigations of unknown or unidentified subjects.',
+      "What criminal profiling actually is — and is not — and how behavioral analysis supports investigations of unknown or unidentified subjects.",
     date: '2025-10-14',
     readTime: '3 min read',
     category: 'Profiling',
@@ -1006,11 +1006,11 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'Learn More' },
       {
         type: 'p',
-        text: 'For an overview of how we structure behavioral analysis engagements, see our [profiling](/profiling) service page, or explore our [consulting](/consulting) options for related work.',
+        text: 'For an overview of how we structure behavioral analysis engagements, see [forensic behavioral profiling for attorneys](/forensic-behavioral-profiling), or explore our [consulting](/consulting) options for related work.',
       },
     ],
     internalLinks: [
-      { href: '/profiling', label: 'Criminal Profiling' },
+      { href: '/forensic-behavioral-profiling', label: 'Forensic Behavioral Profiling for Attorneys' },
       { href: '/consulting', label: 'Consulting' },
       { href: '/services', label: 'All Services' },
     ],
@@ -1024,7 +1024,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'behavioral-threat-assessment-families-executives',
     title: 'Behavioral Threat Assessment in California: How Investigators Evaluate Real Risk',
-    metaTitle: 'Behavioral Threat Assessment in California',
+    metaTitle: "California Private Investigator | Threat Assessment",
     description:
       "How behavioral threat assessment works in California: evaluating stalkers, disgruntled employees, and family threats before risk escalates into violence.",
     date: '2026-08-22',
@@ -1172,9 +1172,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'forensic-linguistics-statement-analysis-evidence',
     title: 'Forensic Linguistics and Statement Analysis: How Language Becomes Evidence',
-    metaTitle: 'Forensic Linguistics & Statement Analysis',
+    metaTitle: "California Private Investigator | Forensic Linguistics",
     description:
-      'Forensic linguistics examines written and spoken language as evidence — authorship attribution, deception indicators, and what it can prove in California courts.',
+      "Forensic linguistics examines written and spoken language as evidence — authorship attribution, deception indicators, and what it can prove in California courts.",
     date: '2026-07-24',
     readTime: '7 min read',
     category: 'Forensic Linguistics',
@@ -1268,7 +1268,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: 'Language leaves a trail whether the person writing it means to or not. Forensic linguistics and statement analysis turn that trail into usable evidence — carefully, honestly, and within real limits. If a disputed letter, threatening message, or questionable statement sits at the center of your case, [request a confidential consultation](/request-service-form) to find out what a linguistic analysis can realistically tell you, or call (909) 964-8976 to talk through the specifics.',
+        text: 'Language leaves a trail whether the person writing it means to or not. Forensic linguistics and statement analysis turn that trail into usable evidence — carefully, honestly, and within real limits. If a disputed letter, threatening message, or questionable statement sits at the center of your case, ask about [forensic linguistic analysis services](/forensic-behavioral-profiling) or [request a confidential consultation](/request-service-form) to find out what a linguistic analysis can realistically tell you, or call (909) 964-8976 to talk through the specifics.',
       },
     ],
     internalLinks: [
@@ -1287,9 +1287,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'hidden-assets-lifestyle-discovery-high-asset-divorce',
     title: 'Hidden Assets and Lifestyle Discovery in High-Asset Divorce and Custody Cases',
-    metaTitle: 'Hidden Assets & Lifestyle Analysis in Divorce',
+    metaTitle: "California Private Investigator | Hidden Assets | G.A. Tucker PI",
     description:
-      'Why income declarations understate true wealth in high-asset California divorces, how spouses hide money, and what a licensed investigator can lawfully document.',
+      "Why income declarations understate true wealth in high-asset California divorces, how spouses hide money, and what a licensed investigator can lawfully document.",
     date: '2026-08-03',
     readTime: '8 min read',
     category: 'High-Net-Worth Custody',
@@ -1383,7 +1383,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'How Lifestyle Evidence Supports a Child Support or Custody Position' },
       {
         type: 'p',
-        text: "California courts decide child support using income-based guideline calculations, and they decide custody based on the best interest of the child — not on which parent has more money or a better attorney. But when one parent's reported income doesn't match the lifestyle a child is actually living in, that gap is directly relevant to a guideline support calculation, and it matters in [high-net-worth custody](/high-net-worth-child-custody) cases where a parent's claimed inability to pay contradicts what the court can plainly see. Judges respond to documented facts — dates, locations, receipts, records — not accusations. A well-documented lifestyle discrepancy, paired with the right legal strategy from your attorney, gives the court something concrete to weigh. It does not guarantee an outcome. It gives your case the facts it needs to be heard on its merits.",
+        text: "California courts decide child support using income-based guideline calculations, and they decide custody based on the best interest of the child — not on which parent has more money or a better attorney. But when one parent's reported income doesn't match the lifestyle a child is actually living in, that gap is directly relevant to a guideline support calculation, and it matters for [high-net-worth custody and lifestyle documentation](/high-net-worth-child-custody), where a parent's claimed inability to pay contradicts what the court can plainly see. Judges respond to documented facts — dates, locations, receipts, records — not accusations. A well-documented lifestyle discrepancy, paired with the right legal strategy from your attorney, gives the court something concrete to weigh. It does not guarantee an outcome. It gives your case the facts it needs to be heard on its merits.",
       },
       { type: 'h2', text: 'The Bottom Line' },
       {
@@ -1407,7 +1407,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'executive-due-diligence-beyond-background-check',
     title: "When a Standard Background Check Isn't Enough: Executive Due Diligence in California",
-    metaTitle: 'Executive Due Diligence vs. Background Checks',
+    metaTitle: "California Private Investigator | Due Diligence",
     description:
       "A $40 background check misses civil suits, regulatory actions, and hidden directorships. Here's what executive due diligence actually covers in California.",
     date: '2026-08-12',
@@ -1510,7 +1510,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: "A commodity background check answers a narrow question: has this person been convicted of a crime recently, in the place they live right now. Executive due diligence answers a bigger one: is this the person who should control a company's capital, sit on its board, or carry its name into a room no one else is in. Greg A. Tucker is a licensed private investigator based in Murrieta, working with attorneys and corporations across California on primary-source verification completed before a hire is final instead of after the damage is already done. To scope an executive due diligence engagement for an upcoming hire, board appointment, or merger, visit the [background checks](/background-checks) page or [request service](/request-service-form) directly.",
+        text: "A commodity background check answers a narrow question: has this person been convicted of a crime recently, in the place they live right now. Executive due diligence answers a bigger one: is this the person who should control a company's capital, sit on its board, or carry its name into a room no one else is in. Greg A. Tucker is a licensed private investigator based in Murrieta, working with attorneys and corporations across California on primary-source verification completed before a hire is final instead of after the damage is already done. To scope an executive due diligence engagement for an upcoming hire, board appointment, or merger, visit our [executive and due-diligence background investigations](/background-checks) or [request service](/request-service-form) directly.",
       },
     ],
     internalLinks: [
@@ -1529,9 +1529,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'what-investigators-document-high-asset-custody',
     title: 'What Private Investigators Document in High-Asset Custody Cases',
-    metaTitle: 'Custody Evidence: What Investigators Document',
+    metaTitle: "California Private Investigator | Custody Documents",
     description:
-      'Private investigators document parenting time, caregiving, and household conditions in high-asset custody cases to build defensible courtroom evidence.',
+      "Private investigators document parenting time, caregiving, and household conditions in high-asset custody cases to build defensible courtroom evidence.",
     date: '2026-08-31',
     readTime: '9 min read',
     category: 'High-Net-Worth Custody',
@@ -1628,7 +1628,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: 'In a high-asset custody matter, the difference between the parenting plan on paper and the parenting pattern in practice is often the case. Building that record takes discipline: dated logs, unaltered evidence, a documented chain of custody, and a report written to hold up under cross-examination, not one written to make a point. G.A. Tucker PI serves attorneys and families litigating [high-net-worth custody matters](/high-net-worth-child-custody) throughout Murrieta and across California. Call (909) 964-8976 or [request a consultation](/request-service-form) to discuss the facts of your case.',
+        text: 'In a high-asset custody matter, the difference between the parenting plan on paper and the parenting pattern in practice is often the case. Building that record takes discipline: dated logs, unaltered evidence, a documented chain of custody, and a report written to hold up under cross-examination, not one written to make a point. G.A. Tucker PI serves attorneys and families with [high-net-worth child custody investigations](/high-net-worth-child-custody) throughout Murrieta and across California. Call (909) 964-8976 or [request a consultation](/request-service-form) to discuss the facts of your case.',
       },
     ],
     internalLinks: [
@@ -1647,9 +1647,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'litigation-support-investigator-trial-strategy',
     title: 'Litigation Support: How a Licensed Investigator Supports Trial Strategy',
-    metaTitle: 'Litigation Support Investigator in California',
+    metaTitle: "California Private Investigator | Litigation Support",
     description:
-      'A licensed California investigator supporting attorneys during active litigation: witness location, record checks, exhibits, and trial-ready work product.',
+      "A licensed California investigator supporting attorneys during active litigation: witness location, record checks, exhibits, and trial-ready work product.",
     date: '2026-09-09',
     readTime: '9 min read',
     category: 'Legal Consulting',
@@ -1741,7 +1741,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: "A case moving toward trial needs facts an attorney can rely on and findings a court won't exclude on a foundation objection. G.A. Tucker PI provides litigation support investigator services to California attorneys from the witness list through the exhibit binder, working at counsel's direction from assignment through trial. Firms with an active matter can start with a [consulting](/consulting) call or [request service](/request-service-form) directly to scope an assignment before a deadline forces the issue.",
+        text: "A case moving toward trial needs facts an attorney can rely on and findings a court won't exclude on a foundation objection. G.A. Tucker PI provides litigation support investigator services to California attorneys from the witness list through the exhibit binder, working at counsel's direction from assignment through trial. Firms with an active matter can start with [litigation support and trial-preparation investigations](/consulting) or [request service](/request-service-form) directly to scope an assignment before a deadline forces the issue.",
       },
     ],
     internalLinks: [
@@ -1760,7 +1760,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'profiling-myths-vs-forensic-reality',
     title: 'Profiling Myths vs. Forensic Reality: What a Profiler Actually Does',
-    metaTitle: 'Profiling Myths vs. Forensic Reality',
+    metaTitle: "California Private Investigator | Profiling Myths",
     description:
       "Television makes profiling look instant. Real behavioral analysis is slow, documentary, and credential-dependent. Here's what the work actually requires.",
     date: '2026-09-19',
@@ -1872,7 +1872,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: 'Profiling on television is a magic trick dressed up as expertise. Profiling in real casework is a documented, evidence-grounded process built to support an investigation, not replace it, and the credentials behind it matter as much as the method itself. G.A. Tucker PI serves Murrieta and the surrounding region with [forensic behavioral profiling](/forensic-behavioral-profiling) grounded in 27+ years of investigative experience and a license any client can check for themselves. [Contact the office](/contact) to discuss a case, or [request service](/request-service-form) to get started.',
+        text: 'Profiling on television is a magic trick dressed up as expertise. Profiling in real casework is a documented, evidence-grounded process built to support an investigation, not replace it, and the credentials behind it matter as much as the method itself. G.A. Tucker PI serves Murrieta and the surrounding region with [forensic behavioral profiling services](/forensic-behavioral-profiling) grounded in 27+ years of investigative experience and a license any client can check for themselves. [Contact the office](/contact) to discuss a case, or [request service](/request-service-form) to get started.',
       },
     ],
     internalLinks: [
@@ -1891,7 +1891,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'infidelity-digital-evidence-admissible-california',
     title: 'Is Digital Evidence From a Cheating Spouse Admissible in California?',
-    metaTitle: "Infidelity Digital Evidence: What's Legal in CA",
+    metaTitle: "California Private Investigator | Infidelity Evidence",
     description:
       "Reading a partner's phone or tracking their location without consent can be illegal in California and can wreck your case. Here's what actually matters.",
     date: '2026-09-28',
@@ -1980,7 +1980,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: "What a Licensed Investigator Will and Won't Do" },
       {
         type: 'p',
-        text: 'A licensed investigator operates under rules a spouse acting alone simply does not have to follow, and that is by design. G.A. Tucker PI, licensed under California BSIS Private Investigator License #PI188351 and based in Murrieta, will decline to access a partner’s accounts or devices, place a GPS tracker on a vehicle a client does not own or co-own, or record a confidential conversation without the consent of everyone on it, because none of that holds up in family court and all of it creates criminal exposure for the client who asked for it in the first place. What a licensed [infidelity investigation](/infidelity) can document instead is observable, public conduct, open-source and records-based research, and lawful financial trails, the kind of record a family law attorney can actually introduce without spending the first hearing explaining how it was obtained, and without the client facing cross-examination about their own conduct instead of the case they came in to build.',
+        text: 'A licensed investigator operates under rules a spouse acting alone simply does not have to follow, and that is by design. G.A. Tucker PI, licensed under California BSIS Private Investigator License #PI188351 and based in Murrieta, will decline to access a partner’s accounts or devices, place a GPS tracker on a vehicle a client does not own or co-own, or record a confidential conversation without the consent of everyone on it, because none of that holds up in family court and all of it creates criminal exposure for the client who asked for it in the first place. What [licensed infidelity investigation services](/infidelity) can document instead is observable, public conduct, open-source and records-based research, and lawful financial trails, the kind of record a family law attorney can actually introduce without spending the first hearing explaining how it was obtained, and without the client facing cross-examination about their own conduct instead of the case they came in to build.',
       },
       { type: 'h2', text: 'The Bottom Line' },
       {
@@ -2004,9 +2004,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'relocation-international-custody-risk-california',
     title: 'Relocation and International Custody Risk: What California Families Should Know',
-    metaTitle: 'Move-Away & International Custody Risk in CA',
+    metaTitle: "California Private Investigator | Move-Away Custody",
     description:
-      'A California move-away filing or an international travel plan can trigger real child abduction risk factors courts and families should recognize early.',
+      "A California move-away filing or an international travel plan can trigger real child abduction risk factors courts and families should recognize early.",
     date: '2026-10-07',
     readTime: '10 min read',
     category: 'High-Net-Worth Custody',
@@ -2108,7 +2108,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'How Does This Documentation Support an Emergency Court Filing?' },
       {
         type: 'p',
-        text: "When several risk factors line up, for example a resigned job, a one-way ticket, a liquidated account, and a documented threat, an attorney can ask the court for an emergency or ex parte order restricting travel or modifying custody on short notice. Judges expect that kind of urgent request to rest on specific, dated, and verifiable facts, not a parent's fear alone. A timeline built by a licensed investigator working alongside [high-net-worth child custody](/high-net-worth-child-custody) counsel gives the attorney something concrete to file, and gives the court something concrete to act on. If removal has already happened, the matter shifts immediately to law enforcement and a [missing persons](/missing-persons) response, run in coordination with the family's attorney, not an independent investigation.",
+        text: "When several risk factors line up, for example a resigned job, a one-way ticket, a liquidated account, and a documented threat, an attorney can ask the court for an emergency or ex parte order restricting travel or modifying custody on short notice. Judges expect that kind of urgent request to rest on specific, dated, and verifiable facts, not a parent's fear alone. A timeline built by a licensed investigator for [high-asset custody and relocation investigations](/high-net-worth-child-custody) gives the attorney something concrete to file, and gives the court something concrete to act on. If removal has already happened, the matter shifts immediately to law enforcement and a [missing persons](/missing-persons) response, run in coordination with the family's attorney, not an independent investigation.",
       },
       {
         type: 'p',
@@ -2136,9 +2136,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'expert-witness-investigative-case-consultation',
     title: 'Expert Witness Support and Pre-Litigation Case Consultation',
-    metaTitle: 'Expert Witness & Case Consultation Services',
+    metaTitle: "California Private Investigator | Expert Witness",
     description:
-      'Learn how consulting experts differ from testifying experts, what standards expert opinions must meet in California, and when early case consultation matters.',
+      "Learn how consulting experts differ from testifying experts, what standards expert opinions must meet in California, and when early case consultation matters.",
     date: '2026-10-16',
     readTime: '8 min read',
     category: 'Legal Consulting',
@@ -2246,7 +2246,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: 'The decision to bring in an investigative consultant, and whether that consultant ultimately moves into a testifying role, should happen early and deliberately, not after a case is already in trouble. G.A. Tucker PI works with California attorneys on [case consultation](/consulting) and pre-litigation assessment, building investigative work product structured around the standards Daubert, Sargon, and Kelly-Frye actually require. [Contact G.A. Tucker PI](/contact) to discuss a case before the next filing deadline, not after it.',
+        text: 'The decision to bring in an investigative consultant, and whether that consultant ultimately moves into a testifying role, should happen early and deliberately, not after a case is already in trouble. G.A. Tucker PI works with California attorneys on [investigative consulting for attorneys](/consulting) and pre-litigation assessment, building investigative work product structured around the standards Daubert, Sargon, and Kelly-Frye actually require. [Contact G.A. Tucker PI](/contact) to discuss a case before the next filing deadline, not after it.',
       },
     ],
     internalLinks: [
@@ -2265,9 +2265,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'skip-tracing-locating-people-california',
     title: "Skip Tracing in California: How Investigators Locate People Who Don't Want to Be Found",
-    metaTitle: 'Skip Tracing in California',
+    metaTitle: "California Private Investigator | Skip Tracing | G.A. Tucker PI",
     description:
-      'Skip tracing locates witnesses, debtors, heirs, and absent parents who are hard to reach in California. Learn the lawful methods a licensed investigator uses.',
+      "Skip tracing locates witnesses, debtors, heirs, and absent parents who are hard to reach in California. Learn the lawful methods a licensed investigator uses.",
     date: '2025-10-30',
     readTime: '8 min read',
     category: 'Missing Persons',
@@ -2366,7 +2366,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: "Skip tracing works because it's methodical, not because it's dramatic. Most people who are hard to reach are found through property records, court filings, and licensed database checks, not stakeouts, and most results hold up precisely because every lead gets verified before it's reported. G.A. Tucker PI handles skip trace cases for attorneys, corporations, and private individuals across California from its Murrieta office, under BSIS license #PI188351, screening every request before accepting the case. If you need a witness, judgment debtor, heir, absent parent, or former business partner located, [request service](/request-service-form) or call (909) 964-8976 to start the conversation.",
+        text: "Skip tracing works because it's methodical, not because it's dramatic. Most people who are hard to reach are found through property records, court filings, and licensed database checks, not stakeouts, and most results hold up precisely because every lead gets verified before it's reported. G.A. Tucker PI provides [skip tracing and locate services in California](/missing-persons) for attorneys, corporations, and private individuals from its Murrieta office, under BSIS license #PI188351, screening every request before accepting the case. If you need a witness, judgment debtor, heir, absent parent, or former business partner located, [request service](/request-service-form) or call (909) 964-8976 to start the conversation.",
       },
     ],
     internalLinks: [
@@ -2385,9 +2385,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'vetting-household-staff-high-profile-families',
     title: 'Vetting Household Staff for High-Profile California Families',
-    metaTitle: 'CA Household Staff Background Checks',
+    metaTitle: "California Private Investigator | Household Staff",
     description:
-      'How California families vet nannies, housekeepers, drivers, and estate staff with background checks that go well beyond agency placement and an NDA.',
+      "How California families vet nannies, housekeepers, drivers, and estate staff with background checks that go well beyond agency placement and an NDA.",
     date: '2025-12-29',
     readTime: '8 min read',
     category: 'High-Profile Clients',
@@ -2491,7 +2491,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: 'Household staff screening is not a one-time checkbox completed before a hire and then filed away. It is an ongoing standard that should apply the first day a nanny, a driver, or an estate manager walks through the door, and again on a regular basis for as long as that person keeps the keys and the codes. G.A. Tucker PI works with families throughout Murrieta and across California who want household staff screened to the same standard used in [high-profile investigations](/high-profile-investigations) more broadly, identity confirmed, records pulled at the source, references reached by phone, and discretion risk assessed before it becomes a problem. Call (909) 964-8976 or [submit a request](/request-service-form) to discuss a vetting program for new hires or a re-screening plan for staff already inside the home.',
+        text: 'Household staff screening is not a one-time checkbox completed before a hire and then filed away. It is an ongoing standard that should apply the first day a nanny, a driver, or an estate manager walks through the door, and again on a regular basis for as long as that person keeps the keys and the codes. G.A. Tucker PI works with families throughout Murrieta and across California who want [household staff background checks](/background-checks) held to the same standard used in [high-profile investigations](/high-profile-investigations) more broadly, identity confirmed, records pulled at the source, references reached by phone, and discretion risk assessed before it becomes a problem. Call (909) 964-8976 or [submit a request](/request-service-form) to discuss a vetting program for new hires or a re-screening plan for staff already inside the home.',
       },
     ],
     internalLinks: [
@@ -2510,7 +2510,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'insurance-claim-workers-comp-investigation-california',
     title: "Insurance Claim and Workers' Compensation Investigations in California",
-    metaTitle: "Workers' Comp and Claims Investigator in CA",
+    metaTitle: "California Private Investigator | Workers' Comp | G.A. Tucker PI",
     description:
       "California insurance claim and workers' compensation investigations: what gets examined, who commissions them, and how evidence holds up at a hearing.",
     date: '2026-02-03',
@@ -2634,9 +2634,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'guardianship-third-party-custody-investigations',
     title: 'Guardianship and Third-Party Custody Investigations in California',
-    metaTitle: 'Guardianship & Third-Party Custody Cases',
+    metaTitle: "California Private Investigator | Guardianship | G.A. Tucker PI",
     description:
-      'When a grandparent or relative seeks custody or guardianship in California, lawful documentation can support the case your family law attorney is building.',
+      "When a grandparent or relative seeks custody or guardianship in California, lawful documentation can support the case your family law attorney is building.",
     date: '2026-03-30',
     readTime: '8 min read',
     category: 'Child Custody',
@@ -2739,7 +2739,7 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: "Guardianship and third-party custody cases ask a court to weigh a parent's constitutionally protected rights against a child's best interest, and that is a legal question an attorney has to frame, not an investigator. What G.A. Tucker PI provides is the factual groundwork underneath that legal argument: lawfully gathered documentation of household conditions, day-to-day caregiving, school stability, and a proposed guardian's background, built on 27+ years of [investigative experience](/about) and BSIS license #PI188351. For a confidential conversation about what can be documented in a [guardianship or third-party custody matter](/child-custody), [request a consultation](/request-service-form) or call (909) 964-8976.",
+        text: "Guardianship and third-party custody cases ask a court to weigh a parent's constitutionally protected rights against a child's best interest, and that is a legal question an attorney has to frame, not an investigator. What G.A. Tucker PI provides is the factual groundwork underneath that legal argument: lawfully gathered documentation of household conditions, day-to-day caregiving, school stability, and a proposed guardian's background, built on 27+ years of [investigative experience](/about) and BSIS license #PI188351. For a confidential conversation about our [custody and guardianship investigation services](/child-custody), [request a consultation](/request-service-form) or call (909) 964-8976.",
       },
     ],
     internalLinks: [
@@ -2758,9 +2758,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'victimology-what-the-victim-tells-investigators',
     title: 'Victimology: What the Victim Tells Investigators About a Case',
-    metaTitle: 'Victimology: What the Victim Tells Us',
+    metaTitle: "California Private Investigator | Victimology | G.A. Tucker PI",
     description:
-      'Victimology studies who a victim was, their routines, and relationships to help investigators narrow suspects without assigning blame. Learn how it works.',
+      "Victimology studies who a victim was, their routines, and relationships to help investigators narrow suspects without assigning blame. Learn how it works.",
     date: '2026-04-28',
     readTime: '8 min read',
     category: 'Profiling',
@@ -2792,7 +2792,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: "Victimology is often the single most productive line of analysis in a case for a simple reason: physical evidence can be sparse, degraded, or entirely absent, but information about a victim's life is often available through records, relationships, and the people who knew them. Routines can be reconstructed from employment records, phone and financial activity, and witness accounts, even when a crime scene yields little. Behavioral science research, including work conducted by the FBI's [National Center for the Analysis of Violent Crime](https://www.fbi.gov/services/cirg/ncavc), has studied victim selection patterns for decades precisely because they reveal so much about offender access, planning, and intent. [Profiling and behavioral analysis](/profiling) draws on exactly this kind of victim-side information to narrow an investigation before a single suspect is named.",
+        text: "Victimology is often the single most productive line of analysis in a case for a simple reason: physical evidence can be sparse, degraded, or entirely absent, but information about a victim's life is often available through records, relationships, and the people who knew them. Routines can be reconstructed from employment records, phone and financial activity, and witness accounts, even when a crime scene yields little. Behavioral science research, including work conducted by the FBI's [National Center for the Analysis of Violent Crime](https://www.fbi.gov/services/cirg/ncavc), has studied victim selection patterns for decades precisely because they reveal so much about offender access, planning, and intent. [Behavioral analysis in an investigation](/forensic-behavioral-profiling) draws on exactly this kind of victim-side information to narrow an investigation before a single suspect is named.",
       },
       { type: 'h2', text: 'Risk Level: A Descriptive Tool, Not a Judgment' },
       {
@@ -2849,11 +2849,10 @@ export const posts: BlogPost[] = [
       { type: 'h2', text: 'The Bottom Line' },
       {
         type: 'p',
-        text: "Victimology turns a victim's life into investigative information: routines, relationships, and risk, read carefully and without judgment, to understand how and why a particular person became a target. Done carefully, it narrows suspect pools, strengthens witness interviews, and gives families and attorneys a clearer picture of what the evidence actually supports, rather than what assumption suggests. It is one piece of a broader investigation, not a substitute for the physical evidence, interviews, and records work that have to accompany it. G.A. Tucker PI serves Murrieta, California and the surrounding region with licensed investigative work that includes victimology and behavioral analysis. To discuss a case, [request a consultation](/request-service-form) or review the firm's [profiling and behavioral analysis services](/profiling).",
+        text: "Victimology turns a victim's life into investigative information: routines, relationships, and risk, read carefully and without judgment, to understand how and why a particular person became a target. Done carefully, it narrows suspect pools, strengthens witness interviews, and gives families and attorneys a clearer picture of what the evidence actually supports, rather than what assumption suggests. It is one piece of a broader investigation, not a substitute for the physical evidence, interviews, and records work that have to accompany it. G.A. Tucker PI serves Murrieta, California and the surrounding region with licensed investigative work that includes victimology and behavioral analysis. To discuss a case, [request a consultation](/request-service-form) or review the firm's [forensic behavioral profiling services](/forensic-behavioral-profiling).",
       },
     ],
     internalLinks: [
-      { href: '/profiling', label: 'Profiling & Behavioral Analysis' },
       { href: '/forensic-behavioral-profiling', label: 'Forensic Behavioral Profiling' },
       { href: '/investigations', label: 'Private Investigation Services' },
       { href: '/request-service-form', label: 'Request a Consultation' },
@@ -2868,9 +2867,9 @@ export const posts: BlogPost[] = [
   {
     slug: 'digital-footprint-doxxing-exposure-audit',
     title: 'Digital Footprint and Doxxing Exposure Audits for Executives and Families',
-    metaTitle: 'Doxxing & Digital Footprint Audits',
+    metaTitle: "California Private Investigator | Digital Footprint",
     description:
-      'A digital footprint audit maps what strangers can find about executives and families online, then reduces exposure to data brokers, doxxing, and stalking risk.',
+      "A digital footprint audit maps what strangers can find about executives and families online, then reduces exposure to data brokers, doxxing, and stalking risk.",
     date: '2026-06-26',
     readTime: '8 min read',
     category: 'Risk Management',

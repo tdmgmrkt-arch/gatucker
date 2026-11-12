@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/infidelity",
-  },
-  title: "Infidelity Investigations | Cheating Spouse",
-  description: "Discreet and confidential infidelity investigations in California. Professional surveillance and evidence gathering for suspected cheating spouses.",
-  openGraph: {
-    title: "Infidelity Investigations | G.A. Tucker PI",
-    description: "Discreet and confidential infidelity investigations in California. Professional surveillance and evidence gathering.",
-    url: "https://gatuckerpi.com/infidelity",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/infidelity",
+  title: "California Private Investigator | Infidelity | G.A. Tucker PI",
+  description:
+    "Discreet and confidential infidelity investigations in California. Professional surveillance and evidence gathering for suspected cheating spouses.",
+});
 
 // Service Schema for Infidelity Investigations
 const serviceSchema = {

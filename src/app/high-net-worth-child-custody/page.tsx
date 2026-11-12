@@ -260,6 +260,16 @@ export default function HighNetWorthChildCustodyPage() {
               wrong are larger. G.A. Tucker PI documents what is actually happening, discreetly, in
               a form your family law attorney can file.
             </p>
+            <p
+              className="mt-4 text-sm sm:text-base text-[#EDEDED]/80 max-w-4xl mx-auto leading-relaxed"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              If your matter is a standard custody case without complex assets or multiple households, see our{' '}
+              <Link href="/child-custody" className="text-[#CEA53D] underline hover:text-[#CEA53D]/80">
+                child custody investigations
+              </Link>{' '}
+              page.
+            </p>
           </motion.div>
         </div>
 

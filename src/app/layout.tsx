@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://gatuckerpi.com",
     siteName: "G.A. Tucker PI",
-    title: "G.A. Tucker PI | California Private Investigator",
-    description: "Licensed California private investigator with 27+ years experience. Background checks, surveillance, infidelity investigations, and more. CA License #PI188351.",
+    title: "California Private Investigator | G.A. Tucker PI",
+    description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
     images: [
       {
         // /og-image.png never existed in public/. hero-poster-desktop.webp is the
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "G.A. Tucker PI | California Private Investigator",
-    description: "Licensed California PI with 27+ years experience. Background checks, surveillance, infidelity investigations. CA License #PI188351.",
+    title: "California Private Investigator | G.A. Tucker PI",
+    description: "Licensed California private investigator in Murrieta with 27+ years of experience. Confidential investigations, background checks, surveillance, and more.",
     images: ["/hero-poster-desktop.webp"]
   },
   robots: {
@@ -91,9 +91,9 @@ const organizationSchema = {
     },
   ],
   address: postalAddressSchema(),
-  // GeoCoordinates removed: the previous pin was for the old Madison Ave
-  // office, and a public geocode of the Hot Springs Rd building was not
-  // precise enough to publish.
+  // GeoCoordinates omitted: the previous pin belonged to an old office,
+  // and a public geocode of the current building was not precise enough
+  // to publish.
   areaServed: {
     "@type": "State",
     name: "California"

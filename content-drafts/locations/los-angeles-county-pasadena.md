@@ -61,7 +61,7 @@ Civil attorneys working the Pasadena Courthouse engage GA Tucker PI for pre-tria
 ### Corporate Profiling and Due Diligence
 Pasadena's institutional base — Caltech, JPL, and a concentration of established professional services firms — creates demand for corporate investigation services. GA Tucker PI provides pre-transaction due diligence, executive background research, and professional-conduct investigations for Pasadena-area business clients.
 
-[Learn More About Profiling](/profiling) | [Learn More About Risk Management](/risk-management)
+[Learn More About Profiling](/forensic-behavioral-profiling) | [Learn More About Risk Management](/risk-management)
 
 ### Missing Persons and Skip Traces
 For Pasadena clients seeking to locate subjects who have departed the area, GA Tucker PI conducts targeted locates using investigative databases and field inquiry when warranted.
@@ -127,6 +127,6 @@ Last Updated: {lastUpdated}
 - /child-custody
 - /missing-persons
 - /investigations
-- /profiling
+- /forensic-behavioral-profiling
 - /risk-management
 - /contact

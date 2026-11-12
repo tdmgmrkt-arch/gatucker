@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  title: "Forensic Behavioral Profiler California",
+export const metadata: Metadata = pageMeta({
+  path: "/forensic-behavioral-profiling",
+  title: "California Private Investigator | Profiling | G.A. Tucker PI",
   description:
     "Forensic behavioral profiling and forensic linguistics for attorneys, corporations, and individuals. Greg A. Tucker, licensed CA PI, MS forensic psychology.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/forensic-behavioral-profiling",
-  },
-  openGraph: {
-    title: "Forensic Behavioral Profiler California | G.A. Tucker PI",
-    description:
-      "Forensic behavioral science, profiling, and forensic linguistic analysis for attorneys, corporations, and private individuals across California.",
-    url: "https://gatuckerpi.com/forensic-behavioral-profiling",
-    type: "website",
-  },
-};
+});
 
 // Service schema — nested entity references are pure @id pointers (no @type),
 // otherwise they declare a second, address-less LocalBusiness node.

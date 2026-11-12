@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../../components/LocationPage";
 import type { LocationPageProps } from "../../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/riverside-county-temecula.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Temecula Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/riverside-county/temecula",
+  title: "Temecula Private Investigator | G.A. Tucker PI",
   description:
     "GA Tucker PI serves Temecula, CA. Licensed private investigator based in nearby Murrieta. Background checks, infidelity, child custody. CA PI #188351.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/riverside-county/temecula",
-  },
-  openGraph: {
-    title: "Temecula Private Investigator | GA Tucker PI | Murrieta",
-    description:
-      "Licensed CA PI serving Temecula. Surveillance, background checks, infidelity investigations. Call 909-964-8976.",
-    url: "https://gatuckerpi.com/locations/riverside-county/temecula",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Temecula Private Investigator | GA Tucker PI | Murrieta",
-    description: "Licensed CA PI Greg Tucker serves Temecula. Call 909-964-8976.",
-  },
-};
+});
 
 // ---------------------------------------------------------------------------
 // Schema

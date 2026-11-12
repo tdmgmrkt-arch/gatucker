@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../../components/LocationPage";
 import type { LocationPageProps } from "../../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/riverside-county-riverside.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Riverside CA Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/riverside-county/riverside",
+  title: "Riverside CA Private Investigator | G.A. Tucker PI",
   description:
     "GA Tucker PI serves Riverside, CA. Licensed PI based in Murrieta, 45 min from Riverside County's courthouse hub. Background checks, surveillance. CA PI #188351.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/riverside-county/riverside",
-  },
-  openGraph: {
-    title: "Riverside CA Private Investigator | GA Tucker PI",
-    description:
-      "Licensed CA PI serving Riverside. Surveillance, background checks, and more. Call 909-964-8976.",
-    url: "https://gatuckerpi.com/locations/riverside-county/riverside",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Riverside CA Private Investigator | GA Tucker PI",
-    description: "Licensed CA PI Greg Tucker serves the city of Riverside. Call 909-964-8976.",
-  },
-};
+});
 
 // ---------------------------------------------------------------------------
 // Schema

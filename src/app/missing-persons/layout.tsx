@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/missing-persons",
-  },
-  title: "Missing Persons Investigations | Locate People",
-  description: "Specialized missing persons investigations in California. Locate lost family members, runaways, or individuals using advanced investigative techniques.",
-  openGraph: {
-    title: "Missing Persons Investigations | G.A. Tucker PI",
-    description: "Specialized missing persons investigations in California. Locate lost family members, runaways, or individuals.",
-    url: "https://gatuckerpi.com/missing-persons",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/missing-persons",
+  title: "California Private Investigator | Missing Persons",
+  description:
+    "Specialized missing persons investigations in California. Locate lost family members, runaways, or individuals using advanced investigative techniques.",
+});
 
 // Service Schema for Missing Persons
 const serviceSchema = {

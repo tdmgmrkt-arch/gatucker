@@ -6,6 +6,7 @@
  * Includes BreadcrumbList JSON-LD and AggregateRating schema.
  */
 import type { Metadata } from 'next';
+import { pageMeta } from "@/lib/page-meta";
 import Link from 'next/link';
 import Image from 'next/image';
 import { getGoogleReviews, formatRating, formatReviewCount } from '@/lib/google-reviews';
@@ -24,21 +25,12 @@ const GBP_WRITE_REVIEW_URL =
 const BASE_URL = 'https://gatuckerpi.com';
 
 // ── Metadata ────────────────────────────────────────────────────────────────
-export const metadata: Metadata = {
-  title: 'Client Reviews',
+export const metadata: Metadata = pageMeta({
+  path: "/reviews",
+  title: "Murrieta Private Investigator | Client Reviews | G.A. Tucker PI",
   description:
-    'Read 4.9-star verified Google reviews of California private investigator Greg A. Tucker. 67 reviews from clients across Southern California, the Bay Area, and beyond.',
-  alternates: {
-    canonical: '/reviews',
-  },
-  openGraph: {
-    title: 'Client Reviews | G.A. Tucker PI',
-    description:
-      'See verified Google reviews from clients of California PI Greg A. Tucker. Rated 4.9★ from 67 Google reviews.',
-    url: '/reviews',
-    images: ['/hero-poster-desktop.webp'],
-  },
-};
+    "Read 4.9-star verified Google reviews of California private investigator Greg A. Tucker. 67 reviews from clients across Southern California, the Bay Area, and beyond.",
+});
 
 // ── Page ─────────────────────────────────────────────────────────────────────
 export default async function ReviewsPage() {

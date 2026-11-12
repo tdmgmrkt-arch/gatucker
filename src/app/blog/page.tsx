@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageMeta } from "@/lib/page-meta";
 import Link from 'next/link';
 import Image from 'next/image';
 import { Navbar } from '../components/navbar';
@@ -6,19 +7,12 @@ import { Footer } from '../components/footer';
 import { StickyCTAButton } from '../components/sticky-cta-button';
 import { getSortedPosts } from './posts';
 
-export const metadata: Metadata = {
-  title: 'Investigator Insights — Private Investigation Blog',
+export const metadata: Metadata = pageMeta({
+  path: "/blog",
+  title: "California Private Investigator Blog | G.A. Tucker PI",
   description:
-    'Guides, case perspectives, and expert insights from G.A. Tucker PI. Read about hiring a private investigator, background checks, surveillance law, custody evidence, and more.',
-  alternates: { canonical: '/blog' },
-  openGraph: {
-    title: 'Investigator Insights — G.A. Tucker PI Blog',
-    description:
-      'Expert guidance on private investigations, background checks, infidelity, custody, missing persons, and risk management from a licensed California PI.',
-    url: 'https://gatuckerpi.com/blog',
-    type: 'website',
-  },
-};
+    "Guides, case perspectives, and expert insights from G.A. Tucker PI. Read about hiring a private investigator, background checks, surveillance law, custody evidence.",
+});
 
 function formatDate(iso: string): string {
   const d = new Date(iso + 'T00:00:00');

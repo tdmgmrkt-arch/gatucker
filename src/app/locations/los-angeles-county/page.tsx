@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../components/LocationPage";
 import type { LocationPageProps } from "../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/los-angeles-county.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Los Angeles County Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/los-angeles-county",
+  title: "Los Angeles County Private Investigator | G.A. Tucker PI",
   description:
     "GA Tucker PI provides licensed PI services across Los Angeles County. Based in Murrieta, CA. Background checks, surveillance, litigation support. CA PI #188351.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/los-angeles-county",
-  },
-  openGraph: {
-    title: "Los Angeles County Private Investigator | GA Tucker PI",
-    description:
-      "Licensed CA PI serving Los Angeles County. Background checks, surveillance, infidelity, and more.",
-    url: "https://gatuckerpi.com/locations/los-angeles-county",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Los Angeles County Private Investigator | GA Tucker PI",
-    description: "Licensed CA PI Greg Tucker serves LA County. Call 909-964-8976.",
-  },
-};
+});
 
 // ---------------------------------------------------------------------------
 // Schema
@@ -125,7 +112,7 @@ const pageProps: LocationPageProps = {
     { title: "Child Custody", description: "Court-ready evidence for LA County family court.", href: "/child-custody" },
     { title: "Missing Persons", description: "Locate individuals throughout Los Angeles County.", href: "/missing-persons" },
     { title: "Litigation Support", description: "Expert investigative support for LA County attorneys.", href: "/investigations" },
-    { title: "Corporate Profiling", description: "Due diligence and risk management for LA County businesses.", href: "/profiling" },
+    { title: "Corporate Profiling", description: "Due diligence and risk management for LA County businesses.", href: "/forensic-behavioral-profiling" },
     { title: "Risk Management", description: "Security assessments for LA County businesses.", href: "/risk-management" },
   ],
   courthouses: [],

@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/background-checks",
-  },
-  title: "Background Checks | Employment & Personal Records",
-  description: "Comprehensive background check services in California. Employment verification, criminal records, personal history research using exclusive databases.",
-  openGraph: {
-    title: "Background Check Services | G.A. Tucker PI",
-    description: "Comprehensive background check services in California. Employment verification, criminal records, personal history research.",
-    url: "https://gatuckerpi.com/background-checks",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/background-checks",
+  title: "California Private Investigator | Background Checks",
+  description:
+    "Comprehensive background check services in California. Employment verification, criminal records, personal history research using exclusive databases.",
+});
 
 // Service Schema for Background Checks
 const serviceSchema = {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../components/LocationPage";
 import type { LocationPageProps } from "../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/san-bernardino-county.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "San Bernardino County Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/san-bernardino-county",
+  title: "San Bernardino County Private Investigator | G.A. Tucker PI",
   description:
     "Licensed PI serving San Bernardino County from Murrieta, CA. Background checks, surveillance, litigation support across the Inland Empire. CA PI #188351.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/san-bernardino-county",
-  },
-  openGraph: {
-    title: "San Bernardino County Private Investigator | GA Tucker PI",
-    description:
-      "Licensed CA PI serving San Bernardino County. Surveillance, background checks, infidelity investigations.",
-    url: "https://gatuckerpi.com/locations/san-bernardino-county",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "San Bernardino County Private Investigator | GA Tucker PI",
-    description: "Licensed CA PI Greg Tucker serves San Bernardino County. Call 909-964-8976.",
-  },
-};
+});
 
 // ---------------------------------------------------------------------------
 // Schema

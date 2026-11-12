@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../components/LocationPage";
 import type { LocationPageProps } from "../../components/LocationPage";
 
@@ -17,26 +18,12 @@ import type { LocationPageProps } from "../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/las-vegas.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Las Vegas PI Services | California Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/las-vegas",
+  title: "California Private Investigator | Las Vegas | G.A. Tucker PI",
   description:
     "California PI Greg Tucker handles cross-border cases involving Las Vegas — background checks, skip traces, CA-side surveillance, and litigation support. CA PI #188351.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/las-vegas",
-  },
-  openGraph: {
-    title: "Las Vegas PI Services | California PI for Vegas Matters",
-    description:
-      "California-licensed PI handling cross-border matters connected to Las Vegas. CA License #PI188351. Confidential consultation available.",
-    url: "https://gatuckerpi.com/locations/las-vegas",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Las Vegas PI Services | California PI for Vegas Matters",
-    description: "California-licensed PI Greg Tucker assists with Las Vegas cross-border matters. Call 909-964-8976.",
-  },
-};
+});
 
 // ---------------------------------------------------------------------------
 // Schema — areaServed is the matter-origin geography, NOT a service location.
@@ -163,7 +150,7 @@ const pageProps: LocationPageProps = {
       title: "Profiling & Due Diligence on Nevada Entities",
       description:
         "Nevada Secretary of State filings, Nevada court records, property records, and national database research on Las Vegas-based businesses or individuals.",
-      href: "/profiling",
+      href: "/forensic-behavioral-profiling",
     },
     {
       title: "Risk Management",

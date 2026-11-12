@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/risk-management",
-  },
-  title: "Risk Management & Threat Assessment",
-  description: "Professional risk assessment and mitigation strategies for businesses in California. Identify threats, protect resources, and safeguard your interests.",
-  openGraph: {
-    title: "Risk Management & Threat Assessment | G.A. Tucker PI",
-    description: "Professional risk assessment and mitigation strategies for businesses in California. Identify threats and protect your interests.",
-    url: "https://gatuckerpi.com/risk-management",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/risk-management",
+  title: "California Private Investigator | Risk Management",
+  description:
+    "Professional risk assessment and mitigation strategies for businesses in California. Identify threats, protect resources, and safeguard your interests.",
+});
 
 // Service Schema for Risk Management
 const serviceSchema = {

@@ -58,7 +58,7 @@ California civil and family law attorneys with Nevada-connected cases engage GA 
 ### Profiling and Due Diligence on Nevada Entities
 California clients considering transactions with Las Vegas-based businesses or individuals use GA Tucker PI for pre-transaction profiling — Nevada Secretary of State filings, Nevada court records, property records, and national database research on principals. This work is available without Nevada PI licensure as it relies on public records and licensed investigative database access.
 
-[Learn More About Profiling](/profiling) | [Learn More About Risk Management](/risk-management)
+[Learn More About Profiling](/forensic-behavioral-profiling) | [Learn More About Risk Management](/risk-management)
 
 ---
 
@@ -118,6 +118,6 @@ Last Updated: {lastUpdated}
 - /background-checks
 - /missing-persons
 - /investigations
-- /profiling
+- /forensic-behavioral-profiling
 - /risk-management
 - /contact

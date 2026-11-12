@@ -16,7 +16,6 @@ const relatedServices = [
   { title: 'Investigations', href: '/investigations' },
   { title: 'Consulting', href: '/consulting' },
   { title: 'Missing Persons', href: '/missing-persons' },
-  { title: 'Profiling', href: '/profiling' },
   { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling' },
   { title: 'Infidelity', href: '/infidelity' },
   { title: 'Child Custody', href: '/child-custody' },

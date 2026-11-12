@@ -44,7 +44,7 @@ California attorneys with cases involving Southern California-based defendants, 
 **Profiling and Risk Management**
 Subject profiling — compiling a comprehensive picture of an individual or business entity — does not require physical presence in San Francisco. GA Tucker PI builds profiles from licensed database access and public records research, delivered in a report format usable by Bay Area attorneys and corporate clients.
 
-[Learn More About Profiling](/profiling) | [Learn More About Risk Management](/risk-management)
+[Learn More About Profiling](/forensic-behavioral-profiling) | [Learn More About Risk Management](/risk-management)
 
 ---
 
@@ -128,6 +128,6 @@ Last Updated: {lastUpdated}
 - /child-custody
 - /missing-persons
 - /investigations
-- /profiling
+- /forensic-behavioral-profiling
 - /risk-management
 - /contact

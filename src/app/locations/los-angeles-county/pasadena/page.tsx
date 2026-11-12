@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../../components/LocationPage";
 import type { LocationPageProps } from "../../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/los-angeles-county-pasadena.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Pasadena Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/los-angeles-county/pasadena",
+  title: "Pasadena Private Investigator | G.A. Tucker PI",
   description:
     "GA Tucker PI serves Pasadena, CA. Licensed PI based in Murrieta. Background checks, infidelity, litigation support for Pasadena and San Gabriel Valley. CA PI #188351.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/los-angeles-county/pasadena",
-  },
-  openGraph: {
-    title: "Pasadena Private Investigator | GA Tucker PI | CA #188351",
-    description:
-      "Licensed CA PI serving Pasadena. Surveillance, background checks, infidelity investigations. Call 909-964-8976.",
-    url: "https://gatuckerpi.com/locations/los-angeles-county/pasadena",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Pasadena Private Investigator | GA Tucker PI | CA #188351",
-    description: "Licensed CA PI Greg Tucker serves Pasadena. Call 909-964-8976.",
-  },
-};
+});
 
 // ---------------------------------------------------------------------------
 // Schema
@@ -131,7 +118,7 @@ const pageProps: LocationPageProps = {
     { title: "Child Custody", description: "Objective evidence for Pasadena / LA County family court.", href: "/child-custody" },
     { title: "Missing Persons", description: "Locate individuals in Pasadena and surrounding foothill communities.", href: "/missing-persons" },
     { title: "Litigation Support", description: "Pre-trial support for Pasadena Courthouse attorneys.", href: "/investigations" },
-    { title: "Corporate Profiling", description: "Due diligence and risk management for Pasadena businesses.", href: "/profiling" },
+    { title: "Corporate Profiling", description: "Due diligence and risk management for Pasadena businesses.", href: "/forensic-behavioral-profiling" },
   ],
   courthouses: [
     { name: "Pasadena Courthouse", address: "300 E. Walnut St, Pasadena, CA 91101" },

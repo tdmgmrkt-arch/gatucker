@@ -27,7 +27,6 @@ import Link from 'next/link';
 
 const relatedServices = [
   { title: 'Forensic Behavioral Profiling', href: '/forensic-behavioral-profiling', current: true },
-  { title: 'Profiling', href: '/profiling' },
   { title: 'Consulting', href: '/consulting' },
   { title: 'Background Checks', href: '/background-checks' },
   { title: 'Risk Management', href: '/risk-management' },

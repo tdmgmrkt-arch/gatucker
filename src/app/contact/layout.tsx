@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "https://gatuckerpi.com/contact",
-  },
-  title: "Contact a California Private Investigator",
-  description: "Contact Greg Tucker, licensed California private investigator with 27+ years experience. Available 24/7 for confidential consultations. Call 909-964-8976.",
-  openGraph: {
-    title: "Contact G.A. Tucker PI | California Private Investigator",
-    description: "Contact Greg Tucker, licensed California PI with 27+ years experience. Available 24/7. Call 909-964-8976.",
-    url: "https://gatuckerpi.com/contact",
-    type: "website",
-  },
-};
+export const metadata: Metadata = pageMeta({
+  path: "/contact",
+  title: "California Private Investigator | Contact | G.A. Tucker PI",
+  description:
+    "Contact Greg Tucker, licensed California private investigator with 27+ years experience. Available 24/7 for confidential consultations. Call 909-964-8976.",
+});
 
 // ContactPage Schema
 const contactSchema = {

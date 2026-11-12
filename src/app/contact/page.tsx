@@ -14,6 +14,7 @@ import {
   MAPS_PLACE_URL,
   SOCIAL,
   SOCIAL_UNRESOLVED,
+  localityLine,
   officeAddressLines,
   officeMapEmbedSrc,
 } from '@/lib/business';
@@ -35,6 +36,7 @@ const RECAPTCHA_SITE_KEY = '6LdK8EssAAAAAB-R5wUOej0apHMJrN4VhixbkJke';
 export default function ContactPage() {
   const office = officeAddressLines();
   const mapEmbed = officeMapEmbedSrc();
+  const cityLine = localityLine();
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -253,38 +255,38 @@ export default function ContactPage() {
             </div>
           </motion.div>
 
-          {office && mapEmbed && (
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="grid lg:grid-cols-2 gap-4 mt-8"
-            >
-              <address className="not-italic p-6 bg-black/80 border border-[#CEA53D]/30 rounded-lg">
-                <p className="text-[#EDEDED]/70 text-xs uppercase tracking-wider mb-2">Office</p>
-                <p className="text-[#CEA53D] font-bold text-lg">{office.line1}</p>
-                <p className="text-[#EDEDED] text-sm mb-4">{office.line2}</p>
-                <a href={MAIN_PHONE_TEL} className="text-[#CEA53D] font-bold hover:underline">
-                  {MAIN_PHONE_DISPLAY}
-                </a>
-                <a
-                  href={MAPS_PLACE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block mt-3 text-sm text-[#EDEDED]/80 underline decoration-[#CEA53D]/50 underline-offset-2 hover:text-[#CEA53D]"
-                >
-                  Open in Google Maps
-                </a>
-              </address>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className={`grid gap-4 mt-8 ${mapEmbed ? "lg:grid-cols-2" : ""}`}
+          >
+            <address className="not-italic p-6 bg-black/80 border border-[#CEA53D]/30 rounded-lg">
+              <p className="text-[#EDEDED]/70 text-xs uppercase tracking-wider mb-2">Office</p>
+              {office ? <p className="text-[#CEA53D] font-bold text-lg">{office.line1}</p> : null}
+              <p className="text-[#EDEDED] text-sm mb-4">{office ? office.line2 : cityLine}</p>
+              <a href={MAIN_PHONE_TEL} className="text-[#CEA53D] font-bold hover:underline">
+                {MAIN_PHONE_DISPLAY}
+              </a>
+              <a
+                href={MAPS_PLACE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mt-3 text-sm text-[#EDEDED]/80 underline decoration-[#CEA53D]/50 underline-offset-2 hover:text-[#CEA53D]"
+              >
+                Open in Google Maps
+              </a>
+            </address>
+            {mapEmbed ? (
               <iframe
-                title={`Map of the G.A. Tucker PI office at ${office.line1}, ${office.line2}`}
+                title={`Map of the G.A. Tucker PI office in ${cityLine}`}
                 src={mapEmbed}
                 className="w-full min-h-64 h-full rounded-lg border border-[#CEA53D]/30 bg-black"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-            </motion.div>
-          )}
+            ) : null}
+          </motion.div>
         </div>
       </section>
 

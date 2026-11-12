@@ -62,7 +62,7 @@ Civil and family law attorneys practicing at the Rancho Cucamonga Courthouse eng
 ### Corporate Profiling and Due Diligence
 Rancho Cucamonga's business sector and the broader Ontario/Inland Empire commercial hub generate corporate investigation needs. GA Tucker PI provides pre-transaction due diligence, executive background research, and business entity profiling for Rancho Cucamonga and Inland Empire corporate clients.
 
-[Learn More About Profiling](/profiling) | [Learn More About Risk Management](/risk-management)
+[Learn More About Profiling](/forensic-behavioral-profiling) | [Learn More About Risk Management](/risk-management)
 
 ---
 
@@ -123,6 +123,6 @@ Last Updated: {lastUpdated}
 - /child-custody
 - /missing-persons
 - /investigations
-- /profiling
+- /forensic-behavioral-profiling
 - /risk-management
 - /contact

@@ -4,10 +4,11 @@ import Link from "next/link";
 import { Phone, Mail, MapPin, Shield, Facebook, Twitter, Instagram } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { VerifyLicenseLink } from './verify-license-link';
-import { MAPS_PLACE_URL, SOCIAL, SOCIAL_UNRESOLVED, officeAddressLines } from '@/lib/business';
+import { MAPS_PLACE_URL, SOCIAL, SOCIAL_UNRESOLVED, localityLine, officeAddressLines } from '@/lib/business';
 
 export function Footer() {
-  const address = officeAddressLines();
+  const street = officeAddressLines();
+  const cityLine = localityLine();
   const year = new Date().getFullYear();
 
   return (
@@ -113,30 +114,21 @@ export function Footer() {
               </div>
               <div className="flex items-start justify-center md:justify-end gap-2">
                 <MapPin className="w-4 h-4 text-[#CEA53D] flex-shrink-0 mt-1" />
-                {address ? (
-                  <address
-                    className="not-italic text-[#EDEDED] text-sm font-light"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
+                <address
+                  className="not-italic text-[#EDEDED] text-sm font-light"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
+                >
+                  {street ? <span className="block">{street.line1}</span> : null}
+                  <span className="block">{street ? street.line2 : cityLine}</span>
+                  <a
+                    href={MAPS_PLACE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#CEA53D] hover:underline"
                   >
-                    <span className="block">{address.line1}</span>
-                    <span className="block">{address.line2}</span>
-                    <a
-                      href={MAPS_PLACE_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#CEA53D] hover:underline"
-                    >
-                      Map
-                    </a>
-                  </address>
-                ) : (
-                  <p
-                    className="text-[#EDEDED] text-sm font-light"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
-                  >
-                    Southern California
-                  </p>
-                )}
+                    Map
+                  </a>
+                </address>
               </div>
               {/* Social Links - Retro square style */}
             <div className="flex gap-4 mt-auto justify-center md:justify-end">

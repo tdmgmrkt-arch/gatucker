@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/page-meta";
 import { LocationPage } from "../../../components/LocationPage";
 import type { LocationPageProps } from "../../../components/LocationPage";
 
@@ -6,26 +7,12 @@ import type { LocationPageProps } from "../../../components/LocationPage";
 // Metadata — wired from content-drafts/locations/riverside-county-murrieta.md
 // ---------------------------------------------------------------------------
 
-export const metadata: Metadata = {
-  title: "Murrieta Private Investigator",
+export const metadata: Metadata = pageMeta({
+  path: "/locations/riverside-county/murrieta",
+  title: "Murrieta Private Investigator | G.A. Tucker PI",
   description:
     "Greg Tucker is a licensed private investigator based in Murrieta, CA. Background checks, infidelity, child custody, and more. CA PI #188351. Call 909-964-8976.",
-  alternates: {
-    canonical: "https://gatuckerpi.com/locations/riverside-county/murrieta",
-  },
-  openGraph: {
-    title: "Murrieta Private Investigator | GA Tucker PI | CA #188351",
-    description:
-      "Licensed CA PI based in Murrieta. Background checks, surveillance, infidelity investigations. Call 909-964-8976.",
-    url: "https://gatuckerpi.com/locations/riverside-county/murrieta",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Murrieta Private Investigator | GA Tucker PI | CA #188351",
-    description: "Licensed CA PI Greg Tucker is based in Murrieta. Call 909-964-8976.",
-  },
-};
+});
 
 // ---------------------------------------------------------------------------
 // Schema
@@ -179,7 +166,7 @@ const pageProps: LocationPageProps = {
     {
       heading: "Murrieta as a Case Environment",
       paragraphs: [
-        "Murrieta is one of the fastest-growing cities in California. It crossed 100,000 residents over a decade ago and continues to expand through master-planned communities along the I-15 and I-215 corridors. Jefferson Avenue, Murrieta Hot Springs Road, and the Clinton Keith Road corridor define the major arterials, and the city's residential grid of Copper Canyon, Bear Creek, and Greer Ranch neighborhoods creates predictable movement patterns that inform surveillance planning.",
+        "Murrieta is one of the fastest-growing cities in California. It crossed 100,000 residents over a decade ago and continues to expand through master-planned communities along the I-15 and I-215 corridors. Jefferson Avenue, the I-15 corridor, and the Clinton Keith Road corridor define the major arterials, and the city's residential grid of Copper Canyon, Bear Creek, and Greer Ranch neighborhoods creates predictable movement patterns that inform surveillance planning.",
         "The city's demographics skew toward families with children, two-income households, and homeowners — which maps directly to the most common case types GA Tucker PI receives: infidelity investigations, child custody documentation, background checks on new partners or business associates, and missing persons matters involving estranged family members.",
         "Murrieta also sits adjacent to the Southwest Justice Center (38686 El Cerrito Road, French Valley), which handles virtually all family law, civil limited and unlimited, and criminal matters for Southwest Riverside County. Attorneys and pro-per litigants working cases in that court engage GA Tucker PI for evidence development, subject research, and surveillance.",
       ],
@@ -197,7 +184,7 @@ const pageProps: LocationPageProps = {
     {
       heading: "Murrieta Neighborhoods GA Tucker PI Knows",
       paragraphs: [
-        "GA Tucker PI operates throughout Murrieta, including West Murrieta (Copper Canyon, Murrieta Hot Springs Road west of the I-15), Central Murrieta (Old Town Murrieta, the Madison Avenue commercial corridor), East Murrieta (Greer Ranch, Harveston, Spencer's Crossing), South Murrieta (neighborhoods approaching the Temecula border at Winchester Road and California Oaks Road), and North Murrieta (Murrieta Hot Springs, Warm Springs areas approaching the Wildomar border).",
+        "GA Tucker PI operates throughout Murrieta, including West Murrieta (Copper Canyon and the neighborhoods west of the I-15), Central Murrieta (Old Town Murrieta, the Madison Avenue commercial corridor), East Murrieta (Greer Ranch, Harveston, Spencer's Crossing), South Murrieta (neighborhoods approaching the Temecula border at Winchester Road and California Oaks Road), and North Murrieta (the neighborhoods approaching the Wildomar border).",
       ],
     },
   ],
