@@ -2993,6 +2993,305 @@ export const posts: BlogPost[] = [
     },
   },
 
+  {
+    slug: 'holiday-custody-exchange-violations-california',
+    title: 'Holiday Custody Exchange Violations in California: What to Document and When to Call the Police',
+    metaTitle: 'Holiday Custody Violations in California',
+    description:
+      "A missed holiday custody exchange isn't automatically a crime in California. What separates a civil violation from a Penal Code 278.5 case.",
+    date: '2026-10-25',
+    readTime: '9 min read',
+    category: 'Child Custody',
+    image: '/custody-evidence-hero.webp',
+    imageAlt:
+      "A child's backpack and a set of keys hanging on hooks by a hallway door, warm light spilling in from the next room",
+    keywords: [
+      'custody order violation california',
+      'holiday visitation violation california',
+      'penal code 278.5 child custody',
+      "parent won't return child after visitation",
+      'custody exchange dispute california',
+    ],
+    excerpt:
+      "A missed holiday exchange is stressful, but it isn't automatically a crime. What separates ordinary holiday friction from a real custody violation, what Penal Code 278.5 actually requires, and what to document in the first 24 hours.",
+    content: [
+      {
+        type: 'p',
+        text: "In Murrieta and across the Inland Empire, the week before Thanksgiving and the first week of winter break are when co-parenting calendars get tested hardest. A pickup that's fifteen minutes late because of holiday traffic on the 15 is not the same thing as a parent who stops answering the phone — or a child who never comes home when the order says they should. The difference between ordinary holiday friction and an actual custody violation often isn't obvious in the moment, and what a parent does in the first few hours after a missed exchange can determine whether the situation gets fixed by a phone call to an attorney or escalates into something far harder to undo.",
+      },
+      {
+        type: 'p',
+        text: "G.A. Tucker PI, a licensed California private investigation firm based in Murrieta, works with family law attorneys across Riverside, San Bernardino, Los Angeles, and Orange counties on documenting custody-order compliance. Greg A. Tucker holds California BSIS Private Investigator License #PI188351 and brings 27+ years of investigative experience to [child custody](/child-custody) matters, including cases that start exactly this way: an exchange that didn't happen the way the order says it should. This article explains what actually counts as a custody violation under California law, when a withheld child becomes a matter for Penal Code section 278.5 rather than a family court motion, what to document in the hours after a missed exchange, and what a licensed investigator can and cannot lawfully do to help.",
+      },
+      {
+        type: 'callout',
+        title: "If a Child's Safety Is at Risk Right Now",
+        text: "If there is reason to believe a child is in immediate danger, or a parent has left the area with no way to reach them and no stated plan to return, call 911 first. A private investigator is not the first call in an active emergency, and neither is a civil motion — local law enforcement can issue alerts and coordinate with other agencies faster than any private service. Everything below applies to the far more common situation: a holiday exchange that didn't happen as scheduled, and a parent trying to figure out what to do next.",
+      },
+      { type: 'h2', text: 'Is a Late Pickup Actually a Custody Violation?' },
+      {
+        type: 'p',
+        text: "Most missed or delayed exchanges are not custody violations in any legal sense. California courts look for a pattern of willful noncompliance with a valid, signed custody order, not a single late arrival caused by holiday traffic, a flight delay, or a child who got sick at the wrong moment. A parent who is thirty minutes late once during the busiest travel week of the year has not violated anything. A parent who is routinely late, who changes pickup locations without notice, or who simply stops bringing the child back at the agreed time is a different situation — and the distinction matters, because overreacting to an isolated delay can make a parent look less credible later, when a real pattern actually needs to be proven.",
+      },
+      {
+        type: 'ul',
+        items: [
+          'A single late arrival with a reasonable explanation — traffic, weather, a flight delay, illness',
+          'A pattern of lateness or last-minute changes repeated across multiple exchanges',
+          'A parent who stops responding to calls or texts at the scheduled exchange time',
+          "A parent who keeps the child beyond the order's return time with no agreement or explanation",
+          'A parent who relocates the child, even briefly, without telling the other parent where',
+        ],
+      },
+      { type: 'h2', text: 'When Does Withholding a Child Become a Crime in California?' },
+      {
+        type: 'p',
+        text: "California Penal Code section 278.5 makes it a crime to maliciously take, keep, withhold, or conceal a child in violation of another person's lawful custody or visitation rights. Unlike straightforward child abduction under Penal Code 278, section 278.5 can apply to a parent who already has some custody rights but exercises them by willfully cutting the other parent out entirely — refusing to return a child after a scheduled visit, for example, with no good-faith safety justification behind it. The law includes a defense for a parent who has a good-faith, reasonable belief that returning the child would expose them to immediate harm, which is part of why a single disputed weekend rarely becomes a criminal matter on its own. Most holiday-exchange disputes stay in family court as a contempt or modification issue. The cases that cross into Penal Code 278.5 territory usually involve a parent who has disappeared with the child, cut off all contact, or stated an intent not to return the child at all.",
+      },
+      { type: 'h2', text: 'Civil Contempt or Criminal Referral: What Decides Which Path Applies?' },
+      {
+        type: 'p',
+        text: "An attorney, not an investigator, makes this call, and it usually comes down to intent and duration rather than the holiday itself. None of this is legal advice, and G.A. Tucker PI is not a law firm — a family law attorney licensed in California should confirm how these distinctions apply to a specific order. A parent who is reachable, who offers some explanation, and who is still inside the custody arrangement even if late or difficult, is almost always a civil enforcement matter — a motion to compel compliance, a request for makeup time, or a contempt filing if the pattern repeats. A parent who vanishes, who was already the subject of a prior threat to take the child, or who has taken concrete steps toward leaving the area or the country, moves toward the criminal side far faster. Family law attorneys who handle enforcement routinely see both, and the documentation that supports each looks different enough that waiting to find out which one applies before gathering facts is the wrong order of operations.",
+      },
+      { type: 'h2', text: 'What to Document in the First 24 Hours' },
+      {
+        type: 'ol',
+        items: [
+          "Write down the exact time the exchange was supposed to happen, and the exact time it actually did, if it did, compared against the order's own language",
+          "Save every text, email, and voicemail related to the exchange exactly as received — don't paraphrase or delete anything, even messages that seem unhelpful",
+          "Note who told you what, and when — a grandparent relaying a message is a different fact than the other parent's own words",
+          "Avoid confronting the other parent in person or escalating through the child — a calm, written request for the child's return, sent once, documents the attempt without creating a new incident",
+          "Don't alter your own behavior in a way that could look retaliatory — withholding the next scheduled exchange in return can undercut an otherwise strong case",
+        ],
+      },
+      { type: 'h2', text: 'What a Licensed Investigator Can Document, and What the Firm Will Not Do' },
+      {
+        type: 'p',
+        text: "When a custody dispute escalates and an attorney needs an independent, factual record, G.A. Tucker PI documents what is lawfully observable — whether a parent is at a stated address, whether a vehicle associated with the case is present or absent, and public-record confirmation of things like a changed address, a terminated lease, or a new place of employment. The firm does not place a GPS tracking device on a vehicle it has no legal right to access, does not access another person's phone, email, or financial accounts, does not enter property without a legal right to be there, and does not record a private conversation without the consent required under California's two-party consent law. None of that produces evidence a court will accept, and most of it carries real legal exposure for whoever does it. Lawful surveillance from public vantage points and verified public-records research get the same factual record built without that exposure.",
+      },
+      { type: 'h2', text: 'How Does This Documentation Actually Help an Attorney?' },
+      {
+        type: 'p',
+        text: "A family law attorney filing an enforcement motion needs specific, dated facts rather than a parent's recollection of how upset they were. A timeline that shows exactly when the exchange failed, what communication followed, and what an independent investigator was able to confirm afterward gives the court something concrete instead of two competing accounts. For a broader look at how investigative evidence supports a custody case generally, not just a single holiday dispute, see [Child Custody Investigations: How the Right Evidence Wins Cases](/blog/child-custody-investigations-evidence-wins-cases), which covers what family courts weigh and how a full custody investigation gets built from intake through final report.",
+      },
+      { type: 'h2', text: 'The Bottom Line' },
+      {
+        type: 'p',
+        text: "A missed holiday exchange is stressful, but it is not automatically a crime, and treating it like one before the facts are documented can backfire in family court. California law gives parents a civil enforcement path for most violations and reserves Penal Code 278.5 for the cases where a parent willfully cuts the other parent out entirely. What matters most in the hours after a failed exchange is a calm, dated, written record and a call to a family law attorney, not a confrontation. G.A. Tucker PI, licensed under California BSIS #PI188351 and based in Murrieta, works with family law attorneys handling custody matters heard at courts across Riverside, San Bernardino, Los Angeles, and Orange counties, including the Southwest Justice Center near the firm's own [Murrieta](/locations/riverside-county/murrieta) office. Call (909) 964-8976 or use the [request service](/request-service-form) form to discuss what lawful documentation can support your attorney's work before the next scheduled exchange.",
+      },
+    ],
+    internalLinks: [
+      { href: '/child-custody', label: 'Child Custody Investigations' },
+      { href: '/locations/riverside-county/murrieta', label: 'Murrieta Private Investigator' },
+      { href: '/request-service-form', label: 'Request Investigative Services' },
+    ],
+    externalLink: {
+      href: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=278.5',
+      label: 'California Penal Code Section 278.5',
+      publisher: 'California Legislative Information',
+    },
+  },
+
+  {
+    slug: 'missing-adult-vs-missing-child-california',
+    title: 'Missing Adult vs. Missing Child Cases in California: What the Law Actually Allows',
+    metaTitle: 'Missing Adult vs. Child Cases in California',
+    description:
+      "California treats a missing adult differently than a missing child. What the Silver Alert program requires, and where an investigator's role changes.",
+    date: '2026-11-03',
+    readTime: '8 min read',
+    category: 'Missing Persons',
+    image: '/missing-persons-hero.webp',
+    imageAlt:
+      'A paper map marked with a red pushpin on a dark desk beside an open notebook, a desk lamp, and a small framed photo',
+    keywords: [
+      'adult missing persons investigation california',
+      'california silver alert program',
+      'welfare check vs missing persons investigation',
+      'right to go missing california',
+      'missing adult law california',
+    ],
+    excerpt:
+      "A missing child case and a missing adult case run on almost entirely different rules in California. What the Silver Alert program actually requires, what a welfare check does and doesn't confirm, and where a licensed investigator's role fits in between.",
+    content: [
+      {
+        type: 'p',
+        text: 'A missing child case and a missing adult case look similar from the outside — someone is gone, a family is frightened, and the first instinct is to call the police and start searching. Under California law, though, the two cases run on almost entirely different rules. A child cannot legally decide to disappear. A competent adult, in most circumstances, can — and that single legal distinction shapes how law enforcement responds, what a Silver Alert actually requires, and where a licensed private investigator\'s role starts and stops.',
+      },
+      {
+        type: 'p',
+        text: "G.A. Tucker PI, a licensed California private investigation firm based in Murrieta, handles [missing persons](/missing-persons) cases across the state, including the harder category: competent adults who left on their own, and family members who aren't sure whether to be worried or to respect a boundary. Greg A. Tucker holds California BSIS Private Investigator License #PI188351 and brings 27+ years of investigative experience, including prior service as a Lieutenant with the Texas Department of Criminal Justice and as a Senior Parole and Probation Officer with the Florida Department of Corrections, to cases that sit in that gray area. This article explains the legal distinction between a missing child and a missing adult, what California's Silver Alert program actually requires, and what a licensed investigator can lawfully do when an adult cannot be reached but has not been confirmed to be in danger.",
+      },
+      {
+        type: 'callout',
+        title: 'If Someone May Be in Immediate Danger',
+        text: "If there is a specific reason to believe a missing person is in danger right now — a stated threat, a health condition that requires medication, a disappearance that is completely out of character paired with signs of violence — call 911 and file a police report immediately. There is no waiting period required in California before reporting someone missing, for a child or an adult. Everything below applies once that initial report has been made and a family is trying to understand what happens next.",
+      },
+      { type: 'h2', text: 'Why Does California Treat Missing Adults and Missing Children So Differently?' },
+      {
+        type: 'p',
+        text: "A child cannot consent to leaving, cannot legally be considered capable of deciding to cut off contact, and is owed a protective response that doesn't depend on the circumstances. A competent adult has a legal right to privacy and to move, relocate, or end contact with family members without anyone's permission, including law enforcement's. That right doesn't disappear just because it worries the people left behind. Once police confirm a missing adult left voluntarily and isn't a danger to themselves or others, many departments close or deprioritize the case — not because they don't care, but because there is no crime and no legal basis to compel a competent adult's whereabouts to be disclosed against their will.",
+      },
+      { type: 'h2', text: "What Counts as a 'Welfare Check,' and What Does It Actually Confirm?" },
+      {
+        type: 'p',
+        text: "A welfare check is a brief, in-person contact by law enforcement to confirm a specific person is alive and not in immediate danger — nothing more. An officer who makes contact with a missing adult, confirms they're safe, and hears that person say they don't want their location shared, generally cannot force that information out to the family asking for it. This surprises a lot of families, who assume a welfare check means someone will tell them where their relative is. It often doesn't, and that gap between what a welfare check confirms and what a worried family actually wants to know is where most of the frustration in these cases comes from.",
+      },
+      { type: 'h2', text: 'What Is the California Silver Alert Program, and Who Qualifies?' },
+      {
+        type: 'p',
+        text: "California's Silver Alert program gives law enforcement a tool to broadcast information about a missing adult to the public, but only when specific statutory criteria are met under California Government Code section 8594.10. Every one of the following has to be true before an agency will activate a Silver Alert, not just one or two of them.",
+      },
+      {
+        type: 'ul',
+        items: [
+          'The missing person is 65 or older, developmentally disabled, or cognitively impaired',
+          'The investigating agency has already used all available local resources',
+          'The disappearance happened under unexplained or suspicious circumstances',
+          'Law enforcement believes the person is in danger because of age, health, a disability, weather, or another specific factor',
+          'Releasing information to the public could plausibly help recover the person safely',
+        ],
+      },
+      {
+        type: 'p',
+        text: "A competent adult of any age who leaves voluntarily, with no cognitive impairment and no indication of danger, doesn't meet this standard — no matter how distressing the disappearance is for their family. The [California Highway Patrol](https://www.chp.ca.gov/news-alerts/silver-alert) administers the program and publishes the current criteria and activation process.",
+      },
+      { type: 'h2', text: 'The Cases That Fall in Between' },
+      {
+        type: 'p',
+        text: "The hardest calls G.A. Tucker PI sees aren't the clear emergencies and aren't the clear voluntary departures — they're the cases in between. An adult family member who cuts off contact after a mental health crisis or a relapse. A young adult who leaves after a family conflict and goes quiet on purpose rather than out of danger. An elderly parent who wanders from a care facility but doesn't meet every Silver Alert factor on a given day. Someone who skipped a scheduled court appearance and has a legal reason to avoid being found. Each of these requires a different approach, and none of them are resolved by the same playbook used for an abducted child.",
+      },
+      { type: 'h2', text: 'What Can a Private Investigator Lawfully Do That a Welfare Check Cannot?' },
+      {
+        type: 'p',
+        text: "An investigator brings capacity and tools law enforcement often can't spare on a case involving a competent adult: unlimited hours on a single case, licensed access to public-records databases not open to the general public, and the ability to coordinate across county and state lines without jurisdictional friction. That work is lawful and fact-based — skip tracing through financial, telecom, and public-records data; interviewing people the missing adult had recent contact with, with their knowledge; and verifying a current address or employer through legitimate records research, consistent with the standards that govern [general investigations](/investigations) under California law. It is not a workaround for the legal limits above. If an adult is located and states clearly that they don't want contact or their location disclosed, a licensed investigator communicates that outcome to the family rather than compelling a reunion the adult doesn't want.",
+      },
+      { type: 'h2', text: 'What Documentation Supports the Decision to Keep Looking?' },
+      {
+        type: 'ol',
+        items: [
+          'The exact date and time the person was last confirmed seen or heard from, and by whom',
+          'Any health conditions, medications, or cognitive impairments that bear on urgency',
+          'Any statements the person made before disappearing that suggest intent, danger, or neither',
+          'Whether a police report has been filed, and what agency and case number are attached to it',
+          'Any prior disappearances and how those were ultimately resolved',
+        ],
+      },
+      { type: 'h2', text: 'The Bottom Line' },
+      {
+        type: 'p',
+        text: "California law doesn't treat every missing person the same way, and understanding which category a case falls into early changes what happens next. A missing child case moves immediately and without question. A missing adult case depends on competency, danger, and specific statutory criteria that most disappearances simply don't meet — which is frustrating, but is also the law protecting the same right to privacy that applies to everyone, including the person who is missing. G.A. Tucker PI, licensed under California BSIS #PI188351 and based in Murrieta, works with families navigating that distinction, from the first [48 hours](/blog/missing-persons-first-48-hours) after someone disappears through the slower, records-based work a voluntary adult disappearance actually requires. Call (909) 964-8976 or use the [contact](/contact) page to discuss a specific case.",
+      },
+    ],
+    internalLinks: [
+      { href: '/missing-persons', label: 'Missing Persons Investigations' },
+      { href: '/investigations', label: 'Private Investigation Services' },
+      { href: '/contact', label: 'Contact G.A. Tucker PI' },
+    ],
+    externalLink: {
+      href: 'https://www.chp.ca.gov/news-alerts/silver-alert',
+      label: 'California Silver Alert Program',
+      publisher: 'California Highway Patrol',
+    },
+  },
+
+  {
+    slug: 'workplace-violence-prevention-plan-california',
+    title: "California's Workplace Violence Prevention Law: What SB 553 Requires, and Where a Threat Assessment Fits",
+    metaTitle: 'California Workplace Violence Prevention Law',
+    description:
+      'Since July 2024, SB 553 requires most California employers to maintain a written workplace violence prevention plan. Where a threat assessment fits in.',
+    date: '2026-11-12',
+    readTime: '8 min read',
+    category: 'Risk Management',
+    image: '/risk-management-hero.webp',
+    imageAlt:
+      'Dark wooden chess pieces on a board lit by a desk lamp, with an open notebook and city lights visible through window blinds at night',
+    keywords: [
+      'california workplace violence prevention plan',
+      'sb 553 compliance california employers',
+      'pre-termination threat assessment california',
+      'cal/osha workplace violence prevention',
+      'labor code 6401.9',
+    ],
+    excerpt:
+      'Since July 2024, most California employers must maintain a written workplace violence prevention plan under SB 553. What the law actually requires, and where a documented threat assessment fits before a high-risk termination.',
+    content: [
+      {
+        type: 'p',
+        text: "Most California employers now have a legal obligation they may not know they already missed. Since July 2024, state law has required nearly every employer in the state to maintain a written workplace violence prevention plan, train employees on it, and log every qualifying incident — not as a best practice, but as an enforceable Cal/OSHA requirement. Year-end is when this gap tends to surface: a round of layoffs is being planned, HR is drafting termination letters, and someone finally asks whether the company's plan actually covers what happens if a termination goes badly.",
+      },
+      {
+        type: 'p',
+        text: "G.A. Tucker PI, a licensed California private investigation firm based in Murrieta, works with employers and their counsel on the [risk management](/risk-management) side of workplace safety: documented threat assessments that give a compliance plan actual substance instead of a template nobody has read. Greg A. Tucker holds California BSIS Private Investigator License #PI188351 and brings 27+ years of investigative experience, including a background in corrections and parole supervision, to that kind of assessment. This article explains what Senate Bill 553 actually requires, what belongs in a written plan, and where an independent, documented threat assessment fits before a situation becomes an incident report instead of a plan.",
+      },
+      { type: 'h2', text: 'What Does SB 553 Actually Require?' },
+      {
+        type: 'p',
+        text: "Senate Bill 553 amended California Labor Code section 6401.7 and added section 6401.9, requiring most employers to establish, implement, and maintain a written workplace violence prevention plan at every facility, effective July 1, 2024. The law applies broadly, with limited exceptions for workplaces with fewer than ten employees that aren't accessible to the public, employees who telework from a location of their own choosing, and a few sectors — health care and law enforcement facilities — that already fall under their own violence-prevention standard. Cal/OSHA enforces it, and the [Division of Occupational Safety and Health](https://www.dir.ca.gov/dosh/workplace-violence.html) is required to adopt a more detailed general-industry regulation by December 31, 2026 — meaning the baseline requirement already in effect is about to be followed by a more specific standard most employers haven't seen yet.",
+      },
+      { type: 'h2', text: 'What a Written Plan Has to Include' },
+      {
+        type: 'ul',
+        items: [
+          'Named individuals responsible for implementing and maintaining the plan',
+          'A system for employees to report violence, threats, or concerning behavior without fear of retaliation',
+          'Procedures for responding to actual or potential workplace violence incidents, including emergencies',
+          'A process for identifying and evaluating workplace violence hazards, including those tied to specific jobs or locations',
+          'Corrective methods to address identified hazards in a timely way',
+          'Procedures to coordinate with other employers whose employees share the same worksite',
+          'Training requirements, delivered when the plan is first implemented and at least annually after',
+          'A violent incident log, recorded and maintained for every qualifying incident',
+        ],
+      },
+      { type: 'h2', text: 'Why Pre-Termination Situations Are the Highest-Risk Gap' },
+      {
+        type: 'p',
+        text: "A workplace violence prevention plan tends to look complete on paper right up until it's tested by the one scenario employers most want to avoid thinking about: an employee who is being terminated, and who has already shown signs that the reaction might not be calm. Generic plans cover reporting procedures and training requirements well. They rarely say anything specific about what to do when HR already has reason for concern before a termination meeting happens — which is exactly the situation where a documented threat assessment earns its place.",
+      },
+      {
+        type: 'callout',
+        title: 'If There Is an Active Threat Right Now',
+        text: "A pre-termination threat assessment is a planning tool, not an emergency response. If an employee has made a specific, credible threat, or the situation already feels dangerous, call 911 and loop in law enforcement before the termination meeting happens, not after. A threat assessment is also not a psychological evaluation or a prediction of what someone will do — it's a documented review of specific facts that informs a decision, and it doesn't replace a mental health crisis response or law enforcement's own judgment in an active situation.",
+      },
+      { type: 'h2', text: 'What Does a Pre-Termination Threat Assessment Actually Look At?' },
+      {
+        type: 'p',
+        text: "A threat assessment in this context is not a psychological evaluation and not a prediction of what a specific person will do. It is a structured, documented review of concrete, observable facts: prior statements, documented behavior, access to the workplace and to specific individuals, and any history that raises the stakes of a particular termination above routine. The goal is to give an employer and its counsel a factual basis for decisions that are otherwise made on instinct alone — whether to involve additional security, change the time or location of a meeting, or loop in law enforcement in advance rather than after something happens.",
+      },
+      {
+        type: 'ul',
+        items: [
+          'Documented threats or concerning statements, made directly or reported by coworkers',
+          'Known access to weapons, prior violent incidents, or relevant history where lawfully available',
+          "The employee's access to the building, specific individuals, or sensitive areas after termination",
+          'Patterns of escalating behavior leading up to the termination decision',
+          'Whether law enforcement, security, or counsel should be involved before the meeting rather than after',
+        ],
+      },
+      { type: 'h2', text: 'How Does a Threat Assessment Fit Into the Required Written Plan?' },
+      {
+        type: 'p',
+        text: "Labor Code section 6401.9 already requires a process for evaluating workplace violence hazards and responding to incidents — a pre-termination threat assessment is one concrete way an employer satisfies that requirement in a specific, high-stakes situation rather than relying on the plan's general language. The assessment itself, and the fact that one was conducted, becomes part of the documentation that shows the plan is a living process rather than a binder that exists to pass an audit. For employers working with outside counsel on a difficult termination, that documentation also matters well beyond Cal/OSHA compliance if the termination is later challenged.",
+      },
+      { type: 'h2', text: 'The Bottom Line' },
+      {
+        type: 'p',
+        text: "SB 553 made workplace violence prevention a documented, enforceable obligation for nearly every California employer, and the Cal/OSHA standard due by the end of 2026 is about to make the baseline requirement more specific, not less. A written plan satisfies the letter of the law. A documented threat assessment before a high-risk termination is what actually protects people when the plan gets tested. G.A. Tucker PI, licensed under California BSIS #PI188351 and based in Murrieta, works with employers and employment counsel across California on [risk management](/risk-management) and [threat assessment](/blog/behavioral-threat-assessment-families-executives) consultations, including before a termination that already has HR's attention. For [case consultation](/consulting) or to discuss a specific situation, call (909) 964-8976 or use the [contact](/contact) page.",
+      },
+    ],
+    internalLinks: [
+      { href: '/risk-management', label: 'Risk Management Services' },
+      { href: '/consulting', label: 'Investigative Consulting' },
+      { href: '/contact', label: 'Contact G.A. Tucker PI' },
+    ],
+    externalLink: {
+      href: 'https://www.dir.ca.gov/dosh/workplace-violence.html',
+      label: 'Cal/OSHA Workplace Violence Prevention Guidance',
+      publisher: 'California Department of Industrial Relations — Division of Occupational Safety and Health (Cal/OSHA)',
+    },
+  },
+
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
